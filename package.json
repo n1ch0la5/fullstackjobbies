@@ -1,0 +1,14 @@
+{
+  "name": "fullstackjobbies",
+  "version": "0.1.0",
+  "private": true,
+  "description": "We sift through the 💩 so you don't have to. Full stack jobs, rated.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "sift": "node src/run.js",
+    "test": "node --test test/*.test.js"
+  }
+}

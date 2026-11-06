@@ -1,0 +1,13 @@
+{
+  "_note": "Seed list. The sifter adds boards it discovers in Hacker News 'Who is hiring' posts, and disables a board after 3 failed fetches in a row. Add your own: { \"ats\": \"greenhouse|lever|ashby\", \"slug\": \"<board name from its jobs URL>\", \"name\": \"Display Name\" }.",
+  "companies": [
+    { "ats": "greenhouse", "slug": "gitlab", "name": "GitLab" },
+    { "ats": "greenhouse", "slug": "discord", "name": "Discord" },
+    { "ats": "greenhouse", "slug": "figma", "name": "Figma" },
+    { "ats": "greenhouse", "slug": "vercel", "name": "Vercel" },
+    { "ats": "ashby", "slug": "ramp", "name": "Ramp" },
+    { "ats": "ashby", "slug": "linear", "name": "Linear" },
+    { "ats": "ashby", "slug": "supabase", "name": "Supabase" },
+    { "ats": "lever", "slug": "plaid", "name": "Plaid" }
+  ]
+}
