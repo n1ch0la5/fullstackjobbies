@@ -2,6 +2,7 @@
 // Lives in a shadow root so the page's styles can't break it (and ours can't break the page).
 import { extractFacts } from './lib/extract.js';
 import { scoreJob } from './lib/score.js';
+import { loadPrefs, hasPrefs, fitCheck } from './prefs.js';
 
 const BG = ['#5C1A1A', '#8A5523', '#C9893E', '#E9D16A', '#7FB3FF', '#2F5BFF'];
 const FG = ['#FFF4CC', '#FFF4CC', '#1A1712', '#1A1712', '#1A1712', '#FFFFFF'];
@@ -47,6 +48,11 @@ button:focus-visible { outline: 3px solid #2F5BFF; outline-offset: 2px; }
 .tag { font: 500 12px ui-monospace, monospace; border: 2px solid #1A1712; border-radius: 7px; padding: 2px 7px; background: #fff; }
 .tag.pay { background: #E6F7E9; } .tag.flag { background: #FFD9C7; }
 ul { margin: 0; padding-left: 18px; }
+.fit { border: 2px solid #1A1712; border-radius: 10px; background: #fff; padding: 8px 10px; display: grid; gap: 4px; }
+.fit p { margin: 0; font-size: 13px; }
+.fit .ok::before { content: "✅ "; } .fit .warn::before { content: "⚠️ "; }
+.fit .k { font: 700 11px/1 ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; color: #5C5444; margin-bottom: 2px; }
+.prefs { all: unset; cursor: pointer; text-decoration: underline; color: #1A1712; width: auto; height: auto; border: 0; background: none; font: inherit; display: inline; }
 .foot { font-size: 12px; color: #5C5444; border-top: 2px dashed #D8CFB4; padding: 8px 14px; }
 .foot a { color: #1A1712; }
 .collapsed .body, .collapsed .foot { display: none; }
@@ -68,7 +74,8 @@ function keepAlive(host) {
   return () => watcher.disconnect();
 }
 
-export function showBadge(input, { from = 'page' } = {}) {
+export async function showBadge(input, { from = 'page' } = {}) {
+  const prefs = await loadPrefs();
   const old = document.getElementById('fsj-badge-host');
   if (old) {
     old.dataset.closed = '1';
@@ -117,10 +124,24 @@ export function showBadge(input, { from = 'page' } = {}) {
   emoji.style.cssText = `background:${BG[rating.level]};color:${FG[rating.level]};border-radius:10px;padding:4px`;
 
   const body = el('div', 'body');
+
+  // Your fit, from your preferences. The rating above is the same for everyone.
+  if (hasPrefs(prefs)) {
+    const { fits, heads } = fitCheck(facts, input, prefs);
+    if (fits.length || heads.length) {
+      const box = el('div', 'fit');
+      box.append(el('div', 'k', 'For you'));
+      if (fits.length) box.append(el('p', 'ok', `Fits you: ${fits.join(' · ')}`));
+      for (const h of heads) box.append(el('p', 'warn', h));
+      body.append(box);
+    }
+  }
+
   const tags = el('div', 'tags');
   const pay = formatPay(facts.salary);
   tags.append(el('span', `tag ${pay ? 'pay' : 'flag'}`, pay ?? 'No salary'));
-  if (facts.remote) tags.append(el('span', 'tag', 'Remote'));
+  if (facts.workStyle) tags.append(el('span', 'tag', { remote: 'Remote', hybrid: 'Hybrid', onsite: 'On-site' }[facts.workStyle]));
+  else if (facts.remote) tags.append(el('span', 'tag', 'Remote'));
   if (facts.rounds) tags.append(el('span', 'tag', `${facts.rounds} rounds`));
   for (const s of facts.interviewStyles) tags.append(el('span', 'tag', STYLE_LABELS[s] ?? s));
   body.append(tags);
@@ -139,9 +160,16 @@ export function showBadge(input, { from = 'page' } = {}) {
   link.href = 'https://fullstackjobbies.com/?ref=extension';
   link.target = '_blank';
   link.rel = 'noopener';
-  foot.append('Sniffed by ', link, '. Nothing left your browser.');
+  const prefsLink = el('button', 'prefs', hasPrefs(prefs) ? 'Your preferences' : 'Set your preferences');
+  prefsLink.addEventListener('click', () => chrome.runtime.sendMessage({ type: 'open-options' }));
+  foot.append('Sniffed by ', link, '. Nothing left your browser. ', prefsLink);
 
   card.append(head, body, foot);
+  if (prefs.startCollapsed) {
+    card.classList.add('collapsed');
+    toggle.textContent = '+';
+    toggle.setAttribute('aria-label', 'Expand');
+  }
   root.append(style, card);
   document.documentElement.append(host);
   const stopWatching = keepAlive(host);

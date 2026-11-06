@@ -31,9 +31,9 @@ export function scoreJob(facts) {
   // Calibrated on the first full sift (Nov 2026, 238 jobs) so roughly the top 10–15% reach
   // Rocket ship. Pay bands sit near that sample's median ($175k) and 75th percentile ($212k).
   // Only things that are good for every candidate count. Work style (remote, hybrid, on-site)
-  // is a personal preference, so it's a filter, never points. Being well paid alone tops out
-  // at Solid; a Rocket ship also needs an honest range, a clean listing and a stated, humane
-  // interview process. Low pay is a mild knock, so fair non-US salaries aren't shamed.
+  // is a personal preference, so it's a filter, never points. A Rocket ship is either
+  // top-band pay with an honest range and a clean listing, or strong pay plus a stated,
+  // humane interview process. Low pay is a mild knock, so fair non-US salaries aren't shamed.
   let score = 2.25;
 
   if (facts.severeFlags.length) {

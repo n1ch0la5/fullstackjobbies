@@ -125,6 +125,31 @@ export function extractRemote(job) {
   return /\bremote\b/i.test(where) ? true : null;
 }
 
+// Remote, hybrid or on-site. This is a preference people filter on; it never affects the rating.
+// Order of trust: an explicit "Location Type" label (Ashby), then the location field, then the text.
+const HYBRID = /\bhybrid\b(?!\s+(cloud|apps?|mobile|infrastructure|architecture|environments?|search|model of care))|\b\d\s*(?:days?|x)\s*(?:a|per|\/)\s*week\s+(?:in|at)\s+(?:the\s+|our\s+)?office/i;
+const ONSITE = /\b(on-?site|in[- ]office|in-person|office-based|fully in office|5 days (?:a|per) week in)\b/i;
+const REMOTE = /\bremote\b/i;
+
+function styleFrom(text) {
+  if (!text) return null;
+  if (HYBRID.test(text)) return 'hybrid';
+  if (REMOTE.test(text) && !/\b(not remote|no remote|non-remote)\b/i.test(text)) return 'remote';
+  if (ONSITE.test(text)) return 'onsite';
+  return null;
+}
+
+export function extractWorkStyle(job) {
+  const label = (job.description ?? '').match(/location type\s*[:\n]\s*(remote|hybrid|on-?site|in[- ]office)/i)?.[1];
+  if (label) return /remote/i.test(label) ? 'remote' : /hybrid/i.test(label) ? 'hybrid' : 'onsite';
+  const fromLocation = styleFrom(job.location);
+  if (fromLocation) return fromLocation;
+  if (job.remote === true) return 'remote';
+  const fromText = styleFrom((job.description ?? '').slice(0, 2500));
+  if (fromText) return fromText;
+  return job.remote === false ? 'onsite' : null;
+}
+
 export function extractFacts(job) {
   const text = `${job.title}\n${job.description}`;
   const salary = job.salary ?? extractSalary(text);
@@ -133,6 +158,7 @@ export function extractFacts(job) {
     salary,
     stack: extractStack(text),
     remote: extractRemote(job),
+    workStyle: extractWorkStyle(job),
     rounds: extractRounds(text),
     interviewStyles: extractInterviewStyles(text),
     redFlags: flags,

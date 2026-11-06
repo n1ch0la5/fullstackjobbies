@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { extractSalary, extractStack, extractRounds, extractInterviewStyles, extractFacts } from '../src/extract.js';
+import { extractSalary, extractStack, extractRounds, extractInterviewStyles, extractFacts, extractWorkStyle } from '../src/extract.js';
 import { isFullStack } from '../src/filter.js';
 import { scoreJob } from '../src/score.js';
 import { findBoards } from '../src/sources/hn.js';
@@ -81,4 +81,24 @@ test('HN links reveal new company boards', () => {
 
 test('Greenhouse double-escaped HTML becomes text', () => {
   assert.equal(htmlToText('&lt;p&gt;Hello &amp;amp; welcome&lt;/p&gt;&lt;ul&gt;&lt;li&gt;React&lt;/li&gt;&lt;/ul&gt;'), 'Hello & welcome\n- React');
+});
+
+test('work style: remote, hybrid or on-site', () => {
+  const ws = (location, description = '', remote = null) => extractWorkStyle({ location, description, remote });
+  assert.equal(ws('', 'Location\n\nSan Francisco\n\nLocation Type\n\nHybrid\n\nDepartment'), 'hybrid');
+  assert.equal(ws('Remote (US)'), 'remote');
+  assert.equal(ws('New York, NY', 'We work 3 days a week in the office.'), 'hybrid');
+  assert.equal(ws('Austin, TX', 'This is an on-site role at our HQ.'), 'onsite');
+  assert.equal(ws('Seattle, WA', 'We build hybrid cloud infrastructure.'), null);
+  assert.equal(ws('', '', false), 'onsite');
+  assert.equal(ws('Berlin', 'Fully remote within the EU.'), 'remote');
+  assert.equal(ws('Remote', 'Our team is hybrid in London, but this role is remote.'), 'remote', 'location field wins');
+});
+
+test('work style never changes the rating', () => {
+  const base = 'Full Stack Engineer. $180k - $210k. React and Node. 3 rounds, we pair on a real task.';
+  const a = scoreJob(extractFacts(job({ location: 'Remote (US)', description: base })));
+  const b = scoreJob(extractFacts(job({ location: 'Austin, TX', description: base + ' This is an on-site role.' })));
+  assert.equal(a.level, b.level);
+  assert.deepEqual(a.reasons, b.reasons);
 });

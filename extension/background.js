@@ -25,3 +25,8 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     chrome.action.openPopup?.();
   }
 });
+
+// The card on a job page asks for the preferences page; content scripts can't open it themselves.
+chrome.runtime.onMessage.addListener((msg) => {
+  if (msg?.type === 'open-options') chrome.runtime.openOptionsPage();
+});

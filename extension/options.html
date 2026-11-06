@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your preferences · Full Stack Jobbies</title>
+<style>
+  :root { --ink: #1A1712; --ink-2: #3D372C; --ink-3: #5C5444; --butter: #FFF4CC; --blue: #2F5BFF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--butter); color: var(--ink); font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { margin: 0; font-size: 36px; letter-spacing: -0.02em; }
+  .lede { margin: 8px 0 0; color: var(--ink-2); max-width: 40em; }
+  section { margin-top: 28px; background: #fff; border: 3px solid var(--ink); border-radius: 18px; box-shadow: 5px 5px 0 var(--ink); padding: 20px 22px; }
+  h2 { margin: 0 0 4px; font-size: 20px; }
+  .hint { margin: 0 0 14px; color: var(--ink-3); font-size: 14px; }
+  .opts { display: flex; flex-wrap: wrap; gap: 10px; }
+  .opt { display: flex; align-items: center; gap: 8px; border: 2px solid var(--ink); border-radius: 999px; padding: 8px 14px; cursor: pointer; background: var(--butter); font-weight: 600; font-size: 15px; }
+  .opt input { width: 18px; height: 18px; accent-color: var(--ink); margin: 0; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  input[type=number], select { font-size: 16px; font-family: inherit; padding: 10px 12px; border: 2px solid var(--ink); border-radius: 10px; background: var(--butter); color: var(--ink); }
+  input[type=number] { width: 180px; }
+  details { margin-top: 12px; }
+  summary { cursor: pointer; font-weight: 600; }
+  .region { margin-top: 12px; }
+  .region h3 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 4px 12px; }
+  .grid label { display: flex; align-items: center; gap: 8px; font-size: 15px; cursor: pointer; }
+  .grid input { width: 16px; height: 16px; accent-color: var(--ink); }
+  .quick { display: flex; flex-wrap: wrap; gap: 8px; }
+  .quick button { font-size: 14px; font-weight: 600; font-family: inherit; border: 2px solid var(--ink); border-radius: 999px; padding: 6px 12px; background: #fff; color: var(--ink); cursor: pointer; }
+  .quick button:hover { background: var(--butter); }
+  .status { position: fixed; right: 20px; bottom: 20px; background: var(--ink); color: var(--butter); border-radius: 999px; padding: 8px 16px; font-weight: 600; opacity: 0; transition: opacity .2s; }
+  .status.show { opacity: 1; }
+  .note { margin-top: 28px; font-size: 14px; color: var(--ink-3); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Your preferences</h1>
+  <p class="lede">The Jobbie rating is the same for everyone. These settings add a short "For you" check to the rating card: what fits you, and what to watch out for. Changes save as you go.</p>
+
+  <section>
+    <h2>Work style</h2>
+    <p class="hint">Which kinds of job are you open to? Leave all unticked for no preference.</p>
+    <div class="opts" id="workStyles"></div>
+  </section>
+
+  <section>
+    <h2>Salary floor</h2>
+    <p class="hint">Warn me when a job tops out below this, per year. Leave it at 0 for no floor.</p>
+    <div class="row">
+      <label for="floor" class="sr">Amount</label>
+      <input id="floor" type="number" min="0" step="5000" inputmode="numeric">
+      <label for="currency" class="sr">Currency</label>
+      <select id="currency"></select>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where you can work</h2>
+    <p class="hint">Warn me when a job is only open to other countries. Leave empty for anywhere.</p>
+    <div class="quick">
+      <button type="button" data-pick="US">🇺🇸 US</button>
+      <button type="button" data-pick="US,CA">🇺🇸🇨🇦 US &amp; Canada</button>
+      <button type="button" data-pick="GB,IE,DE,NL,FR,ES,PT">🇪🇺 UK &amp; Europe</button>
+      <button type="button" data-pick="">Clear</button>
+    </div>
+    <details id="countryList"><summary>Pick countries</summary><div id="regions"></div></details>
+  </section>
+
+  <section>
+    <h2>Interviews to avoid</h2>
+    <p class="hint">Flag jobs that interview this way.</p>
+    <div class="opts" id="avoid"></div>
+  </section>
+
+  <section>
+    <h2>Rating card</h2>
+    <div class="opts"><label class="opt"><input type="checkbox" id="startCollapsed"> Start collapsed (just the rating; click + for details)</label></div>
+  </section>
+
+  <p class="note">Saved in Chrome's own storage (synced across your Chrome browsers if Chrome sync is on). Nothing is sent to Full Stack Jobbies.</p>
+</main>
+<div class="status" id="status" role="status" aria-live="polite">Saved</div>
+<script type="module" src="options.js"></script>
+</body>
+</html>

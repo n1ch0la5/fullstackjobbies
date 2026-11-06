@@ -5,7 +5,7 @@ import { cp, mkdir, rm } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 
 await mkdir('extension/lib', { recursive: true });
-for (const f of ['extract.js', 'score.js']) await cp(`src/${f}`, `extension/lib/${f}`);
+for (const f of ['extract.js', 'score.js', 'location.js']) await cp(`src/${f}`, `extension/lib/${f}`);
 
 await mkdir('dist', { recursive: true });
 await rm('dist/fullstackjobbies-extension.zip', { force: true });

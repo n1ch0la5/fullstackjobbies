@@ -14,7 +14,7 @@ import { fetchWorkable } from './sources/workable.js';
 import { fetchRemoteOK } from './sources/remoteok.js';
 import { needsName, lookUpName } from './names.js';
 import { isFullStack } from './filter.js';
-import { extractFacts } from './extract.js';
+import { extractFacts, extractWorkStyle } from './extract.js';
 import { aiEnabled, extractWithAI, mergeFacts } from './ai.js';
 import { scoreJob } from './score.js';
 import { classifyLocation } from './location.js';
@@ -136,6 +136,7 @@ export async function sift() {
       where: classifyLocation(job),
       via: job.via ?? null, // credit for feeds that require it (e.g. Remote OK)
       remote: facts.remote,
+      workStyle: facts.workStyle ?? extractWorkStyle(job), // a filter, never part of the rating
       salary: facts.salary,
       stack: facts.stack,
       rounds: facts.rounds,

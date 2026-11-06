@@ -25,6 +25,13 @@
       .filter(Boolean)
       .join('\n');
 
+  // The job's location as the site shows it: a dedicated element, or the "Location" field in a sidebar.
+  function pageLocation() {
+    const direct = document.querySelector('.job__location, .posting-categories .location, [data-ui="job-location"]')?.innerText?.trim();
+    if (direct) return direct;
+    return sideText().match(/(?:^|\n)\s*Location\s*\n+\s*([^\n]+)/i)?.[1]?.trim() ?? '';
+  }
+
   function fromStructuredData() {
     for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
       try {
@@ -44,7 +51,7 @@
         return {
           title: p.title ?? '',
           text: `${p.title ?? ''}\n${sideText()}\n${body}`,
-          location: remote ? `Remote${where ? ` (${where})` : ''}` : place,
+          location: [remote ? `Remote${where ? ` (${where})` : ''}` : place, pageLocation()].filter(Boolean).join(' · '),
           remote: remote || null,
           salary: min > 0 ? { min, max: max > 0 ? max : min, currency: p.baseSalary.currency ?? 'USD', interval: unit === 'HOUR' ? 'hour' : unit === 'MONTH' ? 'month' : 'year' } : null,
         };
@@ -60,7 +67,7 @@
     if (structured) return structured;
     const node = SELECTORS.map((s) => document.querySelector(s)).find((n) => n && n.innerText.trim().length > 400);
     const title = TITLE_SELECTORS.map((s) => document.querySelector(s)?.innerText?.trim()).find(Boolean) ?? document.title;
-    return node ? { title, text: `${title}\n${sideText()}\n${node.innerText}` } : null;
+    return node ? { title, text: `${title}\n${sideText()}\n${node.innerText}`, location: pageLocation() } : null;
   }
 
   // Only job detail pages, not a company's list of jobs.
