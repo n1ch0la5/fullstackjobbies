@@ -27,6 +27,7 @@ language plpgsql
 security definer
 set search_path = public
 as $$
+#variable_conflict use_column
 begin
   if p_level < 0 or p_level > 5 then
     raise exception 'level must be 0 to 5';
