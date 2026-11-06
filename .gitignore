@@ -6,3 +6,4 @@ site/lib/
 site/job/
 site/sitemap.xml
 site/robots.txt
+dist/

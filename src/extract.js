@@ -78,7 +78,7 @@ export function extractInterviewStyles(text) {
   if (!negatedAlgo && /leetcode|hackerrank|codility|live[- ]coding|whiteboard|algorithm(ic)? (interview|challenge|test|round)|coding (challenge|test|assessment)/.test(t)) {
     styles.add('live_algorithm');
   }
-  if (/paid (take[- ]home|project|trial|work sample)|we pay (you )?for (the|your) (take[- ]home|project|time)/.test(t)) {
+  if (/(?<!un)\bpaid (take[- ]home|project|trial|work sample)|we pay (you )?for (the|your) (take[- ]home|project|time)/.test(t)) {
     styles.add('paid_take_home');
   } else if (/take[- ]home/.test(t)) {
     styles.add(/unpaid/.test(t) ? 'unpaid_take_home' : 'take_home');

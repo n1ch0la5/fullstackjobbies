@@ -1,0 +1,122 @@
+// The rating badge shown on job pages. Same rules and scoring as the website.
+// Lives in a shadow root so the page's styles can't break it (and ours can't break the page).
+import { extractFacts } from './lib/extract.js';
+import { scoreJob } from './lib/score.js';
+
+const BG = ['#5C1A1A', '#8A5523', '#C9893E', '#E9D16A', '#7FB3FF', '#2F5BFF'];
+const FG = ['#FFF4CC', '#FFF4CC', '#1A1712', '#1A1712', '#1A1712', '#FFFFFF'];
+const STYLE_LABELS = {
+  live_algorithm: 'Live algorithm test',
+  take_home: 'Take-home',
+  paid_take_home: 'Paid take-home',
+  unpaid_take_home: 'Unpaid take-home',
+  pairing: 'Pair on real work',
+  conversation: 'Just a conversation',
+};
+
+export function rate({ title = '', text = '', location = '' }) {
+  const job = { source: 'page', title, description: text, location, remote: null, salary: null };
+  const facts = extractFacts(job);
+  return { facts, rating: scoreJob(facts) };
+}
+
+function formatPay(s) {
+  if (!s) return null;
+  const sym = { USD: '$', GBP: '£', EUR: '€', CAD: 'CA$', AUD: 'A$' }[s.currency] ?? `${s.currency} `;
+  const f = (n) => (s.interval === 'hour' ? `${sym}${n}` : `${sym}${Math.round(n / 1000)}k`);
+  const range = s.min === s.max ? f(s.min) : `${f(s.min)}–${f(s.max)}`;
+  return s.interval === 'hour' ? `${range}/hr` : range;
+}
+
+const CSS = `
+:host { all: initial; }
+.card { position: fixed; right: 16px; bottom: 16px; z-index: 2147483647; width: 320px; max-width: calc(100vw - 32px);
+  font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; color: #1A1712;
+  background: #FFF4CC; border: 3px solid #1A1712; border-radius: 16px; box-shadow: 6px 6px 0 #1A1712; overflow: hidden; }
+.head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
+.emoji { font-size: 34px; line-height: 1; }
+.label { font: 700 11px/1 ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; color: #5C5444; }
+.name { font-weight: 800; font-size: 20px; letter-spacing: -0.01em; }
+.grow { flex: 1; min-width: 0; }
+button { all: unset; cursor: pointer; width: 28px; height: 28px; display: grid; place-items: center; border: 2px solid #1A1712; border-radius: 8px; background: #fff; font-weight: 700; }
+button:focus-visible { outline: 3px solid #2F5BFF; outline-offset: 2px; }
+.body { padding: 0 14px 12px; display: grid; gap: 8px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font: 500 12px ui-monospace, monospace; border: 2px solid #1A1712; border-radius: 7px; padding: 2px 7px; background: #fff; }
+.tag.pay { background: #E6F7E9; } .tag.flag { background: #FFD9C7; }
+ul { margin: 0; padding-left: 18px; }
+.foot { font-size: 12px; color: #5C5444; border-top: 2px dashed #D8CFB4; padding: 8px 14px; }
+.foot a { color: #1A1712; }
+.collapsed .body, .collapsed .foot { display: none; }
+`;
+
+export function showBadge(input, { from = 'page' } = {}) {
+  document.getElementById('fsj-badge-host')?.remove();
+  const { facts, rating } = rate(input);
+  const flags = [...facts.severeFlags, ...facts.redFlags];
+  const host = document.createElement('div');
+  host.id = 'fsj-badge-host';
+  const root = host.attachShadow({ mode: 'closed' });
+  const style = document.createElement('style');
+  style.textContent = CSS;
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.setAttribute('role', 'complementary');
+  card.setAttribute('aria-label', `Full Stack Jobbies rating: ${rating.name}`);
+
+  const el = (tag, cls, text) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  };
+
+  const head = el('div', 'head');
+  const emoji = el('span', 'emoji', rating.emoji);
+  emoji.setAttribute('aria-hidden', 'true');
+  const titleBox = el('div', 'grow');
+  titleBox.append(el('div', 'label', from === 'selection' ? 'Your selection is' : 'This listing is'), el('div', 'name', rating.name));
+  const toggle = el('button', '', '–');
+  toggle.title = 'Collapse';
+  toggle.setAttribute('aria-label', 'Collapse');
+  toggle.addEventListener('click', () => {
+    const c = card.classList.toggle('collapsed');
+    toggle.textContent = c ? '+' : '–';
+    toggle.setAttribute('aria-label', c ? 'Expand' : 'Collapse');
+  });
+  const close = el('button', '', '✕');
+  close.setAttribute('aria-label', 'Close');
+  close.addEventListener('click', () => host.remove());
+  head.append(emoji, titleBox, toggle, close);
+  emoji.style.cssText = `background:${BG[rating.level]};color:${FG[rating.level]};border-radius:10px;padding:4px`;
+
+  const body = el('div', 'body');
+  const tags = el('div', 'tags');
+  const pay = formatPay(facts.salary);
+  tags.append(el('span', `tag ${pay ? 'pay' : 'flag'}`, pay ?? 'No salary'));
+  if (facts.remote) tags.append(el('span', 'tag', 'Remote'));
+  if (facts.rounds) tags.append(el('span', 'tag', `${facts.rounds} rounds`));
+  for (const s of facts.interviewStyles) tags.append(el('span', 'tag', STYLE_LABELS[s] ?? s));
+  body.append(tags);
+  body.append(el('strong', '', flags.length ? `${flags.length} red flag${flags.length === 1 ? '' : 's'}` : 'No red flags spotted'));
+  if (flags.length) {
+    const ul = el('ul');
+    for (const f of flags.slice(0, 6)) ul.append(el('li', '', f));
+    body.append(ul);
+  }
+  const why = el('ul');
+  for (const r of rating.reasons.slice(0, 6)) why.append(el('li', '', r));
+  if (rating.reasons.length) body.append(el('strong', '', 'Why'), why);
+
+  const foot = el('div', 'foot');
+  const link = el('a', '', 'Full Stack Jobbies');
+  link.href = 'https://fullstackjobbies.com/?ref=extension';
+  link.target = '_blank';
+  link.rel = 'noopener';
+  foot.append('Sniffed by ', link, '. Nothing left your browser.');
+
+  card.append(head, body, foot);
+  root.append(style, card);
+  document.documentElement.append(host);
+  return { facts, rating };
+}

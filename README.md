@@ -78,3 +78,10 @@ The site is plain HTML, CSS and JS in `site/`, deployed on Netlify (`netlify.tom
 On deploy, `scripts/build-site.js` copies the public data and the shared rating code into `site/`. Worst-jobbie candidates are **not** published, since they name real companies. Each daily sift commits new data, which triggers a fresh deploy.
 
 Preview locally: `node scripts/build-site.js && npx serve site`
+
+## Votes, agents and the extension
+
+- **Voting:** visitors rate any job on the Jobbie Scale; the community rating takes over once 3 devs have voted. Run `supabase/votes.sql` once in the Supabase SQL Editor. Emoji counters need `supabase/emoji_counts.sql`.
+- **Job pages:** every job gets `/job/<slug>`, listed in `/sitemap.xml`. Built by `scripts/build-site.js`.
+- **Agent API (read-only, no key):** `GET /api/jobs`, `POST /api/rate`, MCP server at `/mcp`, skill at `/skill/SKILL.md`. Docs at `/agents`.
+- **Browser extension:** `extension/`. `node scripts/build-extension.js` refreshes its copy of the rating code and writes `dist/fullstackjobbies-extension.zip` for the Chrome Web Store. To try it: Chrome → `chrome://extensions` → Developer mode → Load unpacked → pick `extension/`.
