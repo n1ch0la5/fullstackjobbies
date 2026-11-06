@@ -31,7 +31,7 @@ globalThis.fetch = async (url) => {
 
 test('a full sift run', async () => {
   const { sift } = await import('../src/run.js');
-  const { listed, worst, stats } = await sift();
+  const { listed, best, worst, stats } = await sift();
 
   assert.ok(stats.newBoards >= 1, 'discovers widgetco from the HN post');
   const titles = listed.map((j) => `${j.company}: ${j.title}`);
@@ -40,6 +40,8 @@ test('a full sift run', async () => {
   assert.ok(!titles.some((t) => t.startsWith('Hypeco')), 'no-salary hype job is not listed');
   assert.ok(!titles.some((t) => t.startsWith('Dataco')), 'non full stack job is not listed');
   assert.equal(listed[0].rating.name, 'Rocket ship');
+  assert.equal(best[0].company, 'Widgetco');
+  assert.ok(best.every((j) => j.rating.level === 5), 'only rocket ships compete for best');
   assert.equal(worst[0].company, 'Hypeco');
   assert.equal(worst[0].rating.name, 'Bloody awful');
 });

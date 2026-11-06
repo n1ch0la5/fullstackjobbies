@@ -124,15 +124,27 @@ export async function sift() {
   const worst = [...rejected.filter((j) => j.rating.level === 0), ...listed.filter((j) => j.rating.level <= 1)]
     .sort((a, b) => a.rating.level - b.rating.level || b.redFlags.length - a.redFlags.length)
     .slice(0, 10);
+  // Best Jobbie of the Week: Rocket ships only, most reasons-to-love first, newest breaks ties.
+  // Chosen by rating alone; paid "Featured" slots never feed into this.
+  const best = listed
+    .filter((j) => j.rating.level === 5)
+    .sort((a, b) => positives(b) - positives(a) || (b.firstSeen > a.firstSeen ? 1 : -1))
+    .slice(0, 10);
 
-  await writeJson('jobs.json', { updatedAt: new Date().toISOString(), count: listed.length, jobs: listed });
-  await writeJson('jobbie-of-the-week-candidates.json', { updatedAt: new Date().toISOString(), jobs: worst });
+  const now = new Date().toISOString();
+  await writeJson('jobs.json', { updatedAt: now, count: listed.length, jobs: listed });
+  await writeJson('best-jobbie-candidates.json', { updatedAt: now, jobs: best });
+  await writeJson('worst-jobbie-candidates.json', { updatedAt: now, jobs: worst });
   await writeJson('cache.json', nextCache);
   await writeJson('companies.json', companiesFile);
   await writeJson('stats.json', { ...stats, updatedAt: new Date().toISOString() });
 
   console.log(JSON.stringify(stats));
-  return { listed, worst, stats };
+  return { listed, best, worst, stats };
+}
+
+function positives(job) {
+  return job.rating.reasons.filter((r) => r.startsWith('+')).length - job.redFlags.length;
 }
 
 function today() {

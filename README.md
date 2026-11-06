@@ -25,7 +25,8 @@ This repo holds the **sifter**: a daily routine that finds full stack jobs, rate
    - Rule-based extraction always runs and costs nothing.
    - If `ANTHROPIC_API_KEY` is set, a small model also reads each listing to catch what regexes miss. It only runs on **new or changed** full stack listings (cached by a hash of the text), capped by `MAX_AI_PER_RUN`.
 4. **Score with a formula**, not AI opinion, so every rating is explainable. See `src/score.js`; each job carries its `reasons`.
-5. **House rule: salary or it doesn't get posted.** Listings without a salary are not published. The worst ones (Level 0 and 1) go to `data/jobbie-of-the-week-candidates.json`.
+5. **House rule: salary or it doesn't get posted.** Listings without a salary are not published.
+6. **Picks Friday candidates.** The best Rocket ships go to `data/best-jobbie-candidates.json`; the worst (Level 0 and 1) go to `data/worst-jobbie-candidates.json`. Both are picked by rating alone. Paid "Featured" slots, if we add them, never feed into Best Jobbie of the Week.
 
 We publish facts, a rating and a link. **"Apply" always goes to the company's own page**; we don't republish full job descriptions.
 
@@ -34,7 +35,8 @@ We publish facts, a rating and a link. **"Apply" always goes to the company's ow
 | File | What it is |
 |---|---|
 | `data/jobs.json` | Published listings, best first. This is what the site reads. |
-| `data/jobbie-of-the-week-candidates.json` | The 10 worst, for Friday's post. |
+| `data/best-jobbie-candidates.json` | Top 10 Rocket ships, for Best Jobbie of the Week. |
+| `data/worst-jobbie-candidates.json` | The 10 worst, for Worst Jobbie of the Week (anonymise before posting). |
 | `data/companies.json` | Boards we check. Failing boards are disabled after 3 misses in a row. |
 | `data/cache.json` | Extracted facts per listing, so nothing is re-processed. |
 | `data/stats.json` | Counts from the latest run. |
