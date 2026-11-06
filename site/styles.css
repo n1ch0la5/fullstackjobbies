@@ -325,3 +325,11 @@ select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 1
 .vote-status { margin: 8px 0 0; font-size: 14px; color: var(--ink-2); }
 .job-link { text-decoration: none; }
 .job-link:hover { text-decoration: underline; }
+
+/* Keep everything inside a phone screen */
+.row > * { flex-basis: min(420px, 100%); }
+.job { min-width: 0; }
+.job-main { flex-basis: min(420px, 100%); }
+.mini-cards > div { min-width: 0; }
+pre.code { max-width: 100%; }
+h1, h2, h3, .job-link, p code, li code { overflow-wrap: anywhere; }
