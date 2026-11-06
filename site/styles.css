@@ -298,3 +298,4 @@ select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 1
   .hero-side .live-buttons button { font-size: 22px; }
   .live-n { font-size: 11px; }
 }
+.hero-side .live-bar { background: none; border: none; box-shadow: none; padding: 0; }
