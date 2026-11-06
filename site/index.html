@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5M9M4NF7');</script>
+<!-- Google Tag Manager: loads right away unless this visitor must opt in first (see consent.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.fsjLoadGTM = function () {
+  if (window.__gtmLoaded) return; window.__gtmLoaded = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M9M4NF7');
+};
+(function () {
+  var choice = null; try { choice = localStorage.getItem('fsj.consent'); } catch (e) {}
+  if (document.documentElement.getAttribute('data-consent') === 'not-required' || choice === 'granted') window.fsjLoadGTM();
+})();
+</script>
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Full Stack Jobbies: tired of crappy job posts? We sift through the 💩 so you don't have to</title>
@@ -24,10 +34,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M9M4NF7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <header class="site-header">
   <nav class="wrap nav" aria-label="Main">
@@ -288,5 +294,6 @@ daily_limit:  5</code></pre>
 
 <script type="module" src="/app.js"></script>
 <script type="module" src="/live.js"></script>
+<script type="module" src="/consent.js"></script>
 </body>
 </html>
