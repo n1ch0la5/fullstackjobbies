@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rated full stack jobs · Full Stack Jobbies</title>
+<meta name="description" content="Full stack jobs with the salary up front, rated from rocket ship to bloody awful. Filter out live algorithm tests and unpaid take-homes.">
+<meta name="theme-color" content="#FFF4CC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="/" class="logo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" fill="#6B3F14" stroke="#1A1712" stroke-width="2" stroke-linejoin="round"><path d="M5 27h22a3.5 3.5 0 0 0 0-7h-1.5a3.5 3.5 0 0 0-2.5-6h-1.5a4.5 4.5 0 0 0-5.5-6.5c.5 2-1.5 3-3 3.5a3.5 3.5 0 0 0-2.5 9H6.5A3.5 3.5 0 0 0 5 27z"/></svg>
+      fullstack<span>jobbies</span>
+    </a>
+    <div class="nav-links">
+      <a href="/jobs.html" aria-current="page">Jobs</a>
+      <a href="/#weekly">Rocket &amp; Jobbie of the Week</a>
+      <a href="/#detector">Red Flag Detector</a>
+      <a href="/#post" class="btn btn-ink">Post a job</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section style="padding-top: 56px">
+  <div class="wrap">
+    <h1 style="font-size: clamp(40px, 6vw, 64px)">The sifted jobs</h1>
+    <p class="lede">Every one has a salary. Every one is rated. Best first. "Apply" always goes to the company's own page.</p>
+
+    <form class="filters" id="filters" style="margin-top: 32px" onsubmit="return false">
+      <div>
+        <label for="q">Search</label>
+        <input id="q" type="search" placeholder="react, rails, Berlin…">
+      </div>
+      <div>
+        <label for="min">At least</label>
+        <select id="min">
+          <option value="0" selected>Anything listed</option>
+          <option value="3">Meh 😐 and up</option>
+          <option value="4">Solid 💯 and up</option>
+          <option value="5">Rocket ship 🚀 only</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>Hide jobs that make you</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="hide" value="live_algorithm"> do a live algorithm test</label>
+          <label><input type="checkbox" name="hide" value="unpaid_take_home"> do an unpaid take-home</label>
+          <label><input type="checkbox" id="remote"> go to an office</label>
+        </div>
+      </fieldset>
+    </form>
+
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="job-list" id="jobs"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
+    <p id="updated" style="color: var(--ink-3)"></p>
+  </div>
+</footer>
+
+<script type="module" src="/jobs.js"></script>
+</body>
+</html>

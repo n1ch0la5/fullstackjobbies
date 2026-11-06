@@ -66,3 +66,15 @@ Add an entry to `data/companies.json`. The slug is the board name in the company
 - Scoring weights, pay bands and currency rates: `src/score.js`
 - Red-flag phrases and interview-style detection: `src/extract.js`
 - What counts as full stack: `src/filter.js`
+
+## The website
+
+The site is plain HTML, CSS and JS in `site/`, deployed on Netlify (`netlify.toml`). There's no framework and nothing to install.
+
+- `site/index.html`: landing page. The hero paste box and Red Flag Detector rate a job **in the browser**, using the same `src/extract.js` and `src/score.js` as the sifter.
+- `site/jobs.html`: the rated jobs, read from `data/jobs.json`, with rating, interview-style and remote filters.
+- Signup forms (newsletter, agent waitlist, employers) use Netlify Forms. Submissions show up in Netlify under **Forms**.
+
+On deploy, `scripts/build-site.js` copies the public data and the shared rating code into `site/`. Worst-jobbie candidates are **not** published, since they name real companies. Each daily sift commits new data, which triggers a fresh deploy.
+
+Preview locally: `node scripts/build-site.js && npx serve site`

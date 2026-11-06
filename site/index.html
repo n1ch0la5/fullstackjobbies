@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Full Stack Jobbies: we sift through the 💩 so you don't have to</title>
+<meta name="description" content="Full stack jobs rated by devs, from rocket ship to bloody awful. Salary up front, no ghosting, no coding on command. Paste any job to check it.">
+<meta property="og:title" content="We sift through the 💩 so you don't have to">
+<meta property="og:description" content="Full stack jobs rated by devs. Paste any job and we'll rate it.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fullstackjobbies.com/">
+<meta name="theme-color" content="#FFF4CC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="/" class="logo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" fill="#6B3F14" stroke="#1A1712" stroke-width="2" stroke-linejoin="round"><path d="M5 27h22a3.5 3.5 0 0 0 0-7h-1.5a3.5 3.5 0 0 0-2.5-6h-1.5a4.5 4.5 0 0 0-5.5-6.5c.5 2-1.5 3-3 3.5a3.5 3.5 0 0 0-2.5 9H6.5A3.5 3.5 0 0 0 5 27z"/></svg>
+      fullstack<span>jobbies</span>
+    </a>
+    <div class="nav-links">
+      <a href="/jobs.html">Jobs</a>
+      <a href="#weekly">Rocket &amp; Jobbie of the Week</a>
+      <a href="#detector">Red Flag Detector</a>
+      <a href="#agents">For agents</a>
+      <a href="#post" class="btn btn-ink">Post a job</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap row">
+    <div>
+      <p class="pill-label">Full stack jobs, rated by devs</p>
+      <h1>We sift through the 💩 so you don't have to.</h1>
+      <p class="lede" style="font-size: 20px">Rated by devs who are just as fed up as you. Salary up front, no ghosting, no coding on command. Found a job somewhere else? Paste it below and we'll rate it.</p>
+      <form class="check-form" id="hero-check">
+        <label for="hero-input" class="sr-only">Job description</label>
+        <textarea id="hero-input" rows="1" placeholder="Paste a job description"></textarea>
+        <button type="submit" class="btn btn-accent">Check it</button>
+      </form>
+      <div id="hero-result" aria-live="polite"></div>
+      <p class="hero-alt">Or skip the sniffing: <a href="/jobs.html">browse jobs we've already rated</a></p>
+    </div>
+
+    <div class="card tilt-r" aria-label="Example of a rated listing">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
+        <div>
+          <p class="eyebrow" style="color: var(--ink-3)">Example listing</p>
+          <h2 style="font-size: 28px; margin-top: 6px; line-height: 1.1">Senior Full Stack Engineer</h2>
+          <p style="margin: 4px 0 0; color: var(--ink-2)">Remote (EU)</p>
+        </div>
+        <span style="font-size: 52px; line-height: 1" role="img" aria-label="Rocket ship">🚀</span>
+      </div>
+      <div class="tags" style="margin-top: 20px">
+        <span class="tag tag-pay">€85k–€105k</span>
+        <span class="tag tag-stack">React</span>
+        <span class="tag tag-stack">Node</span>
+        <span class="tag tag-stack">Postgres</span>
+        <span class="tag tag-int">2 rounds</span>
+        <span class="tag tag-int">Pair on real work</span>
+      </div>
+      <p style="margin: 24px 0 8px; font-weight: 600; font-size: 14px">Jobbie rating</p>
+      <div class="meter" role="img" aria-label="Rated 5 of 5: rocket ship">
+        <i style="background: var(--l0)"></i><i style="background: var(--l1)"></i><i style="background: var(--l2)"></i><i style="background: var(--l3)"></i><i style="background: var(--l4)"></i><i style="background: var(--l5)"></i>
+      </div>
+      <div class="meter-ends"><span>bloody awful</span><span>rocket ship</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="banner" aria-label="House rules">
+  <div class="banner-track">
+    <p>Salary or it doesn't get posted • No rockstars • No ninjas • No "we're a family" • Ghosting gets you a public score •&nbsp;</p>
+    <p aria-hidden="true">Salary or it doesn't get posted • No rockstars • No ninjas • No "we're a family" • Ghosting gets you a public score •&nbsp;</p>
+  </div>
+</section>
+
+<section id="scale">
+  <div class="wrap">
+    <h2>The Jobbie Scale</h2>
+    <p class="lede">Every listing gets a starting rating from what it actually says. Developers who applied, interviewed or just read it then vote it up or down. Six levels, no fence-sitting.</p>
+    <div class="scale">
+      <div class="level lv5"><p class="mono">LEVEL 5</p><h3>Rocket ship 🚀</h3><p>Top-band salary, two rounds, real remote. Apply before lunch.</p></div>
+      <div class="level lv4"><p class="mono">LEVEL 4</p><h3>Solid 💯</h3><p>Fair pay, sane process, replies to every applicant.</p></div>
+      <div class="level lv3"><p class="mono">LEVEL 3</p><h3>Meh 😐</h3><p>A job. It exists. Nobody's excited, nobody's harmed.</p></div>
+      <div class="level lv2"><p class="mono">LEVEL 2</p><h3>Bit whiffy 🤢</h3><p>Salary's there but low. Stack list reads like a shopping trolley.</p></div>
+      <div class="level lv1"><p class="mono">LEVEL 1</p><h3>Steaming pile 💩</h3><p>"Competitive salary", eight rounds, unpaid take-home, and a ghosting habit.</p></div>
+      <div class="level lv0"><p class="mono">LEVEL 0</p><h3>Bloody awful ☠️</h3><p>Unpaid "trial week", equity instead of salary, and the recruiter ghosted mid-call.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="interviews" class="section-tight">
+  <div class="wrap">
+    <div class="card">
+      <p class="eyebrow">Filter by interview style</p>
+      <h2 style="margin-top: 10px">You're not a trained monkey. 🐒</h2>
+      <p class="lede">Every listing is tagged with how they actually interview. Filter out the jobs that make you dance.</p>
+      <div class="chips">
+        <a class="chip" href="/jobs.html">Just a conversation</a>
+        <a class="chip" href="/jobs.html">Pair on real work</a>
+        <a class="chip" href="/jobs.html">Paid take-home</a>
+        <a class="chip no" href="/jobs.html?hide=unpaid_take_home">Unpaid take-home</a>
+        <a class="chip no" href="/jobs.html?hide=live_algorithm">Live algorithm test</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="weekly">
+  <div class="wrap">
+    <p class="eyebrow">Every Friday</p>
+    <h2 style="margin-top: 10px">Rocket and Jobbie of the Week</h2>
+    <p class="lede">One we'd apply to tomorrow, one we wouldn't touch with a barge pole. Both picked by the ratings, never by who paid.</p>
+    <a href="#subscribe" class="btn" style="margin-top: 24px">Get both in your inbox</a>
+    <div class="weekly">
+      <article class="card week-best tilt-r" id="rocket-card">
+        <div class="week-head">
+          <p>Rocket of the Week 🚀 <small>(best)</small></p>
+          <span class="badge" style="background: #fff; color: var(--ink)">Rocket ship</span>
+        </div>
+        <p class="mono" style="margin: 18px 0 4px; font-size: 13px; font-weight: 700" id="rocket-when">EXAMPLE</p>
+        <h3 style="font-size: 28px; margin-bottom: 6px" id="rocket-title">Full Stack Engineer</h3>
+        <p style="margin: 0" id="rocket-blurb">Named and celebrated. Salary up front, a sane stack, and an interview that treats you like a person.</p>
+        <div class="tags divider" id="rocket-tags">
+          <span class="tag">$180k–$210k</span><span class="tag">2 rounds</span><span class="tag">Pair on real work</span><span class="tag">Remote</span>
+        </div>
+      </article>
+
+      <article class="card week-worst tilt-l">
+        <div class="week-head">
+          <p>Jobbie of the Week 💩 <small>(worst)</small></p>
+          <span class="badge" style="background: var(--l1); color: var(--butter)">Steaming pile</span>
+        </div>
+        <p class="mono" style="margin: 18px 0 4px; font-size: 13px; font-weight: 700">EXAMPLE · ANONYMISED</p>
+        <h3 style="font-size: 28px; margin-bottom: 18px">Full Stack Rockstar Unicorn (10x)</h3>
+        <p style="margin: 0">We're a <mark>fast-paced family</mark> looking for a <mark>rockstar unicorn</mark> who <mark>wears many hats</mark>. Must know React, Vue, Angular, Svelte, Go, Rust, Kubernetes and COBOL. <mark>Competitive salary</mark>. Process: just <mark>eight quick rounds</mark>.</p>
+        <div class="tags divider">
+          <span class="tag">5 red flags</span><span class="tag">no salary</span><span class="tag">fullstackjobbies.com</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="detector" class="dark">
+  <div class="wrap row" style="align-items: flex-start">
+    <div>
+      <h2>Red Flag Detector</h2>
+      <p class="lede" style="margin-bottom: 28px">Paste any job description. We highlight the red flags, score it on the Jobbie Scale, and hand you a card to share. It runs in your browser; nothing you paste is stored.</p>
+      <form id="detector-form">
+        <label for="jd" style="display: block; font-weight: 600; font-size: 15px; margin-bottom: 8px">Job description</label>
+        <textarea id="jd" rows="8" placeholder="Paste the listing here…"></textarea>
+        <button type="submit" class="btn btn-accent" style="margin-top: 16px">Sniff it out</button>
+      </form>
+    </div>
+    <div>
+      <p style="margin: 0 0 12px; font-weight: 600; font-size: 15px">Your result</p>
+      <div class="result" id="detector-result" aria-live="polite">
+        <p class="result-empty" style="margin: 0">Paste a listing and hit "Sniff it out". Your rating, the reasons behind it, and every red flag show up here.</p>
+      </div>
+      <div class="share-row" id="share-row" hidden>
+        <a class="btn" id="share-x" href="#" target="_blank" rel="noopener">Share on X</a>
+        <a class="btn" id="share-li" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+        <button type="button" class="btn" id="share-copy">Copy result</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agents">
+  <div class="wrap row">
+    <div>
+      <p class="eyebrow">For devs with bots</p>
+      <h2 style="margin-top: 10px">Let your job agent do the applying. <span class="soon">COMING SOON</span></h2>
+      <p class="lede">Plug your AI agent into Full Stack Jobbies. Tell it your stack, your salary floor and the lowest rating you'll touch. It only applies to listings that clear the bar, so it never wastes a click on a steaming pile.</p>
+      <div class="mini-cards">
+        <div><strong>MCP server</strong><p>For Claude, Cursor and any MCP client. Search, rate and apply as tools.</p></div>
+        <div><strong>Agent skill</strong><p>One file that teaches your agent your preferences and our rules.</p></div>
+        <div><strong>REST API</strong><p>Roll your own. Listings, ratings and applications over JSON.</p></div>
+      </div>
+      <form name="agents-waitlist" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
+        <input type="hidden" name="form-name" value="agents-waitlist">
+        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+        <div style="flex: 1 1 240px; min-width: 0">
+          <label for="agent-email" style="display: block; font-weight: 600; font-size: 15px; margin-bottom: 6px">Get early API access</label>
+          <input id="agent-email" name="email" type="email" required placeholder="you@dev.mail" autocomplete="email">
+        </div>
+        <button type="submit" class="btn btn-ink">Join the waitlist</button>
+      </form>
+    </div>
+    <div>
+      <pre class="code"><code><span class="c"># ~/.jobbies/agent.yaml</span>
+stack:        [react, node, postgres]
+salary_floor: 150000
+remote:       true
+min_rating:   rocket_ship   <span class="c"># or solid</span>
+hide:         [live_algorithm, unpaid_take_home]
+daily_limit:  5</code></pre>
+      <div class="card toast" role="img" aria-label="Example notification: BLAM! You just applied to 3 jobs.">
+        <div class="toast-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+        <div>
+          <p style="font: 800 30px/1.05 var(--display); letter-spacing: -0.02em">BLAM! You just applied to 3 jobs.</p>
+          <p style="margin-top: 6px; font-size: 15px; color: var(--ink-2)">All rated Rocket ship. 2 steaming piles dodged. You didn't even get out of bed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="post" class="section-tight">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2 style="font-size: clamp(32px, 4.5vw, 52px)">Hiring? Aim for rocket ship.</h2>
+        <p class="lede">Post the salary, the stack and how you interview, up front. Good listings get rated up and seen by more developers. Ratings can't be bought.</p>
+      </div>
+      <form name="employers" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" style="flex: 0 1 360px; display: flex; flex-direction: column; gap: 10px">
+        <input type="hidden" name="form-name" value="employers">
+        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+        <label for="emp-email" style="font-weight: 600">Your work email</label>
+        <input id="emp-email" name="email" type="email" required placeholder="you@company.com" autocomplete="email">
+        <button type="submit" class="btn">Tell me when job posting opens</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="subscribe" class="section-tight">
+  <div class="wrap">
+    <form class="signup" name="newsletter" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="newsletter">
+      <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+      <div>
+        <h2>The weekly whiff</h2>
+        <label for="email">Rocket of the Week (best) and Jobbie of the Week (worst), plus the five best new listings. Fridays.</label>
+        <input id="email" name="email" type="email" required placeholder="you@dev.mail" autocomplete="email">
+      </div>
+      <button type="submit" class="btn btn-ink">Subscribe</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com</p>
+  </div>
+</footer>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

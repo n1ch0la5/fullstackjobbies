@@ -1,0 +1,16 @@
+# Netlify: publish the static site in site/, plus the sifter's latest public data
+# and the rating code the in-browser checker reuses.
+# Every daily sift commits fresh data, which triggers a redeploy automatically.
+
+[build]
+  publish = "site"
+  command = "node scripts/build-site.js"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+    Access-Control-Allow-Origin = "*"
