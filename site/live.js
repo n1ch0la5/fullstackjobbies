@@ -23,6 +23,40 @@ function init() {
   const pending = new Map();
   let tapTimes = [];
   let channel = null;
+  let db = null;
+  const counts = new Map();
+  let countsOn = false;
+
+  const addCount = (emoji, n) => {
+    if (!countsOn) return;
+    counts.set(emoji, (counts.get(emoji) ?? 0) + n);
+    drawCount(emoji, true);
+  };
+  const setCounts = (rows) => {
+    if (!Array.isArray(rows)) return;
+    countsOn = true;
+    for (const r of rows) {
+      if (!EMOJIS.includes(r.emoji)) continue;
+      // Server total, plus any taps of ours that haven't been sent yet.
+      counts.set(r.emoji, Number(r.count) + (pending.get(r.emoji) ?? 0));
+    }
+    EMOJIS.forEach((e) => drawCount(e, false));
+  };
+  const refreshCounts = async () => {
+    if (!db) return;
+    const { data, error } = await db.from('emoji_counts').select('emoji,count');
+    if (!error) setCounts(data);
+  };
+  function drawCount(emoji, tick) {
+    const el = bar.querySelector(`[data-count="${emoji}"]`);
+    if (!el) return;
+    el.textContent = countsOn ? shortNumber(counts.get(emoji) ?? 0) : '';
+    if (tick) {
+      el.classList.remove('tick');
+      void el.offsetWidth;
+      el.classList.add('tick');
+    }
+  }
 
   for (const btn of bar.querySelectorAll('[data-emoji]')) {
     btn.addEventListener('click', () => {
@@ -37,6 +71,7 @@ function init() {
       const emoji = btn.dataset.emoji;
       floatUp(layer, emoji, btn);
       pending.set(emoji, (pending.get(emoji) ?? 0) + 1);
+      addCount(emoji, 1);
       bump(btn);
     });
   }
@@ -46,11 +81,19 @@ function init() {
     const taps = Object.fromEntries(pending);
     pending.clear();
     channel.send({ type: 'broadcast', event: 'taps', payload: { taps } }).catch(() => {});
+    if (countsOn) {
+      db.rpc('add_emoji_taps', { taps }).then(({ data, error }) => {
+        if (!error) setCounts(data);
+      });
+    }
   }, SEND_EVERY_MS);
 
   connect()
-    .then((ch) => {
+    .then(async ({ ch, supabase }) => {
       channel = ch;
+      db = supabase;
+      await refreshCounts();
+      setInterval(refreshCounts, 60000);
     })
     .catch((e) => {
       console.info('Live emojis are local-only right now:', e?.message ?? e);
@@ -75,6 +118,7 @@ function init() {
       for (const [emoji, n] of Object.entries(taps)) {
         if (!EMOJIS.includes(emoji)) continue;
         const count = Math.max(0, Math.min(4, Math.floor(Number(n) || 0)));
+        addCount(emoji, Math.max(0, Math.min(10, Math.floor(Number(n) || 0))));
         for (let i = 0; i < count; i++) setTimeout(() => floatUp(layer, emoji, null), i * 90 + Math.random() * 120);
       }
     });
@@ -93,8 +137,14 @@ function init() {
         }
       });
     });
-    return ch;
+    return { ch, supabase };
   }
+}
+
+function shortNumber(n) {
+  if (n < 1000) return String(n);
+  if (n < 1_000_000) return `${(n / 1000).toFixed(n < 10_000 ? 1 : 0).replace(/\.0$/, '')}k`;
+  return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
 }
 
 function setCount(n) {

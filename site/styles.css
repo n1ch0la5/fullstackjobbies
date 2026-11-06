@@ -280,3 +280,21 @@ select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 1
   .live-buttons button { width: 48px; height: 48px; font-size: 24px; }
 }
 @media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+
+/* Live bar sits under the hero card */
+.hero-side { display: flex; flex-direction: column; gap: 40px; }
+.hero-side .live-bar { margin-top: 0; flex-direction: column; align-items: stretch; gap: 14px; padding: 18px; box-shadow: 6px 6px 0 var(--ink); }
+.hero-side .live-q { font-size: 20px; }
+.hero-side .live-buttons { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; width: 100%; }
+.hero-side .live-buttons button {
+  width: auto; height: auto; padding: 8px 2px 6px; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  font-size: 28px; border-radius: 14px; box-shadow: 3px 3px 0 var(--ink);
+}
+.live-e { line-height: 1; }
+.live-n { font: 700 12px/1 var(--mono); color: var(--ink-2); min-height: 12px; font-variant-numeric: tabular-nums; }
+.live-n.tick { animation: tick .3s; }
+@keyframes tick { 50% { transform: scale(1.35); color: var(--accent); } }
+@media (max-width: 640px) {
+  .hero-side .live-buttons button { font-size: 22px; }
+  .live-n { font-size: 11px; }
+}

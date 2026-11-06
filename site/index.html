@@ -51,43 +51,44 @@
       <p class="hero-alt">Or skip the sniffing: <a href="/jobs.html">browse jobs we've already rated</a></p>
     </div>
 
-    <div class="card tilt-r" aria-label="Example of a rated listing">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-        <div>
-          <p class="eyebrow" style="color: var(--ink-3)">Example listing</p>
-          <h2 style="font-size: 28px; margin-top: 6px; line-height: 1.1">Senior Full Stack Engineer</h2>
-          <p style="margin: 4px 0 0; color: var(--ink-2)">🇺🇸 Remote (US)</p>
+    <div class="hero-side">
+      <div class="card tilt-r" aria-label="Example of a rated listing">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
+          <div>
+            <p class="eyebrow" style="color: var(--ink-3)">Example listing</p>
+            <h2 style="font-size: 28px; margin-top: 6px; line-height: 1.1">Senior Full Stack Engineer</h2>
+            <p style="margin: 4px 0 0; color: var(--ink-2)">🇺🇸 Remote (US)</p>
+          </div>
+          <span style="font-size: 52px; line-height: 1" role="img" aria-label="Rocket ship">🚀</span>
         </div>
-        <span style="font-size: 52px; line-height: 1" role="img" aria-label="Rocket ship">🚀</span>
+        <div class="tags" style="margin-top: 20px">
+          <span class="tag tag-pay">$170k–$200k</span>
+          <span class="tag tag-stack">React</span>
+          <span class="tag tag-stack">Node</span>
+          <span class="tag tag-stack">Postgres</span>
+          <span class="tag tag-int">2 rounds</span>
+          <span class="tag tag-int">Pair on real work</span>
+        </div>
+        <p style="margin: 24px 0 8px; font-weight: 600; font-size: 14px">Jobbie rating</p>
+        <div class="meter" role="img" aria-label="Rated 5 of 5: rocket ship">
+          <i style="background: var(--l0)"></i><i style="background: var(--l1)"></i><i style="background: var(--l2)"></i><i style="background: var(--l3)"></i><i style="background: var(--l4)"></i><i style="background: var(--l5)"></i>
+        </div>
+        <div class="meter-ends"><span>bloody awful</span><span>rocket ship</span></div>
       </div>
-      <div class="tags" style="margin-top: 20px">
-        <span class="tag tag-pay">$170k–$200k</span>
-        <span class="tag tag-stack">React</span>
-        <span class="tag tag-stack">Node</span>
-        <span class="tag tag-stack">Postgres</span>
-        <span class="tag tag-int">2 rounds</span>
-        <span class="tag tag-int">Pair on real work</span>
-      </div>
-      <p style="margin: 24px 0 8px; font-weight: 600; font-size: 14px">Jobbie rating</p>
-      <div class="meter" role="img" aria-label="Rated 5 of 5: rocket ship">
-        <i style="background: var(--l0)"></i><i style="background: var(--l1)"></i><i style="background: var(--l2)"></i><i style="background: var(--l3)"></i><i style="background: var(--l4)"></i><i style="background: var(--l5)"></i>
-      </div>
-      <div class="meter-ends"><span>bloody awful</span><span>rocket ship</span></div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="live-bar" id="live-bar">
-      <div class="live-text">
-        <p class="live-q">How's the job hunt today?</p>
-        <p class="live-count"><span class="live-dot" aria-hidden="true"></span><span id="live-count">Connecting…</span></p>
-      </div>
-      <div class="live-buttons" role="group" aria-label="Send a live reaction everyone can see">
-        <button type="button" data-emoji="🚀" aria-label="Rocket ship">🚀</button>
-        <button type="button" data-emoji="💯" aria-label="Solid">💯</button>
-        <button type="button" data-emoji="😐" aria-label="Meh">😐</button>
-        <button type="button" data-emoji="🤢" aria-label="Bit whiffy">🤢</button>
-        <button type="button" data-emoji="💩" aria-label="Steaming pile">💩</button>
-        <button type="button" data-emoji="☠️" aria-label="Bloody awful">☠️</button>
+
+      <div class="live-bar" id="live-bar">
+        <div class="live-text">
+          <p class="live-q">How's your job hunt today?</p>
+          <p class="live-count"><span class="live-dot" aria-hidden="true"></span><span id="live-count">Connecting…</span></p>
+        </div>
+        <div class="live-buttons" role="group" aria-label="Send a live reaction everyone can see">
+          <button type="button" data-emoji="🚀" aria-label="Rocket ship"><span class="live-e">🚀</span><span class="live-n" data-count="🚀"></span></button>
+          <button type="button" data-emoji="💯" aria-label="Solid"><span class="live-e">💯</span><span class="live-n" data-count="💯"></span></button>
+          <button type="button" data-emoji="😐" aria-label="Meh"><span class="live-e">😐</span><span class="live-n" data-count="😐"></span></button>
+          <button type="button" data-emoji="🤢" aria-label="Bit whiffy"><span class="live-e">🤢</span><span class="live-n" data-count="🤢"></span></button>
+          <button type="button" data-emoji="💩" aria-label="Steaming pile"><span class="live-e">💩</span><span class="live-n" data-count="💩"></span></button>
+          <button type="button" data-emoji="☠️" aria-label="Bloody awful"><span class="live-e">☠️</span><span class="live-n" data-count="☠️"></span></button>
+        </div>
       </div>
     </div>
   </div>
