@@ -1,6 +1,7 @@
 // Homepage behaviour. The checker reuses the sifter's own rules and scoring
 // (copied to /lib at build time), so a pasted job is rated exactly like the
-// ones on the jobs page. Everything runs in the browser; nothing is sent anywhere.
+// ones on the jobs page. Pasted text is rated in the browser and never sent
+// anywhere; a pasted link is read by our /api/read-job function first.
 import { extractFacts } from '/lib/extract.js';
 import { scoreJob } from '/lib/score.js';
 
@@ -13,11 +14,14 @@ const STYLE_LABELS = {
   conversation: 'Just a conversation',
 };
 
-export function rateText(text) {
-  const firstLine = text.trim().split('\n')[0].slice(0, 140);
-  const job = { source: 'paste', title: firstLine, description: text, location: '', remote: null, salary: null };
+export function rateJob(job) {
   const facts = extractFacts(job);
   return { facts, rating: scoreJob(facts) };
+}
+
+function jobFromText(text) {
+  const firstLine = text.trim().split('\n')[0].slice(0, 140);
+  return { source: 'paste', title: firstLine, description: text, location: '', remote: null, salary: null };
 }
 
 function el(tag, attrs = {}, ...kids) {
@@ -39,21 +43,44 @@ function formatPay(s) {
 }
 
 function looksLikeLink(text) {
-  return /^https?:\/\/\S+$/i.test(text.trim());
+  return /^https?:\/\/\S+$/i.test(text.trim()) || /^(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)+\/\S*$/i.test(text.trim());
 }
 
-function renderResult(target, text, { compact = false } = {}) {
-  target.replaceChildren();
-  if (!text.trim()) {
-    target.append(el('p', { class: 'result-empty', style: 'margin:0' }, 'Paste a job description first.'));
-    return null;
+// Text → job right away. Link → ask our function to read the page, then rate it here.
+async function jobFromInput(input) {
+  const text = input.trim();
+  if (!text) throw new Error('Paste a job link or description first.');
+  if (!looksLikeLink(text)) return jobFromText(text);
+  const link = /^https?:/i.test(text) ? text : `https://${text}`;
+  let res;
+  try {
+    res = await fetch(`/api/read-job?url=${encodeURIComponent(link)}`);
+  } catch {
+    throw new Error("We couldn't reach our link reader. Check your connection, or paste the description text.");
   }
-  if (looksLikeLink(text)) {
-    target.append(el('p', { style: 'margin:0' }, "We can't open links yet. Copy the job description text from the page and paste that instead."));
-    return null;
-  }
-  const { facts, rating } = rateText(text);
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || "We couldn't read that link. Paste the description text instead.");
+  return { source: 'link', ...data };
+}
+
+function renderMessage(target, message) {
+  target.replaceChildren(el('p', { style: 'margin:0' }, message));
+}
+
+function renderLoading(target) {
+  target.replaceChildren(el('p', { class: 'result-empty', style: 'margin:0' }, '👃 Sniffing that link…'));
+}
+
+function renderResult(target, job, { compact = false } = {}) {
+  const { facts, rating } = rateJob(job);
   const flags = [...facts.severeFlags, ...facts.redFlags];
+  target.replaceChildren();
+
+  if (job.source === 'link') {
+    const what = [job.title, job.company].filter(Boolean).join(' at ');
+    target.append(el('p', { class: 'mono', style: 'margin:0;font-size:12px;font-weight:700;color:var(--ink-3)' },
+      `READ FROM THE LINK${what ? ` · ${what.toUpperCase()}` : ''}`));
+  }
 
   target.append(
     el('div', { class: 'result-top' },
@@ -109,13 +136,35 @@ function setupShare(res) {
   row.hidden = false;
 }
 
+async function withBusy(button, label, work) {
+  const original = button.textContent;
+  button.disabled = true;
+  button.textContent = label;
+  try {
+    return await work();
+  } finally {
+    button.disabled = false;
+    button.textContent = original;
+  }
+}
+
 // Red Flag Detector
 const detectorForm = document.getElementById('detector-form');
 const jd = document.getElementById('jd');
 const detectorResult = document.getElementById('detector-result');
 detectorForm?.addEventListener('submit', (e) => {
   e.preventDefault();
-  setupShare(renderResult(detectorResult, jd.value));
+  const button = detectorForm.querySelector('button');
+  withBusy(button, 'Sniffing…', async () => {
+    if (looksLikeLink(jd.value)) renderLoading(detectorResult);
+    try {
+      const job = await jobFromInput(jd.value);
+      setupShare(renderResult(detectorResult, job));
+    } catch (err) {
+      renderMessage(detectorResult, err.message);
+      setupShare(null);
+    }
+  });
 });
 
 // Hero paste box: quick result inline, full breakdown waiting in the detector.
@@ -124,14 +173,20 @@ const heroInput = document.getElementById('hero-input');
 const heroResult = document.getElementById('hero-result');
 heroForm?.addEventListener('submit', (e) => {
   e.preventDefault();
-  heroResult.replaceChildren();
+  const button = heroForm.querySelector('button');
   const box = el('div', { class: 'result hero-result' });
-  heroResult.append(box);
-  const res = renderResult(box, heroInput.value, { compact: true });
-  if (res) {
-    jd.value = heroInput.value;
-    setupShare(renderResult(detectorResult, jd.value));
-  }
+  heroResult.replaceChildren(box);
+  withBusy(button, 'Sniffing…', async () => {
+    if (looksLikeLink(heroInput.value)) renderLoading(box);
+    try {
+      const job = await jobFromInput(heroInput.value);
+      renderResult(box, job, { compact: true });
+      jd.value = heroInput.value;
+      setupShare(renderResult(detectorResult, job));
+    } catch (err) {
+      renderMessage(box, err.message);
+    }
+  });
 });
 heroInput?.addEventListener('input', () => {
   heroInput.style.height = 'auto';

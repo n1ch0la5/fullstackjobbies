@@ -18,6 +18,7 @@ export function htmlToText(html = '') {
       .replace(/<[^>]+>/g, ' ')
   )
     .replace(/[ \t]+/g, ' ')
+    .replace(/ *\n */g, '\n')
     .replace(/\n\s*\n+/g, '\n')
     .trim();
 }

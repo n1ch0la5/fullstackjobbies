@@ -6,6 +6,10 @@
   publish = "site"
   command = "node scripts/build-site.js"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [build.environment]
   NODE_VERSION = "22"
 
