@@ -1,0 +1,755 @@
+{
+  "updatedAt": "2026-11-06T15:15:26.584Z",
+  "count": 21,
+  "jobs": [
+    {
+      "id": "ab:sentilink:dd839e2c-19fc-4496-8172-0adf786a8798",
+      "company": "sentilink",
+      "title": "Senior Product Engineer, Full Stack",
+      "url": "https://jobs.ashbyhq.com/sentilink/dd839e2c-19fc-4496-8172-0adf786a8798",
+      "location": "United States",
+      "remote": true,
+      "salary": {
+        "min": 180000,
+        "max": 180000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "golang",
+        "postgres",
+        "aws",
+        "docker"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-11-04T16:37:44.633+00:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "ab:sentilink:dd69100c-8482-4583-9075-e81d4b8f906b",
+      "company": "sentilink",
+      "title": "Senior Software Engineer, Full Stack",
+      "url": "https://jobs.ashbyhq.com/sentilink/dd69100c-8482-4583-9075-e81d4b8f906b",
+      "location": "United States",
+      "remote": true,
+      "salary": {
+        "min": 180000,
+        "max": 180000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "golang",
+        "postgres",
+        "aws",
+        "docker"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-11-04T16:37:39.152+00:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "ab:sentilink:1fd15aab-3dcf-4f82-9c70-76c27cc9422d",
+      "company": "sentilink",
+      "title": "Staff Data Scientist, Full Stack",
+      "url": "https://jobs.ashbyhq.com/sentilink/1fd15aab-3dcf-4f82-9c70-76c27cc9422d",
+      "location": "United States",
+      "remote": true,
+      "salary": {
+        "min": 220000,
+        "max": 220000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "python",
+        "aws"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-03-13T03:28:11.998+00:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "ab:sentilink:02b02b78-52e9-4a13-b1b0-557b827fc10d",
+      "company": "sentilink",
+      "title": "Senior Data Scientist, Full Stack",
+      "url": "https://jobs.ashbyhq.com/sentilink/02b02b78-52e9-4a13-b1b0-557b827fc10d",
+      "location": "United States",
+      "remote": true,
+      "salary": {
+        "min": 200000,
+        "max": 200000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "python",
+        "aws"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-01-06T00:09:40.875+00:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "lv:apolloresearch:ab3051f4-d5be-4b46-9f54-eb14da1a6a54",
+      "company": "apolloresearch",
+      "title": "Full-stack Software Engineer (Product)",
+      "url": "https://jobs.lever.co/apolloresearch/ab3051f4-d5be-4b46-9f54-eb14da1a6a54",
+      "location": "London & San Francisco",
+      "remote": false,
+      "salary": {
+        "min": 222000,
+        "max": 290000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "python"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "take_home",
+        "conversation"
+      ],
+      "redFlags": [
+        "hustle culture"
+      ],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 humane interviews",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "lever",
+      "postedAt": "2026-08-28T08:40:40.938Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "lv:curai:46e0dd2f-c1dd-4ca2-9095-5b45f477b656",
+      "company": "curai",
+      "title": "Senior Software Engineer, Full-Stack",
+      "url": "https://jobs.lever.co/curai/46e0dd2f-c1dd-4ca2-9095-5b45f477b656",
+      "location": "Remote",
+      "remote": true,
+      "salary": {
+        "min": 175000,
+        "max": 210000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "python",
+        "fastapi",
+        "postgres",
+        "aws",
+        "docker",
+        "terraform",
+        "react native"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "lever",
+      "postedAt": "2026-09-30T18:18:01.515Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "ab:ramp:6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
+      "company": "Ramp",
+      "title": "Applied AI Engineer, Fullstack",
+      "url": "https://jobs.ashbyhq.com/ramp/6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
+      "location": "New York, NY (HQ)",
+      "remote": true,
+      "salary": {
+        "min": 204400,
+        "max": 352000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "-0.5 suspiciously wide range",
+          "+0.5 remote"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-06-24T14:30:42.943+00:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "gh:figma:5691911004",
+      "company": "Figma",
+      "title": "Software Engineer - Full Stack",
+      "url": "https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "remote": null,
+      "salary": {
+        "min": 153000,
+        "max": 153000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python",
+        "ruby",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-27T13:40:12-04:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "gh:gitlab:8739391002",
+      "company": "GitLab",
+      "title": "Staff Fullstack Engineer (Ruby/Vue.js) Monetization Engineering: Purchase",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8739391002",
+      "location": "Remote, Canada; Remote, United States",
+      "remote": true,
+      "salary": {
+        "min": 152800,
+        "max": 152800,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "vue",
+        "ruby",
+        "rails"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-05T13:51:51-05:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "gh:gitlab:8845277002",
+      "company": "GitLab",
+      "title": "Staff Fullstack Engineer, Data Products (Golang / Node)",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845277002",
+      "location": "Remote, Canada; Remote, United States",
+      "remote": true,
+      "salary": {
+        "min": 152800,
+        "max": 152800,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "node",
+        "ruby",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-05T13:54:34-05:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50350981",
+      "company": "Marker Learning",
+      "title": "Senior Full-Stack Engineer (Frontend-Leaning)",
+      "url": "https://news.ycombinator.com/item?id=50350981",
+      "location": "Remote, US only",
+      "remote": true,
+      "salary": {
+        "min": 180000,
+        "max": 200000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "next.js",
+        "typescript"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-03T12:07:36.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50349294",
+      "company": "Scento",
+      "title": "https://www.scento.com/careers Scento is Europe's largest perfume decant website: more than 1,000 original designer and niche perfumes as 2 ml, 5 ml and 8 ml decants, shipped to 26 EU countries. Founded in 2024, headquartered in Paris with a second office in Berlin. We build our own stack on Next.js and Medusa. Open roles (gross per year, plus annual performance bonus): - Staff Full-Stack Engineer (Next.js, Medusa), €140k–€185k: https://www.scento.com/careers/staff-full-stack-engineer",
+      "url": "https://news.ycombinator.com/item?id=50349294",
+      "location": "Paris, Berlin",
+      "remote": true,
+      "salary": {
+        "min": 140000,
+        "max": 185000,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "next.js"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-03T07:59:27.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50342723",
+      "company": "Fly.io",
+      "title": "$190k USD + equity Hey folks, Fly.io is a developer-focused public cloud. We are currently hiring for three roles: * Networking Engineer: Proxy and Corrosion - https://fly.io/jobs/networking-engineer/ * Infrastructure Operations Engineer - https://fly.io/jobs/infra-engineer/ * Fullstack Engineer - https://fly.io/jobs/fullstack-engineer/ Here's how we hire: https://docs.fly.io/hiring",
+      "url": "https://news.ycombinator.com/item?id=50342723",
+      "location": "REMOTE (multiple countries)",
+      "remote": true,
+      "salary": {
+        "min": 190000,
+        "max": 190000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T19:55:24.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50342697",
+      "company": "SerpApi",
+      "title": "Junior to Senior Fullstack Engineer multiple positions",
+      "url": "https://news.ycombinator.com/item?id=50342697",
+      "location": "Based in Austin, TX but remote-first structure",
+      "remote": true,
+      "salary": {
+        "min": 150000,
+        "max": 180000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "python",
+        "ruby",
+        "rails",
+        "rust",
+        "kotlin",
+        "c#",
+        "php",
+        "elixir",
+        "mongodb"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T19:53:24.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50342579",
+      "company": "Curai",
+      "title": "https://curaihealth.com We're building AI agents to expand access to affordable, and high quality healthcare. We run a vertically integrated primary and urgent care clinic and are actively building features to improve longitudinal outcomes, starting with hypertension and behavioral health. There's plenty of work across building the requisite patient experiences on and off platform, the agent workflows to power those experiences, and evals to make this care reliable. If this sounds interesting, please look to see if any of our roles appeal to you! * Sr Software Engineer, Full-Stack ($175-210k): https://jobs.lever.co/curai/46e0dd2f-c1dd-4ca2-9095-5b45f477... * Sr Software Engineer, Agentic AI ($175-210k): https://jobs.lever.co/curai/cd31b67b-d83c-466a-ac55-cfa4c2ec... * Sr Software Engineer, Marketing Platform ($150-180k): https://jobs.lever.co/curai/b157298e-4dc7-4594-a9c4-29f0dec4... Tech stack: Agents SDK, Braintrust, Python, React, React Native/Expo, AWS, Postgres, DynamoDB, Docker, Terraform.",
+      "url": "https://news.ycombinator.com/item?id=50342579",
+      "location": "Remote (US)",
+      "remote": true,
+      "salary": {
+        "min": 175000,
+        "max": 210000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "python",
+        "postgres",
+        "aws",
+        "docker",
+        "terraform",
+        "react native"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T19:44:53.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50340820",
+      "company": "Postscript (YC W19)",
+      "title": "Senior Software Engineer, Full Stack",
+      "url": "https://news.ycombinator.com/item?id=50340820",
+      "location": "Senior Software Engineer, Full Stack",
+      "remote": true,
+      "salary": {
+        "min": 180000,
+        "max": 220000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "rust"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T18:00:14.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50340287",
+      "company": "JPMorganChase",
+      "title": "Lead Software Engineer",
+      "url": "https://news.ycombinator.com/item?id=50340287",
+      "location": "ONSITE (Jersey City, NJ)",
+      "remote": null,
+      "salary": {
+        "min": 156750,
+        "max": 215000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "python",
+        "java",
+        "spring"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T17:26:48.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "ab:stream:950ba8ae-b3c5-4a24-ab0d-756c9012a731",
+      "company": "stream",
+      "title": "Senior Fullstack Engineer (Moderation)",
+      "url": "https://jobs.ashbyhq.com/stream/950ba8ae-b3c5-4a24-ab0d-756c9012a731",
+      "location": "Toronto office",
+      "remote": true,
+      "salary": {
+        "min": 130000,
+        "max": 190000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "python",
+        "postgres",
+        "redis",
+        "gcp",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+0.5 decent pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-10-27T13:03:57.194+00:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "gh:gitlab:8922249002",
+      "company": "GitLab",
+      "title": "Intermediate Fullstack Engineer, Subscription Lifecycle ",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922249002",
+      "location": "Remote, Canada; Remote, United States",
+      "remote": true,
+      "salary": {
+        "min": 115200,
+        "max": 115200,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "ruby",
+        "rails"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+0.5 decent pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-05T13:52:33-05:00",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50341284",
+      "company": "Uncountable",
+      "title": "Full-Stack Engineering https://www.uncountable.com/hiring/hn Uncountable accelerates R&D for industrial scientists across leading materials, chemicals, and life sciences organizations. With our SaaS solution, our customers get better products to the market in half the time. Our team has grown from 100 to 200 in the last year. Full-Stack Engineers",
+      "url": "https://news.ycombinator.com/item?id=50341284",
+      "location": "NY, SF, London (UK) & Toronto (CA) (In-Person)",
+      "remote": null,
+      "salary": {
+        "min": 130000,
+        "max": 220000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1 strong pay",
+          "-0.5 suspiciously wide range"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T18:28:04.000Z",
+      "firstSeen": "2026-11-06"
+    },
+    {
+      "id": "hn:50338822",
+      "company": "United Risk",
+      "title": "Early-Career AI Engineers – Full-Stack, Data Science, Infrastructure/DevOps (10 openings)",
+      "url": "https://news.ycombinator.com/item?id=50338822",
+      "location": "Early-Career AI Engineers – Full-Stack, Data Science, Infrastructure/DevOps (10 openings)",
+      "remote": null,
+      "salary": {
+        "min": 100000,
+        "max": 120000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "python",
+        "azure"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+0.5 decent pay"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T16:06:11.000Z",
+      "firstSeen": "2026-11-06"
+    }
+  ]
+}

@@ -1,13 +1,221 @@
 {
   "_note": "Seed list. The sifter adds boards it discovers in Hacker News 'Who is hiring' posts, and disables a board after 3 failed fetches in a row. Add your own: { \"ats\": \"greenhouse|lever|ashby\", \"slug\": \"<board name from its jobs URL>\", \"name\": \"Display Name\" }.",
   "companies": [
-    { "ats": "greenhouse", "slug": "gitlab", "name": "GitLab" },
-    { "ats": "greenhouse", "slug": "discord", "name": "Discord" },
-    { "ats": "greenhouse", "slug": "figma", "name": "Figma" },
-    { "ats": "greenhouse", "slug": "vercel", "name": "Vercel" },
-    { "ats": "ashby", "slug": "ramp", "name": "Ramp" },
-    { "ats": "ashby", "slug": "linear", "name": "Linear" },
-    { "ats": "ashby", "slug": "supabase", "name": "Supabase" },
-    { "ats": "lever", "slug": "plaid", "name": "Plaid" }
+    {
+      "ats": "greenhouse",
+      "slug": "gitlab",
+      "name": "GitLab",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "discord",
+      "name": "Discord",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "figma",
+      "name": "Figma",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "vercel",
+      "name": "Vercel",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "ramp",
+      "name": "Ramp",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "linear",
+      "name": "Linear",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "supabase",
+      "name": "Supabase",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "plaid",
+      "name": "Plaid",
+      "fails": 1
+    },
+    {
+      "ats": "lever",
+      "slug": "auw",
+      "name": "auw",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "equall",
+      "name": "equall",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "mastra",
+      "name": "mastra",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "stream",
+      "name": "stream",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "river",
+      "name": "river",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "thundercompute",
+      "name": "thundercompute",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "oklo",
+      "name": "oklo",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "mozilla",
+      "name": "mozilla",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "getduranta",
+      "name": "getduranta",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "reducto",
+      "name": "reducto",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "duck-duck-go",
+      "name": "duck-duck-go",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "curai",
+      "name": "curai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "middesk",
+      "name": "middesk",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "scholarly",
+      "name": "scholarly",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "creditgenie",
+      "name": "creditgenie",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "justworks",
+      "name": "justworks",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "reddit",
+      "name": "reddit",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "charge-robotics",
+      "name": "charge-robotics",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "proxima-fusion",
+      "name": "proxima-fusion",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "controlplane",
+      "name": "controlplane",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "apolloresearch",
+      "name": "apolloresearch",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "oscilar",
+      "name": "oscilar",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "sentilink",
+      "name": "sentilink",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "iceye",
+      "name": "iceye",
+      "discovered": "2026-11-06",
+      "fails": 0
+    }
   ]
 }
