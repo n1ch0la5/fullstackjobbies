@@ -20,12 +20,15 @@ test('salary: common formats', () => {
   assert.deepEqual(extractSalary('$65 - $85/hr'), { min: 65, max: 85, currency: 'USD', interval: 'hour' });
   assert.deepEqual(extractSalary('CA$140,000 - CA$170,000'), { min: 140000, max: 170000, currency: 'CAD', interval: 'year' });
   assert.deepEqual(extractSalary('A$150k-A$180k'), { min: 150000, max: 180000, currency: 'AUD', interval: 'year' });
+  assert.deepEqual(extractSalary('Salary: USD 220000 - 330000'), { min: 220000, max: 330000, currency: 'USD', interval: 'year' });
+  assert.deepEqual(extractSalary('$170K – $220K • Offers Equity'), { min: 170000, max: 220000, currency: 'USD', interval: 'year' });
   assert.deepEqual(extractSalary('Pay: $150k+'), { min: 150000, max: 150000, currency: 'USD', interval: 'year' });
 });
 
 test('salary: ignores funding rounds and stray numbers', () => {
   assert.equal(extractSalary('We raised $50M in our Series B'), null);
   assert.equal(extractSalary('Team of 10-20 people, founded 2019'), null);
+  assert.equal(extractSalary('Offices: 94105 - 94107 area, founded 2019 - 2021'), null);
   assert.equal(extractSalary('competitive salary and benefits'), null);
 });
 

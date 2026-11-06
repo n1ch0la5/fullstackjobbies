@@ -2,7 +2,8 @@
 // so the sifter works (more roughly) with no API key at all.
 
 const SYMBOL_CCY = { $: 'USD', '£': 'GBP', '€': 'EUR' };
-const NUM = String.raw`\d{1,3}(?:[,.]\d{3})+|\d{2,3}(?:\.\d+)?`;
+// 120,000 or 120.000 · 120000 (structured data often has no separators) · 120 or 120.5 (with k)
+const NUM = String.raw`\d{1,3}(?:[,.]\d{3})+|\d{5,6}(?!\d)|\d{2,3}(?:\.\d+)?`;
 const RANGE = new RegExp(
   String.raw`(USD|GBP|EUR|CAD|AUD)?\s?([$£€])?\s?(${NUM})\s?([kK])?\s?(?:-|–|—|to)\s?([$£€])?\s?(${NUM})\s?([kK])?\s?(USD|GBP|EUR|CAD|AUD)?(\s?(?:\/|per)\s?(?:hr|hour|h\b))?`,
   'g'

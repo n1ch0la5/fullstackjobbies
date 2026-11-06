@@ -14,8 +14,10 @@ const STYLE_LABELS = {
   conversation: 'Just a conversation',
 };
 
-export function rate({ title = '', text = '', location = '' }) {
-  const job = { source: 'page', title, description: text, location, remote: null, salary: null };
+// salary/remote come straight from a page's structured data when it has them,
+// so a salary in a sidebar or in data never depends on being found in the prose.
+export function rate({ title = '', text = '', location = '', salary = null, remote = null }) {
+  const job = { source: 'page', title, description: text, location, remote, salary };
   const facts = extractFacts(job);
   return { facts, rating: scoreJob(facts) };
 }

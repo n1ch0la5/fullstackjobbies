@@ -11,28 +11,56 @@
     'article', 'body',
   ];
   const TITLE_SELECTORS = ['h1', '.posting-headline h2', '[class*="_title"]'];
+  // Where hiring sites put location, compensation and remote status beside the description.
+  const SIDE_SELECTORS = [
+    '.ashby-job-posting-left-pane', // Ashby: Location, Location Type, Compensation
+    '.job__location', '.job__header', // Greenhouse
+    '.posting-categories', // Lever
+    '[data-ui="job-location"]', '[data-ui="job-type"]', // Workable
+  ];
 
-  function readJob() {
-    // Prefer structured data when the page has it.
+  const sideText = () =>
+    SIDE_SELECTORS.flatMap((s) => [...document.querySelectorAll(s)])
+      .map((n) => n.innerText.trim())
+      .filter(Boolean)
+      .join('\n');
+
+  function fromStructuredData() {
     for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
       try {
         const data = JSON.parse(s.textContent);
         const items = [data, ...(Array.isArray(data) ? data : []), ...(data['@graph'] ?? [])];
         const p = items.find((x) => x && x['@type'] === 'JobPosting');
-        if (p?.description) {
-          // Parse without rendering, so nothing in the description can run or load.
-          const div = new DOMParser().parseFromString(p.description, 'text/html').body;
-          const sal = p.baseSalary?.value;
-          const salaryLine = sal?.minValue ? `\nSalary: ${p.baseSalary.currency ?? 'USD'} ${sal.minValue} - ${sal.maxValue ?? sal.minValue}` : '';
-          return { title: p.title ?? '', text: `${p.title ?? ''}\n${div.textContent}${salaryLine}` };
-        }
+        if (!p?.description) continue;
+        // Parse without rendering, so nothing in the description can run or load.
+        const body = new DOMParser().parseFromString(p.description, 'text/html').body.textContent;
+        const v = p.baseSalary?.value ?? {};
+        const min = Number(v.minValue ?? v.value);
+        const max = Number(v.maxValue ?? v.value ?? v.minValue);
+        const unit = String(v.unitText ?? 'YEAR').toUpperCase();
+        const remote = p.jobLocationType === 'TELECOMMUTE';
+        const where = [p.applicantLocationRequirements].flat().filter(Boolean).map((r) => r.name).filter(Boolean).join(', ');
+        const place = [p.jobLocation].flat().filter(Boolean).map((l) => [l.address?.addressLocality, l.address?.addressRegion].filter(Boolean).join(', ')).filter(Boolean).join(' · ');
+        return {
+          title: p.title ?? '',
+          text: `${p.title ?? ''}\n${sideText()}\n${body}`,
+          location: remote ? `Remote${where ? ` (${where})` : ''}` : place,
+          remote: remote || null,
+          salary: min > 0 ? { min, max: max > 0 ? max : min, currency: p.baseSalary.currency ?? 'USD', interval: unit === 'HOUR' ? 'hour' : unit === 'MONTH' ? 'month' : 'year' } : null,
+        };
       } catch {
         // ignore malformed data
       }
     }
+    return null;
+  }
+
+  function readJob() {
+    const structured = fromStructuredData();
+    if (structured) return structured;
     const node = SELECTORS.map((s) => document.querySelector(s)).find((n) => n && n.innerText.trim().length > 400);
     const title = TITLE_SELECTORS.map((s) => document.querySelector(s)?.innerText?.trim()).find(Boolean) ?? document.title;
-    return node ? { title, text: `${title}\n${node.innerText}` } : null;
+    return node ? { title, text: `${title}\n${sideText()}\n${node.innerText}` } : null;
   }
 
   // Only job detail pages, not a company's list of jobs.
