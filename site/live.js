@@ -77,9 +77,11 @@ function init() {
   }
 
   setInterval(() => {
-    if (!pending.size || !channel) { pending.clear(); return; }
+    if (!pending.size) return;
     const taps = Object.fromEntries(pending);
     pending.clear();
+    for (const [emoji, n] of Object.entries(taps)) (window.dataLayer = window.dataLayer || []).push({ event: 'emoji_tap', emoji, taps: n });
+    if (!channel) return;
     channel.send({ type: 'broadcast', event: 'taps', payload: { taps } }).catch(() => {});
     if (countsOn) {
       db.rpc('add_emoji_taps', { taps }).then(({ data, error }) => {

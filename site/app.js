@@ -19,6 +19,11 @@ export function rateJob(job) {
   return { facts, rating: scoreJob(facts) };
 }
 
+// Custom events for Google Tag Manager (no personal data, never the pasted text).
+export function track(event, params = {}) {
+  (window.dataLayer = window.dataLayer || []).push({ event, ...params });
+}
+
 function jobFromText(text) {
   const firstLine = text.trim().split('\n')[0].slice(0, 140);
   return { source: 'paste', title: firstLine, description: text, location: '', remote: null, salary: null };
@@ -159,7 +164,9 @@ detectorForm?.addEventListener('submit', (e) => {
     if (looksLikeLink(jd.value)) renderLoading(detectorResult);
     try {
       const job = await jobFromInput(jd.value);
-      setupShare(renderResult(detectorResult, job));
+      const res = renderResult(detectorResult, job);
+      setupShare(res);
+      track('job_check', { check_from: 'detector', check_method: job.source, jobbie_rating: res.rating.name });
     } catch (err) {
       renderMessage(detectorResult, err.message);
       setupShare(null);
@@ -180,7 +187,8 @@ heroForm?.addEventListener('submit', (e) => {
     if (looksLikeLink(heroInput.value)) renderLoading(box);
     try {
       const job = await jobFromInput(heroInput.value);
-      renderResult(box, job, { compact: true });
+      const res = renderResult(box, job, { compact: true });
+      track('job_check', { check_from: 'hero', check_method: job.source, jobbie_rating: res.rating.name });
       jd.value = heroInput.value;
       setupShare(renderResult(detectorResult, job));
     } catch (err) {
@@ -215,3 +223,8 @@ heroInput?.addEventListener('input', () => {
     // Keep the example card.
   }
 })();
+
+// Signups (the forms themselves are handled by Netlify Forms).
+for (const form of document.querySelectorAll('form[data-netlify]')) {
+  form.addEventListener('submit', () => track('sign_up', { form_name: form.getAttribute('name') }));
+}
