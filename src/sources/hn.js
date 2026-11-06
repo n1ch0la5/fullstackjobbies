@@ -42,23 +42,41 @@ export async function fetchHackerNews({ discoveryMonths = Number(process.env.HN_
   return { jobs, boards };
 }
 
+const URLISH = /^(https?:\/\/|www\.)\S+$|^\S+\.(com|io|ai|co|dev|app|org|net)(\/\S*)?$/i;
+const PAYISH = /^[$£€]|\b\d{2,3}k\b|\bequity\b|\bsalary\b/i;
+const ROLEISH = /engineer|developer|\bstack\b|fullstack|programmer|\bswe\b/i;
+const PLACE_WORDS = /remote|onsite|on-site|hybrid|in-office|\b(us|usa|uk|eu|emea|canada|nyc|sf)\b/i;
+const PLACE_SHAPE = /,\s*[A-Z]{2}\b|\b[A-Z][a-z]+,\s*[A-Z]/; // "Austin, TX", "Berlin, Germany"
+const isPlace = (p) => PLACE_WORDS.test(p) || PLACE_SHAPE.test(p);
+
 function hnJob(c) {
-    const rawHtml = c.text;
-    const text = htmlToText(rawHtml);
-    const firstLine = text.split('\n')[0];
-    const [companyPart, ...rest] = firstLine.split('|').map((s) => s.trim());
-    return {
-      source: 'hn',
-      sourceId: `hn:${c.id}`,
-      company: (companyPart || 'Unknown').slice(0, 80),
-      title: rest.find((p) => /engineer|developer|stack/i.test(p)) ?? rest[0] ?? firstLine.slice(0, 120),
-      url: `https://news.ycombinator.com/item?id=${c.id}`,
-      location: rest.find((p) => /remote|onsite|hybrid|,/i.test(p)) ?? '',
-      remote: /\bremote\b/i.test(firstLine) ? true : null,
-      description: text,
-      salary: null,
-      postedAt: c.created_at ?? null,
-    };
+  const text = htmlToText(c.text);
+  const firstLine = text.split('\n')[0].trim();
+  const parts = firstLine.split(/\s+\|\s+|\|/).map((s) => s.trim()).filter(Boolean);
+  const [companyPart, ...rest] = parts;
+  const usable = rest.filter((p) => !URLISH.test(p) && p.length < 120);
+  const title = usable.find((p) => ROLEISH.test(p) && !PAYISH.test(p)) ?? roleFromText(text) ?? 'Full Stack Engineer';
+  const location = usable.find((p) => p !== title && isPlace(p) && !ROLEISH.test(p)) ?? '';
+  return {
+    source: 'hn',
+    sourceId: `hn:${c.id}`,
+    company: companyPart && companyPart.length < 80 ? companyPart : 'Unknown',
+    title: title.slice(0, 120),
+    url: `https://news.ycombinator.com/item?id=${c.id}`,
+    location,
+    remote: /\bremote\b/i.test(firstLine) ? true : null,
+    description: text,
+    salary: null,
+    postedAt: c.created_at ?? null,
+  };
+}
+
+// For posts that skip the "Company | Role | Place" format, find a full stack role phrase.
+function roleFromText(text) {
+  const m = text.match(/\b((?:senior|staff|lead|principal|junior|mid[- ]level|founding)\s+)?(?:full[\s-]?stack|fullstack)(?:\s+(?:software|product|web|ai))?\s+(?:engineer|developer)s?\b/i);
+  if (!m) return null;
+  const role = m[0].replace(/\s+/g, ' ');
+  return role.replace(/\b\w/g, (ch) => ch.toUpperCase()).replace(/s$/, '');
 }
 
 // Pull ATS board slugs out of any links in a post.

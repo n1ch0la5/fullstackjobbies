@@ -18,6 +18,7 @@ import { extractFacts } from './extract.js';
 import { aiEnabled, extractWithAI, mergeFacts } from './ai.js';
 import { scoreJob } from './score.js';
 import { classifyLocation } from './location.js';
+import { jobSlug } from './slug.js';
 
 const DATA = new URL('../data/', import.meta.url);
 const MAX_AI_PER_RUN = Number(process.env.MAX_AI_PER_RUN ?? 150);
@@ -145,6 +146,7 @@ export async function sift() {
       postedAt: job.postedAt,
       firstSeen: nextCache[job.sourceId].firstSeen,
     };
+    entry.slug = jobSlug(entry);
     // House rule: salary or it doesn't get posted. Severe ones are kept aside for Jobbie of the Week.
     if (facts.salary && rating.level > 0) listed.push(entry);
     else rejected.push(entry);

@@ -1,5 +1,7 @@
 // Jobs page: loads the sifter's output and filters it in the browser.
 import { COUNTRIES, REGIONS, jobFitsWhere, describeWhere } from '/lib/location.js';
+import { LEVELS } from '/lib/score.js';
+import { fetchSummaries, effectiveLevel, voteWidget } from '/votes.js';
 
 const STYLE_LABELS = {
   live_algorithm: 'Live algorithm test',
@@ -16,6 +18,8 @@ const STORE_KEY = 'fsj.where.v1';
 
 const $ = (id) => document.getElementById(id);
 let allJobs = [];
+let votes = new Map();
+const cardEls = new Map();
 
 function el(tag, attrs = {}, ...kids) {
   const node = document.createElement(tag);
@@ -149,11 +153,15 @@ function daysAgo(d) {
 }
 
 function jobCard(j) {
-  const lv = j.rating.level;
+  const summary = votes.get(j.id);
+  const lv = effectiveLevel(j, summary);
+  const level = LEVELS[lv];
+  const overridden = lv !== j.rating.level;
   const whereText = describeWhere(j.where);
+  const viaRemoteOK = j.via?.name === 'Remote OK';
   return el('article', { class: 'job' },
     el('div', { class: 'job-main' },
-      el('h3', {}, j.title),
+      el('h3', {}, j.slug ? el('a', { href: `/job/${j.slug}`, class: 'job-link' }, j.title) : j.title),
       el('p', { class: 'co' }, [j.company, j.location].filter(Boolean).join(' · ')),
       el('div', { class: 'tags' },
         el('span', { class: 'tag tag-pay' }, formatPay(j.salary)),
@@ -164,10 +172,17 @@ function jobCard(j) {
         j.stack.slice(0, 6).map((s) => el('span', { class: 'tag tag-stack' }, s)),
         j.redFlags.length > 0 && el('span', { class: 'tag tag-flag' }, `${j.redFlags.length} red flag${j.redFlags.length === 1 ? '' : 's'}`),
       ),
+      voteWidget(j, summary, (next) => {
+        votes.set(j.id, next);
+        const fresh = jobCard(j);
+        cardEls.get(j.id)?.replaceWith(fresh);
+      }),
     ),
     el('div', { class: 'job-side' },
-      el('span', { class: 'badge job-rating', style: `background:${LEVEL_BG[lv]};color:${LEVEL_FG[lv]};font-size:16px;padding:6px 14px` }, `${j.rating.name} ${j.rating.emoji}`),
-      el('a', { class: 'btn btn-accent', href: j.url, target: '_blank', rel: 'noopener', style: 'padding:12px 18px;font-size:15px;box-shadow:4px 4px 0 var(--ink)' }, 'Apply on their site'),
+      el('span', { class: 'badge job-rating', style: `background:${LEVEL_BG[lv]};color:${LEVEL_FG[lv]};font-size:16px;padding:6px 14px` }, `${level.name} ${level.emoji}`),
+      overridden && el('span', { style: 'font-size:13px;color:var(--ink-3)' }, `Devs overruled our sniff test (${j.rating.name})`),
+      el('a', { class: 'btn btn-accent', href: j.url, target: '_blank', rel: 'noopener', style: 'padding:12px 18px;font-size:15px;box-shadow:4px 4px 0 var(--ink)' }, viaRemoteOK ? 'View on Remote OK' : 'Apply on their site'),
+      viaRemoteOK && el('span', { style: 'font-size:13px;color:var(--ink-3)' }, 'Listing via ', el('a', { href: j.via.url, target: '_blank' }, 'Remote OK')),
       el('details', {},
         el('summary', {}, 'Why this rating'),
         el('ul', {}, [...j.rating.reasons, ...j.redFlags.map((f) => `red flag: ${f}`)].map((r) => el('li', {}, r))),
@@ -184,7 +199,7 @@ function render() {
   const remoteOnly = $('remote').checked;
 
   const shown = allJobs.filter((j) => {
-    if (j.rating.level < min) return false;
+    if (effectiveLevel(j, votes.get(j.id)) < min) return false;
     if (remoteOnly && !j.remote) return false;
     if (hide.some((h) => j.interviewStyles.includes(h))) return false;
     if (!jobFitsWhere(j.where, where.picked, { includeAnywhere: where.anywhere, includeUnstated: where.unstated })) return false;
@@ -198,7 +213,13 @@ function render() {
   const placeNote = where.picked.length ? ` you can work from ${where.picked.map((c) => BY_CODE[c].flag).join(' ')}` : '';
   $('count').textContent = `${shown.length} of ${allJobs.length} jobs${placeNote}`;
   const list = $('jobs');
-  list.replaceChildren(...shown.map(jobCard));
+  shown.sort((a, b) => effectiveLevel(b, votes.get(b.id)) - effectiveLevel(a, votes.get(a.id)) || (b.firstSeen > a.firstSeen ? 1 : -1));
+  cardEls.clear();
+  list.replaceChildren(...shown.map((j) => {
+    const card = jobCard(j);
+    cardEls.set(j.id, card);
+    return card;
+  }));
   if (!shown.length) {
     list.append(
       el('div', { class: 'empty' },
@@ -234,3 +255,11 @@ try {
   // Leave the list empty; render() shows the friendly empty state.
 }
 render();
+
+// Dev votes arrive a moment later; ratings and order update when they do.
+fetchSummaries(allJobs.map((j) => j.id))
+  .then((v) => {
+    votes = v;
+    if (v.size) render();
+  })
+  .catch((e) => console.info('Votes unavailable right now:', e?.message ?? e));

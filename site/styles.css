@@ -310,3 +310,18 @@ select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 1
 .cookie-actions { display: flex; gap: 10px; }
 .cookie-actions .btn { padding: 10px 16px; font-size: 15px; box-shadow: 3px 3px 0 var(--ink); }
 .link-button { background: none; border: none; padding: 0; font: inherit; font-size: 14px; color: var(--ink-3); text-decoration: underline; cursor: pointer; }
+
+/* Voting */
+.vote { margin-top: 16px; padding-top: 14px; border-top: 2px dashed #D8CFB4; }
+.vote-label { margin: 0 0 8px; font-weight: 600; font-size: 14px; }
+.vote-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.vote-row button {
+  width: 44px; height: 44px; font-size: 22px; line-height: 1; cursor: pointer; border: 2px solid var(--ink); border-radius: 12px;
+  background: var(--paper); box-shadow: 2px 2px 0 var(--ink); transition: transform .06s;
+}
+.vote-row button:hover { background: var(--butter); }
+.vote-row button[aria-pressed="true"] { background: var(--l4); transform: translate(2px, 2px); box-shadow: none; }
+.vote-row button:disabled { opacity: .6; cursor: progress; }
+.vote-status { margin: 8px 0 0; font-size: 14px; color: var(--ink-2); }
+.job-link { text-decoration: none; }
+.job-link:hover { text-decoration: underline; }

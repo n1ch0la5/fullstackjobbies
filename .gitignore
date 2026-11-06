@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 site/data/
 site/lib/
+site/job/
+site/sitemap.xml
+site/robots.txt

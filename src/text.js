@@ -13,7 +13,7 @@ export function htmlToText(html = '') {
   const once = decodeEntities(html);
   return decodeEntities(
     once
-      .replace(/<(br|\/p|\/li|\/h\d|\/div)\s*\/?>/gi, '\n')
+      .replace(/<(?:br|p|\/p|\/li|\/h\d|div|\/div)(?:\s[^>]*)?\/?>/gi, '\n')
       .replace(/<li[^>]*>/gi, '\n- ')
       .replace(/<[^>]+>/g, ' ')
   )

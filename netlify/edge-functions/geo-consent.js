@@ -23,4 +23,4 @@ export default async (request, context) => {
   return new Response(html, { status: response.status, headers });
 };
 
-export const config = { path: ['/', '/index.html', '/jobs', '/jobs.html', '/thanks', '/thanks.html'] };
+export const config = { path: ['/', '/index.html', '/jobs', '/jobs.html', '/thanks', '/thanks.html', '/agents', '/agents.html', '/job/*'] };
