@@ -11,7 +11,7 @@
     "default_icon": { "16": "icons/16.png", "48": "icons/48.png" }
   },
   "background": { "service_worker": "background.js", "type": "module" },
-  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "permissions": ["contextMenus", "activeTab", "scripting"],
   "content_scripts": [
     {
       "matches": [
