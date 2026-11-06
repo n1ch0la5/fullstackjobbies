@@ -46,6 +46,7 @@ test('stack, rounds, interview style', () => {
   assert.deepEqual(extractInterviewStyles('Expect a HackerRank coding challenge'), ['live_algorithm']);
   assert.deepEqual(extractInterviewStyles('a paid take-home project'), ['paid_take_home']);
   assert.deepEqual(extractInterviewStyles('then an unpaid take-home'), ['unpaid_take_home']);
+  assert.deepEqual(extractInterviewStyles('No leetcode, no take-home.'), ['conversation']);
 });
 
 test('a good listing rates Rocket ship', () => {

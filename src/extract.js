@@ -80,7 +80,7 @@ export function extractInterviewStyles(text) {
   }
   if (/(?<!un)\bpaid (take[- ]home|project|trial|work sample)|we pay (you )?for (the|your) (take[- ]home|project|time)/.test(t)) {
     styles.add('paid_take_home');
-  } else if (/take[- ]home/.test(t)) {
+  } else if (/take[- ]home/.test(t) && !/\b(no|without( a)?|never|skip the) take[- ]homes?\b/.test(t)) {
     styles.add(/unpaid/.test(t) ? 'unpaid_take_home' : 'take_home');
   }
   if (/\bpair(ing\b| program| on\b| with (us|an engineer|one of))|work on a real (problem|task|ticket)|real[- ]world (task|problem|project)/.test(t)) styles.add('pairing');

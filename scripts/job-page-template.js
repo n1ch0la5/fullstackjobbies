@@ -67,6 +67,12 @@ ${gtm}
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${esc(url)}">
+<meta property="og:image" content="${esc(siteUrl)}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Full Stack Jobbies: Tired of crappy job posts? We sift through the 💩 so you don't have to.">
+<meta property="og:site_name" content="Full Stack Jobbies">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFF4CC">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,7 +141,7 @@ ${gtm}
 <footer class="site-footer">
   <div class="wrap">
     <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
-    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com</p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/privacy">Privacy</a></p>
   </div>
 </footer>
 

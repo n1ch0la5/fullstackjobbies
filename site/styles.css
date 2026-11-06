@@ -333,3 +333,8 @@ select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 1
 .mini-cards > div { min-width: 0; }
 pre.code { max-width: 100%; }
 h1, h2, h3, .job-link, p code, li code { overflow-wrap: anywhere; }
+
+/* Long-form text (privacy page) */
+.prose { margin-top: 40px; }
+.prose h2 { font-size: 26px; margin: 36px 0 10px; }
+.prose p { margin: 0 0 14px; font-size: 17px; color: var(--ink-2); }
