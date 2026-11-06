@@ -50,8 +50,28 @@ ul { margin: 0; padding-left: 18px; }
 .collapsed .body, .collapsed .foot { display: none; }
 `;
 
+// Pages built with React, Remix or Next take over the whole document right after
+// loading ("hydration") and delete anything an extension added before they finished.
+// Greenhouse's job pages do this. So for the first 30 seconds the card puts itself
+// back if the page removes it, unless the person closed it.
+function keepAlive(host) {
+  let reattaches = 0;
+  const watcher = new MutationObserver(() => {
+    if (host.isConnected || host.dataset.closed === '1') return;
+    if (++reattaches > 25) return watcher.disconnect();
+    document.documentElement.append(host);
+  });
+  watcher.observe(document, { childList: true, subtree: true });
+  setTimeout(() => watcher.disconnect(), 30000);
+  return () => watcher.disconnect();
+}
+
 export function showBadge(input, { from = 'page' } = {}) {
-  document.getElementById('fsj-badge-host')?.remove();
+  const old = document.getElementById('fsj-badge-host');
+  if (old) {
+    old.dataset.closed = '1';
+    old.remove();
+  }
   const { facts, rating } = rate(input);
   const flags = [...facts.severeFlags, ...facts.redFlags];
   const host = document.createElement('div');
@@ -86,7 +106,11 @@ export function showBadge(input, { from = 'page' } = {}) {
   });
   const close = el('button', '', '✕');
   close.setAttribute('aria-label', 'Close');
-  close.addEventListener('click', () => host.remove());
+  close.addEventListener('click', () => {
+    host.dataset.closed = '1';
+    stopWatching?.();
+    host.remove();
+  });
   head.append(emoji, titleBox, toggle, close);
   emoji.style.cssText = `background:${BG[rating.level]};color:${FG[rating.level]};border-radius:10px;padding:4px`;
 
@@ -118,5 +142,6 @@ export function showBadge(input, { from = 'page' } = {}) {
   card.append(head, body, foot);
   root.append(style, card);
   document.documentElement.append(host);
+  const stopWatching = keepAlive(host);
   return { facts, rating };
 }
