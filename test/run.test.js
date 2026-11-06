@@ -43,5 +43,5 @@ test('a full sift run', async () => {
   assert.equal(best[0].company, 'Widgetco');
   assert.ok(best.every((j) => j.rating.level === 5), 'only rocket ships compete for best');
   assert.equal(worst[0].company, 'Hypeco');
-  assert.equal(worst[0].rating.name, 'Bloody awful');
+  assert.equal(worst[0].rating.name, 'Bloody mess');
 });

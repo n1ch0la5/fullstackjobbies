@@ -13,7 +13,7 @@ This repo holds the **sifter**: a daily routine that finds full stack jobs, rate
 | 3 | Meh | 😐 |
 | 2 | Bit whiffy | 🤢 |
 | 1 | Steaming pile | 💩 |
-| 0 | Bloody awful | ☠️ |
+| 0 | Bloody mess | ☠️ |
 
 ## How the sift works (and why it's cheap)
 

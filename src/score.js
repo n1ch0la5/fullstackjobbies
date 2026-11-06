@@ -2,7 +2,7 @@
 // explained line by line. Developer votes adjust it later on the site.
 
 export const LEVELS = [
-  { level: 0, name: 'Bloody awful', emoji: '☠️' },
+  { level: 0, name: 'Bloody mess', emoji: '☠️' },
   { level: 1, name: 'Steaming pile', emoji: '💩' },
   { level: 2, name: 'Bit whiffy', emoji: '🤢' },
   { level: 3, name: 'Meh', emoji: '😐' },

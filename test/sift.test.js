@@ -55,14 +55,14 @@ test('a good listing rates Rocket ship', () => {
   assert.equal(r.name, 'Rocket ship');
 });
 
-test('a hype-filled listing sinks, and severe flags hit Bloody awful', () => {
+test('a hype-filled listing sinks, and severe flags hit Bloody mess', () => {
   const pile = scoreJob(extractFacts(job({
     title: 'Full Stack Rockstar Ninja (10x)',
     description: "We're a fast-paced family. Wear many hats. $70k-$75k. 6 rounds including a live coding whiteboard test.",
   })));
   assert.equal(pile.level, 1);
   const awful = scoreJob(extractFacts(job({ description: 'Equity-only to start, plus an unpaid trial week.' })));
-  assert.equal(awful.name, 'Bloody awful');
+  assert.equal(awful.name, 'Bloody mess');
 });
 
 test('HN links reveal new company boards', () => {
