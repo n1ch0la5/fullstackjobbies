@@ -4,7 +4,7 @@
 import { cp, mkdir, writeFile, access } from 'node:fs/promises';
 
 const PUBLIC_DATA = ['jobs.json', 'best-jobbie-candidates.json', 'stats.json'];
-const SHARED_CODE = ['extract.js', 'score.js'];
+const SHARED_CODE = ['extract.js', 'score.js', 'location.js'];
 
 await mkdir('site/data', { recursive: true });
 await mkdir('site/lib', { recursive: true });

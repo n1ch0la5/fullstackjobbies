@@ -15,7 +15,11 @@ function toNumber(raw, k) {
   return n;
 }
 
-export function extractSalary(text) {
+export function extractSalary(rawText) {
+  // "CA$140k", "C$140k" and "A$120k" are dollars too, just not American ones.
+  const dollar = /\b(?:CA|C)\$/.test(rawText) ? 'CAD' : /\b(?:AU|A)\$/.test(rawText) ? 'AUD' : 'USD';
+  const text = rawText.replace(/\b(?:CA|C|AU|A)\$/g, '$');
+  const SYMBOL_CCY = { $: dollar, '£': 'GBP', '€': 'EUR' };
   for (const m of text.matchAll(RANGE)) {
     const [, codeA, symA, a, kA, symB, b, kB, codeB, hourly] = m;
     const sym = symA || symB;

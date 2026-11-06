@@ -18,6 +18,8 @@ test('salary: common formats', () => {
   assert.deepEqual(extractSalary('Salary 90-110k GBP'), { min: 90000, max: 110000, currency: 'GBP', interval: 'year' });
   assert.deepEqual(extractSalary('€70.000 - €85.000'), { min: 70000, max: 85000, currency: 'EUR', interval: 'year' });
   assert.deepEqual(extractSalary('$65 - $85/hr'), { min: 65, max: 85, currency: 'USD', interval: 'hour' });
+  assert.deepEqual(extractSalary('CA$140,000 - CA$170,000'), { min: 140000, max: 170000, currency: 'CAD', interval: 'year' });
+  assert.deepEqual(extractSalary('A$150k-A$180k'), { min: 150000, max: 180000, currency: 'AUD', interval: 'year' });
   assert.deepEqual(extractSalary('Pay: $150k+'), { min: 150000, max: 150000, currency: 'USD', interval: 'year' });
 });
 

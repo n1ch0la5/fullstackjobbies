@@ -12,6 +12,7 @@ import { isFullStack } from './filter.js';
 import { extractFacts } from './extract.js';
 import { aiEnabled, extractWithAI, mergeFacts } from './ai.js';
 import { scoreJob } from './score.js';
+import { classifyLocation } from './location.js';
 
 const DATA = new URL('../data/', import.meta.url);
 const MAX_AI_PER_RUN = Number(process.env.MAX_AI_PER_RUN ?? 150);
@@ -103,6 +104,7 @@ export async function sift() {
       title: job.title,
       url: job.url, // "Apply" always goes to the company's own page
       location: job.location,
+      where: classifyLocation(job),
       remote: facts.remote,
       salary: facts.salary,
       stack: facts.stack,

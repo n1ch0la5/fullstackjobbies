@@ -36,6 +36,25 @@
     <p class="lede">Every one has a salary. Every one is rated. Best first. "Apply" always goes to the company's own page.</p>
 
     <form class="filters" id="filters" style="margin-top: 32px" onsubmit="return false">
+      <fieldset class="where" id="where">
+        <legend>Where can you work?</legend>
+        <div class="where-row">
+          <div class="where-chips" id="where-chips" aria-live="polite"></div>
+          <label for="add-country" class="sr-only">Add a country</label>
+          <select id="add-country" class="where-add"></select>
+        </div>
+        <div class="where-presets">
+          <span>Quick picks:</span>
+          <button type="button" class="preset" data-preset="US">🇺🇸 US</button>
+          <button type="button" class="preset" data-preset="US,CA">🇺🇸🇨🇦 US &amp; Canada</button>
+          <button type="button" class="preset" data-preset="GB,IE,DE,NL,FR,ES,PT">🇪🇺 UK &amp; Europe</button>
+          <button type="button" class="preset" data-preset="">🌍 Show everywhere</button>
+        </div>
+        <div class="checks" style="margin-top: 10px">
+          <label><input type="checkbox" id="inc-anywhere" checked> Include work-from-anywhere jobs</label>
+          <label><input type="checkbox" id="inc-unstated" checked> Include remote jobs that don't say where</label>
+        </div>
+      </fieldset>
       <div>
         <label for="q">Search</label>
         <input id="q" type="search" placeholder="react, rails, Berlin…">

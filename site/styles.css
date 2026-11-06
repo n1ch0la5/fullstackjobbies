@@ -214,6 +214,22 @@ input[type=email], input[type=text], input[type=search], select {
 .filters .checks { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
 .filters .checks label { display: flex; align-items: center; gap: 6px; font-weight: 500; margin: 0; }
 .filters input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--ink); }
+.filters fieldset.where { flex: 1 1 100%; padding-bottom: 16px; border-bottom: 2px dashed var(--ink); }
+.where-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.where-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.where-chip {
+  display: inline-flex; align-items: center; gap: 8px; font: 600 15px var(--body);
+  background: var(--l4); border: 2px solid var(--ink); border-radius: 999px; padding: 6px 8px 6px 14px; cursor: pointer; color: var(--ink);
+}
+.where-chip span { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 999px; background: var(--paper); border: 2px solid var(--ink); font-size: 13px; line-height: 1; }
+.where-chip:hover span { background: var(--flag); }
+.where-empty { font-size: 15px; color: var(--ink-3); }
+select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 15px; border-width: 2px; }
+.where-presets { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: var(--ink-2); }
+.preset { font: 600 14px var(--body); background: var(--paper); color: var(--ink); border: 2px solid var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.preset:hover { background: var(--butter); }
+.preset[aria-pressed="true"] { background: var(--ink); color: var(--butter); }
+.where-tag { background: var(--paper); }
 .job-list { margin-top: 28px; display: grid; gap: 16px; }
 .job { background: var(--paper); border: 3px solid var(--ink); border-radius: 18px; padding: 22px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; }
 .job-main { flex: 1 1 420px; min-width: 0; }
