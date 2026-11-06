@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager: loads right away unless this visitor must opt in first (see consent.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.fsjLoadGTM = function () {
+  if (window.__gtmLoaded) return; window.__gtmLoaded = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M9M4NF7');
+};
+(function () {
+  var choice = null; try { choice = localStorage.getItem('fsj.consent'); } catch (e) {}
+  if (document.documentElement.getAttribute('data-consent') === 'not-required' || choice === 'granted') window.fsjLoadGTM();
+})();
+</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For agents: search and vet full stack jobs from your AI · Full Stack Jobbies</title>
+<meta name="description" content="A free, read-only API and MCP server for job agents: search rated full stack jobs and vet any listing. Works with Claude, Claude Code, Cursor and anything that speaks HTTP.">
+<meta property="og:title" content="Let your job agent do the sifting">
+<meta property="og:description" content="Full stack jobs rated by devs. Paste any job and we'll rate it.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fullstackjobbies.com/agents">
+<meta name="theme-color" content="#FFF4CC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="/" class="logo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" fill="#6B3F14" stroke="#1A1712" stroke-width="2" stroke-linejoin="round"><path d="M5 27h22a3.5 3.5 0 0 0 0-7h-1.5a3.5 3.5 0 0 0-2.5-6h-1.5a4.5 4.5 0 0 0-5.5-6.5c.5 2-1.5 3-3 3.5a3.5 3.5 0 0 0-2.5 9H6.5A3.5 3.5 0 0 0 5 27z"/></svg>
+      fullstack<span>jobbies</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#weekly">Rocket &amp; Jobbie of the Week</a>
+      <a href="/#detector">Red Flag Detector</a>
+      <a href="/agents" aria-current="page">For agents</a>
+      <a href="/#post">Post a job</a>
+      <a href="/jobs.html" class="btn btn-accent">Explore jobs</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section style="padding-top: 56px">
+  <div class="wrap row">
+    <div>
+      <p class="pill-label">For devs with bots</p>
+      <h1 style="font-size: clamp(40px, 6vw, 72px)">Let your job agent do the sifting.</h1>
+      <p class="lede" style="font-size: 20px">Plug Claude, Cursor or your own agent into Full Stack Jobbies. It searches rated full stack jobs that match your stack, salary floor and where you can work, and it can vet any listing you throw at it. Free, read-only, no key.</p>
+      <p class="lede">Your agent finds and vets. Applying still happens on the company's own page, and a good agent asks you before it sends anything.</p>
+    </div>
+    <div class="card toast" role="img" aria-label="Example: your agent found 3 rocket ships">
+      <div class="toast-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+      <div>
+        <p style="font: 800 30px/1.05 var(--display); letter-spacing: -0.02em">BLAM! 3 rocket ships found.</p>
+        <p style="margin-top: 6px; font-size: 15px; color: var(--ink-2)">2 steaming piles dodged. Want me to open the applications?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <h2>1. MCP server</h2>
+    <p class="lede">One URL for any MCP client: <code class="mono">https://fullstackjobbies.com/mcp</code>. Two tools: <strong>search_jobs</strong> and <strong>rate_job</strong>. No sign-in.</p>
+    <div class="mini-cards">
+      <div><strong>Claude</strong><p>Customize → Connectors → <b>+ Add</b> → <b>Add custom connector</b>. Name it Full Stack Jobbies, paste the URL above, and pick <b>No sign in</b>. Then switch it on from the <b>+</b> menu in a chat.</p></div>
+      <div><strong>Claude Code</strong><pre class="code" style="margin-top: 10px; font-size: 13px; padding: 14px"><code>claude mcp add --transport http \
+  fullstackjobbies \
+  https://fullstackjobbies.com/mcp</code></pre></div>
+      <div><strong>Cursor and others</strong><pre class="code" style="margin-top: 10px; font-size: 13px; padding: 14px"><code>{ "mcpServers": {
+  "fullstackjobbies": {
+    "url": "https://fullstackjobbies.com/mcp"
+} } }</code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <h2>2. REST API</h2>
+    <p class="lede">Plain JSON over HTTPS for your own scripts and agents. CORS is open.</p>
+    <div class="row" style="align-items: flex-start; margin-top: 28px">
+      <div>
+        <h3>Search jobs</h3>
+        <pre class="code" style="margin-top: 12px"><code>GET /api/jobs?where=US,CA&amp;min_rating=4
+             &amp;stack=react,node
+             &amp;hide_interview_styles=live_algorithm
+             &amp;salary_min_usd=150000&amp;limit=20</code></pre>
+        <ul style="margin-top: 14px; padding-left: 20px; font-size: 15px">
+          <li><code class="mono">where</code>: country codes you can work from</li>
+          <li><code class="mono">min_rating</code>: 0 Bloody mess … 5 Rocket ship</li>
+          <li><code class="mono">stack</code>: every one must be required</li>
+          <li><code class="mono">hide_interview_styles</code>: live_algorithm, take_home, unpaid_take_home, paid_take_home, pairing, conversation</li>
+          <li><code class="mono">salary_min_usd</code>, <code class="mono">remote_only</code>, <code class="mono">q</code>, <code class="mono">limit</code> (max 100)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rate any job</h3>
+        <pre class="code" style="margin-top: 12px"><code>curl -X POST https://fullstackjobbies.com/api/rate \
+  -H 'content-type: application/json' \
+  -d '{"url": "https://boards.greenhouse.io/acme/jobs/123"}'</code></pre>
+        <p style="margin-top: 14px; font-size: 15px">Or send <code class="mono">{"text": "…the description…"}</code>. You get the rating, the reasons behind it, red flags, salary, stack and interview style. LinkedIn and Indeed links can't be read; send their text instead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2 style="font-size: clamp(28px, 4vw, 44px)">3. Agent skill</h2>
+        <p class="lede">One file that teaches your agent the Jobbie Scale, the API, and the house rule: ask before applying to anything.</p>
+      </div>
+      <a class="btn" href="/skill/SKILL.md" download="SKILL.md">Download SKILL.md</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <h2 style="font-size: 32px">Play nice</h2>
+    <p class="lede">The data refreshes once a day, so there's no need to poll. Search once per task and reuse the results. If a job came from Remote OK, credit and link them; their terms require it, and the API tells you when.</p>
+    <form name="agents-waitlist" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; max-width: 620px">
+      <input type="hidden" name="form-name" value="agents-waitlist">
+      <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+      <div style="flex: 1 1 240px; min-width: 0">
+        <label for="agent-email" style="display: block; font-weight: 600; font-size: 15px; margin-bottom: 6px">Get API updates</label>
+        <input id="agent-email" name="email" type="email" required placeholder="you@dev.mail" autocomplete="email">
+      </div>
+      <button type="submit" class="btn btn-ink">Keep me posted</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com</p>
+  </div>
+</footer>
+
+<script type="module" src="/consent.js"></script>
+</body>
+</html>

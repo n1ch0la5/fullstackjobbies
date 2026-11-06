@@ -44,7 +44,7 @@ window.fsjLoadGTM = function () {
     <div class="nav-links">
       <a href="#weekly">Rocket &amp; Jobbie of the Week</a>
       <a href="#detector">Red Flag Detector</a>
-      <a href="#agents">For agents</a>
+      <a href="/agents">For agents</a>
       <a href="#post">Post a job</a>
       <a href="/jobs.html" class="btn btn-accent">Explore jobs</a>
     </div>
@@ -113,8 +113,8 @@ window.fsjLoadGTM = function () {
 
 <section class="banner" aria-label="House rules">
   <div class="banner-track">
-    <p>Salary or it doesn't get posted • No rockstars • No ninjas • No "we're a family" • Ghosting gets you a public score •&nbsp;</p>
-    <p aria-hidden="true">Salary or it doesn't get posted • No rockstars • No ninjas • No "we're a family" • Ghosting gets you a public score •&nbsp;</p>
+    <p>Salary or it doesn't get posted • No rockstars • No ninjas • No "we're a family" • No coding on command •&nbsp;</p>
+    <p aria-hidden="true">Salary or it doesn't get posted • No rockstars • No ninjas • No "we're a family" • No coding on command •&nbsp;</p>
   </div>
 </section>
 
@@ -215,36 +215,27 @@ window.fsjLoadGTM = function () {
   <div class="wrap row">
     <div>
       <p class="eyebrow">For devs with bots</p>
-      <h2 style="margin-top: 10px">Let your job agent do the applying. <span class="soon">COMING SOON</span></h2>
-      <p class="lede">Plug your AI agent into Full Stack Jobbies. Tell it your stack, your salary floor and the lowest rating you'll touch. It only applies to listings that clear the bar, so it never wastes a click on a steaming pile.</p>
+      <h2 style="margin-top: 10px">Let your job agent do the sifting.</h2>
+      <p class="lede">Plug Claude, Cursor or your own agent into Full Stack Jobbies. Tell it your stack, your salary floor and the lowest rating you'll touch. It finds the jobs that clear the bar, vets any listing you send it, and never wastes a click on a steaming pile.</p>
       <div class="mini-cards">
-        <div><strong>MCP server</strong><p>For Claude, Cursor and any MCP client. Search, rate and apply as tools.</p></div>
-        <div><strong>Agent skill</strong><p>One file that teaches your agent your preferences and our rules.</p></div>
-        <div><strong>REST API</strong><p>Roll your own. Listings, ratings and applications over JSON.</p></div>
+        <div><strong>MCP server</strong><p>One URL for Claude, Cursor and any MCP client. Search and rate as tools.</p></div>
+        <div><strong>Agent skill</strong><p>One file that teaches your agent the Jobbie Scale and our rules.</p></div>
+        <div><strong>REST API</strong><p>Roll your own. Rated jobs and ratings over plain JSON. No key.</p></div>
       </div>
-      <form name="agents-waitlist" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
-        <input type="hidden" name="form-name" value="agents-waitlist">
-        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
-        <div style="flex: 1 1 240px; min-width: 0">
-          <label for="agent-email" style="display: block; font-weight: 600; font-size: 15px; margin-bottom: 6px">Get early API access</label>
-          <input id="agent-email" name="email" type="email" required placeholder="you@dev.mail" autocomplete="email">
-        </div>
-        <button type="submit" class="btn btn-ink">Join the waitlist</button>
-      </form>
+      <a href="/agents" class="btn btn-ink" style="margin-top: 28px">Connect your agent</a>
     </div>
     <div>
-      <pre class="code"><code><span class="c"># ~/.jobbies/agent.yaml</span>
-stack:        [react, node, postgres]
-salary_floor: 150000
-remote:       true
-min_rating:   rocket_ship   <span class="c"># or solid</span>
-hide:         [live_algorithm, unpaid_take_home]
-daily_limit:  5</code></pre>
+      <pre class="code"><code><span class="c"># Rocket ships you can do from the US or Canada</span>
+GET /api/jobs?where=US,CA
+    &amp;min_rating=5
+    &amp;stack=react,node
+    &amp;hide_interview_styles=live_algorithm
+    &amp;salary_min_usd=150000</code></pre>
       <div class="card toast" role="img" aria-label="Example notification: BLAM! You just applied to 3 jobs.">
         <div class="toast-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
         <div>
           <p style="font: 800 30px/1.05 var(--display); letter-spacing: -0.02em">BLAM! You just applied to 3 jobs.</p>
-          <p style="margin-top: 6px; font-size: 15px; color: var(--ink-2)">All rated Rocket ship. 2 steaming piles dodged. You didn't even get out of bed.</p>
+          <p style="margin-top: 6px; font-size: 15px; color: var(--ink-2)">All rated Rocket ship. 2 steaming piles dodged. All you did was say yes.</p>
         </div>
       </div>
     </div>
