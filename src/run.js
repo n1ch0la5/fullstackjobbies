@@ -8,6 +8,11 @@ import { fetchGreenhouse } from './sources/greenhouse.js';
 import { fetchLever } from './sources/lever.js';
 import { fetchAshby } from './sources/ashby.js';
 import { fetchHackerNews } from './sources/hn.js';
+import { fetchRecruitee } from './sources/recruitee.js';
+import { fetchSmartRecruiters } from './sources/smartrecruiters.js';
+import { fetchWorkable } from './sources/workable.js';
+import { fetchRemoteOK } from './sources/remoteok.js';
+import { needsName, lookUpName } from './names.js';
 import { isFullStack } from './filter.js';
 import { extractFacts } from './extract.js';
 import { aiEnabled, extractWithAI, mergeFacts } from './ai.js';
@@ -17,7 +22,15 @@ import { classifyLocation } from './location.js';
 const DATA = new URL('../data/', import.meta.url);
 const MAX_AI_PER_RUN = Number(process.env.MAX_AI_PER_RUN ?? 150);
 const MAX_FAILS = 3;
-const FETCHERS = { greenhouse: fetchGreenhouse, lever: fetchLever, ashby: fetchAshby };
+const MAX_NAME_LOOKUPS = 60;
+const FETCHERS = {
+  greenhouse: fetchGreenhouse,
+  lever: fetchLever,
+  ashby: fetchAshby,
+  recruitee: fetchRecruitee,
+  smartrecruiters: fetchSmartRecruiters,
+  workable: fetchWorkable,
+};
 
 async function readJson(name, fallback) {
   try {
@@ -55,9 +68,24 @@ export async function sift() {
     console.warn(`HN fetch failed: ${e.message}`);
   }
 
+  // Feeds that aren't one company's board.
+  try {
+    raw.push(...(await fetchRemoteOK()));
+  } catch (e) {
+    console.warn(`Remote OK fetch failed: ${e.message}`);
+  }
+
   const active = companiesFile.companies.filter((c) => !c.disabled && FETCHERS[c.ats]);
   stats.boardsTried = active.length;
-  const batches = await mapLimit(active, 4, async (c) => {
+
+  // Give discovered companies real names ("duck-duck-go" → "DuckDuckGo"), a few dozen per run.
+  const unnamed = active.filter((c) => !c.nameChecked && needsName(c)).slice(0, MAX_NAME_LOOKUPS);
+  await mapLimit(unnamed, 6, async (c) => {
+    c.name = await lookUpName(c);
+    c.nameChecked = true;
+  });
+
+  const batches = await mapLimit(active, 6, async (c) => {
     try {
       const jobs = await FETCHERS[c.ats](c);
       c.fails = 0;
@@ -105,6 +133,7 @@ export async function sift() {
       url: job.url, // "Apply" always goes to the company's own page
       location: job.location,
       where: classifyLocation(job),
+      via: job.via ?? null, // credit for feeds that require it (e.g. Remote OK)
       remote: facts.remote,
       salary: facts.salary,
       stack: facts.stack,

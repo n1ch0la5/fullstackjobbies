@@ -1,5 +1,5 @@
 {
-  "_note": "Seed list. The sifter adds boards it discovers in Hacker News 'Who is hiring' posts, and disables a board after 3 failed fetches in a row. Add your own: { \"ats\": \"greenhouse|lever|ashby\", \"slug\": \"<board name from its jobs URL>\", \"name\": \"Display Name\" }.",
+  "_note": "Boards the sifter checks. It adds boards it discovers in Hacker News 'Who is hiring' posts (Greenhouse, Lever, Ashby, Recruitee, SmartRecruiters, Workable), looks up tidy company names, and disables a board after 3 failed fetches in a row. Add your own: { \"ats\": \"greenhouse|lever|ashby|recruitee|smartrecruiters|workable\", \"slug\": \"<board name from its jobs URL>\" }.",
   "companies": [
     {
       "ats": "greenhouse",
@@ -216,6 +216,516 @@
       "name": "iceye",
       "discovered": "2026-11-06",
       "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "airbnb",
+      "name": "airbnb",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "stripe",
+      "name": "stripe",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "dropbox",
+      "name": "dropbox",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "cloudflare",
+      "name": "cloudflare",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "datadog",
+      "name": "datadog",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "twilio",
+      "name": "twilio",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "gusto",
+      "name": "gusto",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "robinhood",
+      "name": "robinhood",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "coinbase",
+      "name": "coinbase",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "instacart",
+      "name": "instacart",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "lyft",
+      "name": "lyft",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "pinterest",
+      "name": "pinterest",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "duolingo",
+      "name": "duolingo",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "asana",
+      "name": "asana",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "airtable",
+      "name": "airtable",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "webflow",
+      "name": "webflow",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "grammarly",
+      "name": "grammarly",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "mongodb",
+      "name": "mongodb",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "elastic",
+      "name": "elastic",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "okta",
+      "name": "okta",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "squarespace",
+      "name": "squarespace",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "etsy",
+      "name": "etsy",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "affirm",
+      "name": "affirm",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "brex",
+      "name": "brex",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "carta",
+      "name": "carta",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "faire",
+      "name": "faire",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "flexport",
+      "name": "flexport",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "samsara",
+      "name": "samsara",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "scaleai",
+      "name": "scaleai",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "verkada",
+      "name": "verkada",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "mixpanel",
+      "name": "mixpanel",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "nerdwallet",
+      "name": "nerdwallet",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "databricks",
+      "name": "databricks",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "anthropic",
+      "name": "anthropic",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "roblox",
+      "name": "roblox",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "toast",
+      "name": "toast",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "wealthfront",
+      "name": "wealthfront",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "betterment",
+      "name": "betterment",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "calendly",
+      "name": "calendly",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "intercom",
+      "name": "intercom",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "postman",
+      "name": "postman",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "netlify",
+      "name": "netlify",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "fastly",
+      "name": "fastly",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "pagerduty",
+      "name": "pagerduty",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "launchdarkly",
+      "name": "launchdarkly",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "grafanalabs",
+      "name": "grafanalabs",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "sourcegraph",
+      "name": "sourcegraph",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "cockroachlabs",
+      "name": "cockroachlabs",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "hashicorp",
+      "name": "hashicorp",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "snyk",
+      "name": "snyk",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "sentry",
+      "name": "sentry",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "twitch",
+      "name": "twitch",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "block",
+      "name": "block",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "chime",
+      "name": "chime",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "hellofresh",
+      "name": "hellofresh",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "peloton",
+      "name": "peloton",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "nextdoor",
+      "name": "nextdoor",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "thumbtack",
+      "name": "thumbtack",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "lever",
+      "slug": "palantir",
+      "name": "palantir",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "lever",
+      "slug": "spotify",
+      "name": "spotify",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "lever",
+      "slug": "atlassian",
+      "name": "atlassian",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "lever",
+      "slug": "kraken",
+      "name": "kraken",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "lever",
+      "slug": "eventbrite",
+      "name": "eventbrite",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "notion",
+      "name": "notion",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "openai",
+      "name": "openai",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "replit",
+      "name": "replit",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "posthog",
+      "name": "posthog",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "deel",
+      "name": "deel",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "vanta",
+      "name": "vanta",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "mercury",
+      "name": "mercury",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "clerk",
+      "name": "clerk",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "resend",
+      "name": "resend",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "raycast",
+      "name": "raycast",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "anysphere",
+      "name": "anysphere",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "zapier",
+      "name": "zapier",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "langchain",
+      "name": "langchain",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "modal",
+      "name": "modal",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "elevenlabs",
+      "name": "elevenlabs",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "runway",
+      "name": "runway",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "neon",
+      "name": "neon",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "convex",
+      "name": "convex",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "watershed",
+      "name": "watershed",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "retool",
+      "name": "retool",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "plain",
+      "name": "plain",
+      "seeded": "2026-11-06"
+    },
+    {
+      "ats": "ashby",
+      "slug": "cal",
+      "name": "cal",
+      "seeded": "2026-11-06"
     }
   ]
 }
