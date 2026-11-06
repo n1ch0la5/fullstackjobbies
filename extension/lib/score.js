@@ -30,8 +30,10 @@ export function scoreJob(facts) {
   };
   // Calibrated on the first full sift (Nov 2026, 238 jobs) so roughly the top 10–15% reach
   // Rocket ship. Pay bands sit near that sample's median ($175k) and 75th percentile ($212k).
-  // Being well paid alone tops out at Solid; a Rocket ship also needs remote or a humane,
-  // stated interview process. Low pay is a mild knock, so fair non-US salaries aren't shamed.
+  // Only things that are good for every candidate count. Work style (remote, hybrid, on-site)
+  // is a personal preference, so it's a filter, never points. Being well paid alone tops out
+  // at Solid; a Rocket ship also needs an honest range, a clean listing and a stated, humane
+  // interview process. Low pay is a mild knock, so fair non-US salaries aren't shamed.
   let score = 2.25;
 
   if (facts.severeFlags.length) {
@@ -47,9 +49,8 @@ export function scoreJob(facts) {
     else if (mid >= 130000) add(0.5, 'decent pay');
     else if (mid < 70000) add(-0.5, 'low pay');
     if (pay.max > pay.min * 1.6) add(-0.5, 'suspiciously wide range');
+    else if (pay.max <= pay.min * 1.3) add(0.25, 'clear salary range');
   }
-
-  if (facts.remote === true) add(0.5, 'remote');
 
   const styles = facts.interviewStyles;
   if (styles.includes('live_algorithm')) add(-1, 'live algorithm test');
@@ -66,6 +67,7 @@ export function scoreJob(facts) {
 
   const flagHit = Math.min(facts.redFlags.length * 0.5, 2.5);
   if (flagHit) add(-flagHit, `${facts.redFlags.length} red flag(s)`);
+  else if (facts.salary) add(0.25, 'no red flags');
 
   // Being listed at all needs a salary; Level 0 is reserved for the severe stuff.
   return finish(Math.max(1, Math.min(5, Math.round(score))), reasons);

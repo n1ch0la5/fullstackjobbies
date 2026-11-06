@@ -16,7 +16,7 @@ Full Stack Jobbies lists full stack jobs that show a salary, each rated on the J
 | 1 | Steaming pile | 💩 |
 | 0 | Bloody mess | ☠️ |
 
-Ratings come from a transparent formula over the listing's facts (pay, remote, interview rounds and style, red flags). Every result includes `rating.reasons`, so you can explain a rating.
+Ratings come from a transparent formula over the listing's facts (pay, how honest the salary range is, interview rounds and style, red flags). Work style is not part of the rating: remote, hybrid and on-site are filters, because they're a personal preference. Every result includes `rating.reasons`, so you can explain a rating.
 
 ## How to call it
 
