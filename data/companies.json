@@ -47,685 +47,1768 @@
       "ats": "lever",
       "slug": "plaid",
       "name": "Plaid",
-      "fails": 1
+      "fails": 2
     },
     {
       "ats": "lever",
       "slug": "auw",
-      "name": "auw",
+      "name": "Auw",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "equall",
-      "name": "equall",
+      "name": "Equall",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "mastra",
-      "name": "mastra",
+      "name": "Mastra",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "stream",
-      "name": "stream",
+      "name": "Stream",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "river",
-      "name": "river",
+      "name": "River",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "thundercompute",
-      "name": "thundercompute",
+      "name": "Thunder Compute",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "oklo",
-      "name": "oklo",
+      "name": "Oklo",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "mozilla",
-      "name": "mozilla",
+      "name": "Mozilla",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "getduranta",
-      "name": "getduranta",
+      "name": "Duranta",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "reducto",
-      "name": "reducto",
+      "name": "Reducto",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "duck-duck-go",
-      "name": "duck-duck-go",
+      "name": "DuckDuckGo",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "curai",
-      "name": "curai",
+      "name": "Curai",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "middesk",
-      "name": "middesk",
+      "name": "Middesk",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "scholarly",
-      "name": "scholarly",
+      "name": "Scholarly",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "creditgenie",
-      "name": "creditgenie",
+      "name": "Credit Genie",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "justworks",
-      "name": "justworks",
+      "name": "Justworks",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "reddit",
-      "name": "reddit",
+      "name": "Reddit",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "charge-robotics",
-      "name": "charge-robotics",
+      "name": "Charge Robotics",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "proxima-fusion",
-      "name": "proxima-fusion",
+      "name": "Proxima Fusion",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "controlplane",
-      "name": "controlplane",
+      "name": "ControlPlane",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "apolloresearch",
-      "name": "apolloresearch",
+      "name": "Apollo Research",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "oscilar",
-      "name": "oscilar",
+      "name": "Oscilar",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "sentilink",
-      "name": "sentilink",
+      "name": "SentiLink",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "iceye",
-      "name": "iceye",
+      "name": "ICEYE",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "airbnb",
-      "name": "airbnb",
-      "seeded": "2026-11-06"
+      "name": "Airbnb",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "stripe",
-      "name": "stripe",
-      "seeded": "2026-11-06"
+      "name": "Stripe",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "dropbox",
-      "name": "dropbox",
-      "seeded": "2026-11-06"
+      "name": "Dropbox",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "cloudflare",
-      "name": "cloudflare",
-      "seeded": "2026-11-06"
+      "name": "Cloudflare",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "datadog",
-      "name": "datadog",
-      "seeded": "2026-11-06"
+      "name": "Datadog",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "twilio",
-      "name": "twilio",
-      "seeded": "2026-11-06"
+      "name": "Twilio",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "gusto",
-      "name": "gusto",
-      "seeded": "2026-11-06"
+      "name": "Gusto, Inc.",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "robinhood",
-      "name": "robinhood",
-      "seeded": "2026-11-06"
+      "name": "Robinhood",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "coinbase",
-      "name": "coinbase",
-      "seeded": "2026-11-06"
+      "name": "Coinbase",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "instacart",
-      "name": "instacart",
-      "seeded": "2026-11-06"
+      "name": "Instacart",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "lyft",
-      "name": "lyft",
-      "seeded": "2026-11-06"
+      "name": "Lyft",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "pinterest",
-      "name": "pinterest",
-      "seeded": "2026-11-06"
+      "name": "Pinterest",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "duolingo",
-      "name": "duolingo",
-      "seeded": "2026-11-06"
+      "name": "Duolingo",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "asana",
-      "name": "asana",
-      "seeded": "2026-11-06"
+      "name": "Asana",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "airtable",
-      "name": "airtable",
-      "seeded": "2026-11-06"
+      "name": "Airtable",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "webflow",
-      "name": "webflow",
-      "seeded": "2026-11-06"
+      "name": "Webflow",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "grammarly",
-      "name": "grammarly",
-      "seeded": "2026-11-06"
+      "name": "Grammarly",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "mongodb",
-      "name": "mongodb",
-      "seeded": "2026-11-06"
+      "name": "MongoDB",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "elastic",
-      "name": "elastic",
-      "seeded": "2026-11-06"
+      "name": "Elastic",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "okta",
-      "name": "okta",
-      "seeded": "2026-11-06"
+      "name": "Okta",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "squarespace",
-      "name": "squarespace",
-      "seeded": "2026-11-06"
+      "name": "Squarespace",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "etsy",
-      "name": "etsy",
-      "seeded": "2026-11-06"
+      "name": "Etsy",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "affirm",
-      "name": "affirm",
-      "seeded": "2026-11-06"
+      "name": "Affirm",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "brex",
-      "name": "brex",
-      "seeded": "2026-11-06"
+      "name": "Brex",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "carta",
-      "name": "carta",
-      "seeded": "2026-11-06"
+      "name": "Carta",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "faire",
-      "name": "faire",
-      "seeded": "2026-11-06"
+      "name": "Faire",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "flexport",
-      "name": "flexport",
-      "seeded": "2026-11-06"
+      "name": "Flexport",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "samsara",
-      "name": "samsara",
-      "seeded": "2026-11-06"
+      "name": "Samsara",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "scaleai",
-      "name": "scaleai",
-      "seeded": "2026-11-06"
+      "name": "Scale AI",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "verkada",
-      "name": "verkada",
-      "seeded": "2026-11-06"
+      "name": "Verkada",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "mixpanel",
-      "name": "mixpanel",
-      "seeded": "2026-11-06"
+      "name": "Mixpanel",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "nerdwallet",
-      "name": "nerdwallet",
-      "seeded": "2026-11-06"
+      "name": "Nerdwallet",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "databricks",
-      "name": "databricks",
-      "seeded": "2026-11-06"
+      "name": "Databricks",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "anthropic",
-      "name": "anthropic",
-      "seeded": "2026-11-06"
+      "name": "Anthropic",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "roblox",
-      "name": "roblox",
-      "seeded": "2026-11-06"
+      "name": "Roblox",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "toast",
-      "name": "toast",
-      "seeded": "2026-11-06"
+      "name": "Toast",
+      "seeded": "2026-11-06",
+      "nameChecked": true,
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "wealthfront",
       "name": "wealthfront",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "betterment",
       "name": "betterment",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "calendly",
       "name": "calendly",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "intercom",
       "name": "intercom",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "postman",
       "name": "postman",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "netlify",
       "name": "netlify",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "fastly",
       "name": "fastly",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "pagerduty",
       "name": "pagerduty",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "launchdarkly",
       "name": "launchdarkly",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "grafanalabs",
       "name": "grafanalabs",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "sourcegraph",
       "name": "sourcegraph",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "cockroachlabs",
       "name": "cockroachlabs",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "hashicorp",
       "name": "hashicorp",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "snyk",
       "name": "snyk",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "sentry",
       "name": "sentry",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "greenhouse",
       "slug": "twitch",
       "name": "twitch",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "block",
       "name": "block",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "chime",
       "name": "chime",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "hellofresh",
       "name": "hellofresh",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "peloton",
       "name": "peloton",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "nextdoor",
       "name": "nextdoor",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "greenhouse",
       "slug": "thumbtack",
       "name": "thumbtack",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "lever",
       "slug": "palantir",
       "name": "palantir",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "lever",
       "slug": "spotify",
       "name": "spotify",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "lever",
       "slug": "atlassian",
       "name": "atlassian",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "lever",
       "slug": "kraken",
       "name": "kraken",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "lever",
       "slug": "eventbrite",
       "name": "eventbrite",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "ashby",
       "slug": "notion",
       "name": "notion",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "openai",
       "name": "openai",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "replit",
       "name": "replit",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "posthog",
       "name": "posthog",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "deel",
       "name": "deel",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "vanta",
       "name": "vanta",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "mercury",
       "name": "mercury",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "clerk",
       "name": "clerk",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "resend",
       "name": "resend",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "raycast",
       "name": "raycast",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "anysphere",
       "name": "anysphere",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "ashby",
       "slug": "zapier",
       "name": "zapier",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "langchain",
       "name": "langchain",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "modal",
       "name": "modal",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "elevenlabs",
       "name": "elevenlabs",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "runway",
       "name": "runway",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "neon",
       "name": "neon",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "convex",
       "name": "convex",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "ashby",
       "slug": "watershed",
       "name": "watershed",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "retool",
       "name": "retool",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
     },
     {
       "ats": "ashby",
       "slug": "plain",
       "name": "plain",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 0
     },
     {
       "ats": "ashby",
       "slug": "cal",
       "name": "cal",
-      "seeded": "2026-11-06"
+      "seeded": "2026-11-06",
+      "fails": 1
+    },
+    {
+      "ats": "workable",
+      "slug": "valis-insights-1",
+      "name": "valis-insights-1",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "modash",
+      "name": "modash",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "recruitee",
+      "slug": "tether",
+      "name": "tether",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "checkly",
+      "name": "checkly",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "smarkets",
+      "name": "smarkets",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "shieldai",
+      "name": "shieldai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "solace",
+      "name": "solace",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "sheerhealth",
+      "name": "sheerhealth",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "tolmo",
+      "name": "tolmo",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "portswigger",
+      "name": "portswigger",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "blackcanyonconsulting",
+      "name": "blackcanyonconsulting",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "givedirectly",
+      "name": "givedirectly",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "growfig",
+      "name": "growfig",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "seeq",
+      "name": "seeq",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "relativity",
+      "name": "relativity",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "hiya",
+      "name": "hiya",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "runway-ml",
+      "name": "runway-ml",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "longshot-systems-ltd",
+      "name": "longshot-systems-ltd",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "jupus",
+      "name": "jupus",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "rebar",
+      "name": "rebar",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "somana.tech",
+      "name": "somana.tech",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "prior-labs",
+      "name": "prior-labs",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "k2spacecorporation",
+      "name": "k2spacecorporation",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "clickhouse",
+      "name": "clickhouse",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "voladynamics",
+      "name": "voladynamics",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "krakentech",
+      "name": "krakentech",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "menlo",
+      "name": "menlo",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "mattermost",
+      "name": "mattermost",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "footprint",
+      "name": "footprint",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "luxor",
+      "name": "luxor",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "manifest",
+      "name": "manifest",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "coast",
+      "name": "coast",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "livekit",
+      "name": "livekit",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "recruitee",
+      "slug": "attendi",
+      "name": "attendi",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "findigs",
+      "name": "findigs",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "wikimedia",
+      "name": "wikimedia",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "category-labs",
+      "name": "category-labs",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "comity",
+      "name": "comity",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "chariotclaims",
+      "name": "chariotclaims",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "novacredit",
+      "name": "novacredit",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "odyssey",
+      "name": "odyssey",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "loftorbital",
+      "name": "loftorbital",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "aiuc",
+      "name": "aiuc",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "productgenius",
+      "name": "productgenius",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "deepl",
+      "name": "deepl",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "artificialanalysis",
+      "name": "artificialanalysis",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "rai",
+      "name": "rai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "reframesystems",
+      "name": "reframesystems",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "norm-ai",
+      "name": "norm-ai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "colonist",
+      "name": "colonist",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "deeter-analytics",
+      "name": "deeter-analytics",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "permitflow",
+      "name": "permitflow",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "langfuse",
+      "name": "langfuse",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "turquoise-health",
+      "name": "turquoise-health",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "close",
+      "name": "close",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "anterior",
+      "name": "anterior",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "everis",
+      "name": "everis",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "tonicai",
+      "name": "tonicai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "radical-numerics",
+      "name": "radical-numerics",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "railway",
+      "name": "railway",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "kinelo",
+      "name": "kinelo",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "ionq",
+      "name": "ionq",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "oneleet",
+      "name": "oneleet",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "eleostech",
+      "name": "eleostech",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "pear-vc",
+      "name": "pear-vc",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "aptura",
+      "name": "aptura",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "voltai.careers",
+      "name": "voltai.careers",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "canopyworks",
+      "name": "canopyworks",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "gausslabs",
+      "name": "gausslabs",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "deepsetai",
+      "name": "deepsetai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "nango",
+      "name": "nango",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "atomcomputing",
+      "name": "atomcomputing",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "forus",
+      "name": "forus",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "onecrew",
+      "name": "onecrew",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "confido",
+      "name": "confido",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "brightcoreenergy",
+      "name": "brightcoreenergy",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "maincode",
+      "name": "maincode",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "lago",
+      "name": "lago",
+      "discovered": "2026-11-06",
+      "fails": 1
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "doubleverify",
+      "name": "doubleverify",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "thealleninstitute",
+      "name": "thealleninstitute",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "wirescreen",
+      "name": "wirescreen",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "rho",
+      "name": "rho",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "prolific",
+      "name": "prolific",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "antithesis",
+      "name": "antithesis",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "distru",
+      "name": "distru",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "aureliussystems",
+      "name": "aureliussystems",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "atria-health",
+      "name": "atria-health",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "spruceid",
+      "name": "spruceid",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "ro",
+      "name": "ro",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "complement",
+      "name": "complement",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "obsidiansecurity",
+      "name": "obsidiansecurity",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "finnapp",
+      "name": "finnapp",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "9-mothers",
+      "name": "9-mothers",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "mentimeter",
+      "name": "mentimeter",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "beautifulai",
+      "name": "beautifulai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "weave",
+      "name": "weave",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "amo",
+      "name": "amo",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "hive.co",
+      "name": "hive.co",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "ditto",
+      "name": "ditto",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "opsmill",
+      "name": "opsmill",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "proton",
+      "name": "proton",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "safi",
+      "name": "safi",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "shepherd",
+      "name": "shepherd",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "prompt",
+      "name": "prompt",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "kepler-ai",
+      "name": "kepler-ai",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "ridezum",
+      "name": "ridezum",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "scribdinc",
+      "name": "scribdinc",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "authorium",
+      "name": "authorium",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "chestnut",
+      "name": "chestnut",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "justpark",
+      "name": "justpark",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "alembic",
+      "name": "alembic",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "planetscale",
+      "name": "planetscale",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "fathom.video",
+      "name": "fathom.video",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "salesjack",
+      "name": "salesjack",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "neo-tax",
+      "name": "neo-tax",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "spacex",
+      "name": "spacex",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "outschool",
+      "name": "outschool",
+      "discovered": "2026-11-06",
+      "fails": 1
+    },
+    {
+      "ats": "ashby",
+      "slug": "kiloforge",
+      "name": "kiloforge",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "workable",
+      "slug": "akeno",
+      "name": "akeno",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "recruitee",
+      "slug": "exeon",
+      "name": "exeon",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "mapbox",
+      "name": "mapbox",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "articulate",
+      "name": "articulate",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "kong",
+      "name": "kong",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "tracelabs",
+      "name": "tracelabs",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "wand",
+      "name": "wand",
+      "discovered": "2026-11-06",
+      "fails": 1
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "piramidalinc",
+      "name": "piramidalinc",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "aquabyte",
+      "name": "aquabyte",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "tetsuwan",
+      "name": "tetsuwan",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "vvd",
+      "name": "vvd",
+      "discovered": "2026-11-06",
+      "fails": 1
+    },
+    {
+      "ats": "lever",
+      "slug": "prolific-machines",
+      "name": "prolific-machines",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "vestwell",
+      "name": "vestwell",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "lever",
+      "slug": "upmetrics",
+      "name": "upmetrics",
+      "discovered": "2026-11-06",
+      "fails": 1
+    },
+    {
+      "ats": "ashby",
+      "slug": "eagle",
+      "name": "eagle",
+      "discovered": "2026-11-06",
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "compa",
+      "name": "compa",
+      "discovered": "2026-11-06",
+      "fails": 0
     }
   ]
 }

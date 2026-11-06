@@ -1,4 +1,43 @@
 {
-  "updatedAt": "2026-11-06T15:15:26.584Z",
-  "jobs": []
+  "updatedAt": "2026-11-06T18:17:10.073Z",
+  "jobs": [
+    {
+      "id": "hn:50342365",
+      "company": "REVNODE",
+      "title": "Full Stack Engineer",
+      "url": "https://news.ycombinator.com/item?id=50342365",
+      "location": "Remote (US)",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 50000,
+        "max": 50000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 0,
+        "name": "Bloody mess",
+        "emoji": "☠️",
+        "reasons": [
+          "floor: commission only"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T19:32:53.000Z",
+      "firstSeen": "2026-11-06",
+      "slug": "revnode-full-stack-engineer-ywx67b"
+    }
+  ]
 }

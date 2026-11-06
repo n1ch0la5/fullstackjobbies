@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T15:15:26.584Z",
+  "updatedAt": "2026-11-06T18:17:10.073Z",
   "jobs": [
     {
       "id": "gh:gitlab:8845277002",
@@ -7,6 +7,15 @@
       "title": "Staff Fullstack Engineer, Data Products (Golang / Node)",
       "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845277002",
       "location": "Remote, Canada; Remote, United States",
+      "where": {
+        "countries": [
+          "CA",
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
       "remote": true,
       "salary": {
         "min": 152800,
@@ -36,268 +45,39 @@
       },
       "source": "greenhouse",
       "postedAt": "2026-11-05T13:54:34-05:00",
-      "firstSeen": "2026-11-06"
+      "firstSeen": "2026-11-06",
+      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja"
     },
     {
-      "id": "hn:50340820",
-      "company": "Postscript (YC W19)",
-      "title": "Senior Software Engineer, Full Stack",
-      "url": "https://news.ycombinator.com/item?id=50340820",
-      "location": "Senior Software Engineer, Full Stack",
+      "id": "gh:toast:7819344",
+      "company": "Toast",
+      "title": "Senior Software Engineer (Fullstack), Digital Storefront",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=7819344",
+      "location": "Remote, US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
       "remote": true,
       "salary": {
-        "min": 180000,
-        "max": 220000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "rust"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.5 top-band pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-02T18:00:14.000Z",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "hn:50342579",
-      "company": "Curai",
-      "title": "https://curaihealth.com We're building AI agents to expand access to affordable, and high quality healthcare. We run a vertically integrated primary and urgent care clinic and are actively building features to improve longitudinal outcomes, starting with hypertension and behavioral health. There's plenty of work across building the requisite patient experiences on and off platform, the agent workflows to power those experiences, and evals to make this care reliable. If this sounds interesting, please look to see if any of our roles appeal to you! * Sr Software Engineer, Full-Stack ($175-210k): https://jobs.lever.co/curai/46e0dd2f-c1dd-4ca2-9095-5b45f477... * Sr Software Engineer, Agentic AI ($175-210k): https://jobs.lever.co/curai/cd31b67b-d83c-466a-ac55-cfa4c2ec... * Sr Software Engineer, Marketing Platform ($150-180k): https://jobs.lever.co/curai/b157298e-4dc7-4594-a9c4-29f0dec4... Tech stack: Agents SDK, Braintrust, Python, React, React Native/Expo, AWS, Postgres, DynamoDB, Docker, Terraform.",
-      "url": "https://news.ycombinator.com/item?id=50342579",
-      "location": "Remote (US)",
-      "remote": true,
-      "salary": {
-        "min": 175000,
-        "max": 210000,
+        "min": 159000,
+        "max": 159000,
         "currency": "USD",
         "interval": "year"
       },
       "stack": [
         "react",
-        "python",
+        "angular",
+        "java",
+        "kotlin",
         "postgres",
         "aws",
         "docker",
-        "terraform",
-        "react native"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.5 top-band pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-02T19:44:53.000Z",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "hn:50342697",
-      "company": "SerpApi",
-      "title": "Junior to Senior Fullstack Engineer multiple positions",
-      "url": "https://news.ycombinator.com/item?id=50342697",
-      "location": "Based in Austin, TX but remote-first structure",
-      "remote": true,
-      "salary": {
-        "min": 150000,
-        "max": 180000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "python",
-        "ruby",
-        "rails",
-        "rust",
-        "kotlin",
-        "c#",
-        "php",
-        "elixir",
-        "mongodb"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1 strong pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-02T19:53:24.000Z",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "hn:50342723",
-      "company": "Fly.io",
-      "title": "$190k USD + equity Hey folks, Fly.io is a developer-focused public cloud. We are currently hiring for three roles: * Networking Engineer: Proxy and Corrosion - https://fly.io/jobs/networking-engineer/ * Infrastructure Operations Engineer - https://fly.io/jobs/infra-engineer/ * Fullstack Engineer - https://fly.io/jobs/fullstack-engineer/ Here's how we hire: https://docs.fly.io/hiring",
-      "url": "https://news.ycombinator.com/item?id=50342723",
-      "location": "REMOTE (multiple countries)",
-      "remote": true,
-      "salary": {
-        "min": 190000,
-        "max": 190000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.5 top-band pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-02T19:55:24.000Z",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "hn:50349294",
-      "company": "Scento",
-      "title": "https://www.scento.com/careers Scento is Europe's largest perfume decant website: more than 1,000 original designer and niche perfumes as 2 ml, 5 ml and 8 ml decants, shipped to 26 EU countries. Founded in 2024, headquartered in Paris with a second office in Berlin. We build our own stack on Next.js and Medusa. Open roles (gross per year, plus annual performance bonus): - Staff Full-Stack Engineer (Next.js, Medusa), €140k–€185k: https://www.scento.com/careers/staff-full-stack-engineer",
-      "url": "https://news.ycombinator.com/item?id=50349294",
-      "location": "Paris, Berlin",
-      "remote": true,
-      "salary": {
-        "min": 140000,
-        "max": 185000,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "next.js"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1 strong pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-03T07:59:27.000Z",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "hn:50350981",
-      "company": "Marker Learning",
-      "title": "Senior Full-Stack Engineer (Frontend-Leaning)",
-      "url": "https://news.ycombinator.com/item?id=50350981",
-      "location": "Remote, US only",
-      "remote": true,
-      "salary": {
-        "min": 180000,
-        "max": 200000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "next.js",
-        "typescript"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.5 top-band pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-03T12:07:36.000Z",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "gh:gitlab:8739391002",
-      "company": "GitLab",
-      "title": "Staff Fullstack Engineer (Ruby/Vue.js) Monetization Engineering: Purchase",
-      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8739391002",
-      "location": "Remote, Canada; Remote, United States",
-      "remote": true,
-      "salary": {
-        "min": 152800,
-        "max": 152800,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "vue",
-        "ruby",
-        "rails"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1 strong pay",
-          "+0.5 remote"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-05T13:51:51-05:00",
-      "firstSeen": "2026-11-06"
-    },
-    {
-      "id": "gh:figma:5691911004",
-      "company": "Figma",
-      "title": "Software Engineer - Full Stack",
-      "url": "https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004",
-      "location": "San Francisco, CA • New York, NY • United States",
-      "remote": null,
-      "salary": {
-        "min": 153000,
-        "max": 153000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "python",
-        "ruby",
-        "golang"
+        "tailwind"
       ],
       "rounds": null,
       "interviewStyles": [
@@ -310,24 +90,34 @@
         "emoji": "🚀",
         "reasons": [
           "+1 strong pay",
+          "+0.5 remote",
           "+0.5 humane interviews"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-10-27T13:40:12-04:00",
-      "firstSeen": "2026-11-06"
+      "postedAt": "2026-10-21T14:19:17-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b"
     },
     {
-      "id": "ab:ramp:6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
-      "company": "Ramp",
-      "title": "Applied AI Engineer, Fullstack",
-      "url": "https://jobs.ashbyhq.com/ramp/6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
-      "location": "New York, NY (HQ)",
+      "id": "gh:grafanalabs:6250631004",
+      "company": "grafanalabs",
+      "title": "Senior Full Stack Engineer | Database Observability, Grafana Cloud | Germany | Remote",
+      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250631004",
+      "location": "Germany (Remote)",
+      "where": {
+        "countries": [
+          "DE"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
       "remote": true,
       "salary": {
-        "min": 204400,
-        "max": 352000,
-        "currency": "USD",
+        "min": 100000,
+        "max": 125000,
+        "currency": "EUR",
         "interval": "year"
       },
       "stack": [
@@ -335,7 +125,141 @@
         "typescript"
       ],
       "rounds": null,
-      "interviewStyles": [],
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+0.5 decent pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-06T09:24:43-05:00",
+      "firstSeen": "2026-11-06",
+      "slug": "grafanalabs-senior-full-stack-engineer-database-observability-grafana-cl-cpp7kl"
+    },
+    {
+      "id": "gh:grafanalabs:6250633004",
+      "company": "grafanalabs",
+      "title": "Senior Full Stack Engineer | Database Observability, Grafana Cloud | Spain | Remote",
+      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250633004",
+      "location": "Spain (Remote)",
+      "where": {
+        "countries": [
+          "ES"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 107000,
+        "max": 107000,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+0.5 decent pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-06T09:30:23-05:00",
+      "firstSeen": "2026-11-06",
+      "slug": "grafanalabs-senior-full-stack-engineer-database-observability-grafana-cl-nx79ef"
+    },
+    {
+      "id": "gh:grafanalabs:6250630004",
+      "company": "grafanalabs",
+      "title": "Senior Full Stack Engineer | Database Observability, Grafana Cloud | UK | Remote",
+      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250630004",
+      "location": "United Kingdom (Remote)",
+      "where": {
+        "countries": [
+          "GB"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 118000,
+        "max": 118000,
+        "currency": "GBP",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-06T09:26:44-05:00",
+      "firstSeen": "2026-11-06",
+      "slug": "grafanalabs-senior-full-stack-engineer-database-observability-grafana-cl-agjqsk"
+    },
+    {
+      "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
+      "company": "openai",
+      "title": "Full Stack Software Engineer, Consumer Verticals",
+      "url": "https://jobs.ashbyhq.com/openai/39e06ef9-5e62-425d-81e2-e8690188011f",
+      "location": "San Francisco",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 347000,
+        "max": 385000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [
+        "conversation"
+      ],
       "redFlags": [],
       "rating": {
         "level": 5,
@@ -343,13 +267,211 @@
         "emoji": "🚀",
         "reasons": [
           "+1.5 top-band pay",
-          "-0.5 suspiciously wide range",
-          "+0.5 remote"
+          "+0.5 remote",
+          "+0.5 humane interviews"
         ]
       },
       "source": "ashby",
-      "postedAt": "2026-06-24T14:30:42.943+00:00",
-      "firstSeen": "2026-11-06"
+      "postedAt": "2026-06-15T18:16:20.513+00:00",
+      "firstSeen": "2026-11-06",
+      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon"
+    },
+    {
+      "id": "ab:solace:19759414-954f-48f7-a8d8-aaf1ae195122",
+      "company": "solace",
+      "title": "Senior Full Stack Engineer",
+      "url": "https://jobs.ashbyhq.com/Solace/19759414-954f-48f7-a8d8-aaf1ae195122",
+      "location": "United States",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 150000,
+        "max": 200000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "node",
+        "postgres",
+        "redis",
+        "gcp",
+        "tailwind"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1 strong pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-10-30T18:47:31.270+00:00",
+      "firstSeen": "2026-11-06",
+      "slug": "solace-senior-full-stack-engineer-d6zsk6"
+    },
+    {
+      "id": "wk:seeq:610FB07CEB",
+      "company": "Seeq",
+      "title": "Full Stack Software Engineer - Staff or Principal",
+      "url": "https://apply.workable.com/j/610FB07CEB",
+      "location": "Remote · United States",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 187500,
+        "max": 220000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python",
+        "java",
+        "kotlin",
+        "postgres",
+        "graphql",
+        "tailwind"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "workable",
+      "postedAt": "2026-09-10",
+      "firstSeen": "2026-11-06",
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt"
+    },
+    {
+      "id": "wk:seeq:802346B20E",
+      "company": "Seeq",
+      "title": "Full Stack Software Engineer - Staff or Principal",
+      "url": "https://apply.workable.com/j/802346B20E",
+      "location": "Remote · Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 265000,
+        "max": 310000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python",
+        "java",
+        "kotlin",
+        "postgres",
+        "graphql",
+        "tailwind"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "workable",
+      "postedAt": "2026-09-10",
+      "firstSeen": "2026-11-06",
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj"
+    },
+    {
+      "id": "ab:prompt:dec47398-48ef-4788-a601-21b3218f0b25",
+      "company": "prompt",
+      "title": "Senior Full Stack AI Engineer (Natural Language Systems)",
+      "url": "https://jobs.ashbyhq.com/Prompt/dec47398-48ef-4788-a601-21b3218f0b25",
+      "location": "Remote",
+      "where": {
+        "countries": [],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 160000,
+        "max": 220000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "python",
+        "fastapi",
+        "aws",
+        "docker"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "conversation"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.5 top-band pay",
+          "+0.5 remote",
+          "+0.5 humane interviews"
+        ]
+      },
+      "source": "ashby",
+      "postedAt": "2026-01-05T19:35:36.083+00:00",
+      "firstSeen": "2026-11-06",
+      "slug": "prompt-senior-full-stack-ai-engineer-natural-language-systems-kivha5"
     }
   ]
 }
