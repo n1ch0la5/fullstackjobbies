@@ -252,3 +252,31 @@ select.where-add { width: auto; flex: 0 1 240px; padding: 8px 12px; font-size: 1
   .banner-track { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* Live emoji bar */
+.live-bar {
+  margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between;
+  background: var(--paper); border: 3px solid var(--ink); border-radius: 22px; box-shadow: 6px 6px 0 var(--ink); padding: 18px 22px;
+}
+.live-q { margin: 0; font: 800 24px var(--display); letter-spacing: -0.02em; }
+.live-count { margin: 2px 0 0; display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--ink-2); }
+.live-dot { width: 10px; height: 10px; border-radius: 50%; background: #1FA45A; box-shadow: 0 0 0 0 rgba(31,164,90,.6); animation: pulse 1.8s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(31,164,90,0); } 100% { box-shadow: 0 0 0 0 rgba(31,164,90,0); } }
+.live-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.live-buttons button {
+  width: 60px; height: 60px; font-size: 30px; line-height: 1; cursor: pointer; border: 3px solid var(--ink); border-radius: 16px;
+  background: var(--butter); box-shadow: 4px 4px 0 var(--ink); transition: transform .06s, box-shadow .06s; touch-action: manipulation;
+}
+.live-buttons button:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--ink); }
+.live-buttons button:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+.live-buttons button.bump { animation: bump .25s; }
+.live-buttons button.shake { animation: shake .3s; }
+@keyframes bump { 50% { transform: scale(1.15) rotate(-6deg); } }
+@keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+.float-layer { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 50; }
+.floater { position: absolute; line-height: 1; will-change: transform, opacity; user-select: none; }
+@media (max-width: 640px) {
+  .live-buttons { width: 100%; justify-content: space-between; gap: 6px; }
+  .live-buttons button { width: 48px; height: 48px; font-size: 24px; }
+}
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }

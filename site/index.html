@@ -75,6 +75,22 @@
       <div class="meter-ends"><span>bloody awful</span><span>rocket ship</span></div>
     </div>
   </div>
+  <div class="wrap">
+    <div class="live-bar" id="live-bar">
+      <div class="live-text">
+        <p class="live-q">How's the job hunt today?</p>
+        <p class="live-count"><span class="live-dot" aria-hidden="true"></span><span id="live-count">Connecting…</span></p>
+      </div>
+      <div class="live-buttons" role="group" aria-label="Send a live reaction everyone can see">
+        <button type="button" data-emoji="🚀" aria-label="Rocket ship">🚀</button>
+        <button type="button" data-emoji="💯" aria-label="Solid">💯</button>
+        <button type="button" data-emoji="😐" aria-label="Meh">😐</button>
+        <button type="button" data-emoji="🤢" aria-label="Bit whiffy">🤢</button>
+        <button type="button" data-emoji="💩" aria-label="Steaming pile">💩</button>
+        <button type="button" data-emoji="☠️" aria-label="Bloody awful">☠️</button>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="banner" aria-label="House rules">
@@ -259,5 +275,6 @@ daily_limit:  5</code></pre>
 </footer>
 
 <script type="module" src="/app.js"></script>
+<script type="module" src="/live.js"></script>
 </body>
 </html>
