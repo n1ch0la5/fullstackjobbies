@@ -28,7 +28,11 @@ export function scoreJob(facts) {
     score += points;
     reasons.push(`${points > 0 ? '+' : ''}${points} ${why}`);
   };
-  let score = 3;
+  // Calibrated on the first full sift (Nov 2026, 238 jobs) so roughly the top 10–15% reach
+  // Rocket ship. Pay bands sit near that sample's median ($175k) and 75th percentile ($212k).
+  // Being well paid alone tops out at Solid; a Rocket ship also needs remote or a humane,
+  // stated interview process. Low pay is a mild knock, so fair non-US salaries aren't shamed.
+  let score = 2.25;
 
   if (facts.severeFlags.length) {
     return finish(0, [`floor: ${facts.severeFlags.join(', ')}`]);
@@ -38,10 +42,10 @@ export function scoreJob(facts) {
   if (!facts.salary) add(-2, 'no salary');
   else if (pay) {
     const mid = (pay.min + pay.max) / 2;
-    if (mid >= 180000) add(1.5, 'top-band pay');
-    else if (mid >= 140000) add(1, 'strong pay');
-    else if (mid >= 110000) add(0.5, 'decent pay');
-    else if (mid < 80000) add(-1, 'low pay');
+    if (mid >= 210000) add(1.75, 'top-band pay');
+    else if (mid >= 170000) add(1.25, 'strong pay');
+    else if (mid >= 130000) add(0.5, 'decent pay');
+    else if (mid < 70000) add(-0.5, 'low pay');
     if (pay.max > pay.min * 1.6) add(-0.5, 'suspiciously wide range');
   }
 
@@ -51,7 +55,7 @@ export function scoreJob(facts) {
   if (styles.includes('live_algorithm')) add(-1, 'live algorithm test');
   if (styles.includes('unpaid_take_home')) add(-0.5, 'unpaid take-home');
   if (styles.includes('paid_take_home')) add(0.5, 'paid take-home');
-  if (styles.includes('pairing') || styles.includes('conversation')) add(0.5, 'humane interviews');
+  if (styles.includes('pairing') || styles.includes('conversation')) add(0.75, 'humane interviews');
 
   if (facts.rounds !== null && facts.rounds !== undefined) {
     if (facts.rounds <= 3) add(0.5, `${facts.rounds} rounds`);

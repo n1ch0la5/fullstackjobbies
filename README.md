@@ -85,3 +85,7 @@ Preview locally: `node scripts/build-site.js && npx serve site`
 - **Job pages:** every job gets `/job/<slug>`, listed in `/sitemap.xml`. Built by `scripts/build-site.js`.
 - **Agent API (read-only, no key):** `GET /api/jobs`, `POST /api/rate`, MCP server at `/mcp`, skill at `/skill/SKILL.md`. Docs at `/agents`.
 - **Browser extension:** `extension/`. `node scripts/build-extension.js` refreshes its copy of the rating code and writes `dist/fullstackjobbies-extension.zip` for the Chrome Web Store. To try it: Chrome → `chrome://extensions` → Developer mode → Load unpacked → pick `extension/`.
+
+## Changing the scoring
+
+Edit `src/score.js`, run `npm test`, then `node scripts/rescore.js` to re-rate the current jobs without waiting for the next sift. The formula is calibrated so roughly the top 10–15% of jobs reach Rocket ship; check the before/after counts it prints.

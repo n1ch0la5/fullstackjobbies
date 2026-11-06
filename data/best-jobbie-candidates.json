@@ -1,239 +1,6 @@
 {
-  "updatedAt": "2026-11-06T18:17:10.073Z",
+  "updatedAt": "2026-11-06T19:55:03.123Z",
   "jobs": [
-    {
-      "id": "gh:gitlab:8845277002",
-      "company": "GitLab",
-      "title": "Staff Fullstack Engineer, Data Products (Golang / Node)",
-      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845277002",
-      "location": "Remote, Canada; Remote, United States",
-      "where": {
-        "countries": [
-          "CA",
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "salary": {
-        "min": 152800,
-        "max": 152800,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "node",
-        "ruby",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1 strong pay",
-          "+0.5 remote",
-          "+0.5 humane interviews"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-05T13:54:34-05:00",
-      "firstSeen": "2026-11-06",
-      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja"
-    },
-    {
-      "id": "gh:toast:7819344",
-      "company": "Toast",
-      "title": "Senior Software Engineer (Fullstack), Digital Storefront",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=7819344",
-      "location": "Remote, US",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "salary": {
-        "min": 159000,
-        "max": 159000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "java",
-        "kotlin",
-        "postgres",
-        "aws",
-        "docker",
-        "tailwind"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1 strong pay",
-          "+0.5 remote",
-          "+0.5 humane interviews"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-10-21T14:19:17-04:00",
-      "firstSeen": "2026-11-06",
-      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b"
-    },
-    {
-      "id": "gh:grafanalabs:6250631004",
-      "company": "grafanalabs",
-      "title": "Senior Full Stack Engineer | Database Observability, Grafana Cloud | Germany | Remote",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250631004",
-      "location": "Germany (Remote)",
-      "where": {
-        "countries": [
-          "DE"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "salary": {
-        "min": 100000,
-        "max": 125000,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+0.5 decent pay",
-          "+0.5 remote",
-          "+0.5 humane interviews"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-06T09:24:43-05:00",
-      "firstSeen": "2026-11-06",
-      "slug": "grafanalabs-senior-full-stack-engineer-database-observability-grafana-cl-cpp7kl"
-    },
-    {
-      "id": "gh:grafanalabs:6250633004",
-      "company": "grafanalabs",
-      "title": "Senior Full Stack Engineer | Database Observability, Grafana Cloud | Spain | Remote",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250633004",
-      "location": "Spain (Remote)",
-      "where": {
-        "countries": [
-          "ES"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "salary": {
-        "min": 107000,
-        "max": 107000,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+0.5 decent pay",
-          "+0.5 remote",
-          "+0.5 humane interviews"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-06T09:30:23-05:00",
-      "firstSeen": "2026-11-06",
-      "slug": "grafanalabs-senior-full-stack-engineer-database-observability-grafana-cl-nx79ef"
-    },
-    {
-      "id": "gh:grafanalabs:6250630004",
-      "company": "grafanalabs",
-      "title": "Senior Full Stack Engineer | Database Observability, Grafana Cloud | UK | Remote",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250630004",
-      "location": "United Kingdom (Remote)",
-      "where": {
-        "countries": [
-          "GB"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "salary": {
-        "min": 118000,
-        "max": 118000,
-        "currency": "GBP",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1 strong pay",
-          "+0.5 remote",
-          "+0.5 humane interviews"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-06T09:26:44-05:00",
-      "firstSeen": "2026-11-06",
-      "slug": "grafanalabs-senior-full-stack-engineer-database-observability-grafana-cl-agjqsk"
-    },
     {
       "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
       "company": "openai",
@@ -266,9 +33,9 @@
         "name": "Rocket ship",
         "emoji": "🚀",
         "reasons": [
-          "+1.5 top-band pay",
+          "+1.75 top-band pay",
           "+0.5 remote",
-          "+0.5 humane interviews"
+          "+0.75 humane interviews"
         ]
       },
       "source": "ashby",
@@ -316,9 +83,9 @@
         "name": "Rocket ship",
         "emoji": "🚀",
         "reasons": [
-          "+1 strong pay",
+          "+1.25 strong pay",
           "+0.5 remote",
-          "+0.5 humane interviews"
+          "+0.75 humane interviews"
         ]
       },
       "source": "ashby",
@@ -367,9 +134,9 @@
         "name": "Rocket ship",
         "emoji": "🚀",
         "reasons": [
-          "+1.5 top-band pay",
+          "+1.25 strong pay",
           "+0.5 remote",
-          "+0.5 humane interviews"
+          "+0.75 humane interviews"
         ]
       },
       "source": "workable",
@@ -418,9 +185,9 @@
         "name": "Rocket ship",
         "emoji": "🚀",
         "reasons": [
-          "+1.5 top-band pay",
+          "+1.25 strong pay",
           "+0.5 remote",
-          "+0.5 humane interviews"
+          "+0.75 humane interviews"
         ]
       },
       "source": "workable",
@@ -463,15 +230,235 @@
         "name": "Rocket ship",
         "emoji": "🚀",
         "reasons": [
-          "+1.5 top-band pay",
+          "+1.25 strong pay",
           "+0.5 remote",
-          "+0.5 humane interviews"
+          "+0.75 humane interviews"
         ]
       },
       "source": "ashby",
       "postedAt": "2026-01-05T19:35:36.083+00:00",
       "firstSeen": "2026-11-06",
       "slug": "prompt-senior-full-stack-ai-engineer-natural-language-systems-kivha5"
+    },
+    {
+      "id": "hn:50338951",
+      "company": "NEO Holdings (stealth, regulated commodity markets infrastructure)",
+      "title": "Full Stack Engineer",
+      "url": "https://news.ycombinator.com/item?id=50338951",
+      "location": "Malibu, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 200000,
+        "max": 300000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-02T16:12:14.000Z",
+      "firstSeen": "2026-11-06",
+      "slug": "neo-holdings-stealth-regulated-commodity-markets-infrastruct-full-stack-engineer-7ha18l"
+    },
+    {
+      "id": "gh:affirm:7872398003",
+      "company": "Affirm",
+      "title": "Analytics Lead, Full Stack",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7872398003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 185000,
+        "max": 245000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "python"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-30T17:15:12-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "affirm-analytics-lead-full-stack-pcmouk"
+    },
+    {
+      "id": "gh:affirm:7981723003",
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (App Experience)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7981723003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 195000,
+        "max": 255000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin",
+        "react native"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-30T17:15:12-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "affirm-senior-software-engineer-fullstack-app-experience-tgvwb3"
+    },
+    {
+      "id": "gh:affirm:7663434003",
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (Consumer Engineering)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7663434003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 195000,
+        "max": 255000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "typescript",
+        "javascript",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes",
+        "react native",
+        "swift"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-30T17:15:12-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "affirm-senior-software-engineer-fullstack-consumer-engineering-q8mn8h"
+    },
+    {
+      "id": "gh:affirm:7978722003",
+      "company": "Affirm",
+      "title": "Senior Staff Software Engineer, Fullstack (Marketplace and Consumer Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7978722003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "salary": {
+        "min": 265000,
+        "max": 325000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "javascript",
+        "kotlin",
+        "react native"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.5 remote"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-30T17:15:12-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "affirm-senior-staff-software-engineer-fullstack-marketplace-and-con-7efawi"
     }
   ]
 }
