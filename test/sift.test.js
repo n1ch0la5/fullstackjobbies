@@ -102,3 +102,9 @@ test('work style never changes the rating', () => {
   assert.equal(a.level, b.level);
   assert.deepEqual(a.reasons, b.reasons);
 });
+
+test('salary with cents', () => {
+  assert.deepEqual(extractSalary('Pay $160,000.00 - $180,000.00'), { min: 160000, max: 180000, currency: 'USD', interval: 'year' });
+  assert.deepEqual(extractSalary('$95000.00 to $120000.00'), { min: 95000, max: 120000, currency: 'USD', interval: 'year' });
+  assert.deepEqual(extractSalary('€60.000 - €75.000'), { min: 60000, max: 75000, currency: 'EUR', interval: 'year' });
+});
