@@ -217,6 +217,7 @@ function jobCard(j) {
         j.interviewStyles.map((s) => el('span', { class: 'tag tag-int' }, STYLE_LABELS[s] ?? s)),
         j.stack.slice(0, 6).map((s) => el('span', { class: 'tag tag-stack' }, s)),
         j.redFlags.length > 0 && el('span', { class: 'tag tag-flag' }, `${j.redFlags.length} red flag${j.redFlags.length === 1 ? '' : 's'}`),
+        j.reports?.count > 0 && el('span', { class: 'tag tag-int' }, `🗣 ${j.reports.count} interview report${j.reports.count === 1 ? '' : 's'}`),
       ),
       voteWidget(j, summary, (next) => {
         votes.set(j.id, next);

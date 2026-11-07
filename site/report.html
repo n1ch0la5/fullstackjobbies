@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager: loads right away unless this visitor must opt in first (see consent.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.fsjLoadGTM = function () {
+  if (window.__gtmLoaded) return; window.__gtmLoaded = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M9M4NF7');
+};
+(function () {
+  var choice = null; try { choice = localStorage.getItem('fsj.consent'); } catch (e) {}
+  if (document.documentElement.getAttribute('data-consent') === 'not-required' || choice === 'granted') window.fsjLoadGTM();
+})();
+</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add a job you interviewed for · Full Stack Jobbies</title>
+<meta name="description" content="Interviewed somewhere? Tell other devs how it went: the steps, the rounds, how long it took. Checkboxes only, always anonymous.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FFF4CC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="/" class="logo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" fill="#6B3F14" stroke="#1A1712" stroke-width="2" stroke-linejoin="round"><path d="M5 27h22a3.5 3.5 0 0 0 0-7h-1.5a3.5 3.5 0 0 0-2.5-6h-1.5a4.5 4.5 0 0 0-5.5-6.5c.5 2-1.5 3-3 3.5a3.5 3.5 0 0 0-2.5 9H6.5A3.5 3.5 0 0 0 5 27z"/></svg>
+      fullstack<span>jobbies</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#weekly">Rocket &amp; Jobbie of the Week</a>
+      <a href="/#detector">Red Flag Detector</a>
+      <a href="/agents">For agents</a>
+      <a href="/#post">Post a job</a>
+      <a href="/jobs.html" class="btn btn-accent">Explore jobs</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section style="padding-top: 56px">
+  <div class="wrap report-wrap">
+    <h1 style="font-size: clamp(36px, 5.5vw, 60px)">How did the interview go?</h1>
+    <p class="lede">Tell other devs what the process was really like. Checkboxes only, always anonymous, and we read every report before it goes up.</p>
+
+    <form id="report-form" class="report-form" novalidate>
+      <fieldset>
+        <legend>1. The job</legend>
+        <label for="job-url">Link to the job posting</label>
+        <input id="job-url" type="url" inputmode="url" placeholder="https://…" required autocomplete="off">
+        <p class="form-note" id="job-preview" aria-live="polite">We'll read the title, company and salary from the link.</p>
+        <div id="desc-wrap" hidden>
+          <label for="job-desc">We couldn't read that page. Paste the job description so we can rate it.</label>
+          <textarea id="job-desc" rows="6" maxlength="20000" placeholder="The job's own text: title, salary, requirements…"></textarea>
+          <div class="report-row">
+            <div><label for="job-title">Job title</label><input id="job-title" type="text" maxlength="200" placeholder="Senior Full Stack Engineer"></div>
+            <div><label for="job-company">Company</label><input id="job-company" type="text" maxlength="200" placeholder="Acme"></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. How far did you get?</legend>
+        <div class="choices" id="stage"></div>
+      </fieldset>
+
+      <fieldset id="process">
+        <legend>3. What were the interviews? <span class="legend-note">Tick all that happened</span></legend>
+        <div class="choices" id="steps"></div>
+        <div class="report-row">
+          <div>
+            <label for="rounds">How many rounds?</label>
+            <select id="rounds"><option value="">Not sure</option></select>
+          </div>
+          <div>
+            <label for="duration">Start to finish, it took</label>
+            <select id="duration"><option value="">Not sure</option></select>
+          </div>
+          <div>
+            <label for="salary-upfront">Did they talk salary up front?</label>
+            <select id="salary-upfront"><option value="">Not sure</option><option value="yes">Yes</option><option value="no">No</option></select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Anything that stood out? <span class="legend-note">Optional</span></legend>
+        <div class="choices" id="tags"></div>
+      </fieldset>
+
+      <!-- Bots fill this in; people never see it. -->
+      <div class="sr-only" aria-hidden="true"><label>Leave empty <input type="text" id="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <div class="report-submit">
+        <button class="btn btn-accent" type="submit">Send report</button>
+        <p class="form-note" id="report-status" aria-live="polite">No account, no name. We only keep a random id in your browser so nobody can flood us.</p>
+      </div>
+    </form>
+
+    <div id="report-done" class="card report-done" hidden>
+      <p style="font-size: 44px; margin: 0">🙌</p>
+      <h2 style="font-size: 32px; margin: 8px 0 0">Thanks, that helps.</h2>
+      <p>We'll check it over, usually within a day, and it shows up after the next morning's sift.</p>
+      <p style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px">
+        <a class="btn btn-accent" href="/report">Add another</a>
+        <a class="btn" href="/jobs">Back to the jobs</a>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
+    <p id="updated" style="color: var(--ink-3)"></p>
+    <p style="color: var(--ink-3)"><a href="/privacy">Privacy</a></p>
+  </div>
+</footer>
+
+<script type="module" src="/report.js"></script>
+<script type="module" src="/consent.js"></script>
+</body>
+</html>

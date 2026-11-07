@@ -19,6 +19,8 @@ import { aiEnabled, extractWithAI, mergeFacts } from './ai.js';
 import { scoreJob } from './score.js';
 import { classifyLocation } from './location.js';
 import { jobSlug } from './slug.js';
+import { fetchApprovedReports, groupReports, jobFromReports, urlKey } from './sources/reports.js';
+import { applyReports } from './reports.js';
 
 const DATA = new URL('../data/', import.meta.url);
 const MAX_AI_PER_RUN = Number(process.env.MAX_AI_PER_RUN ?? 150);
@@ -49,7 +51,7 @@ async function writeJson(name, value) {
 export async function sift() {
   const companiesFile = await readJson('companies.json', { companies: [] });
   const cache = await readJson('cache.json', {});
-  const stats = { boardsTried: 0, boardsFailed: 0, fetched: 0, fullStack: 0, withSalary: 0, aiCalls: 0, newBoards: 0 };
+  const stats = { boardsTried: 0, boardsFailed: 0, fetched: 0, fullStack: 0, withSalary: 0, aiCalls: 0, newBoards: 0, reports: 0, reportedJobs: 0 };
 
   // 1. Discover: HN thread first, because it also finds new company boards.
   let raw = [];
@@ -106,6 +108,32 @@ export async function sift() {
   const candidates = raw.filter(isFullStack);
   stats.fullStack = candidates.length;
 
+  // Interview reports (approved by hand). They attach to a job we already have, or add the job:
+  // you approved it, so it skips the full stack filter but still needs a salary to be listed.
+  const reportsFor = new Map(); // sourceId → summary
+  try {
+    const groups = groupReports(await fetchApprovedReports());
+    stats.reports = groups.reduce((n, g) => n + g.reports.length, 0);
+    const byUrl = new Map(candidates.map((j) => [urlKey(j.url), j]));
+    const byId = new Map(candidates.map((j) => [j.sourceId, j]));
+    await mapLimit(groups, 4, async (g) => {
+      let job = (g.jobId && byId.get(g.jobId)) || byUrl.get(urlKey(g.url));
+      if (!job) {
+        try {
+          job = await jobFromReports(g);
+          candidates.push(job);
+        } catch (e) {
+          console.warn(`Reported job ${g.url}: ${e.message}`);
+          return;
+        }
+      }
+      reportsFor.set(job.sourceId, g.summary);
+      stats.reportedJobs++;
+    });
+  } catch (e) {
+    console.warn(`Interview reports unavailable: ${e.message}`);
+  }
+
   // 3. Extract facts (rules always; AI only for new or changed listings) and 4. score.
   const nextCache = {};
   const listed = [];
@@ -126,7 +154,10 @@ export async function sift() {
     }
     nextCache[job.sourceId] = { hash: h, facts, firstSeen: cache[job.sourceId]?.firstSeen ?? today() };
 
+    const summary = reportsFor.get(job.sourceId);
+    if (summary) facts = applyReports(facts, summary);
     const rating = scoreJob(facts);
+    if (facts.reportedBy) rating.reasons.push(`interview details from ${facts.reportedBy} report${facts.reportedBy === 1 ? '' : 's'}`);
     const entry = {
       id: job.sourceId,
       company: job.company,
@@ -146,6 +177,7 @@ export async function sift() {
       source: job.source,
       postedAt: job.postedAt,
       firstSeen: nextCache[job.sourceId].firstSeen,
+      reports: summary ?? null,
     };
     entry.slug = jobSlug(entry);
     // House rule: salary or it doesn't get posted. Severe ones are kept aside for Jobbie of the Week.

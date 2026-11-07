@@ -10,7 +10,7 @@ import { renderJobPage, jobDescription } from './job-page-template.js';
 
 const SITE_URL = process.env.URL || 'https://fullstackjobbies.com';
 const PUBLIC_DATA = ['best-jobbie-candidates.json', 'stats.json'];
-const SHARED_CODE = ['extract.js', 'score.js', 'location.js', 'slug.js'];
+const SHARED_CODE = ['extract.js', 'score.js', 'location.js', 'slug.js', 'reports.js'];
 
 await mkdir('site/data', { recursive: true });
 await mkdir('site/lib', { recursive: true });

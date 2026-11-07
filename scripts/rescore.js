@@ -3,6 +3,7 @@
 //   node scripts/rescore.js
 import { readFile, writeFile } from 'node:fs/promises';
 import { scoreJob } from '../src/score.js';
+import { applyReports } from '../src/reports.js';
 
 const path = 'data/jobs.json';
 const data = JSON.parse(await readFile(path, 'utf8'));
@@ -11,11 +12,13 @@ const before = {};
 const after = {};
 for (const j of data.jobs) {
   before[j.rating.name] = (before[j.rating.name] ?? 0) + 1;
-  const facts = cache[j.id]?.facts ?? {
+  const base = cache[j.id]?.facts ?? {
     salary: j.salary, remote: j.remote, rounds: j.rounds, interviewStyles: j.interviewStyles,
     redFlags: j.redFlags, severeFlags: [], stack: j.stack,
   };
+  const facts = applyReports(base, j.reports);
   const r = scoreJob(facts);
+  if (facts.reportedBy) r.reasons.push(`interview details from ${facts.reportedBy} report${facts.reportedBy === 1 ? '' : 's'}`);
   j.rating = { level: r.level, name: r.name, emoji: r.emoji, reasons: r.reasons };
   after[r.name] = (after[r.name] ?? 0) + 1;
 }

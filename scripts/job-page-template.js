@@ -8,6 +8,8 @@ const STYLE_LABELS = {
   pairing: 'Pair on real work',
   conversation: 'Just a conversation',
 };
+import { reportLines } from '../src/reports.js';
+
 const LEVEL_BG = ['#5C1A1A', '#8A5523', '#C9893E', '#E9D16A', '#7FB3FF', '#2F5BFF'];
 const LEVEL_FG = ['#FFF4CC', '#FFF4CC', '#1A1712', '#1A1712', '#1A1712', '#FFFFFF'];
 
@@ -63,6 +65,8 @@ export function renderJobPage(job, { siteUrl, gtm, where, description }) {
   ].filter(Boolean).join('\n          ');
   const reasons = (job.rating.reasons ?? []).map((r) => `<li>${esc(r)}</li>`).join('');
   const flags = (job.redFlags ?? []).map((r) => `<li>${esc(r)}</li>`).join('');
+  const reportItems = reportLines(job.reports).map((r) => `<li>${esc(r)}</li>`).join('');
+  const reportUrl = `/report?url=${encodeURIComponent(job.url)}`;
   // Only what the vote widget needs, safely embedded.
   const pageData = JSON.stringify({ id: job.id, title: job.title, rating: job.rating }).replace(/</g, '\\u003c');
 
@@ -124,6 +128,7 @@ ${gtm}
         <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
           <a class="btn btn-accent" href="${esc(job.url)}" target="_blank" rel="noopener">${viaRemoteOK ? 'View on Remote OK' : 'Apply on their site'}</a>
           <span id="applied-mount"></span>
+          <a href="${esc(reportUrl)}" style="font-weight: 600">I interviewed here</a>
           ${viaRemoteOK ? `<span style="font-size: 14px; color: var(--ink-3)">Listing via <a href="${esc(job.via.url)}" target="_blank">Remote OK</a></span>` : ''}
         </div>
       </div>
@@ -133,6 +138,7 @@ ${gtm}
         <p style="margin: 18px 0 4px; font-weight: 700">How we got there</p>
         <ul style="margin: 0; padding-left: 20px">${reasons || '<li>Nothing stood out either way</li>'}</ul>
         ${flags ? `<p style="margin: 14px 0 4px; font-weight: 700">Red flags</p><ul style="margin: 0; padding-left: 20px">${flags}</ul>` : ''}
+        ${reportItems ? `<div class="reports-box"><p style="margin: 0; font-weight: 700">From ${job.reports.count} interview report${job.reports.count === 1 ? '' : 's'}</p><ul>${reportItems}</ul></div>` : ''}
         <div id="vote-mount"></div>
       </aside>
     </div>

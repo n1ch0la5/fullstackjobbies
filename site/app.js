@@ -113,6 +113,16 @@ function renderResult(target, job, { compact = false } = {}) {
     if (flags.length) target.append(el('ul', {}, flags.map((f) => el('li', {}, f))));
     target.append(el('p', { style: 'margin:0;font-weight:700' }, 'How we got there'));
     target.append(el('ul', {}, (rating.reasons.length ? rating.reasons : ['Nothing stood out either way']).map((r) => el('li', {}, r))));
+    // Hand the job to the report form (this tab only), so nobody has to paste it twice.
+    const report = el('a', { href: '/report', style: 'font-weight:700' }, 'Add it with how the interview went →');
+    report.addEventListener('click', () => {
+      try {
+        sessionStorage.setItem('fsj.report.draft', JSON.stringify(job.source === 'link' ? { url: job.url } : { text: job.description }));
+      } catch {
+        // They'll paste it again; no harm.
+      }
+    });
+    target.append(el('p', { style: 'margin:0;font-size:15px' }, 'Interviewed for this one? ', report));
   } else {
     const link = el('a', { href: '#detector', style: 'font-weight:700' }, 'See the full breakdown');
     target.append(el('p', { style: 'margin:0;font-size:15px' }, flags.length ? `${flags.length} red flag${flags.length === 1 ? '' : 's'}. ` : 'No red flags spotted. ', link));

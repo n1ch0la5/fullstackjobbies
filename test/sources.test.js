@@ -74,3 +74,36 @@ test('salary over $500k is not treated as a salary', async () => {
   assert.equal(extractSalary('Principal track: up to ~$750k cash plus equity'), null);
   assert.deepEqual(extractSalary('$140k-$160k'), { min: 140000, max: 160000, currency: 'USD', interval: 'year' });
 });
+
+// ---- Interview reports ----
+import { summarizeReports, applyReports, reportLines } from '../src/reports.js';
+import { groupReports, urlKey } from '../src/sources/reports.js';
+
+const rep = (o) => ({ job_id: null, job_url: 'https://acme.com/jobs/1', stage: 'interviewed', steps: [], rounds: null, duration: null, salary_upfront: null, tags: [], ...o });
+
+test('reports: same job grouped across link variations', () => {
+  assert.equal(urlKey('https://ACME.com/jobs/1/?utm_source=x#apply'), urlKey('https://acme.com/jobs/1'));
+  const groups = groupReports([rep({}), rep({ job_url: 'https://acme.com/jobs/1/?utm_source=hn' }), rep({ job_id: 'gh:1' })]);
+  assert.equal(groups.length, 2);
+});
+
+test('reports: what interviewees say replaces our guess', () => {
+  const summary = summarizeReports([
+    rep({ steps: ['pairing', 'recruiter_call'], rounds: 3, duration: '2_4w', salary_upfront: true, tags: ['respected_time'] }),
+    rep({ steps: ['pairing', 'live_algorithm'], rounds: 4 }),
+    rep({ stage: 'applied', tags: ['ghosted'] }),
+  ]);
+  assert.equal(summary.count, 3);
+  assert.equal(summary.interviewed, 2);
+  const facts = applyReports({ interviewStyles: ['live_algorithm', 'unpaid_take_home'], rounds: 6 }, summary);
+  // Pairing (2 of 2) and live algorithm (1 of 2, half) count; the unpaid take-home nobody reported is dropped.
+  assert.deepEqual(facts.interviewStyles.sort(), ['live_algorithm', 'pairing']);
+  assert.equal(facts.rounds, 3);
+  assert.equal(facts.reportedBy, 2);
+  assert.ok(reportLines(summary).includes('Pair on real work (2 of 3)'));
+});
+
+test('reports: applied-only reports never change the rating', () => {
+  const facts = { interviewStyles: ['pairing'], rounds: 2 };
+  assert.equal(applyReports(facts, summarizeReports([rep({ stage: 'applied', tags: ['ghosted'] })])), facts);
+});
