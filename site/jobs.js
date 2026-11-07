@@ -18,6 +18,9 @@ const BY_CODE = Object.fromEntries(COUNTRIES.map((c) => [c.code, c]));
 const STORE_KEY = 'fsj.where.v1';
 
 const $ = (id) => document.getElementById(id);
+const STYLE_TAGS = { remote: 'Remote', hybrid: 'Hybrid', onsite: 'On-site' };
+// What the listing says about where the work happens; older entries only have "remote".
+const workStyle = (j) => j.workStyle ?? (j.remote ? 'remote' : 'unknown');
 let allJobs = [];
 let votes = new Map();
 const cardEls = new Map();
@@ -209,7 +212,7 @@ function jobCard(j) {
       el('div', { class: 'tags' },
         el('span', { class: 'tag tag-pay' }, formatPay(j.salary)),
         whereText && el('span', { class: 'tag where-tag' }, whereText),
-        j.remote && el('span', { class: 'tag tag-stack' }, 'Remote'),
+        STYLE_TAGS[workStyle(j)] && el('span', { class: 'tag tag-stack' }, STYLE_TAGS[workStyle(j)]),
         j.rounds && el('span', { class: 'tag tag-int' }, `${j.rounds} rounds`),
         j.interviewStyles.map((s) => el('span', { class: 'tag tag-int' }, STYLE_LABELS[s] ?? s)),
         j.stack.slice(0, 6).map((s) => el('span', { class: 'tag tag-stack' }, s)),
@@ -251,13 +254,13 @@ function render() {
   const q = $('q').value.trim().toLowerCase();
   const min = Number($('min').value);
   const hide = [...document.querySelectorAll('input[name=hide]:checked')].map((c) => c.value);
-  const remoteOnly = $('remote').checked;
+  const styles = [...document.querySelectorAll('input[name=style]:checked')].map((c) => c.value);
   const hideApplied = $('hide-applied').checked;
 
   const shown = allJobs.filter((j) => {
     if (effectiveLevel(j, votes.get(j.id)) < min) return false;
     if (hideApplied && appliedOn(j.id)) return false;
-    if (remoteOnly && !j.remote) return false;
+    if (!styles.includes(workStyle(j))) return false;
     if (!payFits(j)) return false;
     if (hide.some((h) => j.interviewStyles.includes(h))) return false;
     if (!jobFitsWhere(j.where, where.picked, { includeAnywhere: where.anywhere, includeUnstated: where.unstated })) return false;
@@ -302,7 +305,23 @@ for (const h of params.getAll('hide')) {
   if (box) box.checked = true;
 }
 
-for (const id of ['q', 'min', 'remote', 'sort', 'hide-applied']) $(id).addEventListener('input', render);
+for (const id of ['q', 'min', 'sort', 'hide-applied']) $(id).addEventListener('input', render);
+
+// Work style choices are remembered in this browser, like the pay range.
+const STYLE_KEY = 'fsj.styles.v1';
+try {
+  const saved = JSON.parse(localStorage.getItem(STYLE_KEY) ?? 'null');
+  if (Array.isArray(saved)) for (const box of document.querySelectorAll('input[name=style]')) box.checked = saved.includes(box.value);
+} catch {
+  // Storage blocked: show every work style.
+}
+for (const box of document.querySelectorAll('input[name=style]')) {
+  box.addEventListener('input', () => {
+    const picked = [...document.querySelectorAll('input[name=style]:checked')].map((c) => c.value);
+    try { localStorage.setItem(STYLE_KEY, JSON.stringify(picked)); } catch { /* fine for this visit */ }
+    render();
+  });
+}
 for (const box of document.querySelectorAll('input[name=hide]')) box.addEventListener('input', render);
 
 loadWhere();

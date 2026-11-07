@@ -120,10 +120,20 @@ window.fsjLoadGTM = function () {
         <div class="checks">
           <label><input type="checkbox" name="hide" value="live_algorithm"> do a live algorithm test</label>
           <label><input type="checkbox" name="hide" value="unpaid_take_home"> do an unpaid take-home</label>
-          <label><input type="checkbox" id="remote"> go to an office</label>
-          <label id="hide-applied-wrap" hidden><input type="checkbox" id="hide-applied" checked> <span id="hide-applied-label">Hide jobs I've applied to</span></label>
         </div>
       </fieldset>
+      <fieldset id="styles">
+        <legend>Work style</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="style" value="remote" checked> Remote</label>
+          <label><input type="checkbox" name="style" value="hybrid" checked> Hybrid</label>
+          <label><input type="checkbox" name="style" value="onsite" checked> On-site</label>
+          <label><input type="checkbox" name="style" value="unknown" checked> Doesn't say</label>
+        </div>
+      </fieldset>
+      <div id="hide-applied-wrap" class="checks" hidden>
+        <label><input type="checkbox" id="hide-applied" checked> <span id="hide-applied-label">Hide jobs I've applied to</span></label>
+      </div>
     </form>
 
     <p class="count" id="count" aria-live="polite"></p>
