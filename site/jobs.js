@@ -145,11 +145,17 @@ function formatPay(s) {
   return s.interval === 'hour' ? `${range}/hr` : range;
 }
 
+// When the sifter first found the job. firstSeen is a calendar date ("2026-11-06"),
+// so compare calendar days in the viewer's time zone: reading it as a timestamp would
+// treat it as midnight in London and make today's jobs look a day old in the Americas.
 function daysAgo(d) {
-  if (!d) return null;
-  const days = Math.floor((Date.now() - new Date(d).getTime()) / 86400000);
-  if (Number.isNaN(days)) return null;
-  return days <= 0 ? 'New today' : days === 1 ? 'Yesterday' : `${days} days ago`;
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d ?? '');
+  if (!m) return null;
+  const found = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const days = Math.round((today - found) / 86400000);
+  return days <= 0 ? 'Found today' : days === 1 ? 'Found yesterday' : `Found ${days} days ago`;
 }
 
 function jobCard(j) {
