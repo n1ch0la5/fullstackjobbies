@@ -35,6 +35,18 @@ export function jobDescription(job) {
   return bits.join(' ');
 }
 
+function dateLabel(job) {
+  const fmt = (v) => {
+    const plain = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v ?? '');
+    const d = plain ? new Date(Date.UTC(+plain[1], +plain[2] - 1, +plain[3], 12)) : new Date(v);
+    return Number.isNaN(d.getTime()) ? null : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' });
+  };
+  const posted = job.postedAt && fmt(job.postedAt);
+  if (posted) return `Posted ${posted}`;
+  const found = fmt(job.firstSeen);
+  return found ? `Found ${found}` : '';
+}
+
 export function renderJobPage(job, { siteUrl, gtm, where, description }) {
   const url = `${siteUrl}/job/${job.slug}`;
   const pay = formatPay(job.salary);
@@ -104,12 +116,14 @@ ${gtm}
       <div>
         <h1 style="font-size: clamp(36px, 5vw, 56px)">${esc(job.title)}</h1>
         <p class="lede" style="margin-top: 10px">${esc([job.company, job.location].filter(Boolean).join(' · '))}</p>
+        <p class="mono" style="margin: 6px 0 0; font-size: 13px; color: var(--ink-3)">${esc(dateLabel(job))}</p>
         <div class="tags" style="margin-top: 24px">
           ${tags}
         </div>
         <p style="margin-top: 24px; max-width: 40em">${esc(description)}</p>
         <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
           <a class="btn btn-accent" href="${esc(job.url)}" target="_blank" rel="noopener">${viaRemoteOK ? 'View on Remote OK' : 'Apply on their site'}</a>
+          <span id="applied-mount"></span>
           ${viaRemoteOK ? `<span style="font-size: 14px; color: var(--ink-3)">Listing via <a href="${esc(job.via.url)}" target="_blank">Remote OK</a></span>` : ''}
         </div>
       </div>

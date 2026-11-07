@@ -88,6 +88,13 @@ window.fsjLoadGTM = function () {
         <input id="q" type="search" placeholder="react, rails, Berlin…">
       </div>
       <div>
+        <label for="sort">Sort by</label>
+        <select id="sort">
+          <option value="rating" selected>Best rated</option>
+          <option value="newest">Newest posted</option>
+        </select>
+      </div>
+      <div>
         <label for="min">At least</label>
         <select id="min">
           <option value="0" selected>Anything listed</option>
@@ -102,6 +109,7 @@ window.fsjLoadGTM = function () {
           <label><input type="checkbox" name="hide" value="live_algorithm"> do a live algorithm test</label>
           <label><input type="checkbox" name="hide" value="unpaid_take_home"> do an unpaid take-home</label>
           <label><input type="checkbox" id="remote"> go to an office</label>
+          <label id="hide-applied-wrap" hidden><input type="checkbox" id="hide-applied" checked> <span id="hide-applied-label">Hide jobs I've applied to</span></label>
         </div>
       </fieldset>
     </form>

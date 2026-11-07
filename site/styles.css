@@ -338,3 +338,16 @@ h1, h2, h3, .job-link, p code, li code { overflow-wrap: anywhere; }
 .prose { margin-top: 40px; }
 .prose h2 { font-size: 26px; margin: 36px 0 10px; }
 .prose p { margin: 0 0 14px; font-size: 17px; color: var(--ink-2); }
+
+/* Applied tracking */
+.applied-btn {
+  font: 600 14px var(--body); color: var(--ink); background: var(--paper); cursor: pointer;
+  border: 2px solid var(--ink); border-radius: 10px; padding: 8px 12px;
+}
+.applied-btn:hover { background: var(--butter); }
+.applied-btn[aria-pressed="true"] { background: #E6F7E9; border-color: #1F7A45; color: #135C32; }
+.job.is-applied { background: #F6F3EA; border-style: dashed; }
+.job.is-applied .job-main h3, .job.is-applied .job-main .co { color: var(--ink-3); }
+
+/* Anything marked hidden stays hidden, whatever its layout styles say */
+[hidden] { display: none !important; }

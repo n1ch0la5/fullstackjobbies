@@ -10,13 +10,14 @@ export async function fetchGreenhouse(company) {
   return (data.jobs ?? []).map((j) => ({
     source: 'greenhouse',
     sourceId: `gh:${company.slug}:${j.id}`,
-    company: company.name ?? company.slug,
+    company: j.company_name || company.name || company.slug,
     title: j.title ?? '',
     url: j.absolute_url,
     location: j.location?.name ?? '',
     remote: null,
     description: htmlToText(j.content ?? ''),
     salary: null,
-    postedAt: j.updated_at ?? null,
+    // first_published is when the job went up; updated_at is just the last edit.
+    postedAt: j.first_published ?? null,
   }));
 }

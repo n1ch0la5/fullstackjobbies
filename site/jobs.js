@@ -2,6 +2,7 @@
 import { COUNTRIES, REGIONS, jobFitsWhere, describeWhere } from '/lib/location.js';
 import { LEVELS } from '/lib/score.js';
 import { fetchSummaries, effectiveLevel, voteWidget } from '/votes.js';
+import { appliedOn, appliedButton, appliedCount, relative, daysSince } from '/applied.js';
 
 const STYLE_LABELS = {
   live_algorithm: 'Live algorithm test',
@@ -145,18 +146,6 @@ function formatPay(s) {
   return s.interval === 'hour' ? `${range}/hr` : range;
 }
 
-// When the sifter first found the job. firstSeen is a calendar date ("2026-11-06"),
-// so compare calendar days in the viewer's time zone: reading it as a timestamp would
-// treat it as midnight in London and make today's jobs look a day old in the Americas.
-function daysAgo(d) {
-  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d ?? '');
-  if (!m) return null;
-  const found = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const days = Math.round((today - found) / 86400000);
-  return days <= 0 ? 'Found today' : days === 1 ? 'Found yesterday' : `Found ${days} days ago`;
-}
 
 function jobCard(j) {
   const summary = votes.get(j.id);
@@ -165,7 +154,10 @@ function jobCard(j) {
   const overridden = lv !== j.rating.level;
   const whereText = describeWhere(j.where);
   const viaRemoteOK = j.via?.name === 'Remote OK';
-  return el('article', { class: 'job' },
+  const applied = appliedOn(j.id);
+  // Posting date when the source gives one; otherwise when we found it.
+  const when = (j.postedAt && relative(j.postedAt, 'Posted')) || relative(j.firstSeen, 'Found');
+  return el('article', { class: applied ? 'job is-applied' : 'job' },
     el('div', { class: 'job-main' },
       el('h3', {}, j.slug ? el('a', { href: `/job/${j.slug}`, class: 'job-link' }, j.title) : j.title),
       el('p', { class: 'co' }, [j.company, j.location].filter(Boolean).join(' · ')),
@@ -193,9 +185,21 @@ function jobCard(j) {
         el('summary', {}, 'Why this rating'),
         el('ul', {}, [...j.rating.reasons, ...j.redFlags.map((f) => `red flag: ${f}`)].map((r) => el('li', {}, r))),
       ),
-      el('span', { style: 'font-size:13px;color:var(--ink-3)' }, daysAgo(j.firstSeen)),
+      // Grey the card out but keep it in place, so it doesn't vanish under your cursor;
+      // "Hide jobs I've applied to" takes effect on the next filter change or visit.
+      appliedButton(j.id, (on, btn) => {
+        btn.closest('.job')?.classList.toggle('is-applied', on);
+        updateAppliedFilter();
+      }),
+      el('span', { style: 'font-size:13px;color:var(--ink-3)' }, when),
     ),
   );
+}
+
+function updateAppliedFilter() {
+  const n = appliedCount();
+  $('hide-applied-wrap').hidden = n === 0;
+  $('hide-applied-label').textContent = `Hide jobs I've applied to (${n})`;
 }
 
 function render() {
@@ -203,9 +207,11 @@ function render() {
   const min = Number($('min').value);
   const hide = [...document.querySelectorAll('input[name=hide]:checked')].map((c) => c.value);
   const remoteOnly = $('remote').checked;
+  const hideApplied = $('hide-applied').checked;
 
   const shown = allJobs.filter((j) => {
     if (effectiveLevel(j, votes.get(j.id)) < min) return false;
+    if (hideApplied && appliedOn(j.id)) return false;
     if (remoteOnly && !j.remote) return false;
     if (hide.some((h) => j.interviewStyles.includes(h))) return false;
     if (!jobFitsWhere(j.where, where.picked, { includeAnywhere: where.anywhere, includeUnstated: where.unstated })) return false;
@@ -216,10 +222,14 @@ function render() {
     return true;
   });
 
+  updateAppliedFilter();
   const placeNote = where.picked.length ? ` you can work from ${where.picked.map((c) => BY_CODE[c].flag).join(' ')}` : '';
   $('count').textContent = `${shown.length} of ${allJobs.length} jobs${placeNote}`;
   const list = $('jobs');
-  shown.sort((a, b) => effectiveLevel(b, votes.get(b.id)) - effectiveLevel(a, votes.get(a.id)) || (b.firstSeen > a.firstSeen ? 1 : -1));
+  const age = (j) => daysSince(j.postedAt || j.firstSeen) ?? 9999;
+  const byRating = (a, b) => effectiveLevel(b, votes.get(b.id)) - effectiveLevel(a, votes.get(a.id)) || age(a) - age(b);
+  const byNewest = (a, b) => age(a) - age(b) || effectiveLevel(b, votes.get(b.id)) - effectiveLevel(a, votes.get(a.id));
+  shown.sort($('sort').value === 'newest' ? byNewest : byRating);
   cardEls.clear();
   list.replaceChildren(...shown.map((j) => {
     const card = jobCard(j);
@@ -244,7 +254,7 @@ for (const h of params.getAll('hide')) {
   if (box) box.checked = true;
 }
 
-for (const id of ['q', 'min', 'remote']) $(id).addEventListener('input', render);
+for (const id of ['q', 'min', 'remote', 'sort', 'hide-applied']) $(id).addEventListener('input', render);
 for (const box of document.querySelectorAll('input[name=hide]')) box.addEventListener('input', render);
 
 loadWhere();
