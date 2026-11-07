@@ -1,77 +1,6 @@
 {
-  "updatedAt": "2026-11-07T12:17:55.991Z",
+  "updatedAt": "2026-11-07T16:28:00.244Z",
   "jobs": [
-    {
-      "id": "hn:50342365",
-      "company": "REVNODE",
-      "title": "Full Stack Engineer",
-      "url": "https://news.ycombinator.com/item?id=50342365",
-      "location": "Remote (US)",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 50000,
-        "max": 50000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 0,
-        "name": "Bloody mess",
-        "emoji": "☠️",
-        "reasons": [
-          "floor: commission only"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-02T19:32:53.000Z",
-      "firstSeen": "2026-11-06",
-      "slug": "revnode-full-stack-engineer-ywx67b"
-    },
-    {
-      "id": "hn:50402383",
-      "company": "BCDRPulse",
-      "title": "Full Stack Engineer",
-      "url": "https://news.ycombinator.com/item?id=50402383",
-      "location": "REMOTE (worldwide)",
-      "where": {
-        "countries": [],
-        "regions": [],
-        "anywhere": true
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": null,
-      "stack": [],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 0,
-        "name": "Bloody mess",
-        "emoji": "☠️",
-        "reasons": [
-          "floor: commission only"
-        ]
-      },
-      "source": "hn",
-      "postedAt": "2026-11-07T07:17:02.000Z",
-      "firstSeen": "2026-11-07",
-      "slug": "bcdrpulse-full-stack-engineer-bbapkg"
-    },
     {
       "id": "gh:affirm:8040392003",
       "company": "Affirm",
@@ -118,6 +47,7 @@
       "source": "greenhouse",
       "postedAt": "2026-10-27T09:26:59-04:00",
       "firstSeen": "2026-11-06",
+      "reports": null,
       "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-r0nqpw"
     },
     {
@@ -166,82 +96,8 @@
       "source": "greenhouse",
       "postedAt": "2026-10-27T09:27:59-04:00",
       "firstSeen": "2026-11-06",
+      "reports": null,
       "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-26j8v4"
-    },
-    {
-      "id": "rok:1137475",
-      "company": "Lemon.io",
-      "title": "Senior React Full stack Developer",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
-      "location": "Remote",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [
-          "EMEA"
-        ],
-        "anywhere": false
-      },
-      "via": {
-        "name": "Remote OK",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475"
-      },
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 80000,
-        "max": 200000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "vue",
-        "angular",
-        "svelte",
-        "next.js",
-        "nuxt",
-        "typescript",
-        "javascript",
-        "node",
-        "python",
-        "ruby",
-        "golang",
-        "rust",
-        "java",
-        "spring",
-        "c#",
-        ".net",
-        "php",
-        "laravel",
-        "aws",
-        "gcp",
-        "azure",
-        "react native",
-        "swift",
-        "flutter"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [
-        "fast-paced"
-      ],
-      "rating": {
-        "level": 1,
-        "name": "Steaming pile",
-        "emoji": "💩",
-        "reasons": [
-          "+0.5 decent pay",
-          "-0.5 suspiciously wide range",
-          "-0.5 kitchen-sink stack",
-          "-0.5 1 red flag(s)"
-        ]
-      },
-      "source": "remoteok",
-      "postedAt": "2026-10-09T13:09:18+00:00",
-      "firstSeen": "2026-11-06",
-      "slug": "lemon-io-senior-react-full-stack-developer-wji7rt"
     }
   ]
 }

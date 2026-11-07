@@ -1487,7 +1487,7 @@
       "slug": "gausslabs",
       "name": "Gausslabs",
       "discovered": "2026-11-06",
-      "fails": 0,
+      "fails": 1,
       "nameChecked": true
     },
     {
@@ -1509,44 +1509,50 @@
     {
       "ats": "lever",
       "slug": "atomcomputing",
-      "name": "atomcomputing",
+      "name": "Atomcomputing",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "forus",
-      "name": "forus",
+      "name": "Forus",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "onecrew",
-      "name": "onecrew",
+      "name": "Onecrew",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "confido",
-      "name": "confido",
+      "name": "Confido",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "brightcoreenergy",
-      "name": "brightcoreenergy",
+      "name": "Brightcore Energy",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "maincode",
-      "name": "maincode",
+      "name": "Maincode",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
@@ -1559,268 +1565,306 @@
     {
       "ats": "greenhouse",
       "slug": "doubleverify",
-      "name": "doubleverify",
+      "name": "DoubleVerify",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "thealleninstitute",
-      "name": "thealleninstitute",
+      "name": "The Allen Institute for Artificial Intelligence",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "wirescreen",
-      "name": "wirescreen",
+      "name": "Wirescreen",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "rho",
-      "name": "rho",
+      "name": "Rho",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "prolific",
-      "name": "prolific",
+      "name": "Prolific ",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "antithesis",
-      "name": "antithesis",
+      "name": "Antithesis",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "distru",
-      "name": "distru",
+      "name": "Distru",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "aureliussystems",
-      "name": "aureliussystems",
+      "name": "Aureliussystems",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "workable",
       "slug": "atria-health",
-      "name": "atria-health",
+      "name": "Atria Health",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "spruceid",
-      "name": "spruceid",
+      "name": "Spruceid",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "ro",
-      "name": "ro",
+      "name": "Ro",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "complement",
-      "name": "complement",
+      "name": "Complement",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "obsidiansecurity",
-      "name": "obsidiansecurity",
+      "name": "Obsidian Security",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "finnapp",
-      "name": "finnapp",
+      "name": "FINN",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "9-mothers",
-      "name": "9-mothers",
+      "name": "9 Mothers",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "mentimeter",
-      "name": "mentimeter",
+      "name": "Mentimeter",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "beautifulai",
-      "name": "beautifulai",
+      "name": "Beautiful.ai",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "weave",
-      "name": "weave",
+      "name": "Weave",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "amo",
-      "name": "amo",
+      "name": "Amo",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "hive.co",
-      "name": "hive.co",
+      "name": "Hive Co",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "ditto",
-      "name": "ditto",
+      "name": "Ditto",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "opsmill",
-      "name": "opsmill",
+      "name": "Opsmill",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "proton",
-      "name": "proton",
+      "name": "Proton",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "safi",
-      "name": "safi",
+      "name": "Safi",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "shepherd",
-      "name": "shepherd",
+      "name": "Shepherd",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "prompt",
-      "name": "prompt",
+      "name": "Prompt",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "kepler-ai",
-      "name": "kepler-ai",
+      "name": "Kepler AI",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "ridezum",
-      "name": "ridezum",
+      "name": "Ridezum",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "scribdinc",
-      "name": "scribdinc",
+      "name": "Scribd",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "authorium",
-      "name": "authorium",
+      "name": "Authorium",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "chestnut",
-      "name": "chestnut",
+      "name": "Chestnut",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "workable",
       "slug": "justpark",
-      "name": "justpark",
+      "name": "Justpark",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "alembic",
-      "name": "alembic",
+      "name": "Alembic",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "planetscale",
-      "name": "planetscale",
+      "name": "PlanetScale",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "fathom.video",
-      "name": "fathom.video",
+      "name": "Fathom Video",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "salesjack",
-      "name": "salesjack",
+      "name": "Salesjack",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "neo-tax",
-      "name": "neo-tax",
+      "name": "Neo Tax",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "spacex",
-      "name": "spacex",
+      "name": "SpaceX",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
@@ -1833,51 +1877,58 @@
     {
       "ats": "ashby",
       "slug": "kiloforge",
-      "name": "kiloforge",
+      "name": "Kiloforge",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "workable",
       "slug": "akeno",
-      "name": "akeno",
+      "name": "Akeno",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "recruitee",
       "slug": "exeon",
-      "name": "exeon",
+      "name": "Exeon",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "mapbox",
-      "name": "mapbox",
+      "name": "Mapbox",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "articulate",
-      "name": "articulate",
+      "name": "Articulate",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "kong",
-      "name": "kong",
+      "name": "Kong",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "tracelabs",
-      "name": "tracelabs",
+      "name": "Tracelabs",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
@@ -1890,23 +1941,26 @@
     {
       "ats": "greenhouse",
       "slug": "piramidalinc",
-      "name": "piramidalinc",
+      "name": "Piramidal, Inc.",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
       "slug": "aquabyte",
-      "name": "aquabyte",
+      "name": "Aquabyte",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "tetsuwan",
-      "name": "tetsuwan",
+      "name": "Tetsuwan",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
@@ -1919,16 +1973,18 @@
     {
       "ats": "lever",
       "slug": "prolific-machines",
-      "name": "prolific-machines",
+      "name": "Prolific Machines",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "greenhouse",
       "slug": "vestwell",
-      "name": "vestwell",
+      "name": "Vestwell",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "lever",
@@ -1941,23 +1997,26 @@
     {
       "ats": "ashby",
       "slug": "eagle",
-      "name": "eagle",
+      "name": "Eagle",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "compa",
-      "name": "compa",
+      "name": "Compa",
       "discovered": "2026-11-06",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     },
     {
       "ats": "ashby",
       "slug": "3ive",
       "name": "3ive",
       "discovered": "2026-11-07",
-      "fails": 0
+      "fails": 0,
+      "nameChecked": true
     }
   ]
 }
