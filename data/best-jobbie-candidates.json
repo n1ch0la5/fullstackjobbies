@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-06T22:22:12.635Z",
+  "updatedAt": "2026-11-07T01:52:26.309Z",
   "jobs": [
     {
-      "id": "gh:spacex:8505483002",
-      "company": "spacex",
-      "title": "Sr. Full Stack Software Engineer (Starlink)",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8505483002?gh_jid=8505483002",
-      "location": "Palo Alto, CA",
+      "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
+      "company": "OpenAI",
+      "title": "Full Stack Software Engineer, Consumer Verticals",
+      "url": "https://jobs.ashbyhq.com/openai/39e06ef9-5e62-425d-81e2-e8690188011f",
+      "location": "San Francisco",
       "where": {
         "countries": [
           "US"
@@ -15,79 +15,18 @@
         "anywhere": false
       },
       "via": null,
-      "remote": null,
+      "remote": true,
+      "workStyle": "remote",
       "salary": {
-        "min": 170000,
-        "max": 170000,
+        "min": 347000,
+        "max": 385000,
         "currency": "USD",
         "interval": "year"
       },
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-04T18:30:16-05:00",
-      "firstSeen": "2026-11-06",
-      "slug": "spacex-sr-full-stack-software-engineer-starlink-s14wh1"
-    },
-    {
-      "id": "wk:seeq:802346B20E",
-      "company": "Seeq",
-      "title": "Full Stack Software Engineer - Staff or Principal",
-      "url": "https://apply.workable.com/j/802346B20E",
-      "location": "Remote · Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "salary": {
-        "min": 265000,
-        "max": 310000,
-        "currency": "CAD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "python",
-        "java",
-        "kotlin",
-        "postgres",
-        "graphql",
-        "tailwind"
-      ],
+      "stack": [],
       "rounds": null,
       "interviewStyles": [
-        "pairing"
+        "conversation"
       ],
       "redFlags": [],
       "rating": {
@@ -95,16 +34,16 @@
         "name": "Rocket ship",
         "emoji": "🚀",
         "reasons": [
-          "+1.25 strong pay",
+          "+1.75 top-band pay",
           "+0.25 clear salary range",
           "+0.75 humane interviews",
           "+0.25 no red flags"
         ]
       },
-      "source": "workable",
-      "postedAt": "2026-09-10",
+      "source": "ashby",
+      "postedAt": "2026-06-15T18:16:20.513+00:00",
       "firstSeen": "2026-11-06",
-      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj"
+      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon"
     },
     {
       "id": "wk:seeq:610FB07CEB",
@@ -121,6 +60,7 @@
       },
       "via": null,
       "remote": true,
+      "workStyle": "remote",
       "salary": {
         "min": 187500,
         "max": 220000,
@@ -159,11 +99,118 @@
       "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt"
     },
     {
-      "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
-      "company": "openai",
-      "title": "Full Stack Software Engineer, Consumer Verticals",
-      "url": "https://jobs.ashbyhq.com/openai/39e06ef9-5e62-425d-81e2-e8690188011f",
-      "location": "San Francisco",
+      "id": "wk:seeq:802346B20E",
+      "company": "Seeq",
+      "title": "Full Stack Software Engineer - Staff or Principal",
+      "url": "https://apply.workable.com/j/802346B20E",
+      "location": "Remote · Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 265000,
+        "max": 310000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python",
+        "java",
+        "kotlin",
+        "postgres",
+        "graphql",
+        "tailwind"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.75 humane interviews",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "workable",
+      "postedAt": "2026-09-10",
+      "firstSeen": "2026-11-06",
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj"
+    },
+    {
+      "id": "gh:spacex:8505483002",
+      "company": "SpaceX",
+      "title": "Sr. Full Stack Software Engineer (Starlink)",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8505483002?gh_jid=8505483002",
+      "location": "Palo Alto, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 170000,
+        "max": 170000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.5 1 rounds",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-04-14T15:59:02-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "spacex-sr-full-stack-software-engineer-starlink-s14wh1"
+    },
+    {
+      "id": "gh:affirm:7978722003",
+      "company": "Affirm",
+      "title": "Senior Staff Software Engineer, Fullstack (Marketplace and Consumer Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7978722003",
+      "location": "Remote US",
       "where": {
         "countries": [
           "US"
@@ -173,270 +220,18 @@
       },
       "via": null,
       "remote": true,
+      "workStyle": "remote",
       "salary": {
-        "min": 347000,
-        "max": 385000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [],
-      "rounds": null,
-      "interviewStyles": [
-        "conversation"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 clear salary range",
-          "+0.75 humane interviews",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2026-06-15T18:16:20.513+00:00",
-      "firstSeen": "2026-11-06",
-      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon"
-    },
-    {
-      "id": "gh:mattermost:5405812008",
-      "company": "mattermost",
-      "title": "Staff Full Stack Engineer",
-      "url": "https://job-boards.greenhouse.io/mattermost/jobs/5405812008",
-      "location": "Toronto, Ontario, Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "salary": {
-        "min": 195001,
-        "max": 238965,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "redis",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-08-26T14:39:44-04:00",
-      "firstSeen": "2026-11-06",
-      "slug": "mattermost-staff-full-stack-engineer-bxf0r3"
-    },
-    {
-      "id": "ab:watershed:c24a97b1-e9c2-4863-bbb5-f28446174d46",
-      "company": "watershed",
-      "title": "Senior software engineer, full-stack",
-      "url": "https://jobs.ashbyhq.com/Watershed/c24a97b1-e9c2-4863-bbb5-f28446174d46",
-      "location": "New York City",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": false,
-      "salary": {
-        "min": 202100,
-        "max": 255000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "node"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2026-08-12T21:49:48.001+00:00",
-      "firstSeen": "2026-11-06",
-      "slug": "watershed-senior-software-engineer-full-stack-u48sn3"
-    },
-    {
-      "id": "ab:openai:fcb0ed1a-9329-4e8f-8aab-92bb626d8141",
-      "company": "openai",
-      "title": "Founding Full Stack Software Engineer, Legal",
-      "url": "https://jobs.ashbyhq.com/openai/fcb0ed1a-9329-4e8f-8aab-92bb626d8141",
-      "location": "San Francisco",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "salary": {
-        "min": 347000,
-        "max": 445000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2026-06-29T00:06:01.652+00:00",
-      "firstSeen": "2026-11-06",
-      "slug": "openai-founding-full-stack-software-engineer-legal-ervkn9"
-    },
-    {
-      "id": "ab:openai:73e56947-5d8b-414d-a0ac-9dc9b04e2406",
-      "company": "openai",
-      "title": "Software Engineer, Full-Stack - Core Experimentation",
-      "url": "https://jobs.ashbyhq.com/openai/73e56947-5d8b-414d-a0ac-9dc9b04e2406",
-      "location": "Seattle",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "salary": {
-        "min": 347000,
-        "max": 445000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2026-03-17T00:54:56.512+00:00",
-      "firstSeen": "2026-11-06",
-      "slug": "openai-software-engineer-full-stack-core-experimentation-5rrgop"
-    },
-    {
-      "id": "gh:roblox:7844201",
-      "company": "Roblox",
-      "title": "Senior Software Engineer (Full Stack), Ads User Experience ",
-      "url": "https://careers.roblox.com/jobs/7844201?gh_jid=7844201",
-      "location": "San Mateo, CA, United States",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "salary": {
-        "min": 242100,
-        "max": 242100,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-10-13T20:05:20-04:00",
-      "firstSeen": "2026-11-06",
-      "slug": "roblox-senior-software-engineer-full-stack-ads-user-experience-0tcgnw"
-    },
-    {
-      "id": "gh:roblox:8164933",
-      "company": "Roblox",
-      "title": "Senior Frontend/Fullstack Software Engineer, Sharing",
-      "url": "https://careers.roblox.com/jobs/8164933?gh_jid=8164933",
-      "location": "San Mateo, CA, United States",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "salary": {
-        "min": 243290,
-        "max": 243290,
+        "min": 265000,
+        "max": 325000,
         "currency": "USD",
         "interval": "year"
       },
       "stack": [
         "react",
         "javascript",
-        "graphql"
+        "kotlin",
+        "react native"
       ],
       "rounds": null,
       "interviewStyles": [],
@@ -452,9 +247,242 @@
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-11-05T14:39:08-05:00",
+      "postedAt": "2026-09-03T11:30:33-04:00",
       "firstSeen": "2026-11-06",
-      "slug": "roblox-senior-frontend-fullstack-software-engineer-sharing-se6xhy"
+      "slug": "affirm-senior-staff-software-engineer-fullstack-marketplace-and-con-7efawi"
+    },
+    {
+      "id": "gh:affirm:8162556003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Account Management)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8162556003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 230000,
+        "max": 290000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-05T11:30:13-05:00",
+      "firstSeen": "2026-11-06",
+      "slug": "affirm-staff-software-engineer-fullstack-account-management-umdbq1"
+    },
+    {
+      "id": "gh:affirm:8040271003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Card Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8040271003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 230000,
+        "max": 290000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes",
+        "react native"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-02T21:35:11-05:00",
+      "firstSeen": "2026-11-06",
+      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-59i10w"
+    },
+    {
+      "id": "gh:scaleai:4713608005",
+      "company": "Scale AI",
+      "title": "Staff Software Engineer, Full Stack - Gen AI ",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4713608005",
+      "location": "New York, NY; San Francisco, CA; Seattle, WA; New York, NY",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 252000,
+        "max": 252000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "javascript",
+        "aws",
+        "gcp",
+        "azure",
+        "kubernetes"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-07-09T14:54:54-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "scale-ai-staff-software-engineer-full-stack-gen-ai-8zex16"
+    },
+    {
+      "id": "gh:anthropic:5369710008",
+      "company": "Anthropic",
+      "title": "Staff+ Fullstack Software Engineer, Safeguards Engineering",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5369710008",
+      "location": "San Francisco, CA | New York City, NY",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 405000,
+        "max": 405000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-09T10:55:52-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "anthropic-staff-fullstack-software-engineer-safeguards-engineering-uooy2z"
+    },
+    {
+      "id": "gh:anthropic:5454882008",
+      "company": "Anthropic",
+      "title": "Staff+ Software Engineer, Enterprise (Full Stack)",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5454882008",
+      "location": "San Francisco, CA | New York City, NY",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 405000,
+        "max": 405000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.75 top-band pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-15T23:38:43-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "anthropic-staff-software-engineer-enterprise-full-stack-pbrx74"
     }
   ]
 }
