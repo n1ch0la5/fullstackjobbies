@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T01:52:26.309Z",
+  "updatedAt": "2026-11-07T12:17:55.991Z",
   "jobs": [
     {
       "id": "hn:50342365",
@@ -39,6 +39,38 @@
       "postedAt": "2026-11-02T19:32:53.000Z",
       "firstSeen": "2026-11-06",
       "slug": "revnode-full-stack-engineer-ywx67b"
+    },
+    {
+      "id": "hn:50402383",
+      "company": "BCDRPulse",
+      "title": "Full Stack Engineer",
+      "url": "https://news.ycombinator.com/item?id=50402383",
+      "location": "REMOTE (worldwide)",
+      "where": {
+        "countries": [],
+        "regions": [],
+        "anywhere": true
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": null,
+      "stack": [],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 0,
+        "name": "Bloody mess",
+        "emoji": "☠️",
+        "reasons": [
+          "floor: commission only"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-07T07:17:02.000Z",
+      "firstSeen": "2026-11-07",
+      "slug": "bcdrpulse-full-stack-engineer-bbapkg"
     },
     {
       "id": "gh:affirm:8040392003",

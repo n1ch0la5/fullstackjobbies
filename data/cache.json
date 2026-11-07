@@ -1834,22 +1834,34 @@
     },
     "firstSeen": "2026-11-07"
   },
-  "rok:1137693": {
-    "hash": "0fe87f3e690e2b34",
+  "hn:50402383": {
+    "hash": "6a53860e2368f4ea",
     "facts": {
-      "salary": {
-        "min": 180200,
-        "max": 180200,
-        "currency": "USD",
-        "interval": "year"
-      },
+      "salary": null,
+      "stack": [],
+      "remote": true,
+      "workStyle": "remote",
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [
+        "commission only"
+      ],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-07"
+  },
+  "hn:50403646": {
+    "hash": "b1470a75ba4332fa",
+    "facts": {
+      "salary": null,
       "stack": [
         "react",
+        "vue",
+        "next.js",
+        "nuxt",
         "typescript",
-        "python",
-        "php",
-        "postgres",
-        "golang"
+        "tailwind"
       ],
       "remote": true,
       "workStyle": "remote",
@@ -1862,7 +1874,7 @@
     "firstSeen": "2026-11-07"
   },
   "rok:1137475": {
-    "hash": "11edf9142d90e0ff",
+    "hash": "2408527a7bb6d0ca",
     "facts": {
       "salary": {
         "min": 80000,
@@ -1910,7 +1922,7 @@
     "firstSeen": "2026-11-06"
   },
   "rok:1137062": {
-    "hash": "1950accc7f105393",
+    "hash": "5c1e85657e5f3e2f",
     "facts": {
       "salary": null,
       "stack": [
@@ -3566,18 +3578,14 @@
     "firstSeen": "2026-11-06"
   },
   "gh:affirm:7872398003": {
-    "hash": "27a728b795d18c4f",
+    "hash": "67e13f138879695b",
     "facts": {
-      "salary": {
-        "min": 185000,
-        "max": 245000,
-        "currency": "USD",
-        "interval": "year"
-      },
+      "salary": null,
       "stack": [
         "python"
       ],
       "remote": true,
+      "workStyle": "remote",
       "rounds": null,
       "interviewStyles": [],
       "redFlags": [],
@@ -4474,40 +4482,12 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:databricks:8029679002": {
-    "hash": "bcbab855d6105764",
-    "facts": {
-      "salary": null,
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        "aws",
-        "gcp",
-        "azure",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
-  "gh:databricks:7898766002": {
-    "hash": "1d6614d049cfd896",
+  "gh:databricks:8099342002": {
+    "hash": "3b4ffeaa925f851d",
     "facts": {
       "salary": {
-        "min": 166000,
-        "max": 166000,
+        "min": 146200,
+        "max": 146200,
         "currency": "USD",
         "interval": "year"
       },
@@ -4515,8 +4495,10 @@
         "react",
         "angular",
         "javascript",
+        "node",
         "python",
         "java",
+        "c#",
         "aws",
         "gcp",
         "azure",
@@ -4599,12 +4581,12 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:databricks:8099342002": {
-    "hash": "3b4ffeaa925f851d",
+  "gh:databricks:7898766002": {
+    "hash": "1d6614d049cfd896",
     "facts": {
       "salary": {
-        "min": 146200,
-        "max": 146200,
+        "min": 166000,
+        "max": 166000,
         "currency": "USD",
         "interval": "year"
       },
@@ -4612,7 +4594,32 @@
         "react",
         "angular",
         "javascript",
-        "node",
+        "python",
+        "java",
+        "aws",
+        "gcp",
+        "azure",
+        "kubernetes",
+        "docker",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
+  "gh:databricks:8029679002": {
+    "hash": "bcbab855d6105764",
+    "facts": {
+      "salary": null,
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
         "python",
         "java",
         "c#",
@@ -4621,6 +4628,7 @@
         "azure",
         "kubernetes",
         "docker",
+        "terraform",
         "golang"
       ],
       "remote": null,
@@ -4716,6 +4724,27 @@
     },
     "firstSeen": "2026-11-06"
   },
+  "gh:databricks:8220836002": {
+    "hash": "7b9b77ceeace3477",
+    "facts": {
+      "salary": {
+        "min": 192000,
+        "max": 192000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [],
+      "remote": null,
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
   "gh:databricks:8220840002": {
     "hash": "249802695be1da4f",
     "facts": {
@@ -4733,27 +4762,6 @@
       "rounds": null,
       "interviewStyles": [],
       "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
-  "gh:databricks:8220836002": {
-    "hash": "7b9b77ceeace3477",
-    "facts": {
-      "salary": {
-        "min": 192000,
-        "max": 192000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [],
-      "remote": null,
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [
-        "fast-paced"
-      ],
       "severeFlags": [],
       "extractedBy": "rules"
     },
@@ -6636,31 +6644,6 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "lv:shieldai:3b4ee7c2-7daf-48b2-bfb2-bdb6ebdcd515": {
-    "hash": "713aaa9467b6c762",
-    "facts": {
-      "salary": {
-        "min": 130000,
-        "max": 240000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "python",
-        "kubernetes",
-        "golang"
-      ],
-      "remote": false,
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
   "lv:shieldai:f3739fe9-9901-4dba-b970-a6a19423a2e6": {
     "hash": "120297fc8337e4d5",
     "facts": {
@@ -8494,63 +8477,6 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:spacex:8710146002": {
-    "hash": "1d33852335580bbd",
-    "facts": {
-      "salary": null,
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
-  "gh:spacex:8701392002": {
-    "hash": "308eec3f5dd0f185",
-    "facts": {
-      "salary": {
-        "min": 125000,
-        "max": 125000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
   "gh:spacex:8681166002": {
     "hash": "9c2607a9b08393bd",
     "facts": {
@@ -8588,6 +8514,63 @@
       "salary": {
         "min": 135000,
         "max": 135000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
+  "gh:spacex:8710146002": {
+    "hash": "1d33852335580bbd",
+    "facts": {
+      "salary": null,
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
+  "gh:spacex:8701392002": {
+    "hash": "308eec3f5dd0f185",
+    "facts": {
+      "salary": {
+        "min": 125000,
+        "max": 125000,
         "currency": "USD",
         "interval": "year"
       },
@@ -8675,6 +8658,32 @@
     },
     "firstSeen": "2026-11-06"
   },
+  "gh:spacex:8837547002": {
+    "hash": "2ad372b439bf3506",
+    "facts": {
+      "salary": null,
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
   "gh:spacex:8784864002": {
     "hash": "a9140d44f4f7da4f",
     "facts": {
@@ -8699,32 +8708,6 @@
       ],
       "remote": null,
       "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
-  "gh:spacex:8837547002": {
-    "hash": "2ad372b439bf3506",
-    "facts": {
-      "salary": null,
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": null,
       "interviewStyles": [],
       "redFlags": [],
       "severeFlags": [],
@@ -8950,32 +8933,6 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:spacex:8741940002": {
-    "hash": "97037ed3fefe49e0",
-    "facts": {
-      "salary": null,
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
   "gh:spacex:8785502002": {
     "hash": "b5b2922eff5390f5",
     "facts": {
@@ -9000,6 +8957,32 @@
       ],
       "remote": null,
       "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
+  "gh:spacex:8741940002": {
+    "hash": "97037ed3fefe49e0",
+    "facts": {
+      "salary": null,
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": null,
       "interviewStyles": [],
       "redFlags": [],
       "severeFlags": [],
@@ -9085,6 +9068,32 @@
     },
     "firstSeen": "2026-11-06"
   },
+  "gh:spacex:8848609002": {
+    "hash": "6761c75422e4f5b0",
+    "facts": {
+      "salary": null,
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
   "gh:spacex:8703540002": {
     "hash": "49f9c8d810ae7d78",
     "facts": {
@@ -9109,32 +9118,6 @@
       ],
       "remote": null,
       "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
-  "gh:spacex:8848609002": {
-    "hash": "6761c75422e4f5b0",
-    "facts": {
-      "salary": null,
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": null,
       "interviewStyles": [],
       "redFlags": [],
       "severeFlags": [],

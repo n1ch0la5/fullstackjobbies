@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-07T01:52:26.309Z",
-  "count": 239,
+  "updatedAt": "2026-11-07T12:17:55.991Z",
+  "count": 236,
   "jobs": [
     {
       "id": "gh:spacex:8505483002",
@@ -1243,57 +1243,6 @@
       "slug": "affirm-senior-staff-software-engineer-fullstack-marketplace-and-con-7efawi"
     },
     {
-      "id": "rok:1137693",
-      "company": "Thumbtack",
-      "title": "Senior Full Stack Engineer People Products",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-full-stack-engineer-people-products-thumbtack-1137693",
-      "location": "Remote (Toronto)",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": {
-        "name": "Remote OK",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-full-stack-engineer-people-products-thumbtack-1137693"
-      },
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 180200,
-        "max": 180200,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "python",
-        "php",
-        "postgres",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "remoteok",
-      "postedAt": "2026-11-06T00:00:05+00:00",
-      "firstSeen": "2026-11-07",
-      "slug": "thumbtack-senior-full-stack-engineer-people-products-5uvggj"
-    },
-    {
       "id": "gh:spacex:8927923002",
       "company": "SpaceX",
       "title": "Sr. Software Engineer, Full Stack (Data & Video Analysis)",
@@ -2479,7 +2428,7 @@
     },
     {
       "id": "ab:nango:aa8125b8-1b0e-42dc-8c8e-2d69eabe0524",
-      "company": "nango",
+      "company": "Nango",
       "title": "Senior+ Full-Stack Engineer",
       "url": "https://jobs.ashbyhq.com/Nango/aa8125b8-1b0e-42dc-8c8e-2d69eabe0524",
       "location": "USA",
@@ -2524,7 +2473,7 @@
     },
     {
       "id": "lv:loftorbital:efcaba8e-6bbb-4322-884c-c10c03469669",
-      "company": "loftorbital",
+      "company": "Loftorbital",
       "title": "Full Stack Engineer - AI Marketplace",
       "url": "https://jobs.lever.co/loftorbital/efcaba8e-6bbb-4322-884c-c10c03469669",
       "location": "Golden, CO",
@@ -2573,7 +2522,7 @@
     },
     {
       "id": "lv:loftorbital:b32ca611-ba12-4b0b-ac7f-0585e7d1f620",
-      "company": "loftorbital",
+      "company": "Loftorbital",
       "title": "Full Stack Engineer - AI Marketplace",
       "url": "https://jobs.lever.co/loftorbital/b32ca611-ba12-4b0b-ac7f-0585e7d1f620",
       "location": "San Francisco, CA",
@@ -2622,7 +2571,7 @@
     },
     {
       "id": "ab:odyssey:4a947f92-00a1-4da9-b2bd-061865bd208c",
-      "company": "odyssey",
+      "company": "Odyssey",
       "title": "Sr. Full Stack Software Engineer",
       "url": "https://jobs.ashbyhq.com/odyssey/4a947f92-00a1-4da9-b2bd-061865bd208c",
       "location": "New York, NY",
@@ -2667,7 +2616,7 @@
     },
     {
       "id": "ab:odyssey:5158a3e1-ddde-4253-a895-a82a9ab2e2d4",
-      "company": "odyssey",
+      "company": "Odyssey",
       "title": "Full Stack Engineer",
       "url": "https://jobs.ashbyhq.com/odyssey/5158a3e1-ddde-4253-a895-a82a9ab2e2d4",
       "location": "New York, NY",
@@ -2807,7 +2756,7 @@
     },
     {
       "id": "ab:clickhouse:40a07d4e-3b7e-49c0-afd4-2f4dff005d1a",
-      "company": "clickhouse",
+      "company": "Clickhouse",
       "title": "Full Stack Software Engineer, Support Operations",
       "url": "https://jobs.ashbyhq.com/clickhouse/40a07d4e-3b7e-49c0-afd4-2f4dff005d1a",
       "location": "United States",
@@ -2852,7 +2801,7 @@
     },
     {
       "id": "ab:clickhouse:d750c2f9-5141-4a2b-8a67-66eac58a5710",
-      "company": "clickhouse",
+      "company": "Clickhouse",
       "title": "Full Stack Software Engineer - Control Plane",
       "url": "https://jobs.ashbyhq.com/clickhouse/d750c2f9-5141-4a2b-8a67-66eac58a5710",
       "location": "The Netherlands",
@@ -2899,7 +2848,7 @@
     },
     {
       "id": "ab:clickhouse:bd6d5e55-790a-4f3d-a905-193fe39ed5cf",
-      "company": "clickhouse",
+      "company": "Clickhouse",
       "title": "Full Stack Software Engineer - Control Plane",
       "url": "https://jobs.ashbyhq.com/clickhouse/bd6d5e55-790a-4f3d-a905-193fe39ed5cf",
       "location": "United States",
@@ -5120,48 +5069,6 @@
       "slug": "affirm-analytics-lead-full-stack-collections-and-recoveries-y8kq0q"
     },
     {
-      "id": "gh:affirm:7872398003",
-      "company": "Affirm",
-      "title": "Analytics Lead, Full Stack",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7872398003",
-      "location": "Remote US",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 185000,
-        "max": 245000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.75 top-band pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-09-02T11:46:36-04:00",
-      "firstSeen": "2026-11-06",
-      "slug": "affirm-analytics-lead-full-stack-pcmouk"
-    },
-    {
       "id": "gh:affirm:8011132003",
       "company": "Affirm",
       "title": "Analytics Lead, Full Stack",
@@ -7114,59 +7021,6 @@
       "slug": "spacex-full-stack-engineer-flight-software-5njtt6"
     },
     {
-      "id": "gh:spacex:8681166002",
-      "company": "SpaceX",
-      "title": "Full Stack Engineer (Application Software)",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8681166002?gh_jid=8681166002",
-      "location": "Hawthorne, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 125000,
-        "max": 125000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-08-04T21:35:16-04:00",
-      "firstSeen": "2026-11-06",
-      "slug": "spacex-full-stack-engineer-application-software-0p3c1a"
-    },
-    {
       "id": "gh:spacex:8701392002",
       "company": "SpaceX",
       "title": "Full Stack Engineer (Application Software)",
@@ -7218,6 +7072,59 @@
       "postedAt": "2026-08-12T15:02:26-04:00",
       "firstSeen": "2026-11-06",
       "slug": "spacex-full-stack-engineer-application-software-sa2bbm"
+    },
+    {
+      "id": "gh:spacex:8681166002",
+      "company": "SpaceX",
+      "title": "Full Stack Engineer (Application Software)",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8681166002?gh_jid=8681166002",
+      "location": "Hawthorne, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 125000,
+        "max": 125000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 3,
+        "name": "Meh",
+        "emoji": "😐",
+        "reasons": [
+          "+0.25 clear salary range",
+          "+0.5 1 rounds",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-08-04T21:35:16-04:00",
+      "firstSeen": "2026-11-06",
+      "slug": "spacex-full-stack-engineer-application-software-0p3c1a"
     },
     {
       "id": "ab:prompt:1ed8373f-f0e1-4c90-a168-98f91bc41f8f",
@@ -7363,7 +7270,7 @@
     },
     {
       "id": "ab:pear-vc:09bf2cd9-ce10-4d7f-818f-17be05805583",
-      "company": "pear-vc",
+      "company": "Pear Vc",
       "title": "Founding Full-Stack Engineer - Takt",
       "url": "https://jobs.ashbyhq.com/Pear-VC/09bf2cd9-ce10-4d7f-818f-17be05805583",
       "location": "San Francisco Bay Area",
@@ -7405,7 +7312,7 @@
     },
     {
       "id": "ab:pear-vc:1bf7fd8a-a787-4325-8b65-7dcf5dc159e4",
-      "company": "pear-vc",
+      "company": "Pear Vc",
       "title": "Fullstack Engineer - Fortify",
       "url": "https://jobs.ashbyhq.com/Pear-VC/1bf7fd8a-a787-4325-8b65-7dcf5dc159e4",
       "location": "New York City",
@@ -7450,7 +7357,7 @@
     },
     {
       "id": "ab:oneleet:e178bb4b-b402-4630-aaba-89a3c2841518",
-      "company": "oneleet",
+      "company": "Oneleet",
       "title": "Fullstack Engineer, AI Implementation",
       "url": "https://jobs.ashbyhq.com/oneleet/e178bb4b-b402-4630-aaba-89a3c2841518",
       "location": "US/EU - Remote",
@@ -7498,7 +7405,7 @@
     },
     {
       "id": "ab:reframesystems:c651981d-017b-4041-9e01-dbce5633b54d",
-      "company": "reframesystems",
+      "company": "Reframesystems",
       "title": "Full Stack Software Engineer - Platform Software",
       "url": "https://jobs.ashbyhq.com/reframesystems/c651981d-017b-4041-9e01-dbce5633b54d",
       "location": "Billerica, MA",
@@ -7633,7 +7540,7 @@
     },
     {
       "id": "ab:clickhouse:1176ec78-e10d-4acd-8af8-47406af929ee",
-      "company": "clickhouse",
+      "company": "Clickhouse",
       "title": "Full Stack Software Engineer - SQL Console",
       "url": "https://jobs.ashbyhq.com/clickhouse/1176ec78-e10d-4acd-8af8-47406af929ee",
       "location": "Europe or US",
@@ -7681,7 +7588,7 @@
     },
     {
       "id": "ab:clickhouse:d24579a7-6d8c-4433-a9af-ddde1878e092",
-      "company": "clickhouse",
+      "company": "Clickhouse",
       "title": "Senior Full Stack Software Engineer - ClickPipes Platform",
       "url": "https://jobs.ashbyhq.com/clickhouse/d24579a7-6d8c-4433-a9af-ddde1878e092",
       "location": "United States",
@@ -7731,7 +7638,7 @@
     },
     {
       "id": "ab:clickhouse:00d30b77-5f95-4ae3-be98-b1c8319bcdce",
-      "company": "clickhouse",
+      "company": "Clickhouse",
       "title": "Senior Full Stack Engineer - ClickStack",
       "url": "https://jobs.ashbyhq.com/clickhouse/00d30b77-5f95-4ae3-be98-b1c8319bcdce",
       "location": "United States",
@@ -7918,53 +7825,6 @@
       "postedAt": "2026-10-09T19:53:04.535Z",
       "firstSeen": "2026-11-06",
       "slug": "shieldai-senior-engineer-full-stack-frontend-focus-forge-applications-7uj259"
-    },
-    {
-      "id": "lv:shieldai:3b4ee7c2-7daf-48b2-bfb2-bdb6ebdcd515",
-      "company": "Shieldai",
-      "title": "Senior Engineer, Full-Stack - Forge (R6244)",
-      "url": "https://jobs.lever.co/shieldai/3b4ee7c2-7daf-48b2-bfb2-bdb6ebdcd515",
-      "location": "San Diego, California",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": false,
-      "workStyle": "onsite",
-      "salary": {
-        "min": 130000,
-        "max": 240000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "python",
-        "kubernetes",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+1.25 strong pay",
-          "-0.5 suspiciously wide range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "lever",
-      "postedAt": "2026-10-10T02:46:26.225Z",
-      "firstSeen": "2026-11-06",
-      "slug": "shieldai-senior-engineer-full-stack-forge-r6244-eu1qm8"
     },
     {
       "id": "lv:shieldai:fe7531e1-c25e-4e4a-9661-19e3a2ab8e69",
@@ -8666,14 +8526,14 @@
       "slug": "databricks-sr-staff-fullstack-engineer-agentic-applications-ke9t59"
     },
     {
-      "id": "gh:databricks:8099342002",
+      "id": "gh:databricks:7898766002",
       "company": "Databricks",
       "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099342002",
-      "location": "Vancouver, Canada",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7898766002",
+      "location": "Mountain View, California; San Francisco, California",
       "where": {
         "countries": [
-          "CA"
+          "US"
         ],
         "regions": [],
         "anywhere": false
@@ -8682,8 +8542,8 @@
       "remote": null,
       "workStyle": null,
       "salary": {
-        "min": 146200,
-        "max": 146200,
+        "min": 166000,
+        "max": 166000,
         "currency": "USD",
         "interval": "year"
       },
@@ -8691,10 +8551,8 @@
         "react",
         "angular",
         "javascript",
-        "node",
         "python",
         "java",
-        "c#",
         "aws",
         "gcp",
         "azure",
@@ -8712,14 +8570,13 @@
         "reasons": [
           "+0.5 decent pay",
           "+0.25 clear salary range",
-          "-0.5 kitchen-sink stack",
           "+0.25 no red flags"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2025-07-30T22:38:03-04:00",
+      "postedAt": "2025-03-06T17:58:22-05:00",
       "firstSeen": "2026-11-06",
-      "slug": "databricks-senior-software-engineer-fullstack-p93vyx"
+      "slug": "databricks-senior-software-engineer-fullstack-e4ivwb"
     },
     {
       "id": "gh:databricks:5445641002",
@@ -8834,14 +8691,14 @@
       "slug": "databricks-senior-software-engineer-fullstack-0pruj0"
     },
     {
-      "id": "gh:databricks:7898766002",
+      "id": "gh:databricks:8099342002",
       "company": "Databricks",
       "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7898766002",
-      "location": "Mountain View, California; San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8099342002",
+      "location": "Vancouver, Canada",
       "where": {
         "countries": [
-          "US"
+          "CA"
         ],
         "regions": [],
         "anywhere": false
@@ -8850,8 +8707,8 @@
       "remote": null,
       "workStyle": null,
       "salary": {
-        "min": 166000,
-        "max": 166000,
+        "min": 146200,
+        "max": 146200,
         "currency": "USD",
         "interval": "year"
       },
@@ -8859,8 +8716,10 @@
         "react",
         "angular",
         "javascript",
+        "node",
         "python",
         "java",
+        "c#",
         "aws",
         "gcp",
         "azure",
@@ -8878,13 +8737,14 @@
         "reasons": [
           "+0.5 decent pay",
           "+0.25 clear salary range",
+          "-0.5 kitchen-sink stack",
           "+0.25 no red flags"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2025-03-06T17:58:22-05:00",
+      "postedAt": "2025-07-30T22:38:03-04:00",
       "firstSeen": "2026-11-06",
-      "slug": "databricks-senior-software-engineer-fullstack-e4ivwb"
+      "slug": "databricks-senior-software-engineer-fullstack-p93vyx"
     },
     {
       "id": "gh:affirm:8040273003",
