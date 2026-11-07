@@ -28,12 +28,13 @@ export function scoreJob(facts) {
     score += points;
     reasons.push(`${points > 0 ? '+' : ''}${points} ${why}`);
   };
-  // Calibrated on the first full sift (Nov 2026, 238 jobs) so roughly the top 10–15% reach
-  // Rocket ship. Pay bands sit near that sample's median ($175k) and 75th percentile ($212k).
-  // Only things that are good for every candidate count. Work style (remote, hybrid, on-site)
-  // is a personal preference, so it's a filter, never points. A Rocket ship is either
-  // top-band pay with an honest range and a clean listing, or strong pay plus a stated,
-  // humane interview process. Low pay is a mild knock, so fair non-US salaries aren't shamed.
+  // Recalibrated 7 Nov 2026 (236 jobs): about 9% reach Rocket ship. Pay counts fully from
+  // $150k (midpoint); more than that earns nothing extra, so SF-scale salaries don't crowd
+  // out a fair $140k job with a humane process. Only things that are good for every
+  // candidate count. Work style (remote, hybrid, on-site) is a personal preference, so it's a
+  // filter, never points. A Rocket ship needs strong pay plus something good about the
+  // process (few rounds, humane interviews), usually with an honest range and a clean listing. Low pay is a mild knock, so fair non-US salaries
+  // aren't shamed.
   let score = 2.25;
 
   if (facts.severeFlags.length) {
@@ -44,9 +45,9 @@ export function scoreJob(facts) {
   if (!facts.salary) add(-2, 'no salary');
   else if (pay) {
     const mid = (pay.min + pay.max) / 2;
-    if (mid >= 210000) add(1.75, 'top-band pay');
-    else if (mid >= 170000) add(1.25, 'strong pay');
-    else if (mid >= 130000) add(0.5, 'decent pay');
+    if (mid >= 150000) add(1.25, 'strong pay');
+    else if (mid >= 120000) add(0.75, 'fair pay');
+    else if (mid >= 90000) add(0.25, 'okay pay');
     else if (mid < 70000) add(-0.5, 'low pay');
     if (pay.max > pay.min * 1.6) add(-0.5, 'suspiciously wide range');
     else if (pay.max <= pay.min * 1.3) add(0.25, 'clear salary range');

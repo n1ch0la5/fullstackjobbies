@@ -1,6 +1,6 @@
 // Jobs page: loads the sifter's output and filters it in the browser.
 import { COUNTRIES, REGIONS, jobFitsWhere, describeWhere } from '/lib/location.js';
-import { LEVELS } from '/lib/score.js';
+import { LEVELS, annualUsd } from '/lib/score.js';
 import { fetchSummaries, effectiveLevel, voteWidget } from '/votes.js';
 import { appliedOn, appliedButton, appliedCount, relative, daysSince } from '/applied.js';
 
@@ -137,6 +137,51 @@ for (const id of ['inc-anywhere', 'inc-unstated']) {
   });
 }
 
+// ---------- Pay ----------
+// Shows jobs whose range overlaps yours (a $120k–$170k job fits "$130k to $160k").
+// Other currencies are converted roughly to US dollars. Remembered in this browser.
+const PAY_KEY = 'fsj.pay.v1';
+const PAY_STEPS = [60, 80, 100, 120, 130, 140, 150, 160, 180, 200, 250].map((k) => k * 1000);
+const pay = { min: 0, max: 0 }; // 0 = no limit
+
+function drawPay() {
+  const opts = (any, value) => [
+    el('option', { value: '0' }, any),
+    ...PAY_STEPS.map((n) => el('option', { value: String(n) }, `$${n / 1000}k`)),
+  ].map((o) => (o.value === String(value) && o.setAttribute('selected', ''), o));
+  $('pay-min').replaceChildren(...opts('Any', pay.min));
+  $('pay-max').replaceChildren(...opts('No limit', pay.max));
+}
+try {
+  Object.assign(pay, JSON.parse(localStorage.getItem(PAY_KEY) ?? '{}'));
+} catch {
+  // Storage blocked: start with no pay filter.
+}
+drawPay();
+for (const id of ['pay-min', 'pay-max']) {
+  $(id).addEventListener('input', () => {
+    pay.min = Number($('pay-min').value);
+    pay.max = Number($('pay-max').value);
+    if (pay.min && pay.max && pay.min > pay.max) {
+      // Picked "from" above "up to": move the other end rather than show nothing.
+      if (id === 'pay-min') pay.max = pay.min; else pay.min = pay.max;
+      drawPay();
+    }
+    try { localStorage.setItem(PAY_KEY, JSON.stringify(pay)); } catch { /* fine for this visit */ }
+    render();
+  });
+}
+const payMid = (j) => {
+  const p = annualUsd(j.salary);
+  return p ? (p.min + p.max) / 2 : null;
+};
+function payFits(j) {
+  if (!pay.min && !pay.max) return true;
+  const p = annualUsd(j.salary);
+  if (!p) return false;
+  return (!pay.min || p.max >= pay.min) && (!pay.max || p.min <= pay.max);
+}
+
 // ---------- Job cards ----------
 function formatPay(s) {
   if (!s) return null;
@@ -213,6 +258,7 @@ function render() {
     if (effectiveLevel(j, votes.get(j.id)) < min) return false;
     if (hideApplied && appliedOn(j.id)) return false;
     if (remoteOnly && !j.remote) return false;
+    if (!payFits(j)) return false;
     if (hide.some((h) => j.interviewStyles.includes(h))) return false;
     if (!jobFitsWhere(j.where, where.picked, { includeAnywhere: where.anywhere, includeUnstated: where.unstated })) return false;
     if (q) {
@@ -229,7 +275,9 @@ function render() {
   const age = (j) => daysSince(j.postedAt || j.firstSeen) ?? 9999;
   const byRating = (a, b) => effectiveLevel(b, votes.get(b.id)) - effectiveLevel(a, votes.get(a.id)) || age(a) - age(b);
   const byNewest = (a, b) => age(a) - age(b) || effectiveLevel(b, votes.get(b.id)) - effectiveLevel(a, votes.get(a.id));
-  shown.sort($('sort').value === 'newest' ? byNewest : byRating);
+  const byPay = (dir) => (a, b) => ((payMid(a) ?? 0) - (payMid(b) ?? 0)) * dir || byRating(a, b);
+  const sorts = { rating: byRating, newest: byNewest, pay_high: byPay(-1), pay_low: byPay(1) };
+  shown.sort(sorts[$('sort').value] ?? byRating);
   cardEls.clear();
   list.replaceChildren(...shown.map((j) => {
     const card = jobCard(j);
@@ -241,7 +289,7 @@ function render() {
       el('div', { class: 'empty' },
         el('p', { style: 'font-size:48px;margin:0' }, '🔍'),
         el('p', { style: 'font-weight:700;font-size:20px;margin:8px 0 0' }, allJobs.length ? 'Nothing matches those filters.' : 'The first sift hasn\'t landed yet.'),
-        el('p', { style: 'margin:6px 0 0;color:var(--ink-2)' }, allJobs.length ? 'Try adding a country or loosening the rating.' : 'Fresh jobs arrive every morning. Check back tomorrow.'),
+        el('p', { style: 'margin:6px 0 0;color:var(--ink-2)' }, allJobs.length ? 'Try adding a country, widening the pay range or loosening the rating.' : 'Fresh jobs arrive every morning. Check back tomorrow.'),
       ),
     );
   }

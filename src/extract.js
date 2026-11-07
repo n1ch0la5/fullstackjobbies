@@ -16,6 +16,10 @@ function toNumber(raw, k) {
   return n;
 }
 
+// Above this, a "salary" is an exec or principal track ("up to ~$750k") or a misread
+// number, not a full stack salary to compare against.
+const MAX_YEARLY = 500000;
+
 export function extractSalary(rawText) {
   // "CA$140k", "C$140k" and "A$120k" are dollars too, just not American ones.
   const dollar = /\b(?:CA|C)\$/.test(rawText) ? 'CAD' : /\b(?:AU|A)\$/.test(rawText) ? 'AUD' : 'USD';
@@ -32,14 +36,14 @@ export function extractSalary(rawText) {
     if (min > max) [min, max] = [max, min];
     const currency = code || SYMBOL_CCY[sym] || 'USD';
     if (hourly && min >= 15 && max <= 500) return { min, max, currency, interval: 'hour' };
-    if (min >= 20000 && max <= 1000000 && max / min < 3) return { min, max, currency, interval: 'year' };
+    if (min >= 20000 && max <= MAX_YEARLY && max / min < 3) return { min, max, currency, interval: 'year' };
   }
   for (const m of text.matchAll(SINGLE)) {
     const [, sym, a, k, hourly] = m;
     const n = toNumber(a, k);
     const currency = SYMBOL_CCY[sym];
     if (hourly && n >= 15 && n <= 500) return { min: n, max: n, currency, interval: 'hour' };
-    if (!hourly && n >= 20000 && n <= 1000000) return { min: n, max: n, currency, interval: 'year' };
+    if (!hourly && n >= 20000 && n <= MAX_YEARLY) return { min: n, max: n, currency, interval: 'year' };
   }
   return null;
 }

@@ -92,8 +92,20 @@ window.fsjLoadGTM = function () {
         <select id="sort">
           <option value="rating" selected>Best rated</option>
           <option value="newest">Newest posted</option>
+          <option value="pay_high">Pay: high to low</option>
+          <option value="pay_low">Pay: low to high</option>
         </select>
       </div>
+      <fieldset class="pay">
+        <legend>Pay per year</legend>
+        <div class="pay-row">
+          <label for="pay-min" class="sr-only">From</label>
+          <select id="pay-min"></select>
+          <span aria-hidden="true">to</span>
+          <label for="pay-max" class="sr-only">Up to</label>
+          <select id="pay-max"></select>
+        </div>
+      </fieldset>
       <div>
         <label for="min">At least</label>
         <select id="min">

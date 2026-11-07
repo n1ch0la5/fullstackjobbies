@@ -4,10 +4,16 @@
 const FULL_STACK = /\bfull[\s-]?stack\b|\bfullstack\b/i;
 const SENIORITY_EXCLUDE = /\b(intern|internship|principal architect|director|vp|head of|manager)\b/i;
 
+const NOT_A_JOB = /\b(phd|ph\.d|studentship|stipend|postdoc|fellowship|bootcamp)\b/i;
+
 export function isFullStack(job) {
   if (SENIORITY_EXCLUDE.test(job.title)) return false;
-  if (FULL_STACK.test(job.title)) return true;
-  // HN posts put the role in the first line rather than a clean title field.
-  if (job.source === 'hn') return FULL_STACK.test(job.description.slice(0, 400));
-  return false;
+  if (job.source === 'hn') {
+    // HN posts are free text: the role must be a named full stack role, the company must be
+    // known, and academic posts (PhDs, studentships) are out even if they mention full stack.
+    const header = job.description.split('\n')[0] ?? '';
+    if (NOT_A_JOB.test(header) || SENIORITY_EXCLUDE.test(header.replace(/engineering manager/i, ''))) return false;
+    return FULL_STACK.test(job.title) && job.company !== 'Unknown';
+  }
+  return FULL_STACK.test(job.title);
 }

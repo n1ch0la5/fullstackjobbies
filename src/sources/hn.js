@@ -47,7 +47,18 @@ const PAYISH = /^[$£€]|\b\d{2,3}k\b|\bequity\b|\bsalary\b/i;
 const ROLEISH = /engineer|developer|\bstack\b|fullstack|programmer|\bswe\b/i;
 const PLACE_WORDS = /remote|onsite|on-site|hybrid|in-office|\b(us|usa|uk|eu|emea|canada|nyc|sf)\b/i;
 const PLACE_SHAPE = /,\s*[A-Z]{2}\b|\b[A-Z][a-z]+,\s*[A-Z]/; // "Austin, TX", "Berlin, Germany"
-const isPlace = (p) => PLACE_WORDS.test(p) || PLACE_SHAPE.test(p);
+const NOT_PLACE = /\broles?\b|\bpositions?\b|\bopenings?\b|consultant|engineer|developer|hiring/i;
+const isPlace = (p) => (PLACE_WORDS.test(p) || PLACE_SHAPE.test(p)) && !NOT_PLACE.test(p);
+const FULL_STACK = /\bfull[\s-]?stack\b|\bfullstack\b/i;
+
+// The first part is usually the company, but some posts lead with a headline or a sentence.
+// Then look for "<Name> is a/an/the …" early in the post; give up rather than guess.
+function companyFrom(part, text) {
+  const clean = (part ?? '').replace(/^[*_\s]+|[*_\s]+$/g, '');
+  if (clean && clean.length < 60 && !ROLEISH.test(clean) && !/[.!?]$/.test(clean)) return clean;
+  const m = text.slice(0, 400).match(/\b([A-Z][A-Za-z0-9.&'-]+(?: [A-Z][A-Za-z0-9.&'-]+)?) +(?:is|are) +(?:a|an|the)\b/);
+  return m ? m[1] : 'Unknown';
+}
 
 function hnJob(c) {
   const text = htmlToText(c.text);
@@ -55,12 +66,14 @@ function hnJob(c) {
   const parts = firstLine.split(/\s+\|\s+|\|/).map((s) => s.trim()).filter(Boolean);
   const [companyPart, ...rest] = parts;
   const usable = rest.filter((p) => !URLISH.test(p) && p.length < 120);
-  const title = usable.find((p) => ROLEISH.test(p) && !PAYISH.test(p)) ?? roleFromText(text) ?? 'Full Stack Engineer';
+  // A full stack role named in the header, or a full stack role phrase in the text. No
+  // made-up fallback title: a post that never names a full stack role isn't listed.
+  const title = usable.find((p) => FULL_STACK.test(p) && ROLEISH.test(p) && !PAYISH.test(p)) ?? roleFromText(text) ?? '';
   const location = usable.find((p) => p !== title && isPlace(p) && !ROLEISH.test(p)) ?? '';
   return {
     source: 'hn',
     sourceId: `hn:${c.id}`,
-    company: companyPart && companyPart.length < 80 ? companyPart : 'Unknown',
+    company: companyFrom(companyPart, text),
     title: title.slice(0, 120),
     url: `https://news.ycombinator.com/item?id=${c.id}`,
     location,
@@ -102,3 +115,4 @@ export function findBoards(html) {
   }
   return found;
 }
+export const hnJobForTest = hnJob;

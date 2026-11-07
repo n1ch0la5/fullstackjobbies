@@ -37,7 +37,7 @@ test('full stack filter', () => {
   assert.ok(isFullStack(job({ title: 'Fullstack Developer' })));
   assert.ok(!isFullStack(job({ title: 'Frontend Engineer' })));
   assert.ok(!isFullStack(job({ title: 'Full Stack Engineering Intern' })));
-  assert.ok(isFullStack(job({ source: 'hn', title: 'Engineer', description: 'Acme | Full-stack engineer | Remote | $140k' })));
+  assert.ok(isFullStack(job({ source: 'hn', title: 'Full-stack engineer', company: 'Acme', description: 'Acme | Full-stack engineer | Remote | $140k' })));
 });
 
 test('stack, rounds, interview style', () => {
