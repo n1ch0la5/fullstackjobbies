@@ -1,8 +1,13 @@
 name: Daily sift
 
 on:
+  # GitHub runs schedules in UTC and often starts them late (an hour or more when busy),
+  # so these are set a little before the time we want. Off the hour on purpose: that's
+  # when everyone else's schedules pile up. New York times below are winter (EST);
+  # in summer they land an hour later.
   schedule:
-    - cron: "17 10 * * *" # every day, ~5am New York
+    - cron: "53 10 * * *" # ~6am New York: fresh jobs for the morning
+    - cron: "53 20 * * *" # ~4pm New York: catches jobs posted during the US workday
   workflow_dispatch: {}   # "Run workflow" button in the Actions tab
 
 permissions:
@@ -33,9 +38,13 @@ jobs:
           git config user.name "jobbies-sifter"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          if git diff --cached --quiet; then
-            echo "No changes today."
+          # Every push to main costs a Netlify deploy, and the timestamps change on every run.
+          # Only commit when the job list itself changed (new, removed or re-rated jobs).
+          git show HEAD:data/jobs.json | jq -S .jobs > /tmp/old-jobs.json || echo null > /tmp/old-jobs.json
+          jq -S .jobs data/jobs.json > /tmp/new-jobs.json
+          if cmp -s /tmp/old-jobs.json /tmp/new-jobs.json; then
+            echo "Job list unchanged; skipping the commit and the deploy."
           else
-            git commit -m "Daily sift: $(date -u +%F)"
+            git commit -m "Sift: $(date -u '+%F %H:%M') UTC"
             git push
           fi

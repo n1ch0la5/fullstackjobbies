@@ -1,10 +1,13 @@
 # Netlify: publish the static site in site/, plus the sifter's latest public data
 # and the rating code the in-browser checker reuses.
-# Every daily sift commits fresh data, which triggers a redeploy automatically.
+# A sift that changes the job list commits fresh data, which triggers a redeploy.
 
 [build]
   publish = "site"
   command = "node scripts/build-site.js"
+  # Skip the deploy (and its credits) when a push only touches things the site doesn't use:
+  # the GitHub workflow, tests, Supabase SQL, store assets, the extension, docs.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site src scripts netlify data/jobs.json data/stats.json data/best-jobbie-candidates.json netlify.toml package.json"
 
 [functions]
   directory = "netlify/functions"
