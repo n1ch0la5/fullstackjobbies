@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-08T16:41:02.805Z",
-  "count": 219,
+  "updatedAt": "2026-11-09T20:46:06.707Z",
+  "count": 220,
   "jobs": [
     {
       "id": "gh:spacex:8927923002",
@@ -859,7 +859,7 @@
         ]
       },
       "source": "workable",
-      "postedAt": "2026-09-10",
+      "postedAt": "2026-11-09",
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt"
@@ -1115,6 +1115,115 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja"
+    },
+    {
+      "id": "gh:spacex:8934570002",
+      "company": "SpaceX",
+      "title": "Sr. Full Stack Engineer, Fight Software",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8934570002?gh_jid=8934570002",
+      "location": "Hawthorne, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 165000,
+        "max": 230000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.5 1 rounds",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-08T20:48:11-05:00",
+      "firstSeen": "2026-11-09",
+      "reports": null,
+      "slug": "spacex-sr-full-stack-engineer-fight-software-i7rnje"
+    },
+    {
+      "id": "gh:spacex:8934563002",
+      "company": "SpaceX",
+      "title": "Full Stack Software Engineer, Internal Platforms",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8934563002?gh_jid=8934563002",
+      "location": "Hawthorne, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 125000,
+        "max": 160000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+0.75 fair pay",
+          "+0.25 clear salary range",
+          "+0.5 1 rounds",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-08T20:15:11-05:00",
+      "firstSeen": "2026-11-09",
+      "reports": null,
+      "slug": "spacex-full-stack-software-engineer-internal-platforms-n4nyii"
     },
     {
       "id": "gh:robinhood:8008723",
@@ -1527,61 +1636,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "spacex-full-stack-software-engineer-manufacturing-systems-lw23dj"
-    },
-    {
-      "id": "gh:spacex:8785502002",
-      "company": "SpaceX",
-      "title": "Full Stack Software Engineer, Internal Systems",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8785502002?gh_jid=8785502002",
-      "location": "Hawthorne, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 125000,
-        "max": 125000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+0.75 fair pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-09-07T17:23:36-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "spacex-full-stack-software-engineer-internal-systems-p6e4mj"
     },
     {
       "id": "gh:spacex:8763489002",
@@ -2988,52 +3042,6 @@
       "slug": "coast-full-stack-engineer-senior-full-stack-engineer-w5j5hk"
     },
     {
-      "id": "gh:mattermost:5405811008",
-      "company": "Mattermost",
-      "title": "Staff Full Stack Engineer",
-      "url": "https://job-boards.greenhouse.io/mattermost/jobs/5405811008",
-      "location": "United States",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 172724,
-        "max": 227135,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "redis",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-08-26T14:39:47-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "mattermost-staff-full-stack-engineer-xw8oxo"
-    },
-    {
       "id": "gh:mattermost:5405812008",
       "company": "Mattermost",
       "title": "Staff Full Stack Engineer",
@@ -3079,6 +3087,52 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "mattermost-staff-full-stack-engineer-bxf0r3"
+    },
+    {
+      "id": "gh:mattermost:5405811008",
+      "company": "Mattermost",
+      "title": "Staff Full Stack Engineer",
+      "url": "https://job-boards.greenhouse.io/mattermost/jobs/5405811008",
+      "location": "United States",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 172724,
+        "max": 227135,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "redis",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-08-26T14:39:47-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "mattermost-staff-full-stack-engineer-xw8oxo"
     },
     {
       "id": "gh:mattermost:5379251008",
@@ -4746,52 +4800,6 @@
       "slug": "palantir-full-stack-software-engineer-application-development-fm3qel"
     },
     {
-      "id": "gh:nextdoor:8198165",
-      "company": "Nextdoor",
-      "title": "Software Engineer - Fullstack",
-      "url": "https://about.nextdoor.com/careers-list/?gh_jid=8198165",
-      "location": "San Francisco, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": "hybrid",
-      "salary": {
-        "min": 135000,
-        "max": 200000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "javascript",
-        "python",
-        "django"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-09-14T13:40:25-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "nextdoor-software-engineer-fullstack-j8q19j"
-    },
-    {
       "id": "gh:nextdoor:8198185",
       "company": "Nextdoor",
       "title": "Software Engineer - Fullstack",
@@ -4836,6 +4844,52 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "nextdoor-software-engineer-fullstack-fwohxx"
+    },
+    {
+      "id": "gh:nextdoor:8198165",
+      "company": "Nextdoor",
+      "title": "Software Engineer - Fullstack",
+      "url": "https://about.nextdoor.com/careers-list/?gh_jid=8198165",
+      "location": "San Francisco, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": "hybrid",
+      "salary": {
+        "min": 135000,
+        "max": 200000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "javascript",
+        "python",
+        "django"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-09-14T13:40:25-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "nextdoor-software-engineer-fullstack-j8q19j"
     },
     {
       "id": "gh:peloton:8304700",
@@ -5817,60 +5871,6 @@
       "slug": "databricks-staff-fullstack-engineer-fdclbs"
     },
     {
-      "id": "gh:databricks:7898766002",
-      "company": "Databricks",
-      "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7898766002",
-      "location": "Mountain View, California; San Francisco, California",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 166000,
-        "max": 166000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "aws",
-        "gcp",
-        "azure",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2025-03-06T17:58:22-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "databricks-senior-software-engineer-fullstack-e4ivwb"
-    },
-    {
       "id": "gh:databricks:6544403002",
       "company": "Databricks",
       "title": "Senior Software Engineer - Fullstack",
@@ -5983,6 +5983,60 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "databricks-senior-software-engineer-fullstack-p12m2v"
+    },
+    {
+      "id": "gh:databricks:7898766002",
+      "company": "Databricks",
+      "title": "Senior Software Engineer - Fullstack",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7898766002",
+      "location": "Mountain View, California; San Francisco, California",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 166000,
+        "max": 166000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "aws",
+        "gcp",
+        "azure",
+        "kubernetes",
+        "docker",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2025-03-06T17:58:22-05:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "databricks-senior-software-engineer-fullstack-e4ivwb"
     },
     {
       "id": "gh:scaleai:4713608005",
@@ -7505,6 +7559,52 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "postscript-yc-w19-senior-software-engineer-full-stack-jr7857"
+    },
+    {
+      "id": "lv:shieldai:88f7b66e-3412-40c8-b74d-aafc462405ff",
+      "company": "Shieldai",
+      "title": "Engineer II, Software - Ground Control Station - Full Stack - New Grad - 6140",
+      "url": "https://jobs.lever.co/shieldai/88f7b66e-3412-40c8-b74d-aafc462405ff",
+      "location": "Washington, D.C.",
+      "where": {
+        "countries": [],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": false,
+      "workStyle": "onsite",
+      "salary": {
+        "min": 77200,
+        "max": 211200,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "node",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 3,
+        "name": "Meh",
+        "emoji": "😐",
+        "reasons": [
+          "+0.75 fair pay",
+          "-0.5 suspiciously wide range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "lever",
+      "postedAt": "2026-10-27T22:14:38.663Z",
+      "firstSeen": "2026-11-09",
+      "reports": null,
+      "slug": "shieldai-engineer-ii-software-ground-control-station-full-stack-new-g-td7y5c"
     },
     {
       "id": "hn:50345424",
@@ -9815,7 +9915,7 @@
       "company": "Ramp",
       "title": "Applied AI Engineer, Fullstack",
       "url": "https://jobs.ashbyhq.com/ramp/6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
-      "location": "New York, NY (HQ)",
+      "location": "NYC",
       "where": {
         "countries": [
           "US"
@@ -10323,55 +10423,6 @@
       "slug": "elastic-senior-full-stack-software-developer-observability-jclof1"
     },
     {
-      "id": "gh:elastic:8345719",
-      "company": "Elastic",
-      "title": "Senior Full Stack Engineer - Observability APM UI",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8345719&gh_jid=8345719",
-      "location": "Portugal",
-      "where": {
-        "countries": [
-          "PT"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 55800,
-        "max": 55800,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "node",
-        "kubernetes",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 2,
-        "name": "Bit whiffy",
-        "emoji": "🤢",
-        "reasons": [
-          "-0.5 low pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-02T04:50:48-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-ulwgdc"
-    },
-    {
       "id": "gh:elastic:8345720",
       "company": "Elastic",
       "title": "Senior Full Stack Engineer - Observability APM UI",
@@ -10421,80 +10472,53 @@
       "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-rm9htc"
     },
     {
-      "id": "rok:1137475",
-      "company": "Lemon.io",
-      "title": "Senior React Full stack Developer",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
-      "location": "Remote",
+      "id": "gh:elastic:8345719",
+      "company": "Elastic",
+      "title": "Senior Full Stack Engineer - Observability APM UI",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8345719&gh_jid=8345719",
+      "location": "Portugal",
       "where": {
         "countries": [
-          "US"
+          "PT"
         ],
-        "regions": [
-          "EMEA"
-        ],
+        "regions": [],
         "anywhere": false
       },
-      "via": {
-        "name": "Remote OK",
-        "url": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475"
-      },
-      "remote": true,
-      "workStyle": "remote",
+      "via": null,
+      "remote": null,
+      "workStyle": null,
       "salary": {
-        "min": 80000,
-        "max": 200000,
-        "currency": "USD",
+        "min": 55800,
+        "max": 55800,
+        "currency": "EUR",
         "interval": "year"
       },
       "stack": [
         "react",
-        "vue",
-        "angular",
-        "svelte",
-        "next.js",
-        "nuxt",
         "typescript",
         "javascript",
         "node",
-        "python",
-        "ruby",
-        "golang",
-        "rust",
-        "java",
-        "spring",
-        "c#",
-        ".net",
-        "php",
-        "laravel",
-        "aws",
-        "gcp",
-        "azure",
-        "react native",
-        "swift",
-        "flutter"
+        "kubernetes",
+        "golang"
       ],
       "rounds": null,
       "interviewStyles": [],
-      "redFlags": [
-        "fast-paced"
-      ],
+      "redFlags": [],
       "rating": {
         "level": 2,
         "name": "Bit whiffy",
         "emoji": "🤢",
         "reasons": [
-          "+0.75 fair pay",
-          "-0.5 suspiciously wide range",
-          "-0.5 kitchen-sink stack",
-          "-0.5 1 red flag(s)"
+          "-0.5 low pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
         ]
       },
-      "source": "remoteok",
-      "postedAt": "2026-10-09T13:09:18+00:00",
+      "source": "greenhouse",
+      "postedAt": "2026-11-02T04:50:48-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "lemon-io-senior-react-full-stack-developer-wji7rt"
+      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-ulwgdc"
     },
     {
       "id": "gh:affirm:8040392003",
