@@ -2017,6 +2017,14 @@
       "discovered": "2026-11-07",
       "fails": 0,
       "nameChecked": true
+    },
+    {
+      "ats": "greenhouse",
+      "slug": "odinlabs",
+      "name": "ODIN Labs",
+      "discovered": "2026-11-11",
+      "nameChecked": true,
+      "fails": 0
     }
   ]
 }
