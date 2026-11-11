@@ -100,7 +100,7 @@ function dateLabel(job) {
   return found ? `Found ${found}` : '';
 }
 
-export function renderJobPage(job, { siteUrl, gtm, where, description }) {
+export function renderJobPage(job, { siteUrl, gtm, where, description, related = [] }) {
   const url = `${siteUrl}/job/${job.slug}`;
   const pay = formatPay(job.salary);
   const lv = job.rating.level;
@@ -197,7 +197,13 @@ ${gtm}
   </div>
 </section>
 
-<section class="section-tight">
+${related.length ? `<section class="section-tight" style="padding-bottom: 0">
+  <div class="wrap">
+    <h2 style="font-size: 28px">More like this</h2>
+    <ul class="browse-links">${related.map((p) => `<li><a href="/browse/${esc(p.slug)}">${esc(p.h1)}</a> <span>${p.jobs.length}</span></li>`).join('')}</ul>
+  </div>
+</section>
+` : ''}<section class="section-tight">
   <div class="wrap">
     <div class="cta">
       <div>
@@ -213,7 +219,7 @@ ${gtm}
 <footer class="site-footer">
   <div class="wrap">
     <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
-    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
   </div>
 </footer>
 

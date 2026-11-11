@@ -99,3 +99,18 @@ test('JobPosting data: on-site job gets a place and no salary when there is none
   assert.equal(ld.baseSalary, undefined);
   assert.ok(!jobPostingLd({ id: 'x', title: '</script>', company: 'B', url: 'u', rating: { reasons: [] } }, { url: 'u', description: 'd' }).includes('</script>'));
 });
+
+// ---- Landing pages ----
+import { landingPages, pagesForJob, MIN_JOBS } from '../scripts/landing-pages.js';
+
+test('landing pages: only pages with enough jobs, and a job links to its pages', () => {
+  const mk = (i, o) => ({ id: `j${i}`, slug: `j${i}`, title: 'Full Stack Engineer', company: 'A', stack: ['react'], remote: true, where: { countries: ['US'] }, salary: { min: 150000, max: 170000, currency: 'USD', interval: 'year' }, rating: { level: 4 }, ...o });
+  const jobs = [mk(1), mk(2), mk(3), mk(4, { stack: ['vue'], remote: false })];
+  const pages = landingPages(jobs);
+  const slugs = pages.map((p) => p.slug);
+  assert.ok(slugs.includes('remote-full-stack-react-jobs'));
+  assert.ok(slugs.includes('full-stack-jobs-150k'));
+  assert.ok(!slugs.includes('full-stack-vue-jobs'), `fewer than ${MIN_JOBS} jobs means no page`);
+  assert.ok(pages.every((p) => p.jobs.length >= MIN_JOBS));
+  assert.equal(pagesForJob(jobs[0], pages)[0].group, 'Stack');
+});

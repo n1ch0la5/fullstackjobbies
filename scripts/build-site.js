@@ -11,6 +11,7 @@ const OG_VERSION = 1;
 import { jobSlug } from '../src/slug.js';
 import { describeWhere } from '../src/location.js';
 import { renderJobPage, jobDescription } from './job-page-template.js';
+import { landingPages, pagesForJob, renderLandingPage, renderBrowseHub } from './landing-pages.js';
 
 const SITE_URL = process.env.URL || 'https://fullstackjobbies.com';
 const PUBLIC_DATA = ['best-jobbie-candidates.json', 'stats.json'];
@@ -43,9 +44,18 @@ await writeFile('site/data/jobs.json', JSON.stringify(data));
 await rm('site/job', { recursive: true, force: true });
 await mkdir('site/job', { recursive: true });
 const gtm = (await readFile('site/index.html', 'utf8')).match(/<!-- Google Tag Manager[\s\S]*?<!-- End Google Tag Manager -->/)?.[0] ?? '';
+const pages = landingPages(data.jobs);
 for (const job of data.jobs) {
-  await writeFile(`site/job/${job.slug}.html`, renderJobPage(job, { siteUrl: SITE_URL, gtm, where: describeWhere(job.where), description: jobDescription(job) }));
+  await writeFile(`site/job/${job.slug}.html`, renderJobPage(job, { siteUrl: SITE_URL, gtm, where: describeWhere(job.where), description: jobDescription(job), related: pagesForJob(job, pages) }));
 }
+
+// Landing pages for search (/browse/<slug>) and the hub that lists them (/browse/).
+await rm('site/browse', { recursive: true, force: true });
+await mkdir('site/browse', { recursive: true });
+for (const page of pages) {
+  await writeFile(`site/browse/${page.slug}.html`, renderLandingPage(page, pages, { siteUrl: SITE_URL, gtm, updatedAt: data.updatedAt }));
+}
+await writeFile('site/browse/index.html', renderBrowseHub(pages, { siteUrl: SITE_URL, gtm, updatedAt: data.updatedAt, total: data.jobs.length }));
 
 // A preview image per job for shared links. Netlify keeps node_modules between builds, so
 // images are cached there by content and only new or changed jobs are drawn (~0.1s each).
@@ -83,6 +93,8 @@ const urls = [
   { loc: `${SITE_URL}/`, lastmod: today },
   { loc: `${SITE_URL}/jobs`, lastmod: (data.updatedAt ?? '').slice(0, 10) || today },
   { loc: `${SITE_URL}/agents`, lastmod: today },
+  { loc: `${SITE_URL}/browse/`, lastmod: today },
+  ...pages.map((p) => ({ loc: `${SITE_URL}/browse/${p.slug}`, lastmod: today })),
   ...data.jobs.map((j) => ({ loc: `${SITE_URL}/job/${j.slug}`, lastmod: (j.firstSeen ?? today).slice(0, 10) })),
 ];
 await writeFile(
@@ -93,4 +105,4 @@ await writeFile(
 );
 await writeFile('site/robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
-console.log(`site/ ready: ${data.jobs.length} job pages`);
+console.log(`site/ ready: ${data.jobs.length} job pages, ${pages.length} landing pages`);

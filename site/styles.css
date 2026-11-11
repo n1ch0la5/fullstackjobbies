@@ -385,3 +385,11 @@ h1, h2, h3, .job-link, p code, li code { overflow-wrap: anywhere; }
 .ext-callout { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; justify-content: space-between; margin: 28px 0 0; padding: 16px 18px; border: 2px dashed currentColor; border-radius: 14px; font-size: 15px; }
 .ext-callout span { flex: 1 1 260px; }
 .ext-callout .btn { padding: 10px 16px; font-size: 15px; }
+
+/* Landing pages: lists of related searches */
+.browse-links { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.browse-links li { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--ink); border-radius: 999px; padding: 8px 14px; background: var(--paper); font-weight: 600; font-size: 15px; }
+.browse-links a { color: var(--ink); text-decoration: none; }
+.browse-links a:hover { text-decoration: underline; }
+.browse-links span { font: 600 13px var(--mono, monospace); color: var(--ink-3); }
+.job-when { margin: 10px 0 0; font-size: 13px; color: var(--ink-3); }
