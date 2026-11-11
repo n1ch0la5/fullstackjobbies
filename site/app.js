@@ -238,3 +238,9 @@ heroInput?.addEventListener('input', () => {
 for (const form of document.querySelectorAll('form[data-netlify]')) {
   form.addEventListener('submit', () => track('sign_up', { form_name: form.getAttribute('name') }));
 }
+
+// Links marked data-track="event_name" report a click to analytics (e.g. "Add to Chrome").
+document.addEventListener('click', (e) => {
+  const link = e.target.closest?.('[data-track]');
+  if (link) track(link.dataset.track, { link_url: link.href });
+});
