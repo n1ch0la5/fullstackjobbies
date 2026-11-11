@@ -4,6 +4,10 @@
 // Only public files go out: worst-jobbie candidates name real companies, so
 // they stay private until someone anonymises one for the Friday post.
 import { cp, mkdir, writeFile, readFile, rm, access } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+
+// Bump to redraw every job's preview image after changing scripts/og-image.js.
+const OG_VERSION = 1;
 import { jobSlug } from '../src/slug.js';
 import { describeWhere } from '../src/location.js';
 import { renderJobPage, jobDescription } from './job-page-template.js';
@@ -41,6 +45,36 @@ await mkdir('site/job', { recursive: true });
 const gtm = (await readFile('site/index.html', 'utf8')).match(/<!-- Google Tag Manager[\s\S]*?<!-- End Google Tag Manager -->/)?.[0] ?? '';
 for (const job of data.jobs) {
   await writeFile(`site/job/${job.slug}.html`, renderJobPage(job, { siteUrl: SITE_URL, gtm, where: describeWhere(job.where), description: jobDescription(job) }));
+}
+
+// A preview image per job for shared links. Netlify keeps node_modules between builds, so
+// images are cached there by content and only new or changed jobs are drawn (~0.1s each).
+const OG_CACHE = 'node_modules/.cache/fsj-og';
+await rm('site/og/job', { recursive: true, force: true });
+await mkdir('site/og/job', { recursive: true });
+await mkdir(OG_CACHE, { recursive: true });
+let drawn = 0;
+try {
+  const { renderOgImage } = await import('./og-image.js');
+  for (const job of data.jobs) {
+    const where = describeWhere(job.where);
+    const key = createHash('sha1')
+      .update(JSON.stringify([OG_VERSION, job.title, job.company, where, job.location, job.rating.level, job.rating.name, job.salary, job.redFlags?.length ?? 0]))
+      .digest('hex');
+    const cached = `${OG_CACHE}/${key}.png`;
+    try {
+      await access(cached);
+    } catch {
+      await writeFile(cached, await renderOgImage(job, where));
+      drawn++;
+    }
+    await cp(cached, `site/og/job/${job.slug}.png`);
+  }
+  console.log(`og images: ${drawn} drawn, ${data.jobs.length - drawn} from cache`);
+} catch (e) {
+  // Never fail a deploy over preview images; pages fall back to the site-wide one.
+  console.warn(`og images skipped: ${e.message}`);
+  for (const job of data.jobs) await cp('site/og.png', `site/og/job/${job.slug}.png`).catch(() => {});
 }
 
 // Sitemap and robots.txt so search engines find every job page.

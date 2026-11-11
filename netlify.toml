@@ -7,7 +7,7 @@
   command = "node scripts/build-site.js"
   # Skip the deploy (and its credits) when a push only touches things the site doesn't use:
   # the GitHub workflow, tests, Supabase SQL, store assets, the extension, docs.
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site src scripts netlify data/jobs.json data/stats.json data/best-jobbie-candidates.json netlify.toml package.json"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site src scripts netlify assets package-lock.json data/jobs.json data/stats.json data/best-jobbie-candidates.json netlify.toml package.json"
 
 [functions]
   directory = "netlify/functions"

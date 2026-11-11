@@ -68,3 +68,34 @@ test('MCP handshake, tools and calls', async () => {
   const get = await mcp(new Request('https://x.test/mcp'));
   assert.equal(get.status, 405);
 });
+
+// ---- Job page structured data (Google job search) ----
+import { jobPostingLd } from '../scripts/job-page-template.js';
+
+test('JobPosting data: remote job with a range, no made-up fields', () => {
+  const job = {
+    id: 'gh:acme:1', title: 'Full Stack Engineer', company: 'Acme', url: 'https://acme.com/jobs/1', location: 'Remote (US)',
+    remote: true, workStyle: 'remote', where: { countries: ['US', 'CA'], regions: [], anywhere: false },
+    postedAt: '2026-11-03T13:22:47-05:00', firstSeen: '2026-11-06',
+    salary: { min: 140000, max: 160000, currency: 'USD', interval: 'year' },
+    rating: { level: 4, name: 'Solid', reasons: ['+1.25 strong pay'] }, redFlags: [],
+  };
+  const ld = JSON.parse(jobPostingLd(job, { url: 'https://fullstackjobbies.com/job/x', description: 'Summary.' }));
+  assert.equal(ld['@type'], 'JobPosting');
+  assert.equal(ld.datePosted, '2026-11-03');
+  assert.equal(ld.jobLocationType, 'TELECOMMUTE');
+  assert.deepEqual(ld.applicantLocationRequirements.map((c) => c.name), ['United States', 'Canada']);
+  assert.equal(ld.jobLocation, undefined);
+  assert.deepEqual(ld.baseSalary.value, { '@type': 'QuantitativeValue', minValue: 140000, maxValue: 160000, unitText: 'YEAR' });
+  assert.ok(ld.description.includes('https://acme.com/jobs/1'));
+});
+
+test('JobPosting data: on-site job gets a place and no salary when there is none', () => {
+  const ld = JSON.parse(jobPostingLd({
+    id: 'x', title: 'Dev', company: 'B', url: 'https://b.co', location: 'Austin, TX', remote: false, workStyle: 'onsite',
+    where: { countries: ['US'] }, firstSeen: '2026-11-06', salary: null, rating: { level: 3, name: 'Meh', reasons: [] }, redFlags: ['</script>'],
+  }, { url: 'u', description: 'd' }));
+  assert.deepEqual(ld.jobLocation.address, { '@type': 'PostalAddress', addressLocality: 'Austin, TX', addressCountry: 'US' });
+  assert.equal(ld.baseSalary, undefined);
+  assert.ok(!jobPostingLd({ id: 'x', title: '</script>', company: 'B', url: 'u', rating: { reasons: [] } }, { url: 'u', description: 'd' }).includes('</script>'));
+});

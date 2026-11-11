@@ -9,9 +9,60 @@ const STYLE_LABELS = {
   conversation: 'Just a conversation',
 };
 import { reportLines } from '../src/reports.js';
+import { COUNTRIES } from '../src/location.js';
 
-const LEVEL_BG = ['#5C1A1A', '#8A5523', '#C9893E', '#E9D16A', '#7FB3FF', '#2F5BFF'];
-const LEVEL_FG = ['#FFF4CC', '#FFF4CC', '#1A1712', '#1A1712', '#1A1712', '#FFFFFF'];
+const COUNTRY_NAME = Object.fromEntries(COUNTRIES.map((c) => [c.code, c.name]));
+const UNIT = { year: 'YEAR', hour: 'HOUR', month: 'MONTH' };
+
+// Google's job search reads this (schema.org JobPosting). Only facts from the listing:
+// the employer's own title, pay and dates. The description is our own summary, since we
+// never republish the company's text; "Apply" goes to their site.
+export function jobPostingLd(job, { url, description }) {
+  const countries = job.where?.countries ?? [];
+  const remote = job.remote || job.workStyle === 'remote';
+  const posted = (job.postedAt ?? job.firstSeen ?? '').slice(0, 10);
+  const ld = {
+    '@context': 'https://schema.org/',
+    '@type': 'JobPosting',
+    title: job.title,
+    description: [
+      `<p>${esc(description)}</p>`,
+      job.rating.reasons?.length ? `<p>How we rated it:</p><ul>${job.rating.reasons.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>` : '',
+      job.redFlags?.length ? `<p>Red flags:</p><ul>${job.redFlags.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>` : '',
+      `<p>Apply on ${esc(job.company)}'s own site: <a href="${esc(job.url)}">${esc(job.url)}</a></p>`,
+    ].join(''),
+    datePosted: posted || undefined,
+    hiringOrganization: { '@type': 'Organization', name: job.company },
+    identifier: { '@type': 'PropertyValue', name: job.company, value: job.id },
+    url,
+    directApply: false,
+  };
+  if (remote) {
+    ld.jobLocationType = 'TELECOMMUTE';
+    if (countries.length) ld.applicantLocationRequirements = countries.map((c) => ({ '@type': 'Country', name: COUNTRY_NAME[c] ?? c }));
+  }
+  if (!remote || job.workStyle === 'hybrid') {
+    // Our location text is free-form ("Hawthorne, CA"), so it goes in as the locality.
+    const address = { '@type': 'PostalAddress' };
+    if (job.location) address.addressLocality = job.location;
+    if (countries.length === 1) address.addressCountry = countries[0];
+    ld.jobLocation = { '@type': 'Place', address };
+  }
+  const s = job.salary;
+  if (s && UNIT[s.interval]) {
+    ld.baseSalary = {
+      '@type': 'MonetaryAmount',
+      currency: s.currency,
+      value: s.min === s.max
+        ? { '@type': 'QuantitativeValue', value: s.min, unitText: UNIT[s.interval] }
+        : { '@type': 'QuantitativeValue', minValue: s.min, maxValue: s.max, unitText: UNIT[s.interval] },
+    };
+  }
+  return JSON.stringify(ld).replace(/</g, '\\u003c');
+}
+
+export const LEVEL_BG = ['#5C1A1A', '#8A5523', '#C9893E', '#E9D16A', '#7FB3FF', '#2F5BFF'];
+export const LEVEL_FG = ['#FFF4CC', '#FFF4CC', '#1A1712', '#1A1712', '#1A1712', '#FFFFFF'];
 
 const esc = (s = '') =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -83,14 +134,15 @@ ${gtm}
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${esc(url)}">
-<meta property="og:image" content="${esc(siteUrl)}/og.png">
+<meta property="og:image" content="${esc(siteUrl)}/og/job/${esc(job.slug)}.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Full Stack Jobbies: Tired of crappy job posts? We sift through the 💩 so you don't have to.">
+<meta property="og:image:alt" content="${esc(job.title)} at ${esc(job.company)}: rated ${esc(job.rating.name)} on the Jobbie Scale">
 <meta property="og:site_name" content="Full Stack Jobbies">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFF4CC">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">${jobPostingLd(job, { url, description })}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
