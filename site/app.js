@@ -101,7 +101,7 @@ function renderResult(target, job, { compact = false } = {}) {
   const pay = formatPay(facts.salary);
   tags.append(el('span', { class: `tag ${pay ? 'tag-pay' : 'tag-flag'}` }, pay ?? 'No salary'));
   if (facts.remote) tags.append(el('span', { class: 'tag tag-stack' }, 'Remote'));
-  if (facts.rounds) tags.append(el('span', { class: 'tag tag-int' }, `${facts.rounds} rounds`));
+  if (facts.rounds) tags.append(el('span', { class: 'tag tag-int' }, `${facts.rounds} round${facts.rounds === 1 ? '' : 's'}`));
   for (const s of facts.interviewStyles) tags.append(el('span', { class: 'tag tag-int' }, STYLE_LABELS[s] ?? s));
   for (const s of facts.stack.slice(0, 8)) tags.append(el('span', { class: 'tag tag-stack' }, s));
   target.append(tags);
@@ -114,7 +114,7 @@ function renderResult(target, job, { compact = false } = {}) {
     target.append(el('p', { style: 'margin:0;font-weight:700' }, 'How we got there'));
     target.append(el('ul', {}, (rating.reasons.length ? rating.reasons : ['Nothing stood out either way']).map((r) => el('li', {}, r))));
     // Hand the job to the report form (this tab only), so nobody has to paste it twice.
-    const report = el('a', { href: '/report', style: 'font-weight:700' }, 'Add it with how the interview went →');
+    const report = el('a', { href: '/report', style: 'font-weight:700' }, 'Report how the interview went →');
     report.addEventListener('click', () => {
       try {
         sessionStorage.setItem('fsj.report.draft', JSON.stringify(job.source === 'link' ? { url: job.url } : { text: job.description }));
@@ -225,7 +225,7 @@ heroInput?.addEventListener('input', () => {
     document.getElementById('rocket-blurb').textContent = top.location || 'Salary up front, a sane process, and a stack worth working in.';
     const tags = document.getElementById('rocket-tags');
     tags.replaceChildren(
-      ...[formatPay(top.salary), top.rounds ? `${top.rounds} rounds` : null, ...top.interviewStyles.map((s) => STYLE_LABELS[s] ?? s), top.remote ? 'Remote' : null]
+      ...[formatPay(top.salary), top.rounds ? `${top.rounds} round${top.rounds === 1 ? '' : 's'}` : null, ...top.interviewStyles.map((s) => STYLE_LABELS[s] ?? s), top.remote ? 'Remote' : null]
         .filter(Boolean)
         .map((t) => el('span', { class: 'tag' }, t)),
     );

@@ -393,3 +393,14 @@ h1, h2, h3, .job-link, p code, li code { overflow-wrap: anywhere; }
 .browse-links a:hover { text-decoration: underline; }
 .browse-links span { font: 600 13px var(--mono, monospace); color: var(--ink-3); }
 .job-when { margin: 10px 0 0; font-size: 13px; color: var(--ink-3); }
+
+/* Employers: claim link, featured label */
+.claim-link { margin: 16px 0 0; font-size: 14px; color: var(--ink-3); }
+.featured-label { display: inline-block; margin: 0 0 10px; padding: 3px 10px; border: 2px solid var(--ink); border-radius: 999px; background: #E9D16A; font: 700 12px var(--mono, monospace); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); }
+.job.is-featured { border-color: #C9893E; box-shadow: 6px 6px 0 #C9893E; }
+.employer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 36px; }
+.employer-grid h2 { font-size: 28px; margin: 6px 0 10px; }
+.employer-grid ul { margin: 0; padding-left: 20px; }
+.employer-grid .eyebrow { margin: 0; }
+.feature-box { margin-top: 32px; }
+.feature-box input[type=url] { width: 100%; margin-top: 6px; }

@@ -4,6 +4,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { scoreJob } from '../src/score.js';
 import { applyReports } from '../src/reports.js';
+import { applyClaim } from '../src/claims.js';
 
 const path = 'data/jobs.json';
 const data = JSON.parse(await readFile(path, 'utf8'));
@@ -16,9 +17,10 @@ for (const j of data.jobs) {
     salary: j.salary, remote: j.remote, rounds: j.rounds, interviewStyles: j.interviewStyles,
     redFlags: j.redFlags, severeFlags: [], stack: j.stack,
   };
-  const facts = applyReports(base, j.reports);
+  const facts = applyClaim(applyReports(base, j.reports), j.employerStated);
   const r = scoreJob(facts);
   if (facts.reportedBy) r.reasons.push(`interview details from ${facts.reportedBy} report${facts.reportedBy === 1 ? '' : 's'}`);
+  else if (j.employerStated) r.reasons.push('interview process stated by the employer');
   j.rating = { level: r.level, name: r.name, emoji: r.emoji, reasons: r.reasons };
   after[r.name] = (after[r.name] ?? 0) + 1;
 }

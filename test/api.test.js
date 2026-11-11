@@ -114,3 +114,19 @@ test('landing pages: only pages with enough jobs, and a job links to its pages',
   assert.ok(pages.every((p) => p.jobs.length >= MIN_JOBS));
   assert.equal(pagesForJob(jobs[0], pages)[0].group, 'Stack');
 });
+
+// ---- Employer claims ----
+import { claimSummary, applyClaim } from '../src/claims.js';
+
+test('claims: employer fills gaps, but interview reports outrank them', () => {
+  const stated = claimSummary({ created_at: '2026-11-11T10:00:00Z', pay_min: 140000, pay_max: 160000, pay_currency: 'USD', pay_interval: 'year', work_style: 'remote', steps: ['pairing', 'team_chat'], rounds: 3, duration: '2_4w' });
+  const noSalary = applyClaim({ salary: null, interviewStyles: ['live_algorithm'], rounds: 6 }, stated);
+  assert.deepEqual(noSalary.salary, { min: 140000, max: 160000, currency: 'USD', interval: 'year' });
+  assert.deepEqual(noSalary.interviewStyles, ['pairing', 'conversation']);
+  assert.equal(noSalary.rounds, 3);
+  const listingPay = { min: 150000, max: 170000, currency: 'USD', interval: 'year' };
+  assert.deepEqual(applyClaim({ salary: listingPay, interviewStyles: [], rounds: null }, stated).salary, listingPay);
+  const reported = applyClaim({ salary: listingPay, interviewStyles: ['live_algorithm'], rounds: 5, reportedBy: 2 }, stated);
+  assert.deepEqual(reported.interviewStyles, ['live_algorithm']);
+  assert.equal(reported.rounds, 5);
+});

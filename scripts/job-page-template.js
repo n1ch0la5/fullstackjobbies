@@ -9,6 +9,7 @@ const STYLE_LABELS = {
   conversation: 'Just a conversation',
 };
 import { reportLines } from '../src/reports.js';
+import { claimLines } from '../src/claims.js';
 import { COUNTRIES } from '../src/location.js';
 
 const COUNTRY_NAME = Object.fromEntries(COUNTRIES.map((c) => [c.code, c.name]));
@@ -82,7 +83,7 @@ export function jobDescription(job) {
   bits.push(`${job.title} at ${job.company}${pay ? `, paying ${pay}` : ''}.`);
   if (job.remote) bits.push('Remote.');
   if (job.stack?.length) bits.push(`Stack: ${job.stack.slice(0, 6).join(', ')}.`);
-  if (job.rounds) bits.push(`${job.rounds} interview rounds.`);
+  if (job.rounds) bits.push(`${job.rounds} interview round${job.rounds === 1 ? '' : 's'}.`);
   if (job.interviewStyles?.length) bits.push(`Interviews: ${job.interviewStyles.map((s) => (STYLE_LABELS[s] ?? s).toLowerCase()).join(', ')}.`);
   bits.push(`Rated ${job.rating.name} ${job.rating.emoji} on the Jobbie Scale${job.redFlags?.length ? `, with ${job.redFlags.length} red flag${job.redFlags.length === 1 ? '' : 's'}` : ''}.`);
   return bits.join(' ');
@@ -110,7 +111,7 @@ export function renderJobPage(job, { siteUrl, gtm, where, description, related =
     pay && `<span class="tag tag-pay">${esc(pay)}</span>`,
     where && `<span class="tag where-tag">${esc(where)}</span>`,
     job.remote && '<span class="tag tag-stack">Remote</span>',
-    job.rounds && `<span class="tag tag-int">${job.rounds} rounds</span>`,
+    job.rounds && `<span class="tag tag-int">${job.rounds} round${job.rounds === 1 ? '' : 's'}</span>`,
     ...(job.interviewStyles ?? []).map((s) => `<span class="tag tag-int">${esc(STYLE_LABELS[s] ?? s)}</span>`),
     ...(job.stack ?? []).map((s) => `<span class="tag tag-stack">${esc(s)}</span>`),
   ].filter(Boolean).join('\n          ');
@@ -118,6 +119,8 @@ export function renderJobPage(job, { siteUrl, gtm, where, description, related =
   const flags = (job.redFlags ?? []).map((r) => `<li>${esc(r)}</li>`).join('');
   const reportItems = reportLines(job.reports).map((r) => `<li>${esc(r)}</li>`).join('');
   const reportUrl = `/report?url=${encodeURIComponent(job.url)}`;
+  const claimItems = claimLines(job.employerStated).map((r) => `<li>${esc(r)}</li>`).join('');
+  const featured = job.featuredUntil && Date.parse(job.featuredUntil) > Date.now();
   // Only what the vote widget needs, safely embedded.
   const pageData = JSON.stringify({ id: job.id, title: job.title, rating: job.rating }).replace(/</g, '\\u003c');
 
@@ -170,6 +173,7 @@ ${gtm}
     <p class="mono" style="margin: 0 0 16px; font-size: 13px"><a href="/jobs">← All jobs</a></p>
     <div class="row" style="align-items: flex-start">
       <div>
+        ${featured ? '<p class="featured-label">Featured</p>' : ''}
         <h1 style="font-size: clamp(36px, 5vw, 56px)">${esc(job.title)}</h1>
         <p class="lede" style="margin-top: 10px">${esc([job.company, job.location].filter(Boolean).join(' · '))}</p>
         <p class="mono" style="margin: 6px 0 0; font-size: 13px; color: var(--ink-3)">${esc(dateLabel(job))}</p>
@@ -191,7 +195,9 @@ ${gtm}
         <ul style="margin: 0; padding-left: 20px">${reasons || '<li>Nothing stood out either way</li>'}</ul>
         ${flags ? `<p style="margin: 14px 0 4px; font-weight: 700">Red flags</p><ul style="margin: 0; padding-left: 20px">${flags}</ul>` : ''}
         ${reportItems ? `<div class="reports-box"><p style="margin: 0; font-weight: 700">From ${job.reports.count} interview report${job.reports.count === 1 ? '' : 's'}</p><ul>${reportItems}</ul></div>` : ''}
+        ${claimItems ? `<div class="reports-box"><p style="margin: 0; font-weight: 700">The employer says</p><ul>${claimItems}</ul></div>` : ''}
         <div id="vote-mount"></div>
+        <p class="claim-link">${job.employerStated ? 'Process stated by the employer.' : `Is this your job? <a href="/claim?url=${esc(encodeURIComponent(job.url))}">State the pay and process</a>`}</p>
       </aside>
     </div>
   </div>
@@ -219,7 +225,7 @@ ${related.length ? `<section class="section-tight" style="padding-bottom: 0">
 <footer class="site-footer">
   <div class="wrap">
     <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
-    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="/employers">For employers</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
   </div>
 </footer>
 

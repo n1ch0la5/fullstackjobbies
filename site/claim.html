@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager: loads right away unless this visitor must opt in first (see consent.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.fsjLoadGTM = function () {
+  if (window.__gtmLoaded) return; window.__gtmLoaded = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M9M4NF7');
+};
+(function () {
+  var choice = null; try { choice = localStorage.getItem('fsj.consent'); } catch (e) {}
+  if (document.documentElement.getAttribute('data-consent') === 'not-required' || choice === 'granted') window.fsjLoadGTM();
+})();
+</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claim your job listing · Full Stack Jobbies</title>
+<meta name="description" content="Hiring? State the pay range and interview process for your job on Full Stack Jobbies. Free, checked by hand.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FFF4CC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="/" class="logo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" fill="#6B3F14" stroke="#1A1712" stroke-width="2" stroke-linejoin="round"><path d="M5 27h22a3.5 3.5 0 0 0 0-7h-1.5a3.5 3.5 0 0 0-2.5-6h-1.5a4.5 4.5 0 0 0-5.5-6.5c.5 2-1.5 3-3 3.5a3.5 3.5 0 0 0-2.5 9H6.5A3.5 3.5 0 0 0 5 27z"/></svg>
+      fullstack<span>jobbies</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#weekly">Rocket &amp; Jobbie of the Week</a>
+      <a href="/#detector">Red Flag Detector</a>
+      <a href="/agents">For agents</a>
+      <a href="/employers">Post a job</a>
+      <a href="/jobs.html" class="btn btn-accent">Explore jobs</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section style="padding-top: 56px">
+  <div class="wrap report-wrap">
+    <h1 style="font-size: clamp(36px, 5.5vw, 60px)">Is this your job?</h1>
+    <p class="lede">Tell developers what the listing doesn't: the pay range and how you interview. Jobs with a stated, humane process rate higher. It's free, and we check every claim by hand.</p>
+
+    <form id="claim-form" class="report-form" novalidate>
+      <fieldset>
+        <legend>1. The job</legend>
+        <label for="job-url">Link to the job posting</label>
+        <input id="job-url" type="url" inputmode="url" placeholder="https://…" required autocomplete="off">
+        <p class="form-note" id="job-preview" aria-live="polite">It has to be a job we already list, or one on your careers page that we found.</p>
+        <label for="work-email" style="margin-top: 14px">Your work email</label>
+        <input id="work-email" type="email" required placeholder="you@company.com" autocomplete="email">
+        <p class="form-note">We only use it to check you work there. It's never shown.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Pay <span class="legend-note">Base salary, the range you'd actually offer</span></legend>
+        <div class="report-row">
+          <div><label for="pay-min">From</label><input id="pay-min" type="text" inputmode="numeric" placeholder="140,000"></div>
+          <div><label for="pay-max">To</label><input id="pay-max" type="text" inputmode="numeric" placeholder="170,000"></div>
+          <div><label for="pay-currency">Currency</label><select id="pay-currency"><option>USD</option><option>CAD</option><option>GBP</option><option>EUR</option><option>AUD</option></select></div>
+          <div><label for="pay-interval">Per</label><select id="pay-interval"><option value="year">Year</option><option value="hour">Hour</option></select></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Where</legend>
+        <div class="choices" id="work-style"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. How you interview <span class="legend-note">Tick every step</span></legend>
+        <div class="choices" id="steps"></div>
+        <div class="report-row">
+          <div>
+            <label for="rounds">Number of rounds</label>
+            <select id="rounds"><option value="">Choose…</option></select>
+          </div>
+          <div>
+            <label for="duration">Start to offer usually takes</label>
+            <select id="duration"><option value="">Choose…</option></select>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="sr-only" aria-hidden="true"><label>Leave empty <input type="text" id="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <div class="report-submit">
+        <button class="btn btn-accent" type="submit">Send for review</button>
+        <p class="form-note" id="claim-status" aria-live="polite">Candidates' interview reports, when there are any, count for more than what employers state.</p>
+      </div>
+    </form>
+
+    <div id="claim-done" class="card report-done" hidden>
+      <p style="font-size: 44px; margin: 0">🤝</p>
+      <h2 style="font-size: 32px; margin: 8px 0 0">Thanks. We'll check it over.</h2>
+      <p>Once approved (usually within a day), the job page shows "Process stated by the employer" and the rating updates on the next sift. After that, you can feature it.</p>
+      <p style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px">
+        <a class="btn btn-accent" href="/employers">About featured jobs</a>
+        <a class="btn" href="/claim">Claim another</a>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
+    <p id="updated" style="color: var(--ink-3)"></p>
+    <p style="color: var(--ink-3)"><a href="/browse/">Browse jobs</a> · <a href="/employers">For employers</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
+  </div>
+</footer>
+
+<script type="module" src="/claim.js"></script>
+<script type="module" src="/consent.js"></script>
+</body>
+</html>

@@ -195,6 +195,9 @@ function formatPay(s) {
 }
 
 
+// Paid placement: pinned to the top of whatever the filters show, and always labelled.
+const isFeatured = (j) => Boolean(j.featuredUntil && Date.parse(j.featuredUntil) > Date.now());
+
 function jobCard(j) {
   const summary = votes.get(j.id);
   const lv = effectiveLevel(j, summary);
@@ -205,19 +208,21 @@ function jobCard(j) {
   const applied = appliedOn(j.id);
   // Posting date when the source gives one; otherwise when we found it.
   const when = (j.postedAt && relative(j.postedAt, 'Posted')) || relative(j.firstSeen, 'Found');
-  return el('article', { class: applied ? 'job is-applied' : 'job' },
+  return el('article', { class: ['job', applied && 'is-applied', isFeatured(j) && 'is-featured'].filter(Boolean).join(' ') },
     el('div', { class: 'job-main' },
+      isFeatured(j) && el('p', { class: 'featured-label' }, 'Featured'),
       el('h3', {}, j.slug ? el('a', { href: `/job/${j.slug}`, class: 'job-link' }, j.title) : j.title),
       el('p', { class: 'co' }, [j.company, j.location].filter(Boolean).join(' · ')),
       el('div', { class: 'tags' },
         el('span', { class: 'tag tag-pay' }, formatPay(j.salary)),
         whereText && el('span', { class: 'tag where-tag' }, whereText),
         STYLE_TAGS[workStyle(j)] && el('span', { class: 'tag tag-stack' }, STYLE_TAGS[workStyle(j)]),
-        j.rounds && el('span', { class: 'tag tag-int' }, `${j.rounds} rounds`),
+        j.rounds && el('span', { class: 'tag tag-int' }, `${j.rounds} round${j.rounds === 1 ? '' : 's'}`),
         j.interviewStyles.map((s) => el('span', { class: 'tag tag-int' }, STYLE_LABELS[s] ?? s)),
         j.stack.slice(0, 6).map((s) => el('span', { class: 'tag tag-stack' }, s)),
         j.redFlags.length > 0 && el('span', { class: 'tag tag-flag' }, `${j.redFlags.length} red flag${j.redFlags.length === 1 ? '' : 's'}`),
         j.reports?.count > 0 && el('span', { class: 'tag tag-int' }, `🗣 ${j.reports.count} interview report${j.reports.count === 1 ? '' : 's'}`),
+        !j.reports?.count && j.employerStated && el('span', { class: 'tag tag-int' }, 'Process stated by employer'),
       ),
       voteWidget(j, summary, (next) => {
         votes.set(j.id, next);
@@ -282,6 +287,7 @@ function render() {
   const byPay = (dir) => (a, b) => ((payMid(a) ?? 0) - (payMid(b) ?? 0)) * dir || byRating(a, b);
   const sorts = { rating: byRating, newest: byNewest, pay_high: byPay(-1), pay_low: byPay(1) };
   shown.sort(sorts[$('sort').value] ?? byRating);
+  shown.sort((a, b) => isFeatured(b) - isFeatured(a)); // stable: featured first, order kept
   cardEls.clear();
   list.replaceChildren(...shown.map((j) => {
     const card = jobCard(j);

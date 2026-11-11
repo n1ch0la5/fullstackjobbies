@@ -82,7 +82,7 @@ function card(j) {
     `<span class="tag tag-pay">${esc(formatPay(j.salary))}</span>`,
     where && `<span class="tag where-tag">${esc(where)}</span>`,
     isRemote(j) && '<span class="tag tag-stack">Remote</span>',
-    j.rounds && `<span class="tag tag-int">${j.rounds} rounds</span>`,
+    j.rounds && `<span class="tag tag-int">${j.rounds} round${j.rounds === 1 ? '' : 's'}</span>`,
     ...(j.stack ?? []).slice(0, 5).map((s) => `<span class="tag tag-stack">${esc(s)}</span>`),
     j.redFlags?.length && `<span class="tag tag-flag">${j.redFlags.length} red flag${j.redFlags.length === 1 ? '' : 's'}</span>`,
   ].filter(Boolean).join('');
@@ -147,7 +147,7 @@ ${body}
 <footer class="site-footer">
   <div class="wrap">
     <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
-    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="/employers">For employers</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
   </div>
 </footer>
 <script type="module" src="/consent.js"></script>

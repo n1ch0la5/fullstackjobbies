@@ -19,7 +19,8 @@ import { aiEnabled, extractWithAI, mergeFacts } from './ai.js';
 import { scoreJob } from './score.js';
 import { classifyLocation } from './location.js';
 import { jobSlug } from './slug.js';
-import { fetchApprovedReports, groupReports, jobFromReports, urlKey } from './sources/reports.js';
+import { fetchApprovedReports, groupReports, jobFromReports, urlKey, rpc } from './sources/reports.js';
+import { claimSummary, applyClaim } from './claims.js';
 import { applyReports } from './reports.js';
 
 const DATA = new URL('../data/', import.meta.url);
@@ -108,8 +109,9 @@ export async function sift() {
   const candidates = raw.filter(isFullStack);
   stats.fullStack = candidates.length;
 
-  // Interview reports (approved by hand). They attach to a job we already have, or add the job:
-  // you approved it, so it skips the full stack filter but still needs a salary to be listed.
+  // Interview reports (approved by hand). They attach to a job we already have, or add the job
+  // when someone actually interviewed there (not just applied), so the form can't be used as
+  // free job posting. Added jobs skip the full stack filter but still need a salary.
   const reportsFor = new Map(); // sourceId → summary
   try {
     const groups = groupReports(await fetchApprovedReports());
@@ -119,6 +121,7 @@ export async function sift() {
     await mapLimit(groups, 4, async (g) => {
       let job = (g.jobId && byId.get(g.jobId)) || byUrl.get(urlKey(g.url));
       if (!job) {
+        if (!g.summary.interviewed) return; // "applied" reports only attach to jobs we already have
         try {
           job = await jobFromReports(g);
           candidates.push(job);
@@ -132,6 +135,23 @@ export async function sift() {
     });
   } catch (e) {
     console.warn(`Interview reports unavailable: ${e.message}`);
+  }
+
+  // Employer claims (approved by hand): only for jobs we already found, newest claim wins.
+  // Featured jobs: paid, and only shown as featured when the employer has an approved claim.
+  const claimsFor = new Map(); // sourceId → what the employer stated
+  const featuredUntil = new Map(); // sourceId → ISO end time
+  try {
+    const byUrl = new Map(candidates.map((j) => [urlKey(j.url), j]));
+    const byId = new Map(candidates.map((j) => [j.sourceId, j]));
+    for (const c of await rpc('approved_employer_claims')) {
+      const job = (c.job_id && byId.get(c.job_id)) || byUrl.get(urlKey(c.job_url));
+      if (job && !claimsFor.has(job.sourceId)) claimsFor.set(job.sourceId, claimSummary(c));
+    }
+    for (const f of await rpc('active_featured_jobs')) featuredUntil.set(f.job_id, f.ends_at);
+    stats.claimedJobs = claimsFor.size;
+  } catch (e) {
+    console.warn(`Employer claims unavailable: ${e.message}`);
   }
 
   // 3. Extract facts (rules always; AI only for new or changed listings) and 4. score.
@@ -156,8 +176,11 @@ export async function sift() {
 
     const summary = reportsFor.get(job.sourceId);
     if (summary) facts = applyReports(facts, summary);
+    const stated = claimsFor.get(job.sourceId) ?? null;
+    if (stated) facts = applyClaim(facts, stated);
     const rating = scoreJob(facts);
     if (facts.reportedBy) rating.reasons.push(`interview details from ${facts.reportedBy} report${facts.reportedBy === 1 ? '' : 's'}`);
+    else if (stated) rating.reasons.push('interview process stated by the employer');
     const entry = {
       id: job.sourceId,
       company: job.company,
@@ -178,8 +201,11 @@ export async function sift() {
       postedAt: job.postedAt,
       firstSeen: nextCache[job.sourceId].firstSeen,
       reports: summary ?? null,
+      employerStated: stated,
     };
     entry.slug = jobSlug(entry);
+    // Stripe payments carry the job's slug (its page address); older rows may use the id.
+    entry.featuredUntil = (stated && (featuredUntil.get(entry.slug) ?? featuredUntil.get(job.sourceId))) || null;
     // House rule: salary or it doesn't get posted. Severe ones are kept aside for Jobbie of the Week.
     if (facts.salary && rating.level > 0) listed.push(entry);
     else rejected.push(entry);

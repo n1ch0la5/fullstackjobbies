@@ -4,8 +4,9 @@ import { hash } from '../text.js';
 import { summarizeReports } from '../reports.js';
 import { SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY } from '../../site/config.js';
 
-export async function fetchApprovedReports() {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/approved_job_reports`, {
+// Calls a read-only Supabase function with the public key (see supabase/*.sql).
+export async function rpc(name) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`, {
     method: 'POST',
     headers: {
       apikey: SUPABASE_PUBLISHABLE_KEY,
@@ -15,9 +16,11 @@ export async function fetchApprovedReports() {
     body: '{}',
     signal: AbortSignal.timeout(15000),
   });
-  if (!res.ok) throw new Error(`reports: HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`${name}: HTTP ${res.status}`);
   return res.json();
 }
+
+export const fetchApprovedReports = () => rpc('approved_job_reports');
 
 // Same job, different links: ignore case in the host, tracking params, "#…" and a trailing "/".
 export function urlKey(raw) {

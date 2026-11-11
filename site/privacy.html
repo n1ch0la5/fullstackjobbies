@@ -51,7 +51,7 @@ window.fsjLoadGTM = function () {
       <a href="/#weekly">Rocket &amp; Jobbie of the Week</a>
       <a href="/#detector">Red Flag Detector</a>
       <a href="/agents">For agents</a>
-      <a href="/#post">Post a job</a>
+      <a href="/employers">Post a job</a>
       <a href="/jobs.html" class="btn btn-accent">Explore jobs</a>
     </div>
   </nav>
@@ -70,6 +70,8 @@ window.fsjLoadGTM = function () {
 
       <h2>Votes and live emojis</h2>
       <p>To stop one person voting fifty times, your browser makes up a random ID the first time you vote. We store that ID with your vote. It isn't linked to your name, email or anything else about you. Emoji taps are only counted; we don't record who tapped. This data is kept with Supabase, our database provider.</p>
+      <h2>Employers</h2>
+      <p>When an employer claims a job, we store the job link, the pay range and interview details they give, and their work email. The email is only used to check they work there and is never shown. Featured job payments are handled by Stripe; we never see card details.</p>
       <h2>Interview reports</h2>
       <p>When you tell us how an interview went, we store the job link, the choices you ticked and the same random browser ID (so nobody can flood us with reports). There's no free text, and we never ask for your name or email. A person reads each report before it appears, and the site only ever shows totals, never who sent what. If the link can't be read, we also keep the job description you pasted, which is the company's text, not yours.</p>
 
@@ -83,7 +85,7 @@ window.fsjLoadGTM = function () {
       <p>A few conveniences live only in your own browser: the countries, pay range and work styles you picked on the jobs page, the jobs you marked as applied, your cookie choice, and which jobs you've voted on. Clearing your browser data removes them.</p>
 
       <h2>The browser extension</h2>
-      <p>The <a href="/browse/">Browse jobs</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Full Stack Jobbies extension</a> rates job pages entirely inside your browser. It doesn't send page contents, your browsing or anything else to us or anyone, and it has no analytics. It only reads a page when it's a job page on a supported hiring site, or when you right-click selected text and choose "Rate this job." It asks for these permissions: <em>context menus</em> (for the right-click option), <em>active tab</em> and <em>scripting</em> (to show the rating on the page you're on, only when you ask), and <em>storage</em> (to save your preferences).</p>
+      <p>The <a href="/browse/">Browse jobs</a> · <a href="/employers">For employers</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Full Stack Jobbies extension</a> rates job pages entirely inside your browser. It doesn't send page contents, your browsing or anything else to us or anyone, and it has no analytics. It only reads a page when it's a job page on a supported hiring site, or when you right-click selected text and choose "Rate this job." It asks for these permissions: <em>context menus</em> (for the right-click option), <em>active tab</em> and <em>scripting</em> (to show the rating on the page you're on, only when you ask), and <em>storage</em> (to save your preferences).</p>
       <p>If you set preferences in the extension (work style, salary floor, countries, interviews to avoid), they're saved in Chrome's own storage, which Chrome syncs between your browsers if you have Chrome sync turned on. They're used only on your device to show the "For you" check, and are never sent to us.</p>
 
       <h2>The jobs we list</h2>

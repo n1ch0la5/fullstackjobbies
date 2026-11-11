@@ -60,8 +60,8 @@ export function scoreJob(facts) {
   if (styles.includes('pairing') || styles.includes('conversation')) add(0.75, 'humane interviews');
 
   if (facts.rounds !== null && facts.rounds !== undefined) {
-    if (facts.rounds <= 3) add(0.5, `${facts.rounds} rounds`);
-    else if (facts.rounds >= 5) add(-1, `${facts.rounds} rounds`);
+    if (facts.rounds <= 3) add(0.5, `${facts.rounds} round${facts.rounds === 1 ? '' : 's'}`);
+    else if (facts.rounds >= 5) add(-1, `${facts.rounds} round${facts.rounds === 1 ? '' : 's'}`);
   }
 
   if (facts.stack.length > 12) add(-0.5, 'kitchen-sink stack');

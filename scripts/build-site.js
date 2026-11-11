@@ -15,7 +15,7 @@ import { landingPages, pagesForJob, renderLandingPage, renderBrowseHub } from '.
 
 const SITE_URL = process.env.URL || 'https://fullstackjobbies.com';
 const PUBLIC_DATA = ['best-jobbie-candidates.json', 'stats.json'];
-const SHARED_CODE = ['extract.js', 'score.js', 'location.js', 'slug.js', 'reports.js'];
+const SHARED_CODE = ['extract.js', 'score.js', 'location.js', 'slug.js', 'reports.js', 'claims.js'];
 
 await mkdir('site/data', { recursive: true });
 await mkdir('site/lib', { recursive: true });

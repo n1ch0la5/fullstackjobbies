@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager: loads right away unless this visitor must opt in first (see consent.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.fsjLoadGTM = function () {
+  if (window.__gtmLoaded) return; window.__gtmLoaded = true;
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5M9M4NF7');
+};
+(function () {
+  var choice = null; try { choice = localStorage.getItem('fsj.consent'); } catch (e) {}
+  if (document.documentElement.getAttribute('data-consent') === 'not-required' || choice === 'granted') window.fsjLoadGTM();
+})();
+</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For employers · Full Stack Jobbies</title>
+<meta name="description" content="Claim your job listing for free, state your pay range and interview process, or feature it to full stack developers. Ratings can't be bought.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="/" class="logo">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" fill="#6B3F14" stroke="#1A1712" stroke-width="2" stroke-linejoin="round"><path d="M5 27h22a3.5 3.5 0 0 0 0-7h-1.5a3.5 3.5 0 0 0-2.5-6h-1.5a4.5 4.5 0 0 0-5.5-6.5c.5 2-1.5 3-3 3.5a3.5 3.5 0 0 0-2.5 9H6.5A3.5 3.5 0 0 0 5 27z"/></svg>
+      fullstack<span>jobbies</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#weekly">Rocket &amp; Jobbie of the Week</a>
+      <a href="/#detector">Red Flag Detector</a>
+      <a href="/agents">For agents</a>
+      <a href="/employers">Post a job</a>
+      <a href="/jobs.html" class="btn btn-accent">Explore jobs</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section style="padding-top: 56px">
+  <div class="wrap">
+    <h1 style="font-size: clamp(40px, 6vw, 64px)">Hiring full stack developers?</h1>
+    <p class="lede">Developers trust our ratings because they can't be bought. Here's what you can do instead: be clear, then be seen.</p>
+
+    <div class="employer-grid">
+      <div class="card">
+        <p class="eyebrow">Free</p>
+        <h2>Claim your job</h2>
+        <p>State the real pay range and how you interview. It's checked by hand, then shown on the job's page as "Process stated by the employer", and the rating updates.</p>
+        <p><a class="btn btn-accent" href="/claim">Claim a job</a></p>
+      </div>
+      <div class="card">
+        <p class="eyebrow"><span data-price>$199</span> for <span data-days>30</span> days</p>
+        <h2>Feature it</h2>
+        <p>Pinned to the top of the jobs list for anyone whose filters match, with a Featured label. Your rating, its reasons and candidates' interview reports stay exactly as they are.</p>
+        <p><a class="btn" href="#feature">Feature a job</a></p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">How to rate higher</p>
+        <h2>Aim for Rocket ship</h2>
+        <ul>
+          <li>Post the salary range, and keep it honest (top no more than 1.3x the bottom)</li>
+          <li>Three rounds or fewer</li>
+          <li>Pair on real work or just talk, rather than a live algorithm test</li>
+          <li>If there's a take-home, pay for it</li>
+          <li>Skip "rockstar", "ninja" and "we're a family"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="feature" class="card feature-box">
+      <h2 style="font-size: 32px">Feature a job</h2>
+      <p>Only jobs with an approved claim can be featured, so every featured job shows its pay range and interview process. Not claimed yet? <a href="/claim">Claim it first</a>; it's free and usually approved within a day.</p>
+      <label for="feature-url">Link to the job (your posting or its page here)</label>
+      <input id="feature-url" type="url" inputmode="url" placeholder="https://…" autocomplete="off">
+      <p class="form-note" id="feature-preview" aria-live="polite"></p>
+      <p id="feature-buy" hidden><a class="btn btn-accent" id="feature-pay" href="#" target="_blank" rel="noopener">Feature it for <span data-price>$199</span></a></p>
+      <form id="feature-waitlist" name="employers" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="employers">
+        <input type="hidden" name="job" id="feature-job-field">
+        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+        <p style="margin: 14px 0 6px; font-weight: 600">Featured posts open soon. Leave your work email and we'll set it up for you.</p>
+        <div class="report-submit"><input name="email" type="email" required placeholder="you@company.com" autocomplete="email" style="flex: 1 1 240px"><button class="btn" type="submit">Notify me</button></div>
+      </form>
+      <p class="form-note" style="margin-top: 18px">Payments go through Stripe. Featuring starts once the payment comes in, usually the same day, and lasts <span data-days>30</span> days. We never change a rating, remove a report or hide a red flag for money.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
+    <p id="updated" style="color: var(--ink-3)"></p>
+    <p style="color: var(--ink-3)"><a href="/browse/">Browse jobs</a> · <a href="/employers">For employers</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
+  </div>
+</footer>
+
+<script type="module" src="/employers.js"></script>
+<script type="module" src="/consent.js"></script>
+</body>
+</html>

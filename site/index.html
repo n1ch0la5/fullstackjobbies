@@ -254,15 +254,12 @@ GET /api/jobs?where=US,CA
     <div class="cta">
       <div>
         <h2 style="font-size: clamp(32px, 4.5vw, 52px)">Hiring? Aim for rocket ship.</h2>
-        <p class="lede">Post the salary, the stack and how you interview, up front. Good listings get rated up and seen by more developers. Ratings can't be bought.</p>
+        <p class="lede">Post the salary, the stack and how you interview, up front. Already listed here? Claim your job to state the pay range and process, and the rating updates. Ratings can't be bought.</p>
       </div>
-      <form name="employers" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" style="flex: 0 1 360px; display: flex; flex-direction: column; gap: 10px">
-        <input type="hidden" name="form-name" value="employers">
-        <p hidden><label>Leave this empty <input name="bot-field"></label></p>
-        <label for="emp-email" style="font-weight: 600">Your work email</label>
-        <input id="emp-email" name="email" type="email" required placeholder="you@company.com" autocomplete="email">
-        <button type="submit" class="btn">Tell me when job posting opens</button>
-      </form>
+      <div style="flex: 0 1 360px; display: flex; flex-direction: column; gap: 12px">
+        <a class="btn btn-accent" href="/claim">Claim your job (free)</a>
+        <a class="btn" href="/employers">Feature a job</a>
+      </div>
     </div>
   </div>
 </section>
@@ -286,7 +283,7 @@ GET /api/jobs?where=US,CA
 <footer class="site-footer">
   <div class="wrap">
     <p style="font-weight: 600">Yes, we know what "jobbie" means in Glasgow. That's the point.</p>
-    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
+    <p style="color: var(--ink-3)">© 2026 fullstackjobbies.com · <a href="/browse/">Browse jobs</a> · <a href="/employers">For employers</a> · <a href="https://chromewebstore.google.com/detail/full-stack-jobbies-job-sn/fdkpdmocbneaobpaaddejjchpcfijbik" target="_blank" rel="noopener">Chrome extension</a> · <a href="/privacy">Privacy</a></p>
   </div>
 </footer>
 
