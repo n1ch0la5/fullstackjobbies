@@ -1,4 +1,4 @@
-// Employer page: find the job, then pay for featuring through a Polar checkout link
+// Employer page: find the job, then pay for featuring through a Stripe Payment Link
 // (set in config.js). The payment carries the job's slug as its reference id.
 import { FEATURED_PAYMENT_LINK, FEATURED_PRICE, FEATURED_DAYS } from '/config.js';
 
