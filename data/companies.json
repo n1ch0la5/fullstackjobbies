@@ -729,7 +729,7 @@
       "slug": "spotify",
       "name": "Spotify",
       "seeded": "2026-11-06",
-      "fails": 0,
+      "fails": 1,
       "nameChecked": true
     },
     {
@@ -1783,7 +1783,7 @@
       "slug": "ridezum",
       "name": "Ridezum",
       "discovered": "2026-11-06",
-      "fails": 0,
+      "fails": 1,
       "nameChecked": true
     },
     {

@@ -1,6 +1,57 @@
 {
-  "updatedAt": "2026-11-11T17:54:37.098Z",
+  "updatedAt": "2026-11-12T18:21:04.953Z",
   "jobs": [
+    {
+      "id": "gh:affirm:8200180003",
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (International) ",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8200180003",
+      "location": "Remote Poland",
+      "where": {
+        "countries": [
+          "PL"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 32000,
+        "max": 48000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 1,
+        "name": "Steaming pile",
+        "emoji": "💩",
+        "reasons": [
+          "-0.5 low pay",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-12T11:05:18-05:00",
+      "firstSeen": "2026-11-12",
+      "reports": null,
+      "slug": "affirm-senior-software-engineer-fullstack-international-uhtmbt"
+    },
     {
       "id": "gh:affirm:8040392003",
       "company": "Affirm",
