@@ -1,5 +1,5 @@
-// Employer page: find the job, then pay for featuring through a Stripe Payment Link
-// (set in config.js). The payment carries the job's slug as client_reference_id.
+// Employer page: find the job, then pay for featuring through a Polar checkout link
+// (set in config.js). The payment carries the job's slug as its reference id.
 import { FEATURED_PAYMENT_LINK, FEATURED_PRICE, FEATURED_DAYS } from '/config.js';
 
 const $ = (id) => document.getElementById(id);
@@ -48,7 +48,7 @@ async function show() {
   preview.textContent = `✓ ${job.title} at ${job.company}, rated ${job.rating.name} ${job.rating.emoji}`;
   if (FEATURED_PAYMENT_LINK) {
     const url = new URL(FEATURED_PAYMENT_LINK);
-    url.searchParams.set('client_reference_id', job.slug);
+    url.searchParams.set(/stripe\.com$/.test(url.hostname) ? 'client_reference_id' : 'reference_id', job.slug);
     $('feature-pay').href = url.toString();
     $('feature-buy').hidden = false;
   } else {

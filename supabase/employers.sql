@@ -7,8 +7,8 @@
 --   Table Editor → employer_claims → change status to 'approved' (or 'rejected').
 -- The sift uses approved claims; interview reports from candidates still outrank them.
 --
--- FEATURED: after a Stripe payment comes in, add a row to featured_jobs:
---   job_id = the client_reference_id on the Stripe payment (the job's slug, the last part of
+-- FEATURED: after a payment comes in on Polar, add a row to featured_jobs:
+--   job_id = the order's reference_id in Polar (Orders → the order → Metadata): the job's slug, the last part of
 --   its page address: fullstackjobbies.com/job/<slug>), ends_at = 30 days later.
 -- The sift pins featured jobs (only ones with an approved claim) until ends_at.
 -- Keep the allowed values in sync with src/reports.js.
@@ -41,7 +41,7 @@ create table if not exists public.featured_jobs (
   job_id     text primary key,  -- the job's slug (or its id)
   starts_at  timestamptz not null default now(),
   ends_at    timestamptz not null default now() + interval '30 days',
-  note       text  -- e.g. the Stripe payment id, for your own records
+  note       text  -- e.g. the Polar order id, for your own records
 );
 alter table public.featured_jobs enable row level security;
 
