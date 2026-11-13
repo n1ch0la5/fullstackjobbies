@@ -729,7 +729,7 @@
       "slug": "spotify",
       "name": "Spotify",
       "seeded": "2026-11-06",
-      "fails": 1,
+      "fails": 0,
       "nameChecked": true
     },
     {
@@ -1783,7 +1783,7 @@
       "slug": "ridezum",
       "name": "Ridezum",
       "discovered": "2026-11-06",
-      "fails": 1,
+      "fails": 0,
       "nameChecked": true
     },
     {
@@ -2023,6 +2023,22 @@
       "slug": "odinlabs",
       "name": "ODIN Labs",
       "discovered": "2026-11-11",
+      "nameChecked": true,
+      "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "alternativepayments",
+      "name": "Alternativepayments",
+      "discovered": "2026-11-13",
+      "nameChecked": true,
+      "fails": 0
+    },
+    {
+      "ats": "smartrecruiters",
+      "slug": "CERN",
+      "name": "Cern",
+      "discovered": "2026-11-13",
       "nameChecked": true,
       "fails": 0
     }

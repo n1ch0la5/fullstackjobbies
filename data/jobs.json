@@ -1,7 +1,57 @@
 {
-  "updatedAt": "2026-11-12T18:21:04.953Z",
-  "count": 224,
+  "updatedAt": "2026-11-13T17:45:45.194Z",
+  "count": 225,
   "jobs": [
+    {
+      "id": "gh:grafanalabs:6261013004",
+      "company": "Grafana Labs",
+      "title": "Senior Full Stack Engineer | Experimentation - Product Analytics | NASA | Remote",
+      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6261013004",
+      "location": "United States (Remote)",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 167000,
+        "max": 209000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "kubernetes",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.75 humane interviews",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-13T06:38:25-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "grafana-labs-senior-full-stack-engineer-experimentation-product-analytics-dbvthv"
+    },
     {
       "id": "gh:spacex:8927923002",
       "company": "SpaceX",
@@ -51,61 +101,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "spacex-sr-software-engineer-full-stack-data-and-video-analysis-w7tooq"
-    },
-    {
-      "id": "gh:spacex:8505483002",
-      "company": "SpaceX",
-      "title": "Sr. Full Stack Software Engineer (Starlink)",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8505483002?gh_jid=8505483002",
-      "location": "Palo Alto, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 170000,
-        "max": 170000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-04-14T15:59:02-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "spacex-sr-full-stack-software-engineer-starlink-s14wh1"
     },
     {
       "id": "gh:spacex:8840486002",
@@ -1117,6 +1112,238 @@
       "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja"
     },
     {
+      "id": "lv:spotify:9899871a-4307-4367-9f74-039569d7a650",
+      "company": "Spotify",
+      "title": "Full Stack Engineer - Music",
+      "url": "https://jobs.lever.co/spotify/9899871a-4307-4367-9f74-039569d7a650",
+      "location": "New York, NY",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 132948,
+        "max": 189927,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "java"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "lever",
+      "postedAt": "2026-10-02T17:43:05.085Z",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "spotify-full-stack-engineer-music-2rw6uk"
+    },
+    {
+      "id": "gh:affirm:8196749003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Auth Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8196749003",
+      "location": "Remote Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 181000,
+        "max": 241000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "typescript",
+        "javascript"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-12T18:14:42-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "affirm-staff-software-engineer-fullstack-auth-experiences-8o8mic"
+    },
+    {
+      "id": "gh:affirm:8196747003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Auth Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8196747003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 230000,
+        "max": 290000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "typescript",
+        "javascript"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-12T18:14:40-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "affirm-staff-software-engineer-fullstack-auth-experiences-icqrdi"
+    },
+    {
+      "id": "gh:stripe:8384287",
+      "company": "Stripe",
+      "title": "Software Engineer, Full Stack",
+      "url": "https://stripe.com/jobs/search?gh_jid=8384287",
+      "location": "New York, NY",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 193461,
+        "max": 285600,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "graphql",
+        "aws",
+        "kubernetes",
+        "docker"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-12T16:33:50-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "stripe-software-engineer-full-stack-pmkxy3"
+    },
+    {
+      "id": "hn:50484305",
+      "company": "Confidential Healthcare AI Startup",
+      "title": "Senior Full Stack Engineer (Frontend-Leaning)",
+      "url": "https://news.ycombinator.com/item?id=50484305",
+      "location": "NYC",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": "hybrid",
+      "salary": {
+        "min": 160000,
+        "max": 200000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python",
+        "django",
+        "fastapi"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "hn",
+      "postedAt": "2026-11-13T14:47:49.000Z",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "confidential-healthcare-ai-startup-senior-full-stack-engineer-frontend-leaning-c2q4n0"
+    },
+    {
       "id": "gh:grafanalabs:6256074004",
       "company": "Grafana Labs",
       "title": "Senior Full Stack Engineer | Experimentation - Product Analytics | UK | Remote",
@@ -1657,61 +1884,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "spacex-full-stack-software-engineer-starshield-nuep2u"
-    },
-    {
-      "id": "gh:spacex:8501225002",
-      "company": "SpaceX",
-      "title": "Full Stack Software Engineer (Starlink)",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8501225002?gh_jid=8501225002",
-      "location": "Palo Alto, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 135000,
-        "max": 135000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+0.75 fair pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-04-13T19:08:31-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "spacex-full-stack-software-engineer-starlink-jvrtbb"
     },
     {
       "id": "gh:spacex:8731959002",
@@ -2352,61 +2524,6 @@
       "slug": "spacex-full-stack-engineer-employee-experience-nb4zxh"
     },
     {
-      "id": "gh:spacex:8701392002",
-      "company": "SpaceX",
-      "title": "Full Stack Engineer (Application Software)",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8701392002?gh_jid=8701392002",
-      "location": "Redmond, WA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 125000,
-        "max": 125000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+0.75 fair pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-08-12T15:02:26-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "spacex-full-stack-engineer-application-software-sa2bbm"
-    },
-    {
       "id": "gh:spacex:8681166002",
       "company": "SpaceX",
       "title": "Full Stack Engineer (Application Software)",
@@ -2460,6 +2577,61 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "spacex-full-stack-engineer-application-software-0p3c1a"
+    },
+    {
+      "id": "gh:spacex:8701392002",
+      "company": "SpaceX",
+      "title": "Full Stack Engineer (Application Software)",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8701392002?gh_jid=8701392002",
+      "location": "Redmond, WA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 125000,
+        "max": 125000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+0.75 fair pay",
+          "+0.25 clear salary range",
+          "+0.5 1 rounds",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-08-12T15:02:26-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "spacex-full-stack-engineer-application-software-sa2bbm"
     },
     {
       "id": "gh:spacex:8675232002",
@@ -3806,55 +3978,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "black-canyon-consulting-full-stack-developer-python-django-reactjs-x90hvk"
-    },
-    {
-      "id": "lv:shieldai:b6dcf09f-1fb2-4ac1-b2e6-9fab8acb4e79",
-      "company": "Shieldai",
-      "title": "Staff Software Engineer, GCS - Full Stack (R5192)",
-      "url": "https://jobs.lever.co/shieldai/b6dcf09f-1fb2-4ac1-b2e6-9fab8acb4e79",
-      "location": "United States",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": false,
-      "workStyle": "onsite",
-      "salary": {
-        "min": 150000,
-        "max": 230000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "node",
-        "python",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "lever",
-      "postedAt": "2026-06-12T01:33:00.106Z",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "shieldai-staff-software-engineer-gcs-full-stack-r5192-16vapc"
     },
     {
       "id": "ab:watershed:96d1cf77-2950-4a41-893d-3913472b2ea9",
@@ -5924,6 +6047,63 @@
       "slug": "databricks-staff-fullstack-engineer-fdclbs"
     },
     {
+      "id": "gh:databricks:5445641002",
+      "company": "Databricks",
+      "title": "Senior Software Engineer - Fullstack",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002",
+      "location": "Mountain View, California; San Francisco, California",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 166000,
+        "max": 166000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "node",
+        "python",
+        "java",
+        "c#",
+        "aws",
+        "gcp",
+        "azure",
+        "kubernetes",
+        "docker",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "-0.5 kitchen-sink stack",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2022-02-28T15:09:37-05:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "databricks-senior-software-engineer-fullstack-p12m2v"
+    },
+    {
       "id": "gh:databricks:7898766002",
       "company": "Databricks",
       "title": "Senior Software Engineer - Fullstack",
@@ -6035,63 +6215,6 @@
       "slug": "databricks-senior-software-engineer-fullstack-0pruj0"
     },
     {
-      "id": "gh:databricks:5445641002",
-      "company": "Databricks",
-      "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002",
-      "location": "Mountain View, California; San Francisco, California",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 166000,
-        "max": 166000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "node",
-        "python",
-        "java",
-        "c#",
-        "aws",
-        "gcp",
-        "azure",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "-0.5 kitchen-sink stack",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2022-02-28T15:09:37-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "databricks-senior-software-engineer-fullstack-p12m2v"
-    },
-    {
       "id": "gh:scaleai:4713608005",
       "company": "Scale AI",
       "title": "Staff Software Engineer, Full Stack - Gen AI ",
@@ -6139,6 +6262,56 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "scale-ai-staff-software-engineer-full-stack-gen-ai-8zex16"
+    },
+    {
+      "id": "gh:affirm:8040273003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Card Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8040273003",
+      "location": "Remote Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 181000,
+        "max": 241000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes",
+        "react native"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-02T21:35:14-05:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-e7o3i6"
     },
     {
       "id": "gh:affirm:8040271003",
@@ -6192,10 +6365,10 @@
       "slug": "affirm-staff-software-engineer-fullstack-card-experiences-59i10w"
     },
     {
-      "id": "gh:affirm:8040273003",
+      "id": "gh:affirm:8162558003",
       "company": "Affirm",
-      "title": "Staff Software Engineer, Fullstack (Card Experiences)",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8040273003",
+      "title": "Staff Software Engineer, Fullstack (Account Management)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8162558003",
       "location": "Remote Canada",
       "where": {
         "countries": [
@@ -6220,8 +6393,7 @@
         "kotlin",
         "mysql",
         "aws",
-        "kubernetes",
-        "react native"
+        "kubernetes"
       ],
       "rounds": null,
       "interviewStyles": [],
@@ -6236,10 +6408,10 @@
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-11-02T21:35:14-05:00",
+      "postedAt": "2026-11-05T11:30:14-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-e7o3i6"
+      "slug": "affirm-staff-software-engineer-fullstack-account-management-bol5bv"
     },
     {
       "id": "gh:affirm:8162556003",
@@ -6290,55 +6462,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "affirm-staff-software-engineer-fullstack-account-management-umdbq1"
-    },
-    {
-      "id": "gh:affirm:8162558003",
-      "company": "Affirm",
-      "title": "Staff Software Engineer, Fullstack (Account Management)",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8162558003",
-      "location": "Remote Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 181000,
-        "max": 241000,
-        "currency": "CAD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "vue",
-        "python",
-        "kotlin",
-        "mysql",
-        "aws",
-        "kubernetes"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-05T11:30:14-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-account-management-bol5bv"
     },
     {
       "id": "gh:affirm:8032173003",
@@ -6708,49 +6831,6 @@
       "slug": "affirm-analytics-lead-full-stack-collections-and-recoveries-y8kq0q"
     },
     {
-      "id": "gh:affirm:8011132003",
-      "company": "Affirm",
-      "title": "Analytics Lead, Full Stack",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011132003",
-      "location": "Remote Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 145000,
-        "max": 205000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-06T12:16:19-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-analytics-lead-full-stack-i0lx22"
-    },
-    {
       "id": "gh:affirm:8011130003",
       "company": "Affirm",
       "title": "Analytics Lead, Full Stack",
@@ -6794,11 +6874,11 @@
       "slug": "affirm-analytics-lead-full-stack-97h5e4"
     },
     {
-      "id": "gh:okta:8120329",
-      "company": "Okta",
-      "title": "Staff FullStack Engineer, Secures AI ",
-      "url": "https://www.okta.com/company/careers/opportunity/8120329?gh_jid=8120329",
-      "location": "Toronto, Ontario, Canada",
+      "id": "gh:affirm:8011132003",
+      "company": "Affirm",
+      "title": "Analytics Lead, Full Stack",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011132003",
+      "location": "Remote Canada",
       "where": {
         "countries": [
           "CA"
@@ -6807,19 +6887,16 @@
         "anywhere": false
       },
       "via": null,
-      "remote": null,
-      "workStyle": null,
+      "remote": true,
+      "workStyle": "remote",
       "salary": {
-        "min": 164000,
-        "max": 164000,
+        "min": 145000,
+        "max": 205000,
         "currency": "USD",
         "interval": "year"
       },
       "stack": [
-        "typescript",
-        "javascript",
-        "java",
-        "aws"
+        "python"
       ],
       "rounds": null,
       "interviewStyles": [],
@@ -6830,15 +6907,14 @@
         "emoji": "💯",
         "reasons": [
           "+1.25 strong pay",
-          "+0.25 clear salary range",
           "+0.25 no red flags"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-08-17T15:47:45-04:00",
+      "postedAt": "2026-11-06T12:16:19-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "okta-staff-fullstack-engineer-secures-ai-gpu2ec"
+      "slug": "affirm-analytics-lead-full-stack-i0lx22"
     },
     {
       "id": "gh:okta:8314936",
@@ -6886,6 +6962,53 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "okta-staff-fullstack-engineer-secures-ai-mou1wp"
+    },
+    {
+      "id": "gh:okta:8120329",
+      "company": "Okta",
+      "title": "Staff FullStack Engineer, Secures AI ",
+      "url": "https://www.okta.com/company/careers/opportunity/8120329?gh_jid=8120329",
+      "location": "Toronto, Ontario, Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 164000,
+        "max": 164000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "javascript",
+        "java",
+        "aws"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-08-17T15:47:45-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "okta-staff-fullstack-engineer-secures-ai-gpu2ec"
     },
     {
       "id": "gh:okta:8186804",
@@ -7690,51 +7813,6 @@
       "firstSeen": "2026-11-10",
       "reports": null,
       "slug": "affirm-software-engineer-ii-fullstack-contact-channels-g9q1rn"
-    },
-    {
-      "id": "lv:shieldai:88f7b66e-3412-40c8-b74d-aafc462405ff",
-      "company": "Shieldai",
-      "title": "Engineer II, Software - Ground Control Station - Full Stack - New Grad - 6140",
-      "url": "https://jobs.lever.co/shieldai/88f7b66e-3412-40c8-b74d-aafc462405ff",
-      "location": "Washington, D.C.",
-      "where": {
-        "countries": [],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": false,
-      "workStyle": "onsite",
-      "salary": {
-        "min": 108720,
-        "max": 163080,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "node",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+0.75 fair pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "lever",
-      "postedAt": "2026-10-27T22:14:38.663Z",
-      "firstSeen": "2026-11-09",
-      "reports": null,
-      "slug": "shieldai-engineer-ii-software-ground-control-station-full-stack-new-g-td7y5c"
     },
     {
       "id": "hn:50345424",
@@ -9531,48 +9609,6 @@
       "slug": "affirm-analytics-lead-full-stack-pa8df7"
     },
     {
-      "id": "gh:affirm:7916080003",
-      "company": "Affirm",
-      "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7916080003",
-      "location": "Remote Spain",
-      "where": {
-        "countries": [
-          "ES"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 63000,
-        "max": 99000,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-08-20T09:43:45-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-analytics-engineer-ii-full-stack-revenue-analytics-7oxtvh"
-    },
-    {
       "id": "gh:affirm:8039471003",
       "company": "Affirm",
       "title": "Analyst, Early Career (Full Stack)",
@@ -9948,56 +9984,6 @@
       "slug": "sentilink-senior-data-scientist-full-stack-1rov93"
     },
     {
-      "id": "ab:stream:950ba8ae-b3c5-4a24-ab0d-756c9012a731",
-      "company": "Stream",
-      "title": "Senior Fullstack Engineer (Moderation)",
-      "url": "https://jobs.ashbyhq.com/stream/950ba8ae-b3c5-4a24-ab0d-756c9012a731",
-      "location": "Toronto office",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 130000,
-        "max": 190000,
-        "currency": "CAD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "python",
-        "postgres",
-        "redis",
-        "gcp",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+0.25 okay pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2026-10-27T13:03:57.194+00:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "stream-senior-fullstack-engineer-moderation-1gb3md"
-    },
-    {
       "id": "ab:ramp:6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
       "company": "Ramp",
       "title": "Applied AI Engineer, Fullstack",
@@ -10177,6 +10163,54 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "united-risk-early-career-ai-engineers-full-stack-data-science-infrastruc-904im8"
+    },
+    {
+      "id": "gh:affirm:8202548003",
+      "company": "Affirm",
+      "title": "Software Engineer II, Fullstack (International)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8202548003",
+      "location": "Remote Spain",
+      "where": {
+        "countries": [
+          "ES"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 73000,
+        "max": 109000,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 2,
+        "name": "Bit whiffy",
+        "emoji": "🤢",
+        "reasons": [
+          "+0.25 okay pay",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-13T04:44:25-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "affirm-software-engineer-ii-fullstack-international-x4f89j"
     },
     {
       "id": "gh:affirm:8200178003",
@@ -10418,50 +10452,6 @@
       "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-94klzp"
     },
     {
-      "id": "gh:affirm:7813362003",
-      "company": "Affirm",
-      "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7813362003",
-      "location": "Remote Poland",
-      "where": {
-        "countries": [
-          "PL"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 24000,
-        "max": 24000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 2,
-        "name": "Bit whiffy",
-        "emoji": "🤢",
-        "reasons": [
-          "-0.5 low pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-07-28T06:52:21-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-analytics-engineer-ii-full-stack-revenue-analytics-1ywyzy"
-    },
-    {
       "id": "gh:elastic:8276132",
       "company": "Elastic",
       "title": "Senior Full Stack Software Developer - Observability",
@@ -10560,6 +10550,55 @@
       "slug": "elastic-senior-full-stack-software-developer-observability-jclof1"
     },
     {
+      "id": "gh:elastic:8345719",
+      "company": "Elastic",
+      "title": "Senior Full Stack Engineer - Observability APM UI",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8345719&gh_jid=8345719",
+      "location": "Portugal",
+      "where": {
+        "countries": [
+          "PT"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 55800,
+        "max": 55800,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "node",
+        "kubernetes",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 2,
+        "name": "Bit whiffy",
+        "emoji": "🤢",
+        "reasons": [
+          "-0.5 low pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-02T04:50:48-05:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-ulwgdc"
+    },
+    {
       "id": "gh:elastic:8345720",
       "company": "Elastic",
       "title": "Senior Full Stack Engineer - Observability APM UI",
@@ -10609,53 +10648,52 @@
       "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-rm9htc"
     },
     {
-      "id": "gh:elastic:8345719",
-      "company": "Elastic",
-      "title": "Senior Full Stack Engineer - Observability APM UI",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8345719&gh_jid=8345719",
-      "location": "Portugal",
+      "id": "gh:affirm:8202545003",
+      "company": "Affirm",
+      "title": "Software Engineer II, Fullstack (International)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8202545003",
+      "location": "Remote Poland",
       "where": {
         "countries": [
-          "PT"
+          "PL"
         ],
         "regions": [],
         "anywhere": false
       },
       "via": null,
-      "remote": null,
-      "workStyle": null,
+      "remote": true,
+      "workStyle": "remote",
       "salary": {
-        "min": 55800,
-        "max": 55800,
-        "currency": "EUR",
+        "min": 24000,
+        "max": 36000,
+        "currency": "USD",
         "interval": "year"
       },
       "stack": [
         "react",
-        "typescript",
-        "javascript",
-        "node",
-        "kubernetes",
-        "golang"
+        "vue",
+        "python",
+        "kotlin"
       ],
       "rounds": null,
       "interviewStyles": [],
-      "redFlags": [],
+      "redFlags": [
+        "fast-paced"
+      ],
       "rating": {
-        "level": 2,
-        "name": "Bit whiffy",
-        "emoji": "🤢",
+        "level": 1,
+        "name": "Steaming pile",
+        "emoji": "💩",
         "reasons": [
           "-0.5 low pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
+          "-0.5 1 red flag(s)"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-11-02T04:50:48-05:00",
-      "firstSeen": "2026-11-06",
+      "postedAt": "2026-11-13T04:44:22-05:00",
+      "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-ulwgdc"
+      "slug": "affirm-software-engineer-ii-fullstack-international-c1ivoq"
     },
     {
       "id": "gh:affirm:8200180003",

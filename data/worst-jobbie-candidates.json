@@ -1,6 +1,54 @@
 {
-  "updatedAt": "2026-11-12T18:21:04.953Z",
+  "updatedAt": "2026-11-13T17:45:45.194Z",
   "jobs": [
+    {
+      "id": "gh:affirm:8202545003",
+      "company": "Affirm",
+      "title": "Software Engineer II, Fullstack (International)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8202545003",
+      "location": "Remote Poland",
+      "where": {
+        "countries": [
+          "PL"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 24000,
+        "max": 36000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 1,
+        "name": "Steaming pile",
+        "emoji": "💩",
+        "reasons": [
+          "-0.5 low pay",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-13T04:44:22-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "affirm-software-engineer-ii-fullstack-international-c1ivoq"
+    },
     {
       "id": "gh:affirm:8200180003",
       "company": "Affirm",

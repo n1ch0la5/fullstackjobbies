@@ -1,6 +1,56 @@
 {
-  "updatedAt": "2026-11-12T18:21:04.953Z",
+  "updatedAt": "2026-11-13T17:45:45.194Z",
   "jobs": [
+    {
+      "id": "gh:grafanalabs:6261013004",
+      "company": "Grafana Labs",
+      "title": "Senior Full Stack Engineer | Experimentation - Product Analytics | NASA | Remote",
+      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6261013004",
+      "location": "United States (Remote)",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 167000,
+        "max": 209000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "kubernetes",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.75 humane interviews",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-13T06:38:25-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "slug": "grafana-labs-senior-full-stack-engineer-experimentation-product-analytics-dbvthv"
+    },
     {
       "id": "gh:gitlab:8845277002",
       "company": "GitLab",
@@ -470,61 +520,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "spacex-sr-full-stack-engineer-developer-systems-ajmifh"
-    },
-    {
-      "id": "gh:spacex:8649509002",
-      "company": "SpaceX",
-      "title": "Sr. Full Stack Engineer, Employee Experience ",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8649509002?gh_jid=8649509002",
-      "location": "Hawthorne, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 165000,
-        "max": 165000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "kubernetes",
-        "docker",
-        "terraform",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-07-24T22:49:13-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-employee-experience-r49fsf"
     }
   ]
 }
