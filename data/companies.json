@@ -2041,6 +2041,14 @@
       "discovered": "2026-11-13",
       "nameChecked": true,
       "fails": 0
+    },
+    {
+      "ats": "ashby",
+      "slug": "bonfireanalytics",
+      "name": "Bonfireanalytics",
+      "discovered": "2026-11-14",
+      "nameChecked": true,
+      "fails": 0
     }
   ]
 }
