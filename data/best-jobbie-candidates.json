@@ -1,6 +1,61 @@
 {
-  "updatedAt": "2026-11-14T16:36:44.340Z",
+  "updatedAt": "2026-11-15T17:12:38.866Z",
   "jobs": [
+    {
+      "id": "gh:spacex:8943586002",
+      "company": "SpaceX",
+      "title": "Full Stack Software Engineer (Starlink)",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8943586002?gh_jid=8943586002",
+      "location": "Palo Alto, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 150000,
+        "max": 175000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "kubernetes",
+        "docker",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.5 1 rounds",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-14T21:59:43-05:00",
+      "firstSeen": "2026-11-15",
+      "reports": null,
+      "slug": "spacex-full-stack-software-engineer-starlink-scbfcb"
+    },
     {
       "id": "ab:openai:26cfb873-f30a-4a13-b7b6-52833ea48ec9",
       "company": "OpenAI",
@@ -456,58 +511,6 @@
       "firstSeen": "2026-11-06",
       "reports": null,
       "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj"
-    },
-    {
-      "id": "gh:spacex:8555708002",
-      "company": "SpaceX",
-      "title": "Lead Software Engineer (Full Stack) - Build Reliability",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8555708002?gh_jid=8555708002",
-      "location": "Hawthorne, CA",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 160000,
-        "max": 160000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        ".net",
-        "golang"
-      ],
-      "rounds": 1,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.5 1 rounds",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-05-18T21:15:26-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "spacex-lead-software-engineer-full-stack-build-reliability-w5p8v4"
     }
   ]
 }
