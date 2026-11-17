@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T20:30:58.371Z",
+  "updatedAt": "2026-11-17T19:27:40.126Z",
   "jobs": [
     {
       "id": "gh:affirm:8202545003",
@@ -47,7 +47,9 @@
       "postedAt": "2026-11-13T04:44:22-05:00",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-international-c1ivoq"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-international-c1ivoq",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8200180003",
@@ -98,7 +100,9 @@
       "postedAt": "2026-11-12T11:05:18-05:00",
       "firstSeen": "2026-11-12",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-international-uhtmbt"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-international-uhtmbt",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040392003",
@@ -147,7 +151,9 @@
       "postedAt": "2026-10-27T09:26:59-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-r0nqpw"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-r0nqpw",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040378003",
@@ -195,7 +201,9 @@
       "postedAt": "2026-10-27T09:27:59-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-26j8v4"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-26j8v4",
+      "featuredUntil": null
     }
   ]
 }

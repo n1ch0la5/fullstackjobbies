@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T20:30:58.371Z",
+  "updatedAt": "2026-11-17T19:27:40.126Z",
   "jobs": [
     {
       "id": "ab:openai:2320fe69-df26-4d1d-ada6-d1a46c0e68a1",
@@ -44,7 +44,9 @@
       "postedAt": "2026-11-15T21:10:17.443+00:00",
       "firstSeen": "2026-11-16",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-travel-dd69zq"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-travel-dd69zq",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8943586002",
@@ -91,7 +93,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -99,7 +101,9 @@
       "postedAt": "2026-11-14T21:59:43-05:00",
       "firstSeen": "2026-11-15",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-starlink-scbfcb"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-starlink-scbfcb",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:26cfb873-f30a-4a13-b7b6-52833ea48ec9",
@@ -152,7 +156,9 @@
       "postedAt": "2026-11-13T20:57:10.105+00:00",
       "firstSeen": "2026-11-14",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-chatgpt-finances-2y9ls7"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-chatgpt-finances-2y9ls7",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:cc1ea124-47ad-4b81-9e4e-0c69e525b62a",
@@ -197,7 +203,9 @@
       "postedAt": "2026-11-13T21:10:12.048+00:00",
       "firstSeen": "2026-11-14",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-consumer-health-nndix0"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-consumer-health-nndix0",
+      "featuredUntil": null
     },
     {
       "id": "gh:gitlab:8845277002",
@@ -247,7 +255,9 @@
       "postedAt": "2026-10-02T09:24:02-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja"
+      "employerStated": null,
+      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja",
+      "featuredUntil": null
     },
     {
       "id": "gh:figma:5691911004",
@@ -298,7 +308,9 @@
       "postedAt": "2025-11-01T15:16:06-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "figma-software-engineer-full-stack-u81l0o"
+      "employerStated": null,
+      "slug": "figma-software-engineer-full-stack-u81l0o",
+      "featuredUntil": null
     },
     {
       "id": "gh:toast:7819344",
@@ -352,7 +364,9 @@
       "postedAt": "2026-05-20T17:57:37-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b"
+      "employerStated": null,
+      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
@@ -397,7 +411,9 @@
       "postedAt": "2026-06-15T18:16:20.513+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon",
+      "featuredUntil": null
     },
     {
       "id": "wk:seeq:610FB07CEB",
@@ -451,7 +467,9 @@
       "postedAt": "2026-11-09",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt"
+      "employerStated": null,
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt",
+      "featuredUntil": null
     },
     {
       "id": "wk:seeq:802346B20E",
@@ -505,7 +523,9 @@
       "postedAt": "2026-09-10",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj"
+      "employerStated": null,
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj",
+      "featuredUntil": null
     }
   ]
 }

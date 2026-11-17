@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-16T20:30:58.371Z",
-  "count": 224,
+  "updatedAt": "2026-11-17T19:27:40.126Z",
+  "count": 223,
   "jobs": [
     {
       "id": "ab:openai:2320fe69-df26-4d1d-ada6-d1a46c0e68a1",
@@ -45,7 +45,9 @@
       "postedAt": "2026-11-15T21:10:17.443+00:00",
       "firstSeen": "2026-11-16",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-travel-dd69zq"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-travel-dd69zq",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8943586002",
@@ -92,7 +94,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -100,7 +102,9 @@
       "postedAt": "2026-11-14T21:59:43-05:00",
       "firstSeen": "2026-11-15",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-starlink-scbfcb"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-starlink-scbfcb",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:cc1ea124-47ad-4b81-9e4e-0c69e525b62a",
@@ -145,7 +149,9 @@
       "postedAt": "2026-11-13T21:10:12.048+00:00",
       "firstSeen": "2026-11-14",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-consumer-health-nndix0"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-consumer-health-nndix0",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:26cfb873-f30a-4a13-b7b6-52833ea48ec9",
@@ -198,7 +204,9 @@
       "postedAt": "2026-11-13T20:57:10.105+00:00",
       "firstSeen": "2026-11-14",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-chatgpt-finances-2y9ls7"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-chatgpt-finances-2y9ls7",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8927923002",
@@ -240,7 +248,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -248,7 +256,9 @@
       "postedAt": "2026-11-03T13:22:47-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-software-engineer-full-stack-data-and-video-analysis-w7tooq"
+      "employerStated": null,
+      "slug": "spacex-sr-software-engineer-full-stack-data-and-video-analysis-w7tooq",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8840486002",
@@ -295,7 +305,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -303,7 +313,9 @@
       "postedAt": "2026-09-23T18:45:10-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-software-engineer-components-5sjyqw"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-software-engineer-components-5sjyqw",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8784865002",
@@ -350,7 +362,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -358,7 +370,9 @@
       "postedAt": "2026-09-04T23:21:19-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-software-engineer-6v7nos"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-software-engineer-6v7nos",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8837679002",
@@ -405,7 +419,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -413,7 +427,9 @@
       "postedAt": "2026-09-23T11:28:49-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-platform-systems-mml26u"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-platform-systems-mml26u",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8650989002",
@@ -460,7 +476,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -468,7 +484,9 @@
       "postedAt": "2026-07-26T18:46:02-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-manufacturing-systems-3yl07p"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-manufacturing-systems-3yl07p",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8931276002",
@@ -515,7 +533,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -523,7 +541,9 @@
       "postedAt": "2026-11-04T17:27:32-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-launch-software-2ijjc4"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-launch-software-2ijjc4",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8675900002",
@@ -570,7 +590,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -578,7 +598,9 @@
       "postedAt": "2026-08-04T11:09:23-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-internal-systems-n2cgzh"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-internal-systems-n2cgzh",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8692498002",
@@ -625,7 +647,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -633,7 +655,9 @@
       "postedAt": "2026-08-07T21:08:25-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-finance-mb8b78"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-finance-mb8b78",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8649509002",
@@ -680,7 +704,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -688,7 +712,9 @@
       "postedAt": "2026-07-24T22:49:13-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-employee-experience-r49fsf"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-employee-experience-r49fsf",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8769502002",
@@ -735,7 +761,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -743,7 +769,9 @@
       "postedAt": "2026-09-01T11:30:50-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-developer-systems-ajmifh"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-developer-systems-ajmifh",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8594457002",
@@ -790,7 +818,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -798,7 +826,9 @@
       "postedAt": "2026-06-16T13:32:14-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-application-software-zr2jck"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-application-software-zr2jck",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8555708002",
@@ -842,7 +872,7 @@
         "reasons": [
           "+1.25 strong pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -850,7 +880,9 @@
       "postedAt": "2026-05-18T21:15:26-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-lead-software-engineer-full-stack-build-reliability-w5p8v4"
+      "employerStated": null,
+      "slug": "spacex-lead-software-engineer-full-stack-build-reliability-w5p8v4",
+      "featuredUntil": null
     },
     {
       "id": "ab:prompt:dec47398-48ef-4788-a601-21b3218f0b25",
@@ -897,7 +929,9 @@
       "postedAt": "2026-01-05T19:35:36.083+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "prompt-senior-full-stack-ai-engineer-natural-language-systems-kivha5"
+      "employerStated": null,
+      "slug": "prompt-senior-full-stack-ai-engineer-natural-language-systems-kivha5",
+      "featuredUntil": null
     },
     {
       "id": "wk:seeq:802346B20E",
@@ -951,7 +985,9 @@
       "postedAt": "2026-09-10",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj"
+      "employerStated": null,
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj",
+      "featuredUntil": null
     },
     {
       "id": "wk:seeq:610FB07CEB",
@@ -1005,7 +1041,9 @@
       "postedAt": "2026-11-09",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt"
+      "employerStated": null,
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt",
+      "featuredUntil": null
     },
     {
       "id": "ab:solace:19759414-954f-48f7-a8d8-aaf1ae195122",
@@ -1057,7 +1095,9 @@
       "postedAt": "2026-10-30T18:47:31.270+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "solace-senior-full-stack-engineer-d6zsk6"
+      "employerStated": null,
+      "slug": "solace-senior-full-stack-engineer-d6zsk6",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
@@ -1102,7 +1142,9 @@
       "postedAt": "2026-06-15T18:16:20.513+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-consumer-verticals-6t9lon",
+      "featuredUntil": null
     },
     {
       "id": "gh:toast:7819344",
@@ -1156,7 +1198,9 @@
       "postedAt": "2026-05-20T17:57:37-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b"
+      "employerStated": null,
+      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b",
+      "featuredUntil": null
     },
     {
       "id": "gh:figma:5691911004",
@@ -1207,7 +1251,9 @@
       "postedAt": "2025-11-01T15:16:06-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "figma-software-engineer-full-stack-u81l0o"
+      "employerStated": null,
+      "slug": "figma-software-engineer-full-stack-u81l0o",
+      "featuredUntil": null
     },
     {
       "id": "gh:gitlab:8845277002",
@@ -1257,7 +1303,9 @@
       "postedAt": "2026-10-02T09:24:02-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja"
+      "employerStated": null,
+      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8943684002",
@@ -1303,7 +1351,7 @@
         "emoji": "💯",
         "reasons": [
           "+1.25 strong pay",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -1311,7 +1359,9 @@
       "postedAt": "2026-11-14T21:56:23-05:00",
       "firstSeen": "2026-11-15",
       "reports": null,
-      "slug": "spacex-sr-full-stack-software-engineer-starlink-jf36vy"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-software-engineer-starlink-jf36vy",
+      "featuredUntil": null
     },
     {
       "id": "gh:okta:8359853",
@@ -1360,7 +1410,9 @@
       "postedAt": "2026-11-13T15:57:10-05:00",
       "firstSeen": "2026-11-14",
       "reports": null,
-      "slug": "okta-senior-full-stack-engineer-builder-platform-wewo9y"
+      "employerStated": null,
+      "slug": "okta-senior-full-stack-engineer-builder-platform-wewo9y",
+      "featuredUntil": null
     },
     {
       "id": "ab:ramp:6e717b06-6613-42ad-a1ee-f852a305fa37",
@@ -1401,7 +1453,9 @@
       "postedAt": "2026-11-13T21:52:14.463+00:00",
       "firstSeen": "2026-11-14",
       "reports": null,
-      "slug": "ramp-software-engineer-fullstack-spend-controls-cw1lmu"
+      "employerStated": null,
+      "slug": "ramp-software-engineer-fullstack-spend-controls-cw1lmu",
+      "featuredUntil": null
     },
     {
       "id": "lv:spotify:9899871a-4307-4367-9f74-039569d7a650",
@@ -1446,53 +1500,9 @@
       "postedAt": "2026-10-02T17:43:05.085Z",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "spotify-full-stack-engineer-music-2rw6uk"
-    },
-    {
-      "id": "gh:affirm:8196749003",
-      "company": "Affirm",
-      "title": "Staff Software Engineer, Fullstack (Auth Experiences)",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8196749003",
-      "location": "Remote Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 181000,
-        "max": 241000,
-        "currency": "CAD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "vue",
-        "typescript",
-        "javascript"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-12T18:14:42-05:00",
-      "firstSeen": "2026-11-13",
-      "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-auth-experiences-8o8mic"
+      "employerStated": null,
+      "slug": "spotify-full-stack-engineer-music-2rw6uk",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8196747003",
@@ -1539,7 +1549,57 @@
       "postedAt": "2026-11-12T18:14:40-05:00",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-auth-experiences-icqrdi"
+      "employerStated": null,
+      "slug": "affirm-staff-software-engineer-fullstack-auth-experiences-icqrdi",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:affirm:8196749003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Auth Experiences)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8196749003",
+      "location": "Remote Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 181000,
+        "max": 241000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "typescript",
+        "javascript"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-12T18:14:42-05:00",
+      "firstSeen": "2026-11-13",
+      "reports": null,
+      "employerStated": null,
+      "slug": "affirm-staff-software-engineer-fullstack-auth-experiences-8o8mic",
+      "featuredUntil": null
     },
     {
       "id": "gh:stripe:8384287",
@@ -1585,7 +1645,9 @@
       "postedAt": "2026-11-12T16:33:50-05:00",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "stripe-software-engineer-full-stack-pmkxy3"
+      "employerStated": null,
+      "slug": "stripe-software-engineer-full-stack-pmkxy3",
+      "featuredUntil": null
     },
     {
       "id": "hn:50484305",
@@ -1633,7 +1695,9 @@
       "postedAt": "2026-11-13T14:47:49.000Z",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "confidential-healthcare-ai-startup-senior-full-stack-engineer-frontend-leaning-c2q4n0"
+      "employerStated": null,
+      "slug": "confidential-healthcare-ai-startup-senior-full-stack-engineer-frontend-leaning-c2q4n0",
+      "featuredUntil": null
     },
     {
       "id": "hn:50460895",
@@ -1679,7 +1743,9 @@
       "postedAt": "2026-11-12T00:03:47.000Z",
       "firstSeen": "2026-11-12",
       "reports": null,
-      "slug": "foji-full-stack-engineer-typescript-react-node-6von9u"
+      "employerStated": null,
+      "slug": "foji-full-stack-engineer-typescript-react-node-6von9u",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:74842880-e750-4664-9e2e-83b4c96c5a03",
@@ -1721,7 +1787,9 @@
       "postedAt": "2026-11-10T01:56:04.499+00:00",
       "firstSeen": "2026-11-10",
       "reports": null,
-      "slug": "openai-principal-software-engineer-full-stack-codex-8zaamc"
+      "employerStated": null,
+      "slug": "openai-principal-software-engineer-full-stack-codex-8zaamc",
+      "featuredUntil": null
     },
     {
       "id": "hn:50432950",
@@ -1772,7 +1840,9 @@
       "postedAt": "2026-11-09T22:07:39.000Z",
       "firstSeen": "2026-11-10",
       "reports": null,
-      "slug": "polymath-founding-mts-full-stack-gagp8n"
+      "employerStated": null,
+      "slug": "polymath-founding-mts-full-stack-gagp8n",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8934570002",
@@ -1818,7 +1888,7 @@
         "emoji": "💯",
         "reasons": [
           "+1.25 strong pay",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -1826,7 +1896,9 @@
       "postedAt": "2026-11-08T20:48:11-05:00",
       "firstSeen": "2026-11-09",
       "reports": null,
-      "slug": "spacex-sr-full-stack-engineer-fight-software-i7rnje"
+      "employerStated": null,
+      "slug": "spacex-sr-full-stack-engineer-fight-software-i7rnje",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8934563002",
@@ -1873,7 +1945,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -1881,7 +1953,9 @@
       "postedAt": "2026-11-08T20:15:11-05:00",
       "firstSeen": "2026-11-09",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-internal-platforms-n4nyii"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-internal-platforms-n4nyii",
+      "featuredUntil": null
     },
     {
       "id": "gh:robinhood:8008723",
@@ -1927,7 +2001,9 @@
       "postedAt": "2026-06-17T15:08:23-04:00",
       "firstSeen": "2026-11-07",
       "reports": null,
-      "slug": "robinhood-full-stack-software-engineer-credit-cards-and-banking-wtu96u"
+      "employerStated": null,
+      "slug": "robinhood-full-stack-software-engineer-credit-cards-and-banking-wtu96u",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8927919002",
@@ -1969,7 +2045,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -1977,7 +2053,9 @@
       "postedAt": "2026-11-03T13:22:57-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-software-engineer-full-stack-data-and-video-analysis-nghhrt"
+      "employerStated": null,
+      "slug": "spacex-software-engineer-full-stack-data-and-video-analysis-nghhrt",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8610872002",
@@ -2017,7 +2095,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2025,7 +2103,9 @@
       "postedAt": "2026-06-26T19:45:45-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-starshield-nuep2u"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-starshield-nuep2u",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8731959002",
@@ -2070,7 +2150,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2078,7 +2158,9 @@
       "postedAt": "2026-08-20T21:08:50-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-simulation-and-flight-systems-qlf9co"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-simulation-and-flight-systems-qlf9co",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8859566002",
@@ -2125,7 +2207,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2133,7 +2215,9 @@
       "postedAt": "2026-09-30T21:36:33-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-platform-ncxxnp"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-platform-ncxxnp",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8722645002",
@@ -2175,7 +2259,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2183,7 +2267,9 @@
       "postedAt": "2026-08-18T12:25:11-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-operations-software-starlink-2rs5l0"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-operations-software-starlink-2rs5l0",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8703540002",
@@ -2230,7 +2316,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2238,7 +2324,9 @@
       "postedAt": "2026-08-12T21:21:22-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-manufacturing-systems-lw23dj"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-manufacturing-systems-lw23dj",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8763489002",
@@ -2285,7 +2373,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2293,7 +2381,9 @@
       "postedAt": "2026-08-30T02:02:55-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-developer-systems-j05cyx"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-developer-systems-j05cyx",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8656465002",
@@ -2336,7 +2426,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2344,7 +2434,9 @@
       "postedAt": "2026-07-29T12:18:33-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-data-starlink-6ouea0"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-data-starlink-6ouea0",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8746439002",
@@ -2387,7 +2479,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2395,7 +2487,9 @@
       "postedAt": "2026-08-25T12:56:56-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-data-platform-starlink-i8thkd"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-data-platform-starlink-i8thkd",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8839057002",
@@ -2442,7 +2536,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2450,7 +2544,9 @@
       "postedAt": "2026-09-23T18:44:10-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-components-djusim"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-components-djusim",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8555791002",
@@ -2490,7 +2586,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2498,7 +2594,9 @@
       "postedAt": "2026-05-19T16:27:15-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-build-reliability-msmz66"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-build-reliability-msmz66",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8784864002",
@@ -2545,7 +2643,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2553,7 +2651,9 @@
       "postedAt": "2026-09-04T23:20:20-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-software-engineer-dtr66h"
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-dtr66h",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8769729002",
@@ -2600,7 +2700,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2608,7 +2708,9 @@
       "postedAt": "2026-09-01T12:57:33-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-engineer-flight-software-5njtt6"
+      "employerStated": null,
+      "slug": "spacex-full-stack-engineer-flight-software-5njtt6",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8763492002",
@@ -2655,7 +2757,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2663,7 +2765,9 @@
       "postedAt": "2026-08-30T02:17:26-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-engineer-employee-experience-nb4zxh"
+      "employerStated": null,
+      "slug": "spacex-full-stack-engineer-employee-experience-nb4zxh",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8681166002",
@@ -2710,7 +2814,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2718,7 +2822,9 @@
       "postedAt": "2026-08-04T21:35:16-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-engineer-application-software-0p3c1a"
+      "employerStated": null,
+      "slug": "spacex-full-stack-engineer-application-software-0p3c1a",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8675232002",
@@ -2765,7 +2871,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2773,7 +2879,9 @@
       "postedAt": "2026-08-03T19:11:57-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-engineer-application-software-m7ooid"
+      "employerStated": null,
+      "slug": "spacex-full-stack-engineer-application-software-m7ooid",
+      "featuredUntil": null
     },
     {
       "id": "gh:spacex:8701392002",
@@ -2820,7 +2928,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2828,7 +2936,9 @@
       "postedAt": "2026-08-12T15:02:26-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spacex-full-stack-engineer-application-software-sa2bbm"
+      "employerStated": null,
+      "slug": "spacex-full-stack-engineer-application-software-sa2bbm",
+      "featuredUntil": null
     },
     {
       "id": "ab:scribdinc:15d3b241-e147-4d20-a1a2-ed28f2c75fae",
@@ -2875,7 +2985,7 @@
         "reasons": [
           "+0.75 fair pay",
           "+0.25 clear salary range",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "+0.25 no red flags"
         ]
       },
@@ -2883,7 +2993,9 @@
       "postedAt": "2026-10-02T00:27:28.266+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "scribd-software-engineer-ii-fullstack-growth-platform-bd6om7"
+      "employerStated": null,
+      "slug": "scribd-software-engineer-ii-fullstack-growth-platform-bd6om7",
+      "featuredUntil": null
     },
     {
       "id": "ab:kepler-ai:52624a4e-33e3-4f16-8028-026c94fb2eb8",
@@ -2929,7 +3041,9 @@
       "postedAt": "2026-01-21T17:28:03.961+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "kepler-ai-full-stack-engineer-edwlv3"
+      "employerStated": null,
+      "slug": "kepler-ai-full-stack-engineer-edwlv3",
+      "featuredUntil": null
     },
     {
       "id": "ab:prompt:e2c99b8e-11cb-45a2-baca-9afe0d204399",
@@ -2979,7 +3093,9 @@
       "postedAt": "2025-03-17T17:15:58.163+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "prompt-senior-full-stack-software-engineer-8rjimf"
+      "employerStated": null,
+      "slug": "prompt-senior-full-stack-software-engineer-8rjimf",
+      "featuredUntil": null
     },
     {
       "id": "ab:spruceid:3d182b7f-482e-45b2-8668-f04f0b5fda8e",
@@ -3032,7 +3148,9 @@
       "postedAt": "2026-10-07T19:54:21.916+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spruceid-full-stack-software-engineer-new-grad-remote-fl6w1x"
+      "employerStated": null,
+      "slug": "spruceid-full-stack-software-engineer-new-grad-remote-fl6w1x",
+      "featuredUntil": null
     },
     {
       "id": "ab:antithesis:08807dc1-1d8a-46f0-8238-329688082556",
@@ -3078,7 +3196,9 @@
       "postedAt": "2026-10-07T15:04:30.079+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "antithesis-senior-software-engineer-full-stack-ifok20"
+      "employerStated": null,
+      "slug": "antithesis-senior-software-engineer-full-stack-ifok20",
+      "featuredUntil": null
     },
     {
       "id": "ab:onecrew:2e640dbe-e8a6-4c95-82f2-b548a4c81044",
@@ -3124,7 +3244,9 @@
       "postedAt": "2026-09-25T14:24:40.355+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "onecrew-senior-software-engineer-fullstack-8v2iay"
+      "employerStated": null,
+      "slug": "onecrew-senior-software-engineer-fullstack-8v2iay",
+      "featuredUntil": null
     },
     {
       "id": "ab:onecrew:a18a2aaa-882a-4011-adfe-91449fc75cf6",
@@ -3169,7 +3291,9 @@
       "postedAt": "2026-02-19T00:19:16.091+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "onecrew-software-engineer-fullstack-ko80ll"
+      "employerStated": null,
+      "slug": "onecrew-software-engineer-fullstack-ko80ll",
+      "featuredUntil": null
     },
     {
       "id": "ab:pear-vc:09bf2cd9-ce10-4d7f-818f-17be05805583",
@@ -3212,7 +3336,9 @@
       "postedAt": "2026-02-02T20:46:13.061+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "pear-vc-founding-full-stack-engineer-takt-0w8dmd"
+      "employerStated": null,
+      "slug": "pear-vc-founding-full-stack-engineer-takt-0w8dmd",
+      "featuredUntil": null
     },
     {
       "id": "ab:pear-vc:1bf7fd8a-a787-4325-8b65-7dcf5dc159e4",
@@ -3258,7 +3384,9 @@
       "postedAt": "2025-04-30T22:59:43.026+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "pear-vc-fullstack-engineer-fortify-gfghll"
+      "employerStated": null,
+      "slug": "pear-vc-fullstack-engineer-fortify-gfghll",
+      "featuredUntil": null
     },
     {
       "id": "ab:reframesystems:c651981d-017b-4041-9e01-dbce5633b54d",
@@ -3303,7 +3431,9 @@
       "postedAt": "2026-08-04T01:12:30.751+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "reframesystems-full-stack-software-engineer-platform-software-7thmg5"
+      "employerStated": null,
+      "slug": "reframesystems-full-stack-software-engineer-platform-software-7thmg5",
+      "featuredUntil": null
     },
     {
       "id": "lv:loftorbital:efcaba8e-6bbb-4322-884c-c10c03469669",
@@ -3353,7 +3483,9 @@
       "postedAt": "2026-09-07T15:47:32.907Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "loftorbital-full-stack-engineer-ai-marketplace-8wxr3y"
+      "employerStated": null,
+      "slug": "loftorbital-full-stack-engineer-ai-marketplace-8wxr3y",
+      "featuredUntil": null
     },
     {
       "id": "lv:loftorbital:b32ca611-ba12-4b0b-ac7f-0585e7d1f620",
@@ -3403,7 +3535,9 @@
       "postedAt": "2026-09-07T15:47:24.241Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "loftorbital-full-stack-engineer-ai-marketplace-hgdm7w"
+      "employerStated": null,
+      "slug": "loftorbital-full-stack-engineer-ai-marketplace-hgdm7w",
+      "featuredUntil": null
     },
     {
       "id": "ab:odyssey:4a947f92-00a1-4da9-b2bd-061865bd208c",
@@ -3449,7 +3583,9 @@
       "postedAt": "2026-09-11T15:56:45.784+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "odyssey-sr-full-stack-software-engineer-7oiu7h"
+      "employerStated": null,
+      "slug": "odyssey-sr-full-stack-software-engineer-7oiu7h",
+      "featuredUntil": null
     },
     {
       "id": "ab:odyssey:5158a3e1-ddde-4253-a895-a82a9ab2e2d4",
@@ -3496,7 +3632,9 @@
       "postedAt": "2026-09-01T13:59:10.826+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "odyssey-full-stack-engineer-4kxyiu"
+      "employerStated": null,
+      "slug": "odyssey-full-stack-engineer-4kxyiu",
+      "featuredUntil": null
     },
     {
       "id": "gh:coast:4000170004",
@@ -3538,7 +3676,7 @@
         "emoji": "💯",
         "reasons": [
           "+1.25 strong pay",
-          "+0.5 1 rounds",
+          "+0.5 1 round",
           "-0.5 1 red flag(s)"
         ]
       },
@@ -3546,7 +3684,9 @@
       "postedAt": "2021-01-13T19:56:25-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "coast-full-stack-engineer-senior-full-stack-engineer-w5j5hk"
+      "employerStated": null,
+      "slug": "coast-full-stack-engineer-senior-full-stack-engineer-w5j5hk",
+      "featuredUntil": null
     },
     {
       "id": "gh:mattermost:5405812008",
@@ -3593,7 +3733,9 @@
       "postedAt": "2026-08-26T14:39:44-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "mattermost-staff-full-stack-engineer-bxf0r3"
+      "employerStated": null,
+      "slug": "mattermost-staff-full-stack-engineer-bxf0r3",
+      "featuredUntil": null
     },
     {
       "id": "gh:mattermost:5405811008",
@@ -3639,7 +3781,9 @@
       "postedAt": "2026-08-26T14:39:47-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "mattermost-staff-full-stack-engineer-xw8oxo"
+      "employerStated": null,
+      "slug": "mattermost-staff-full-stack-engineer-xw8oxo",
+      "featuredUntil": null
     },
     {
       "id": "gh:mattermost:5379251008",
@@ -3686,7 +3830,9 @@
       "postedAt": "2026-08-07T14:24:44-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "mattermost-senior-full-stack-engineer-0emmzc"
+      "employerStated": null,
+      "slug": "mattermost-senior-full-stack-engineer-0emmzc",
+      "featuredUntil": null
     },
     {
       "id": "gh:mattermost:5383421008",
@@ -3733,7 +3879,9 @@
       "postedAt": "2026-08-07T16:08:42-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "mattermost-senior-full-stack-engineer-7pb2ki"
+      "employerStated": null,
+      "slug": "mattermost-senior-full-stack-engineer-7pb2ki",
+      "featuredUntil": null
     },
     {
       "id": "ab:clickhouse:40a07d4e-3b7e-49c0-afd4-2f4dff005d1a",
@@ -3779,103 +3927,9 @@
       "postedAt": "2026-10-22T14:35:13.389+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "clickhouse-full-stack-software-engineer-support-operations-mk1ueu"
-    },
-    {
-      "id": "ab:clickhouse:d750c2f9-5141-4a2b-8a67-66eac58a5710",
-      "company": "Clickhouse",
-      "title": "Full Stack Software Engineer - Control Plane",
-      "url": "https://jobs.ashbyhq.com/clickhouse/d750c2f9-5141-4a2b-8a67-66eac58a5710",
-      "location": "The Netherlands",
-      "where": {
-        "countries": [
-          "NL"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 195000,
-        "max": 260000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "node",
-        "aws",
-        "gcp",
-        "azure"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2026-09-09T16:47:09.441+00:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "clickhouse-full-stack-software-engineer-control-plane-ipxzzu"
-    },
-    {
-      "id": "ab:clickhouse:bd6d5e55-790a-4f3d-a905-193fe39ed5cf",
-      "company": "Clickhouse",
-      "title": "Full Stack Software Engineer - Control Plane",
-      "url": "https://jobs.ashbyhq.com/clickhouse/bd6d5e55-790a-4f3d-a905-193fe39ed5cf",
-      "location": "United States",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 195000,
-        "max": 260000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "node",
-        "aws",
-        "gcp",
-        "azure"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "ashby",
-      "postedAt": "2025-07-11T21:00:19.705+00:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "clickhouse-full-stack-software-engineer-control-plane-3y2bvu"
+      "employerStated": null,
+      "slug": "clickhouse-full-stack-software-engineer-support-operations-mk1ueu",
+      "featuredUntil": null
     },
     {
       "id": "wk:seeq:C2318392FE",
@@ -3925,7 +3979,9 @@
       "postedAt": "2026-09-10",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "seeq-senior-staff-full-stack-software-engineer-r8icqz"
+      "employerStated": null,
+      "slug": "seeq-senior-staff-full-stack-software-engineer-r8icqz",
+      "featuredUntil": null
     },
     {
       "id": "wk:seeq:763AE68666",
@@ -3975,7 +4031,9 @@
       "postedAt": "2026-09-10",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "seeq-senior-staff-full-stack-software-engineer-uo3eu9"
+      "employerStated": null,
+      "slug": "seeq-senior-staff-full-stack-software-engineer-uo3eu9",
+      "featuredUntil": null
     },
     {
       "id": "gh:blackcanyonconsulting:7572200003",
@@ -4025,7 +4083,9 @@
       "postedAt": "2025-12-24T10:25:20-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "black-canyon-consulting-full-stack-developer-rxnorm-dymwo5"
+      "employerStated": null,
+      "slug": "black-canyon-consulting-full-stack-developer-rxnorm-dymwo5",
+      "featuredUntil": null
     },
     {
       "id": "gh:blackcanyonconsulting:6285647003",
@@ -4073,7 +4133,9 @@
       "postedAt": "2024-12-03T09:59:17-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "black-canyon-consulting-full-stack-developer-python-django-reactjs-x90hvk"
+      "employerStated": null,
+      "slug": "black-canyon-consulting-full-stack-developer-python-django-reactjs-x90hvk",
+      "featuredUntil": null
     },
     {
       "id": "ab:watershed:96d1cf77-2950-4a41-893d-3913472b2ea9",
@@ -4116,7 +4178,9 @@
       "postedAt": "2026-05-22T17:20:07.848+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "watershed-staff-product-engineer-full-stack-sthixc"
+      "employerStated": null,
+      "slug": "watershed-staff-product-engineer-full-stack-sthixc",
+      "featuredUntil": null
     },
     {
       "id": "ab:watershed:c24a97b1-e9c2-4863-bbb5-f28446174d46",
@@ -4160,7 +4224,9 @@
       "postedAt": "2026-08-12T21:49:48.001+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "watershed-senior-software-engineer-full-stack-u48sn3"
+      "employerStated": null,
+      "slug": "watershed-senior-software-engineer-full-stack-u48sn3",
+      "featuredUntil": null
     },
     {
       "id": "ab:langchain:4beade3b-0bf2-4720-b553-0309880e22b4",
@@ -4208,7 +4274,9 @@
       "postedAt": "2026-10-08T04:05:32.870+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "langchain-senior-fullstack-software-engineer-ai-observability-and-eval-ke09we"
+      "employerStated": null,
+      "slug": "langchain-senior-fullstack-software-engineer-ai-observability-and-eval-ke09we",
+      "featuredUntil": null
     },
     {
       "id": "ab:langchain:e6d2bc1e-e0b9-4076-be01-ef8681863c01",
@@ -4256,7 +4324,9 @@
       "postedAt": "2026-09-12T07:06:57.811+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "langchain-senior-fullstack-engineer-ai-observability-and-evals-platfor-yhm48v"
+      "employerStated": null,
+      "slug": "langchain-senior-fullstack-engineer-ai-observability-and-evals-platfor-yhm48v",
+      "featuredUntil": null
     },
     {
       "id": "ab:langchain:ddf92275-1cc3-49c0-9f25-e8ded43b07f6",
@@ -4305,7 +4375,9 @@
       "postedAt": "2026-10-14T15:18:56.705+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "langchain-fullstack-engineer-ai-observability-and-evals-platform-langs-5k0twq"
+      "employerStated": null,
+      "slug": "langchain-fullstack-engineer-ai-observability-and-evals-platform-langs-5k0twq",
+      "featuredUntil": null
     },
     {
       "id": "ab:langchain:a03b3e54-495d-4960-aee7-0194a3cef57d",
@@ -4353,7 +4425,9 @@
       "postedAt": "2025-02-19T01:34:44.923+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "langchain-senior-fullstack-engineer-ai-observability-and-evals-platfor-gxgv75"
+      "employerStated": null,
+      "slug": "langchain-senior-fullstack-engineer-ai-observability-and-evals-platfor-gxgv75",
+      "featuredUntil": null
     },
     {
       "id": "ab:vanta:ed632c31-2a66-4c91-8d29-f450bbd4de67",
@@ -4400,7 +4474,9 @@
       "postedAt": "2026-08-26T20:28:52.130+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "vanta-senior-fullstack-software-engineer-authoring-experience-nenzlx"
+      "employerStated": null,
+      "slug": "vanta-senior-fullstack-software-engineer-authoring-experience-nenzlx",
+      "featuredUntil": null
     },
     {
       "id": "ab:vanta:bbaea4cf-1439-4996-b7b1-c10425413c3f",
@@ -4444,7 +4520,9 @@
       "postedAt": "2026-09-23T19:43:46.798+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "vanta-senior-fullstack-software-engineer-risk-3oj88q"
+      "employerStated": null,
+      "slug": "vanta-senior-fullstack-software-engineer-risk-3oj88q",
+      "featuredUntil": null
     },
     {
       "id": "ab:vanta:fedc71ba-ef1d-454c-9536-ce87333a23c7",
@@ -4490,7 +4568,9 @@
       "postedAt": "2026-03-12T16:14:37.165+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "vanta-senior-ii-fullstack-software-engineer-grc-s7w8ra"
+      "employerStated": null,
+      "slug": "vanta-senior-ii-fullstack-software-engineer-grc-s7w8ra",
+      "featuredUntil": null
     },
     {
       "id": "ab:vanta:1513e1ac-5dca-4acb-a99d-8b5461115651",
@@ -4536,7 +4616,9 @@
       "postedAt": "2025-03-13T22:25:56.507+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "vanta-senior-fullstack-software-engineer-grc-owyvj9"
+      "employerStated": null,
+      "slug": "vanta-senior-fullstack-software-engineer-grc-owyvj9",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:80c40695-5cd7-4206-96b6-873158a8e696",
@@ -4578,7 +4660,9 @@
       "postedAt": "2026-11-05T22:23:39.541+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-founding-full-stack-software-engineer-consulting-osjv1w"
+      "employerStated": null,
+      "slug": "openai-founding-full-stack-software-engineer-consulting-osjv1w",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:dbe79b89-e593-44b3-8aec-c667f7134445",
@@ -4620,7 +4704,9 @@
       "postedAt": "2026-10-16T23:48:11.093+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-software-engineer-full-stack-dots-h8qaz0"
+      "employerStated": null,
+      "slug": "openai-software-engineer-full-stack-dots-h8qaz0",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:ac442f1f-c0d2-4608-a155-bfc89190e01c",
@@ -4664,7 +4750,9 @@
       "postedAt": "2026-09-22T19:29:04.677+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-child-safety-tools-and-systems-ckgli3"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-child-safety-tools-and-systems-ckgli3",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:099dd6af-b017-4a60-85d5-4c79da3a9ead",
@@ -4712,7 +4800,9 @@
       "postedAt": "2026-08-13T16:31:47.234+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-codex-for-finance-uag0kd"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-codex-for-finance-uag0kd",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:fcb0ed1a-9329-4e8f-8aab-92bb626d8141",
@@ -4754,7 +4844,9 @@
       "postedAt": "2026-06-29T00:06:01.652+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-founding-full-stack-software-engineer-legal-ervkn9"
+      "employerStated": null,
+      "slug": "openai-founding-full-stack-software-engineer-legal-ervkn9",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:5ebd5f66-75db-4a96-8d39-babc14f1c582",
@@ -4798,7 +4890,9 @@
       "postedAt": "2026-06-11T23:07:02.457+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-codex-htn7bl"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-codex-htn7bl",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:6b47238e-025a-4350-b270-2f3564002fcc",
@@ -4843,7 +4937,9 @@
       "postedAt": "2026-06-09T18:38:49.181+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-chatgpt-imagegen-7039ro"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-chatgpt-imagegen-7039ro",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:9b1b62f5-1400-4672-910a-fda6f975f642",
@@ -4892,7 +4988,9 @@
       "postedAt": "2026-04-16T20:19:34.599+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-education-d3k238"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-education-d3k238",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:73e56947-5d8b-414d-a0ac-9dc9b04e2406",
@@ -4934,7 +5032,9 @@
       "postedAt": "2026-03-17T00:54:56.512+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-software-engineer-full-stack-core-experimentation-5rrgop"
+      "employerStated": null,
+      "slug": "openai-software-engineer-full-stack-core-experimentation-5rrgop",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca",
@@ -4975,7 +5075,9 @@
       "postedAt": "2026-01-30T23:55:33.386+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-growth-vknil4"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-growth-vknil4",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:52c72cb9-7c44-4cba-b440-e05262a38491",
@@ -5018,7 +5120,9 @@
       "postedAt": "2025-11-12T20:52:20.549+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-intelligence-and-investigations-okh827"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-intelligence-and-investigations-okh827",
+      "featuredUntil": null
     },
     {
       "id": "lv:palantir:2da4be12-bc7a-4950-87db-e9d68d955ff7",
@@ -5069,7 +5173,9 @@
       "postedAt": "2024-02-17T00:49:42.056Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "palantir-full-stack-software-engineer-application-development-fm3qel"
+      "employerStated": null,
+      "slug": "palantir-full-stack-software-engineer-application-development-fm3qel",
+      "featuredUntil": null
     },
     {
       "id": "gh:nextdoor:8198185",
@@ -5115,7 +5221,9 @@
       "postedAt": "2026-09-14T13:40:23-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "nextdoor-software-engineer-fullstack-fwohxx"
+      "employerStated": null,
+      "slug": "nextdoor-software-engineer-fullstack-fwohxx",
+      "featuredUntil": null
     },
     {
       "id": "gh:nextdoor:8198165",
@@ -5161,7 +5269,9 @@
       "postedAt": "2026-09-14T13:40:25-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "nextdoor-software-engineer-fullstack-j8q19j"
+      "employerStated": null,
+      "slug": "nextdoor-software-engineer-fullstack-j8q19j",
+      "featuredUntil": null
     },
     {
       "id": "gh:peloton:8304700",
@@ -5203,7 +5313,9 @@
       "postedAt": "2026-11-02T17:22:40-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "peloton-sr-ai-engineer-full-stack-whtyjb"
+      "employerStated": null,
+      "slug": "peloton-sr-ai-engineer-full-stack-whtyjb",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6223924004",
@@ -5251,7 +5363,9 @@
       "postedAt": "2026-10-14T07:08:34-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-fullstack-engineer-grafana-data-source-plugins-nasa-r-o7led2"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-fullstack-engineer-grafana-data-source-plugins-nasa-r-o7led2",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6223972004",
@@ -5299,7 +5413,9 @@
       "postedAt": "2026-10-14T07:11:04-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-fullstack-engineer-grafana-data-source-plugins-nasa-r-13zky3"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-fullstack-engineer-grafana-data-source-plugins-nasa-r-13zky3",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6130907004",
@@ -5345,7 +5461,9 @@
       "postedAt": "2026-07-31T07:26:29-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-fullstack-engineer-grafana-cloud-observability-us-rem-hydzwu"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-fullstack-engineer-grafana-cloud-observability-us-rem-hydzwu",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6130872004",
@@ -5391,7 +5509,9 @@
       "postedAt": "2026-07-31T07:26:30-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-fullstack-engineer-grafana-cloud-observability-canada-cn0ov3"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-fullstack-engineer-grafana-cloud-observability-canada-cn0ov3",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6226999004",
@@ -5438,7 +5558,9 @@
       "postedAt": "2026-11-04T11:25:34-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-fullstack-engineer-grafana-catalog-us-remote-t1juvx"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-fullstack-engineer-grafana-catalog-us-remote-t1juvx",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6226998004",
@@ -5485,7 +5607,9 @@
       "postedAt": "2026-11-04T11:25:20-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-fullstack-engineer-grafana-catalog-canada-remote-htpdik"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-fullstack-engineer-grafana-catalog-canada-remote-htpdik",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6250630004",
@@ -5533,7 +5657,9 @@
       "postedAt": "2026-11-06T09:15:44-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-full-stack-engineer-database-observability-grafana-cl-agjqsk"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-full-stack-engineer-database-observability-grafana-cl-agjqsk",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6250633004",
@@ -5581,7 +5707,9 @@
       "postedAt": "2026-11-06T09:30:23-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-full-stack-engineer-database-observability-grafana-cl-nx79ef"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-full-stack-engineer-database-observability-grafana-cl-nx79ef",
+      "featuredUntil": null
     },
     {
       "id": "gh:grafanalabs:6250631004",
@@ -5629,7 +5757,9 @@
       "postedAt": "2026-11-06T09:17:54-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "grafana-labs-senior-full-stack-engineer-database-observability-grafana-cl-cpp7kl"
+      "employerStated": null,
+      "slug": "grafana-labs-senior-full-stack-engineer-database-observability-grafana-cl-cpp7kl",
+      "featuredUntil": null
     },
     {
       "id": "gh:calendly:8846049002",
@@ -5674,7 +5804,9 @@
       "postedAt": "2026-09-28T11:12:27-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "calendly-senior-full-stack-engineer-website-development-xq7bi1"
+      "employerStated": null,
+      "slug": "calendly-senior-full-stack-engineer-website-development-xq7bi1",
+      "featuredUntil": null
     },
     {
       "id": "gh:roblox:8036757",
@@ -5720,7 +5852,9 @@
       "postedAt": "2026-10-02T17:10:22-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "roblox-senior-software-engineer-full-stack-global-actions-lwcms2"
+      "employerStated": null,
+      "slug": "roblox-senior-software-engineer-full-stack-global-actions-lwcms2",
+      "featuredUntil": null
     },
     {
       "id": "gh:roblox:7760129",
@@ -5762,7 +5896,9 @@
       "postedAt": "2026-03-27T15:27:01-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "roblox-senior-frontend-fullstack-software-engineer-social-graph-jjaw6e"
+      "employerStated": null,
+      "slug": "roblox-senior-frontend-fullstack-software-engineer-social-graph-jjaw6e",
+      "featuredUntil": null
     },
     {
       "id": "gh:roblox:8164933",
@@ -5808,7 +5944,9 @@
       "postedAt": "2026-09-04T14:05:27-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "roblox-senior-frontend-fullstack-software-engineer-sharing-se6xhy"
+      "employerStated": null,
+      "slug": "roblox-senior-frontend-fullstack-software-engineer-sharing-se6xhy",
+      "featuredUntil": null
     },
     {
       "id": "gh:roblox:7752066",
@@ -5853,7 +5991,9 @@
       "postedAt": "2026-03-27T15:27:22-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "roblox-principal-fullstack-backend-software-engineer-user-connectio-y2qudf"
+      "employerStated": null,
+      "slug": "roblox-principal-fullstack-backend-software-engineer-user-connectio-y2qudf",
+      "featuredUntil": null
     },
     {
       "id": "gh:anthropic:5454882008",
@@ -5895,7 +6035,9 @@
       "postedAt": "2026-10-15T23:38:43-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "anthropic-staff-software-engineer-enterprise-full-stack-pbrx74"
+      "employerStated": null,
+      "slug": "anthropic-staff-software-engineer-enterprise-full-stack-pbrx74",
+      "featuredUntil": null
     },
     {
       "id": "gh:anthropic:5369710008",
@@ -5941,7 +6083,9 @@
       "postedAt": "2026-10-09T10:55:52-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "anthropic-staff-fullstack-software-engineer-safeguards-engineering-uooy2z"
+      "employerStated": null,
+      "slug": "anthropic-staff-fullstack-software-engineer-safeguards-engineering-uooy2z",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:8509534002",
@@ -5992,7 +6136,9 @@
       "postedAt": "2026-04-15T23:20:38-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-staff-software-engineer-fullstack-ai-product-nyc-lsthnm"
+      "employerStated": null,
+      "slug": "databricks-staff-software-engineer-fullstack-ai-product-nyc-lsthnm",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:8099343002",
@@ -6049,7 +6195,9 @@
       "postedAt": "2025-07-30T22:40:25-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-staff-software-engineer-fullstack-mad58c"
+      "employerStated": null,
+      "slug": "databricks-staff-software-engineer-fullstack-mad58c",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:8220840002",
@@ -6094,7 +6242,9 @@
       "postedAt": "2026-06-04T13:25:54-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-staff-fullstack-engineer-agentic-applications-nnd7ja"
+      "employerStated": null,
+      "slug": "databricks-staff-fullstack-engineer-agentic-applications-nnd7ja",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:6704975002",
@@ -6140,64 +6290,9 @@
       "postedAt": "2025-01-23T02:16:45-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-staff-fullstack-engineer-fdclbs"
-    },
-    {
-      "id": "gh:databricks:6544403002",
-      "company": "Databricks",
-      "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544403002",
-      "location": "Seattle, Washington",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 157700,
-        "max": 157700,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "node",
-        "python",
-        "java",
-        "c#",
-        "aws",
-        "gcp",
-        "azure",
-        "kubernetes",
-        "docker",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "-0.5 kitchen-sink stack",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2022-12-20T18:20:50-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "databricks-senior-software-engineer-fullstack-0pruj0"
+      "employerStated": null,
+      "slug": "databricks-staff-fullstack-engineer-fdclbs",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:7898766002",
@@ -6251,7 +6346,9 @@
       "postedAt": "2025-03-06T17:58:22-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-senior-software-engineer-fullstack-e4ivwb"
+      "employerStated": null,
+      "slug": "databricks-senior-software-engineer-fullstack-e4ivwb",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:5445641002",
@@ -6308,7 +6405,68 @@
       "postedAt": "2022-02-28T15:09:37-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-senior-software-engineer-fullstack-p12m2v"
+      "employerStated": null,
+      "slug": "databricks-senior-software-engineer-fullstack-p12m2v",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:databricks:6544403002",
+      "company": "Databricks",
+      "title": "Senior Software Engineer - Fullstack",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544403002",
+      "location": "Seattle, Washington",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 157700,
+        "max": 157700,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "node",
+        "python",
+        "java",
+        "c#",
+        "aws",
+        "gcp",
+        "azure",
+        "kubernetes",
+        "docker",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "-0.5 kitchen-sink stack",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2022-12-20T18:20:50-05:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "databricks-senior-software-engineer-fullstack-0pruj0",
+      "featuredUntil": null
     },
     {
       "id": "gh:scaleai:4713608005",
@@ -6357,7 +6515,9 @@
       "postedAt": "2026-07-09T14:54:54-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "scale-ai-staff-software-engineer-full-stack-gen-ai-8zex16"
+      "employerStated": null,
+      "slug": "scale-ai-staff-software-engineer-full-stack-gen-ai-8zex16",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040273003",
@@ -6407,7 +6567,9 @@
       "postedAt": "2026-11-02T21:35:14-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-e7o3i6"
+      "employerStated": null,
+      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-e7o3i6",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040271003",
@@ -6458,7 +6620,60 @@
       "postedAt": "2026-11-02T21:35:11-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-59i10w"
+      "employerStated": null,
+      "slug": "affirm-staff-software-engineer-fullstack-card-experiences-59i10w",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:affirm:8162558003",
+      "company": "Affirm",
+      "title": "Staff Software Engineer, Fullstack (Account Management)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8162558003",
+      "location": "Remote Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 181000,
+        "max": 241000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-05T11:30:14-05:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "affirm-staff-software-engineer-fullstack-account-management-bol5bv",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8162556003",
@@ -6508,56 +6723,9 @@
       "postedAt": "2026-11-05T11:30:13-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-account-management-umdbq1"
-    },
-    {
-      "id": "gh:affirm:8162558003",
-      "company": "Affirm",
-      "title": "Staff Software Engineer, Fullstack (Account Management)",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8162558003",
-      "location": "Remote Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 181000,
-        "max": 241000,
-        "currency": "CAD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "vue",
-        "python",
-        "kotlin",
-        "mysql",
-        "aws",
-        "kubernetes"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-05T11:30:14-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-staff-software-engineer-fullstack-account-management-bol5bv"
+      "employerStated": null,
+      "slug": "affirm-staff-software-engineer-fullstack-account-management-umdbq1",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8032173003",
@@ -6604,7 +6772,9 @@
       "postedAt": "2026-10-15T21:10:11-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-full-stack-card-acquisition-199vas"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-full-stack-card-acquisition-199vas",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7749755003",
@@ -6649,7 +6819,9 @@
       "postedAt": "2026-06-02T17:43:03-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-capital-orchestration-6xrm8m"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-capital-orchestration-6xrm8m",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7819445003",
@@ -6696,7 +6868,9 @@
       "postedAt": "2026-08-21T13:28:15-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-app-experience-rdlb4a"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-app-experience-rdlb4a",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8016866003",
@@ -6741,7 +6915,9 @@
       "postedAt": "2026-10-09T15:25:16-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-ads-platform-04114t"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-ads-platform-04114t",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8017340003",
@@ -6787,7 +6963,9 @@
       "postedAt": "2026-10-15T17:31:09-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-i-fullstack-search-b8khcd"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-i-fullstack-search-b8khcd",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7978722003",
@@ -6834,7 +7012,64 @@
       "postedAt": "2026-09-03T11:30:33-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-staff-software-engineer-fullstack-marketplace-and-con-7efawi"
+      "employerStated": null,
+      "slug": "affirm-senior-staff-software-engineer-fullstack-marketplace-and-con-7efawi",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:affirm:7663434003",
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (Consumer Engineering)",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7663434003",
+      "location": "Remote US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 195000,
+        "max": 255000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "vue",
+        "typescript",
+        "javascript",
+        "python",
+        "kotlin",
+        "mysql",
+        "aws",
+        "kubernetes",
+        "react native",
+        "swift"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-03-18T06:21:19-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-consumer-engineering-q8mn8h",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7981723003",
@@ -6881,7 +7116,9 @@
       "postedAt": "2026-10-09T15:39:23-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-app-experience-tgvwb3"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-app-experience-tgvwb3",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7979912003",
@@ -6924,50 +7161,9 @@
       "postedAt": "2026-09-16T10:06:13-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-analytics-lead-full-stack-collections-and-recoveries-y8kq0q"
-    },
-    {
-      "id": "gh:affirm:8011130003",
-      "company": "Affirm",
-      "title": "Analytics Lead, Full Stack",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011130003",
-      "location": "Remote US",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 145000,
-        "max": 205000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-06T12:16:24-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-analytics-lead-full-stack-97h5e4"
+      "employerStated": null,
+      "slug": "affirm-analytics-lead-full-stack-collections-and-recoveries-y8kq0q",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8011132003",
@@ -7010,35 +7206,34 @@
       "postedAt": "2026-11-06T12:16:19-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-analytics-lead-full-stack-i0lx22"
+      "employerStated": null,
+      "slug": "affirm-analytics-lead-full-stack-i0lx22",
+      "featuredUntil": null
     },
     {
-      "id": "gh:okta:8314936",
-      "company": "Okta",
-      "title": "Staff FullStack Engineer, Secures AI ",
-      "url": "https://www.okta.com/company/careers/opportunity/8314936?gh_jid=8314936",
-      "location": "Toronto, Ontario, Canada",
+      "id": "gh:affirm:8011130003",
+      "company": "Affirm",
+      "title": "Analytics Lead, Full Stack",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011130003",
+      "location": "Remote US",
       "where": {
         "countries": [
-          "CA"
+          "US"
         ],
         "regions": [],
         "anywhere": false
       },
       "via": null,
-      "remote": null,
-      "workStyle": null,
+      "remote": true,
+      "workStyle": "remote",
       "salary": {
-        "min": 164000,
-        "max": 164000,
+        "min": 145000,
+        "max": 205000,
         "currency": "USD",
         "interval": "year"
       },
       "stack": [
-        "typescript",
-        "javascript",
-        "java",
-        "aws"
+        "python"
       ],
       "rounds": null,
       "interviewStyles": [],
@@ -7049,15 +7244,16 @@
         "emoji": "💯",
         "reasons": [
           "+1.25 strong pay",
-          "+0.25 clear salary range",
           "+0.25 no red flags"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-10-29T15:09:51-04:00",
+      "postedAt": "2026-11-06T12:16:24-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "okta-staff-fullstack-engineer-secures-ai-mou1wp"
+      "employerStated": null,
+      "slug": "affirm-analytics-lead-full-stack-97h5e4",
+      "featuredUntil": null
     },
     {
       "id": "gh:okta:8120329",
@@ -7104,7 +7300,58 @@
       "postedAt": "2026-08-17T15:47:45-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "okta-staff-fullstack-engineer-secures-ai-gpu2ec"
+      "employerStated": null,
+      "slug": "okta-staff-fullstack-engineer-secures-ai-gpu2ec",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:okta:8314936",
+      "company": "Okta",
+      "title": "Staff FullStack Engineer, Secures AI ",
+      "url": "https://www.okta.com/company/careers/opportunity/8314936?gh_jid=8314936",
+      "location": "Toronto, Ontario, Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 164000,
+        "max": 164000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "javascript",
+        "java",
+        "aws"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-29T15:09:51-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "okta-staff-fullstack-engineer-secures-ai-mou1wp",
+      "featuredUntil": null
     },
     {
       "id": "gh:okta:8186804",
@@ -7152,7 +7399,9 @@
       "postedAt": "2026-09-24T12:51:08-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "okta-senior-software-engineer-fullstack-inmoqg"
+      "employerStated": null,
+      "slug": "okta-senior-software-engineer-fullstack-inmoqg",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8285465",
@@ -7198,7 +7447,9 @@
       "postedAt": "2026-10-19T12:22:21-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-tech-lead-web-development-full-stack-09xblf"
+      "employerStated": null,
+      "slug": "elastic-tech-lead-web-development-full-stack-09xblf",
+      "featuredUntil": null
     },
     {
       "id": "gh:coinbase:8174232",
@@ -7242,7 +7493,9 @@
       "postedAt": "2026-10-08T19:50:37-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "coinbase-senior-software-engineer-backend-fullstack-coinbase-advisor-kp1s6x"
+      "employerStated": null,
+      "slug": "coinbase-senior-software-engineer-backend-fullstack-coinbase-advisor-kp1s6x",
+      "featuredUntil": null
     },
     {
       "id": "gh:stripe:8332676",
@@ -7290,7 +7543,9 @@
       "postedAt": "2026-10-28T19:38:42-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "stripe-software-engineer-full-stack-ic5qkg"
+      "employerStated": null,
+      "slug": "stripe-software-engineer-full-stack-ic5qkg",
+      "featuredUntil": null
     },
     {
       "id": "ab:sentilink:dd839e2c-19fc-4496-8172-0adf786a8798",
@@ -7341,7 +7596,9 @@
       "postedAt": "2026-11-04T16:37:44.633+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "sentilink-senior-product-engineer-full-stack-9ahm0c"
+      "employerStated": null,
+      "slug": "sentilink-senior-product-engineer-full-stack-9ahm0c",
+      "featuredUntil": null
     },
     {
       "id": "ab:sentilink:dd69100c-8482-4583-9075-e81d4b8f906b",
@@ -7392,7 +7649,9 @@
       "postedAt": "2026-11-04T16:37:39.152+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "sentilink-senior-software-engineer-full-stack-asj1l2"
+      "employerStated": null,
+      "slug": "sentilink-senior-software-engineer-full-stack-asj1l2",
+      "featuredUntil": null
     },
     {
       "id": "lv:curai:46e0dd2f-c1dd-4ca2-9095-5b45f477b656",
@@ -7443,7 +7702,9 @@
       "postedAt": "2026-09-30T18:18:01.515Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "curai-senior-software-engineer-full-stack-76uigi"
+      "employerStated": null,
+      "slug": "curai-senior-software-engineer-full-stack-76uigi",
+      "featuredUntil": null
     },
     {
       "id": "hn:50350981",
@@ -7489,7 +7750,9 @@
       "postedAt": "2026-11-03T12:07:36.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "marker-learning-senior-full-stack-engineer-frontend-leaning-3kcngm"
+      "employerStated": null,
+      "slug": "marker-learning-senior-full-stack-engineer-frontend-leaning-3kcngm",
+      "featuredUntil": null
     },
     {
       "id": "hn:50349294",
@@ -7535,7 +7798,9 @@
       "postedAt": "2026-11-03T07:59:27.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "scento-staff-full-stack-engineer-jfm4pf"
+      "employerStated": null,
+      "slug": "scento-staff-full-stack-engineer-jfm4pf",
+      "featuredUntil": null
     },
     {
       "id": "hn:50342723",
@@ -7575,7 +7840,9 @@
       "postedAt": "2026-11-02T19:55:24.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "fly-io-fullstack-engineer-d34xjl"
+      "employerStated": null,
+      "slug": "fly-io-fullstack-engineer-d34xjl",
+      "featuredUntil": null
     },
     {
       "id": "hn:50342697",
@@ -7628,7 +7895,9 @@
       "postedAt": "2026-11-02T19:53:24.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "serpapi-junior-to-senior-fullstack-engineer-multiple-positions-99znwx"
+      "employerStated": null,
+      "slug": "serpapi-junior-to-senior-fullstack-engineer-multiple-positions-99znwx",
+      "featuredUntil": null
     },
     {
       "id": "hn:50340820",
@@ -7673,7 +7942,9 @@
       "postedAt": "2026-11-02T18:00:14.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "postscript-yc-w19-senior-software-engineer-full-stack-jr7857"
+      "employerStated": null,
+      "slug": "postscript-yc-w19-senior-software-engineer-full-stack-jr7857",
+      "featuredUntil": null
     },
     {
       "id": "gh:verkada:5101666007",
@@ -7721,7 +7992,9 @@
       "postedAt": "2026-04-08T13:13:31-04:00",
       "firstSeen": "2026-11-11",
       "reports": null,
-      "slug": "verkada-full-stack-engineer-business-systems-o0kmzm"
+      "employerStated": null,
+      "slug": "verkada-full-stack-engineer-business-systems-o0kmzm",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:8ddb799f-f0c7-4df8-9665-5016a1f39da3",
@@ -7766,7 +8039,9 @@
       "postedAt": "2026-11-09T22:58:22.319+00:00",
       "firstSeen": "2026-11-10",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-child-safety-tools-and-systems-06z1pj"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-child-safety-tools-and-systems-06z1pj",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:d7dfc19d-e508-4522-91fa-e31c3b612a47",
@@ -7811,7 +8086,9 @@
       "postedAt": "2026-11-09T22:58:12.042+00:00",
       "firstSeen": "2026-11-10",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-child-safety-tools-and-systems-33cgry"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-child-safety-tools-and-systems-33cgry",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8042371003",
@@ -7857,7 +8134,9 @@
       "postedAt": "2026-11-10T04:30:06-05:00",
       "firstSeen": "2026-11-10",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-contact-channels-g9q1rn"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-contact-channels-g9q1rn",
+      "featuredUntil": null
     },
     {
       "id": "hn:50345424",
@@ -7900,7 +8179,9 @@
       "postedAt": "2026-11-02T23:09:27.000Z",
       "firstSeen": "2026-11-07",
       "reports": null,
-      "slug": "spade-fullstack-engineer-ymp5j2"
+      "employerStated": null,
+      "slug": "spade-fullstack-engineer-ymp5j2",
+      "featuredUntil": null
     },
     {
       "id": "wk:akeno:D49DFF9F6E",
@@ -7951,7 +8232,9 @@
       "postedAt": "2026-01-19",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "akeno-senior-full-stack-engineer-all-genders-8bqq4q"
+      "employerStated": null,
+      "slug": "akeno-senior-full-stack-engineer-all-genders-8bqq4q",
+      "featuredUntil": null
     },
     {
       "id": "ab:prompt:1ed8373f-f0e1-4c90-a168-98f91bc41f8f",
@@ -7998,7 +8281,9 @@
       "postedAt": "2026-06-11T16:44:28.399+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "prompt-senior-full-stack-engineer-data-and-analytics-u3g1vk"
+      "employerStated": null,
+      "slug": "prompt-senior-full-stack-engineer-data-and-analytics-u3g1vk",
+      "featuredUntil": null
     },
     {
       "id": "ab:prompt:3a30fa71-a269-481b-a8ef-f35ae95e4fba",
@@ -8044,7 +8329,9 @@
       "postedAt": "2026-01-05T20:06:33.119+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "prompt-senior-full-stack-ai-engineer-rapid-prototyping-and-analytic-kio54r"
+      "employerStated": null,
+      "slug": "prompt-senior-full-stack-ai-engineer-rapid-prototyping-and-analytic-kio54r",
+      "featuredUntil": null
     },
     {
       "id": "ab:shepherd:c4081c3d-a79b-4ac9-aa19-78f5e1a24c4d",
@@ -8096,7 +8383,9 @@
       "postedAt": "2026-10-20T16:45:02.170+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "shepherd-software-engineer-full-stack-1enmnn"
+      "employerStated": null,
+      "slug": "shepherd-software-engineer-full-stack-1enmnn",
+      "featuredUntil": null
     },
     {
       "id": "ab:spruceid:491c3062-8aae-425f-bcc7-9451ff180997",
@@ -8153,7 +8442,9 @@
       "postedAt": "2026-01-05T20:19:01.184+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "spruceid-full-stack-software-engineer-remote-5noigz"
+      "employerStated": null,
+      "slug": "spruceid-full-stack-software-engineer-remote-5noigz",
+      "featuredUntil": null
     },
     {
       "id": "ab:oneleet:e178bb4b-b402-4630-aaba-89a3c2841518",
@@ -8202,7 +8493,9 @@
       "postedAt": "2025-11-03T19:11:22.206+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "oneleet-fullstack-engineer-ai-implementation-b2ojqm"
+      "employerStated": null,
+      "slug": "oneleet-fullstack-engineer-ai-implementation-b2ojqm",
+      "featuredUntil": null
     },
     {
       "id": "ab:clickhouse:1176ec78-e10d-4acd-8af8-47406af929ee",
@@ -8251,7 +8544,9 @@
       "postedAt": "2026-10-19T05:49:24.124+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "clickhouse-full-stack-software-engineer-sql-console-mit1z5"
+      "employerStated": null,
+      "slug": "clickhouse-full-stack-software-engineer-sql-console-mit1z5",
+      "featuredUntil": null
     },
     {
       "id": "ab:clickhouse:00d30b77-5f95-4ae3-be98-b1c8319bcdce",
@@ -8270,7 +8565,7 @@
       "remote": true,
       "workStyle": "remote",
       "salary": {
-        "min": 195000,
+        "min": 190000,
         "max": 260000,
         "currency": "USD",
         "interval": "year"
@@ -8306,7 +8601,9 @@
       "postedAt": "2026-01-05T20:11:16.997+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "clickhouse-senior-full-stack-engineer-clickstack-gks00d"
+      "employerStated": null,
+      "slug": "clickhouse-senior-full-stack-engineer-clickstack-gks00d",
+      "featuredUntil": null
     },
     {
       "id": "ab:clickhouse:447d74c7-22bd-47e4-ae67-db5035ca6592",
@@ -8359,7 +8656,9 @@
       "postedAt": "2025-07-08T16:32:36.602+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "clickhouse-full-stack-software-engineer-billing-team-s6if7g"
+      "employerStated": null,
+      "slug": "clickhouse-full-stack-software-engineer-billing-team-s6if7g",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:1f7c6071-ad3a-4903-9b05-4684f5c1a7c8",
@@ -8405,7 +8704,9 @@
       "postedAt": "2026-10-01T22:23:42.627+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-sales-platform-pgudoy"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-sales-platform-pgudoy",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:76c2a136-4e93-4e1a-bbdf-de4268498838",
@@ -8447,7 +8748,9 @@
       "postedAt": "2026-09-24T17:45:59.814+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-mobile-full-stack-staff-and-software-engineer-consumer-monet-f2vfra"
+      "employerStated": null,
+      "slug": "openai-mobile-full-stack-staff-and-software-engineer-consumer-monet-f2vfra",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:d4cd5172-d4bc-4f9e-956e-c6bcaef1c355",
@@ -8489,7 +8792,9 @@
       "postedAt": "2026-09-24T17:42:19.514+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-staff-and-software-engineer-consumer-monetization-932k85"
+      "employerStated": null,
+      "slug": "openai-full-stack-staff-and-software-engineer-consumer-monetization-932k85",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:4d1ede8c-3d4c-4503-8408-81e4b68c5c91",
@@ -8531,7 +8836,9 @@
       "postedAt": "2026-09-03T20:29:00.146+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-product-explorations-g74ec9"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-product-explorations-g74ec9",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:191e42f8-cd62-4082-8f72-505c26505e67",
@@ -8573,7 +8880,9 @@
       "postedAt": "2026-10-23T17:15:11.941+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-monetization-platform-p86etv"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-monetization-platform-p86etv",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:d1c6cb87-a44d-4d04-92a8-dc40eccd090e",
@@ -8615,7 +8924,9 @@
       "postedAt": "2026-07-13T19:27:13.459+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-engineer-enterprise-expansions-ja78pt"
+      "employerStated": null,
+      "slug": "openai-full-stack-engineer-enterprise-expansions-ja78pt",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:88654e7f-4e23-4e75-8e54-18c10d09b093",
@@ -8657,7 +8968,9 @@
       "postedAt": "2026-06-04T21:16:59.213+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-cybersecurity-products-t0w6a6"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-cybersecurity-products-t0w6a6",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:f873dd71-46c9-4be1-8580-bc67c56b4cad",
@@ -8699,7 +9012,9 @@
       "postedAt": "2026-05-07T19:45:42.110+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-applied-foundations-z24ckn"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-applied-foundations-z24ckn",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:2d7f1028-ce9b-49c7-acc8-782714ca1cf4",
@@ -8742,7 +9057,9 @@
       "postedAt": "2026-06-17T22:34:56.814+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-software-engineer-agent-enablement-urj8de"
+      "employerStated": null,
+      "slug": "openai-full-stack-software-engineer-agent-enablement-urj8de",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:9d11e1d8-af1d-413b-873f-d8fac2bdee99",
@@ -8797,7 +9114,9 @@
       "postedAt": "2025-02-06T00:14:08.985+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-full-stack-engineer-fleet-scheduling-l5ogsr"
+      "employerStated": null,
+      "slug": "openai-full-stack-engineer-fleet-scheduling-l5ogsr",
+      "featuredUntil": null
     },
     {
       "id": "ab:openai:d4780eac-03ad-4dae-861f-99af22b4287e",
@@ -8842,7 +9161,9 @@
       "postedAt": "2025-07-22T20:47:54.607+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "openai-software-engineer-full-stack-people-innovation-labs-87jui8"
+      "employerStated": null,
+      "slug": "openai-software-engineer-full-stack-people-innovation-labs-87jui8",
+      "featuredUntil": null
     },
     {
       "id": "gh:anthropic:5174747008",
@@ -8891,7 +9212,9 @@
       "postedAt": "2026-04-08T14:57:51-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "anthropic-staff-software-engineer-full-stack-oy74zn"
+      "employerStated": null,
+      "slug": "anthropic-staff-software-engineer-full-stack-oy74zn",
+      "featuredUntil": null
     },
     {
       "id": "gh:anthropic:5174743008",
@@ -8938,7 +9261,9 @@
       "postedAt": "2026-04-08T14:58:35-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "anthropic-senior-software-engineer-full-stack-kvhfrr"
+      "employerStated": null,
+      "slug": "anthropic-senior-software-engineer-full-stack-kvhfrr",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:8220836002",
@@ -8982,7 +9307,9 @@
       "postedAt": "2025-10-29T15:58:06-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-staff-fullstack-engineer-agentic-applications-zzwlg9"
+      "employerStated": null,
+      "slug": "databricks-staff-fullstack-engineer-agentic-applications-zzwlg9",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:8220902002",
@@ -9026,7 +9353,9 @@
       "postedAt": "2025-10-29T15:56:55-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-sr-staff-fullstack-engineer-agentic-applications-ke9t59"
+      "employerStated": null,
+      "slug": "databricks-sr-staff-fullstack-engineer-agentic-applications-ke9t59",
+      "featuredUntil": null
     },
     {
       "id": "gh:databricks:8099342002",
@@ -9083,7 +9412,9 @@
       "postedAt": "2025-07-30T22:38:03-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "databricks-senior-software-engineer-fullstack-p93vyx"
+      "employerStated": null,
+      "slug": "databricks-senior-software-engineer-fullstack-p93vyx",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7854835003",
@@ -9131,7 +9462,9 @@
       "postedAt": "2026-08-13T08:48:31-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-international-gsm0jk"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-international-gsm0jk",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8042399003",
@@ -9180,7 +9513,9 @@
       "postedAt": "2026-10-30T16:19:46-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-full-stack-card-pre-swipe-experience-qmbgwp"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-full-stack-card-pre-swipe-experience-qmbgwp",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8032175003",
@@ -9227,7 +9562,9 @@
       "postedAt": "2026-10-15T21:10:13-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-full-stack-card-acquisition-lvbi72"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-full-stack-card-acquisition-lvbi72",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7819447003",
@@ -9274,7 +9611,9 @@
       "postedAt": "2026-08-21T13:28:20-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-app-experience-e38who"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-app-experience-e38who",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8016868003",
@@ -9319,7 +9658,9 @@
       "postedAt": "2026-10-09T15:25:18-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-ads-platform-ybqxqv"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-ads-platform-ybqxqv",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8017342003",
@@ -9365,7 +9706,9 @@
       "postedAt": "2026-10-15T17:31:11-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-i-fullstack-search-9x13ab"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-i-fullstack-search-9x13ab",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7827039003",
@@ -9416,7 +9759,9 @@
       "postedAt": "2026-08-13T06:52:16-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-international-35e2xi"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-international-35e2xi",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:7981725003",
@@ -9463,52 +9808,9 @@
       "postedAt": "2026-10-09T15:39:25-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-app-experience-bf4nct"
-    },
-    {
-      "id": "gh:affirm:7799329003",
-      "company": "Affirm",
-      "title": "Analytics Lead, Full Stack",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7799329003",
-      "location": "Remote UK",
-      "where": {
-        "countries": [
-          "GB"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 113000,
-        "max": 161000,
-        "currency": "GBP",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [
-        "fast-paced"
-      ],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+1.25 strong pay",
-          "-0.5 1 red flag(s)"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-07-17T09:00:57-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "affirm-analytics-lead-full-stack-iuf462"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-app-experience-bf4nct",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8003170003",
@@ -9553,7 +9855,56 @@
       "postedAt": "2026-09-23T04:34:42-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-analytics-lead-full-stack-pa8df7"
+      "employerStated": null,
+      "slug": "affirm-analytics-lead-full-stack-pa8df7",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:affirm:7799329003",
+      "company": "Affirm",
+      "title": "Analytics Lead, Full Stack",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7799329003",
+      "location": "Remote UK",
+      "where": {
+        "countries": [
+          "GB"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 113000,
+        "max": 161000,
+        "currency": "GBP",
+        "interval": "year"
+      },
+      "stack": [
+        "python"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 3,
+        "name": "Meh",
+        "emoji": "😐",
+        "reasons": [
+          "+1.25 strong pay",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-07-17T09:00:57-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "affirm-analytics-lead-full-stack-iuf462",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8039471003",
@@ -9597,7 +9948,59 @@
       "postedAt": "2026-10-21T17:16:19-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-analyst-early-career-full-stack-tr9gze"
+      "employerStated": null,
+      "slug": "affirm-analyst-early-career-full-stack-tr9gze",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:elastic:8276131",
+      "company": "Elastic",
+      "title": "Senior Full Stack Software Developer - Observability",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8276131&gh_jid=8276131",
+      "location": "Spain",
+      "where": {
+        "countries": [
+          "ES"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 67000,
+        "max": 67000,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "node",
+        "kubernetes",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 3,
+        "name": "Meh",
+        "emoji": "😐",
+        "reasons": [
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-13T06:33:51-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-software-developer-observability-ismh13",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8276135",
@@ -9646,55 +10049,9 @@
       "postedAt": "2026-10-13T06:33:58-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-senior-full-stack-software-developer-observability-hoo297"
-    },
-    {
-      "id": "gh:elastic:8276131",
-      "company": "Elastic",
-      "title": "Senior Full Stack Software Developer - Observability",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8276131&gh_jid=8276131",
-      "location": "Spain",
-      "where": {
-        "countries": [
-          "ES"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 67000,
-        "max": 67000,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "node",
-        "kubernetes",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-10-13T06:33:51-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "slug": "elastic-senior-full-stack-software-developer-observability-ismh13"
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-software-developer-observability-hoo297",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8314141",
@@ -9742,7 +10099,9 @@
       "postedAt": "2026-11-02T04:50:14-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-79c78t"
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-79c78t",
+      "featuredUntil": null
     },
     {
       "id": "gh:airbnb:8325753",
@@ -9786,7 +10145,9 @@
       "postedAt": "2026-10-26T18:12:12-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "airbnb-staff-software-engineer-prototyping-platform-full-stack-g891y5"
+      "employerStated": null,
+      "slug": "airbnb-staff-software-engineer-prototyping-platform-full-stack-g891y5",
+      "featuredUntil": null
     },
     {
       "id": "gh:airbnb:8325813",
@@ -9834,7 +10195,9 @@
       "postedAt": "2026-10-27T12:46:12-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "airbnb-senior-software-engineer-ui-tooling-full-stack-ios-dg77os"
+      "employerStated": null,
+      "slug": "airbnb-senior-software-engineer-ui-tooling-full-stack-ios-dg77os",
+      "featuredUntil": null
     },
     {
       "id": "ab:sentilink:1fd15aab-3dcf-4f82-9c70-76c27cc9422d",
@@ -9881,7 +10244,9 @@
       "postedAt": "2026-03-13T03:28:11.998+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "sentilink-staff-data-scientist-full-stack-1dykut"
+      "employerStated": null,
+      "slug": "sentilink-staff-data-scientist-full-stack-1dykut",
+      "featuredUntil": null
     },
     {
       "id": "ab:sentilink:02b02b78-52e9-4a13-b1b0-557b827fc10d",
@@ -9928,7 +10293,9 @@
       "postedAt": "2026-01-06T00:09:40.875+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "sentilink-senior-data-scientist-full-stack-1rov93"
+      "employerStated": null,
+      "slug": "sentilink-senior-data-scientist-full-stack-1rov93",
+      "featuredUntil": null
     },
     {
       "id": "ab:ramp:6a7e382f-240a-4952-b9e5-7fe2b3856bc9",
@@ -9973,7 +10340,9 @@
       "postedAt": "2026-06-24T14:30:42.943+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "ramp-applied-ai-engineer-fullstack-i3he10"
+      "employerStated": null,
+      "slug": "ramp-applied-ai-engineer-fullstack-i3he10",
+      "featuredUntil": null
     },
     {
       "id": "gh:gitlab:8922249002",
@@ -10021,7 +10390,9 @@
       "postedAt": "2026-11-03T11:38:14-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "gitlab-intermediate-fullstack-engineer-subscription-lifecycle-ur0qe5"
+      "employerStated": null,
+      "slug": "gitlab-intermediate-fullstack-engineer-subscription-lifecycle-ur0qe5",
+      "featuredUntil": null
     },
     {
       "id": "hn:50341284",
@@ -10064,7 +10435,9 @@
       "postedAt": "2026-11-02T18:28:04.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "uncountable-full-stack-engineering-9krjsa"
+      "employerStated": null,
+      "slug": "uncountable-full-stack-engineering-9krjsa",
+      "featuredUntil": null
     },
     {
       "id": "hn:50338822",
@@ -10109,7 +10482,9 @@
       "postedAt": "2026-11-02T16:06:11.000Z",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "united-risk-early-career-ai-engineers-full-stack-data-science-infrastruc-904im8"
+      "employerStated": null,
+      "slug": "united-risk-early-career-ai-engineers-full-stack-data-science-infrastruc-904im8",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8202548003",
@@ -10157,7 +10532,9 @@
       "postedAt": "2026-11-13T04:44:25-05:00",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-international-x4f89j"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-international-x4f89j",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8200178003",
@@ -10208,7 +10585,9 @@
       "postedAt": "2026-11-12T11:05:15-05:00",
       "firstSeen": "2026-11-12",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-international-hf2ev0"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-international-hf2ev0",
+      "featuredUntil": null
     },
     {
       "id": "hn:50365279",
@@ -10254,7 +10633,9 @@
       "postedAt": "2026-11-04T13:31:28.000Z",
       "firstSeen": "2026-11-07",
       "reports": null,
-      "slug": "search-atlas-senior-full-stack-engineer-aq6sho"
+      "employerStated": null,
+      "slug": "search-atlas-senior-full-stack-engineer-aq6sho",
+      "featuredUntil": null
     },
     {
       "id": "ab:plain:11251278-77a8-475a-afa6-aa62e0a2a1df",
@@ -10299,7 +10680,9 @@
       "postedAt": "2026-04-17T07:43:11.957+00:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "plain-product-engineer-full-stack-gysl83"
+      "employerStated": null,
+      "slug": "plain-product-engineer-full-stack-gysl83",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040394003",
@@ -10348,7 +10731,9 @@
       "postedAt": "2026-10-27T09:27:01-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-8lsjvy"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-8lsjvy",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040380003",
@@ -10396,7 +10781,9 @@
       "postedAt": "2026-10-27T09:28:02-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-94klzp"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-94klzp",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8276132",
@@ -10445,7 +10832,9 @@
       "postedAt": "2026-10-13T06:33:53-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-senior-full-stack-software-developer-observability-j2m2q2"
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-software-developer-observability-j2m2q2",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8276133",
@@ -10494,7 +10883,9 @@
       "postedAt": "2026-10-13T06:33:55-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-senior-full-stack-software-developer-observability-jclof1"
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-software-developer-observability-jclof1",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8345720",
@@ -10543,7 +10934,9 @@
       "postedAt": "2026-11-02T04:51:18-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-rm9htc"
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-rm9htc",
+      "featuredUntil": null
     },
     {
       "id": "gh:elastic:8345719",
@@ -10592,7 +10985,9 @@
       "postedAt": "2026-11-02T04:50:48-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-ulwgdc"
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-engineer-observability-apm-ui-ulwgdc",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8202545003",
@@ -10640,7 +11035,9 @@
       "postedAt": "2026-11-13T04:44:22-05:00",
       "firstSeen": "2026-11-13",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-international-c1ivoq"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-international-c1ivoq",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8200180003",
@@ -10691,7 +11088,9 @@
       "postedAt": "2026-11-12T11:05:18-05:00",
       "firstSeen": "2026-11-12",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-international-uhtmbt"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-international-uhtmbt",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040392003",
@@ -10740,7 +11139,9 @@
       "postedAt": "2026-10-27T09:26:59-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-r0nqpw"
+      "employerStated": null,
+      "slug": "affirm-software-engineer-ii-fullstack-repayment-ux-r0nqpw",
+      "featuredUntil": null
     },
     {
       "id": "gh:affirm:8040378003",
@@ -10788,7 +11189,9 @@
       "postedAt": "2026-10-27T09:27:59-04:00",
       "firstSeen": "2026-11-06",
       "reports": null,
-      "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-26j8v4"
+      "employerStated": null,
+      "slug": "affirm-senior-software-engineer-fullstack-repayments-ux-26j8v4",
+      "featuredUntil": null
     }
   ]
 }
