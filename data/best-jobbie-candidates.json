@@ -1,6 +1,57 @@
 {
-  "updatedAt": "2026-11-17T19:27:40.126Z",
+  "updatedAt": "2026-11-18T02:39:24.385Z",
   "jobs": [
+    {
+      "id": "gh:twilio:8393931",
+      "company": "Twilio",
+      "title": "Staff, Fullstack Software Engineer (L4)",
+      "url": "https://job-boards.greenhouse.io/twilio/jobs/8393931",
+      "location": "Remote - US",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 171120,
+        "max": 213900,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.75 humane interviews",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-17T15:21:04-05:00",
+      "firstSeen": "2026-11-18",
+      "reports": null,
+      "employerStated": null,
+      "slug": "twilio-staff-fullstack-software-engineer-l4-g3guem",
+      "featuredUntil": null
+    },
     {
       "id": "ab:openai:2320fe69-df26-4d1d-ada6-d1a46c0e68a1",
       "company": "OpenAI",
@@ -469,62 +520,6 @@
       "reports": null,
       "employerStated": null,
       "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt",
-      "featuredUntil": null
-    },
-    {
-      "id": "wk:seeq:802346B20E",
-      "company": "Seeq",
-      "title": "Full Stack Software Engineer - Staff or Principal",
-      "url": "https://apply.workable.com/j/802346B20E",
-      "location": "Remote · Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 265000,
-        "max": 310000,
-        "currency": "CAD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "python",
-        "java",
-        "kotlin",
-        "postgres",
-        "graphql",
-        "tailwind"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.75 humane interviews",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "workable",
-      "postedAt": "2026-09-10",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj",
       "featuredUntil": null
     }
   ]
