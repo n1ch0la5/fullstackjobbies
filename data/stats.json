@@ -1,13 +1,13 @@
 {
   "boardsTried": 234,
-  "boardsFailed": 0,
-  "fetched": 19177,
-  "fullStack": 370,
-  "withSalary": 225,
+  "boardsFailed": 2,
+  "fetched": 19109,
+  "fullStack": 363,
+  "withSalary": 222,
   "aiCalls": 0,
   "newBoards": 0,
   "reports": 0,
   "reportedJobs": 0,
   "claimedJobs": 0,
-  "updatedAt": "2026-11-18T02:39:24.390Z"
+  "updatedAt": "2026-11-18T19:10:58.434Z"
 }

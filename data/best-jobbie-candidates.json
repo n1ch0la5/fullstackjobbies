@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-18T02:39:24.385Z",
+  "updatedAt": "2026-11-18T19:10:58.426Z",
   "jobs": [
     {
       "id": "gh:twilio:8393931",
       "company": "Twilio",
-      "title": "Staff, Fullstack Software Engineer (L4)",
+      "title": "Staff, Fullstack Software Engineer (P4)",
       "url": "https://job-boards.greenhouse.io/twilio/jobs/8393931",
       "location": "Remote - US",
       "where": {
@@ -18,8 +18,8 @@
       "remote": true,
       "workStyle": "remote",
       "salary": {
-        "min": 171120,
-        "max": 213900,
+        "min": 175120,
+        "max": 218900,
         "currency": "USD",
         "interval": "year"
       },
@@ -49,7 +49,7 @@
       "firstSeen": "2026-11-18",
       "reports": null,
       "employerStated": null,
-      "slug": "twilio-staff-fullstack-software-engineer-l4-g3guem",
+      "slug": "twilio-staff-fullstack-software-engineer-p4-g3guem",
       "featuredUntil": null
     },
     {
