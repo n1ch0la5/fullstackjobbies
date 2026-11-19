@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T19:10:58.426Z",
+  "updatedAt": "2026-11-19T02:04:41.732Z",
   "jobs": [
     {
       "id": "gh:twilio:8393931",
@@ -364,62 +364,6 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:toast:7819344",
-      "company": "Toast",
-      "title": "Senior Software Engineer (Fullstack), Digital Storefront",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=7819344",
-      "location": "Remote, US",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 159000,
-        "max": 159000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "angular",
-        "java",
-        "kotlin",
-        "postgres",
-        "aws",
-        "docker",
-        "tailwind"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.75 humane interviews",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-05-20T17:57:37-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "toast-senior-software-engineer-fullstack-digital-storefront-0ry57b",
-      "featuredUntil": null
-    },
-    {
       "id": "ab:openai:39e06ef9-5e62-425d-81e2-e8690188011f",
       "company": "OpenAI",
       "title": "Full Stack Software Engineer, Consumer Verticals",
@@ -520,6 +464,62 @@
       "reports": null,
       "employerStated": null,
       "slug": "seeq-full-stack-software-engineer-staff-or-principal-fz92zt",
+      "featuredUntil": null
+    },
+    {
+      "id": "wk:seeq:802346B20E",
+      "company": "Seeq",
+      "title": "Full Stack Software Engineer - Staff or Principal",
+      "url": "https://apply.workable.com/j/802346B20E",
+      "location": "Remote · Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 265000,
+        "max": 310000,
+        "currency": "CAD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "python",
+        "java",
+        "kotlin",
+        "postgres",
+        "graphql",
+        "tailwind"
+      ],
+      "rounds": null,
+      "interviewStyles": [
+        "pairing"
+      ],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.75 humane interviews",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "workable",
+      "postedAt": "2026-09-10",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj",
       "featuredUntil": null
     }
   ]

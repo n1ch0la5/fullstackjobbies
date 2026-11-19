@@ -215,7 +215,7 @@
       "slug": "apolloresearch",
       "name": "Apollo Research",
       "discovered": "2026-11-06",
-      "fails": 1,
+      "fails": 0,
       "nameChecked": true
     },
     {
@@ -729,7 +729,7 @@
       "slug": "spotify",
       "name": "Spotify",
       "seeded": "2026-11-06",
-      "fails": 1,
+      "fails": 0,
       "nameChecked": true
     },
     {
@@ -1327,7 +1327,7 @@
       "slug": "norm-ai",
       "name": "Norm AI",
       "discovered": "2026-11-06",
-      "fails": 0,
+      "fails": 1,
       "nameChecked": true
     },
     {
