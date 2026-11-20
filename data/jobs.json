@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-20T01:55:13.885Z",
-  "count": 217,
+  "updatedAt": "2026-11-20T18:53:09.394Z",
+  "count": 220,
   "jobs": [
     {
       "id": "gh:twilio:8393931",
@@ -1300,6 +1300,158 @@
       "reports": null,
       "employerStated": null,
       "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:spacex:8955900002",
+      "company": "SpaceX",
+      "title": "Lead Software Engineer (Full Stack) - Build Reliability",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8955900002?gh_jid=8955900002",
+      "location": "Hawthorne, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 185000,
+        "max": 265000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.5 1 round",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-20T13:06:56-05:00",
+      "firstSeen": "2026-11-20",
+      "reports": null,
+      "employerStated": null,
+      "slug": "spacex-lead-software-engineer-full-stack-build-reliability-plwvsy",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:spacex:8955898002",
+      "company": "SpaceX",
+      "title": "Full Stack Software Engineer (Build Reliability)",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8955898002?gh_jid=8955898002",
+      "location": "Hawthorne, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 135000,
+        "max": 160000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "python",
+        "c#",
+        ".net"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+0.75 fair pay",
+          "+0.25 clear salary range",
+          "+0.5 1 round",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-20T13:06:41-05:00",
+      "firstSeen": "2026-11-20",
+      "reports": null,
+      "employerStated": null,
+      "slug": "spacex-full-stack-software-engineer-build-reliability-2xbm3g",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:okta:8398497",
+      "company": "Okta",
+      "title": "Staff Fullstack Engineer, Okta Secures AI",
+      "url": "https://www.okta.com/company/careers/opportunity/8398497?gh_jid=8398497",
+      "location": "Toronto, ON, Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 160000,
+        "max": 160000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "javascript",
+        "java",
+        "aws"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-11-20T10:15:48-05:00",
+      "firstSeen": "2026-11-20",
+      "reports": null,
+      "employerStated": null,
+      "slug": "okta-staff-fullstack-engineer-okta-secures-ai-h42m47",
       "featuredUntil": null
     },
     {
@@ -3730,6 +3882,54 @@
       "featuredUntil": null
     },
     {
+      "id": "gh:mattermost:5405811008",
+      "company": "Mattermost",
+      "title": "Staff Full Stack Engineer",
+      "url": "https://job-boards.greenhouse.io/mattermost/jobs/5405811008",
+      "location": "United States",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 172724,
+        "max": 227135,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "redis",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-08-26T14:39:47-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "mattermost-staff-full-stack-engineer-xw8oxo",
+      "featuredUntil": null
+    },
+    {
       "id": "gh:mattermost:5405812008",
       "company": "Mattermost",
       "title": "Staff Full Stack Engineer",
@@ -3776,54 +3976,6 @@
       "reports": null,
       "employerStated": null,
       "slug": "mattermost-staff-full-stack-engineer-bxf0r3",
-      "featuredUntil": null
-    },
-    {
-      "id": "gh:mattermost:5405811008",
-      "company": "Mattermost",
-      "title": "Staff Full Stack Engineer",
-      "url": "https://job-boards.greenhouse.io/mattermost/jobs/5405811008",
-      "location": "United States",
-      "where": {
-        "countries": [
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 172724,
-        "max": 227135,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "redis",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-08-26T14:39:47-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "mattermost-staff-full-stack-engineer-xw8oxo",
       "featuredUntil": null
     },
     {
@@ -3977,10 +4129,10 @@
       "company": "Clickhouse",
       "title": "Full Stack Software Engineer - Postgres",
       "url": "https://jobs.ashbyhq.com/clickhouse/8d7ef0a5-5a0a-4598-b39d-c4c0ac011547",
-      "location": "India",
+      "location": "United States",
       "where": {
         "countries": [
-          "IN"
+          "US"
         ],
         "regions": [],
         "anywhere": false
@@ -6144,11 +6296,11 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:databricks:6544403002",
+      "id": "gh:databricks:5445641002",
       "company": "Databricks",
       "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544403002",
-      "location": "Seattle, Washington",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002",
+      "location": "Mountain View, California; San Francisco, California",
       "where": {
         "countries": [
           "US"
@@ -6160,8 +6312,8 @@
       "remote": null,
       "workStyle": null,
       "salary": {
-        "min": 157700,
-        "max": 157700,
+        "min": 166000,
+        "max": 166000,
         "currency": "USD",
         "interval": "year"
       },
@@ -6195,11 +6347,11 @@
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2022-12-20T18:20:50-05:00",
+      "postedAt": "2022-02-28T15:09:37-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
       "employerStated": null,
-      "slug": "databricks-senior-software-engineer-fullstack-0pruj0",
+      "slug": "databricks-senior-software-engineer-fullstack-p12m2v",
       "featuredUntil": null
     },
     {
@@ -6259,11 +6411,11 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:databricks:5445641002",
+      "id": "gh:databricks:6544403002",
       "company": "Databricks",
       "title": "Senior Software Engineer - Fullstack",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002",
-      "location": "Mountain View, California; San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544403002",
+      "location": "Seattle, Washington",
       "where": {
         "countries": [
           "US"
@@ -6275,8 +6427,8 @@
       "remote": null,
       "workStyle": null,
       "salary": {
-        "min": 166000,
-        "max": 166000,
+        "min": 157700,
+        "max": 157700,
         "currency": "USD",
         "interval": "year"
       },
@@ -6310,11 +6462,11 @@
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2022-02-28T15:09:37-05:00",
+      "postedAt": "2022-12-20T18:20:50-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
       "employerStated": null,
-      "slug": "databricks-senior-software-engineer-fullstack-p12m2v",
+      "slug": "databricks-senior-software-engineer-fullstack-0pruj0",
       "featuredUntil": null
     },
     {
@@ -6968,51 +7120,6 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:affirm:8011132003",
-      "company": "Affirm",
-      "title": "Analytics Lead, Full Stack",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011132003",
-      "location": "Remote Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 145000,
-        "max": 205000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 4,
-        "name": "Solid",
-        "emoji": "💯",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-11-06T12:16:19-05:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "affirm-analytics-lead-full-stack-i0lx22",
-      "featuredUntil": null
-    },
-    {
       "id": "gh:affirm:8011130003",
       "company": "Affirm",
       "title": "Analytics Lead, Full Stack",
@@ -7058,11 +7165,11 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:okta:8120329",
-      "company": "Okta",
-      "title": "Staff FullStack Engineer, Secures AI ",
-      "url": "https://www.okta.com/company/careers/opportunity/8120329?gh_jid=8120329",
-      "location": "Toronto, Ontario, Canada",
+      "id": "gh:affirm:8011132003",
+      "company": "Affirm",
+      "title": "Analytics Lead, Full Stack",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011132003",
+      "location": "Remote Canada",
       "where": {
         "countries": [
           "CA"
@@ -7071,19 +7178,16 @@
         "anywhere": false
       },
       "via": null,
-      "remote": null,
-      "workStyle": null,
+      "remote": true,
+      "workStyle": "remote",
       "salary": {
-        "min": 164000,
-        "max": 164000,
+        "min": 145000,
+        "max": 205000,
         "currency": "USD",
         "interval": "year"
       },
       "stack": [
-        "typescript",
-        "javascript",
-        "java",
-        "aws"
+        "python"
       ],
       "rounds": null,
       "interviewStyles": [],
@@ -7094,16 +7198,15 @@
         "emoji": "💯",
         "reasons": [
           "+1.25 strong pay",
-          "+0.25 clear salary range",
           "+0.25 no red flags"
         ]
       },
       "source": "greenhouse",
-      "postedAt": "2026-08-17T15:47:45-04:00",
+      "postedAt": "2026-11-06T12:16:19-05:00",
       "firstSeen": "2026-11-06",
       "reports": null,
       "employerStated": null,
-      "slug": "okta-staff-fullstack-engineer-secures-ai-gpu2ec",
+      "slug": "affirm-analytics-lead-full-stack-i0lx22",
       "featuredUntil": null
     },
     {
@@ -7153,6 +7256,55 @@
       "reports": null,
       "employerStated": null,
       "slug": "okta-staff-fullstack-engineer-secures-ai-mou1wp",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:okta:8120329",
+      "company": "Okta",
+      "title": "Staff FullStack Engineer, Secures AI ",
+      "url": "https://www.okta.com/company/careers/opportunity/8120329?gh_jid=8120329",
+      "location": "Toronto, Ontario, Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 164000,
+        "max": 164000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "typescript",
+        "javascript",
+        "java",
+        "aws"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 4,
+        "name": "Solid",
+        "emoji": "💯",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-08-17T15:47:45-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "okta-staff-fullstack-engineer-secures-ai-gpu2ec",
       "featuredUntil": null
     },
     {
@@ -8002,7 +8154,7 @@
       "workStyle": "onsite",
       "salary": {
         "min": 80000,
-        "max": 110000,
+        "max": 100000,
         "currency": "EUR",
         "interval": "year"
       },
@@ -8026,6 +8178,7 @@
         "emoji": "😐",
         "reasons": [
           "+0.25 okay pay",
+          "+0.25 clear salary range",
           "+0.25 no red flags"
         ]
       },
@@ -9666,53 +9819,6 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:affirm:8003170003",
-      "company": "Affirm",
-      "title": "Analytics Lead, Full Stack",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/8003170003",
-      "location": "Remote Canada",
-      "where": {
-        "countries": [
-          "CA"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 145000,
-        "max": 205000,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "python"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [
-        "fast-paced"
-      ],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+1.25 strong pay",
-          "-0.5 1 red flag(s)"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-09-23T04:34:42-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "affirm-analytics-lead-full-stack-pa8df7",
-      "featuredUntil": null
-    },
-    {
       "id": "gh:affirm:7799329003",
       "company": "Affirm",
       "title": "Analytics Lead, Full Stack",
@@ -9760,6 +9866,53 @@
       "featuredUntil": null
     },
     {
+      "id": "gh:affirm:8003170003",
+      "company": "Affirm",
+      "title": "Analytics Lead, Full Stack",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8003170003",
+      "location": "Remote Canada",
+      "where": {
+        "countries": [
+          "CA"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": true,
+      "workStyle": "remote",
+      "salary": {
+        "min": 145000,
+        "max": 205000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "python"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [
+        "fast-paced"
+      ],
+      "rating": {
+        "level": 3,
+        "name": "Meh",
+        "emoji": "😐",
+        "reasons": [
+          "+1.25 strong pay",
+          "-0.5 1 red flag(s)"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-09-23T04:34:42-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "affirm-analytics-lead-full-stack-pa8df7",
+      "featuredUntil": null
+    },
+    {
       "id": "gh:affirm:8039471003",
       "company": "Affirm",
       "title": "Analyst, Early Career (Full Stack)",
@@ -9802,56 +9955,6 @@
       "reports": null,
       "employerStated": null,
       "slug": "affirm-analyst-early-career-full-stack-tr9gze",
-      "featuredUntil": null
-    },
-    {
-      "id": "gh:elastic:8276131",
-      "company": "Elastic",
-      "title": "Senior Full Stack Software Developer - Observability",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8276131&gh_jid=8276131",
-      "location": "Spain",
-      "where": {
-        "countries": [
-          "ES"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 67000,
-        "max": 67000,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "node",
-        "kubernetes",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 3,
-        "name": "Meh",
-        "emoji": "😐",
-        "reasons": [
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-10-13T06:33:51-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "elastic-senior-full-stack-software-developer-observability-ismh13",
       "featuredUntil": null
     },
     {
@@ -9903,6 +10006,56 @@
       "reports": null,
       "employerStated": null,
       "slug": "elastic-senior-full-stack-software-developer-observability-hoo297",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:elastic:8276131",
+      "company": "Elastic",
+      "title": "Senior Full Stack Software Developer - Observability",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8276131&gh_jid=8276131",
+      "location": "Spain",
+      "where": {
+        "countries": [
+          "ES"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 67000,
+        "max": 67000,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "node",
+        "kubernetes",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 3,
+        "name": "Meh",
+        "emoji": "😐",
+        "reasons": [
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-13T06:33:51-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-software-developer-observability-ismh13",
       "featuredUntil": null
     },
     {
@@ -10588,57 +10741,6 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:elastic:8276132",
-      "company": "Elastic",
-      "title": "Senior Full Stack Software Developer - Observability",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8276132&gh_jid=8276132",
-      "location": "Portugal",
-      "where": {
-        "countries": [
-          "PT"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": null,
-      "workStyle": null,
-      "salary": {
-        "min": 55800,
-        "max": 55800,
-        "currency": "EUR",
-        "interval": "year"
-      },
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "node",
-        "kubernetes",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "rating": {
-        "level": 2,
-        "name": "Bit whiffy",
-        "emoji": "🤢",
-        "reasons": [
-          "-0.5 low pay",
-          "+0.25 clear salary range",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-10-13T06:33:53-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "elastic-senior-full-stack-software-developer-observability-j2m2q2",
-      "featuredUntil": null
-    },
-    {
       "id": "gh:elastic:8276133",
       "company": "Elastic",
       "title": "Senior Full Stack Software Developer - Observability",
@@ -10687,6 +10789,57 @@
       "reports": null,
       "employerStated": null,
       "slug": "elastic-senior-full-stack-software-developer-observability-jclof1",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:elastic:8276132",
+      "company": "Elastic",
+      "title": "Senior Full Stack Software Developer - Observability",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8276132&gh_jid=8276132",
+      "location": "Portugal",
+      "where": {
+        "countries": [
+          "PT"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 55800,
+        "max": 55800,
+        "currency": "EUR",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "node",
+        "kubernetes",
+        "golang"
+      ],
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 2,
+        "name": "Bit whiffy",
+        "emoji": "🤢",
+        "reasons": [
+          "-0.5 low pay",
+          "+0.25 clear salary range",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-10-13T06:33:53-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "elastic-senior-full-stack-software-developer-observability-j2m2q2",
       "featuredUntil": null
     },
     {
