@@ -1081,8 +1081,8 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:stripe:8214618": {
-    "hash": "e7de4c70f5f87bb0",
+  "gh:stripe:8214616": {
+    "hash": "f2133bd8dd0c8898",
     "facts": {
       "salary": null,
       "stack": [],
@@ -1097,8 +1097,8 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:stripe:8214616": {
-    "hash": "f2133bd8dd0c8898",
+  "gh:stripe:8214618": {
+    "hash": "e7de4c70f5f87bb0",
     "facts": {
       "salary": null,
       "stack": [],
@@ -3157,12 +3157,40 @@
     },
     "firstSeen": "2026-11-12"
   },
-  "gh:databricks:7898766002": {
-    "hash": "1d6614d049cfd896",
+  "gh:databricks:8029679002": {
+    "hash": "bcbab855d6105764",
+    "facts": {
+      "salary": null,
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        "aws",
+        "gcp",
+        "azure",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "golang"
+      ],
+      "remote": null,
+      "rounds": null,
+      "interviewStyles": [],
+      "redFlags": [],
+      "severeFlags": [],
+      "extractedBy": "rules"
+    },
+    "firstSeen": "2026-11-06"
+  },
+  "gh:databricks:6544403002": {
+    "hash": "32ccd10ec925ad8d",
     "facts": {
       "salary": {
-        "min": 166000,
-        "max": 166000,
+        "min": 157700,
+        "max": 157700,
         "currency": "USD",
         "interval": "year"
       },
@@ -3170,8 +3198,10 @@
         "react",
         "angular",
         "javascript",
+        "node",
         "python",
         "java",
+        "c#",
         "aws",
         "gcp",
         "azure",
@@ -3221,12 +3251,12 @@
     },
     "firstSeen": "2026-11-06"
   },
-  "gh:databricks:6544403002": {
-    "hash": "32ccd10ec925ad8d",
+  "gh:databricks:7898766002": {
+    "hash": "1d6614d049cfd896",
     "facts": {
       "salary": {
-        "min": 157700,
-        "max": 157700,
+        "min": 166000,
+        "max": 166000,
         "currency": "USD",
         "interval": "year"
       },
@@ -3234,10 +3264,8 @@
         "react",
         "angular",
         "javascript",
-        "node",
         "python",
         "java",
-        "c#",
         "aws",
         "gcp",
         "azure",
@@ -3276,34 +3304,6 @@
         "azure",
         "kubernetes",
         "docker",
-        "golang"
-      ],
-      "remote": null,
-      "rounds": null,
-      "interviewStyles": [],
-      "redFlags": [],
-      "severeFlags": [],
-      "extractedBy": "rules"
-    },
-    "firstSeen": "2026-11-06"
-  },
-  "gh:databricks:8029679002": {
-    "hash": "bcbab855d6105764",
-    "facts": {
-      "salary": null,
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "python",
-        "java",
-        "c#",
-        "aws",
-        "gcp",
-        "azure",
-        "kubernetes",
-        "docker",
-        "terraform",
         "golang"
       ],
       "remote": null,
