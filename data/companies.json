@@ -1512,7 +1512,7 @@
       "slug": "atomcomputing",
       "name": "Atomcomputing",
       "discovered": "2026-11-06",
-      "fails": 1,
+      "fails": 0,
       "nameChecked": true
     },
     {
@@ -1656,8 +1656,9 @@
       "slug": "complement",
       "name": "Complement",
       "discovered": "2026-11-06",
-      "fails": 2,
-      "nameChecked": true
+      "fails": 3,
+      "nameChecked": true,
+      "disabled": true
     },
     {
       "ats": "greenhouse",
