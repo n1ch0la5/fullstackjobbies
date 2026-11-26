@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T20:15:30.535Z",
+  "updatedAt": "2026-11-26T03:14:34.324Z",
   "jobs": [
     {
       "id": "gh:twilio:8393931",
@@ -259,58 +259,6 @@
       "featuredUntil": null
     },
     {
-      "id": "gh:gitlab:8845277002",
-      "company": "GitLab",
-      "title": "Staff Fullstack Engineer, Data Products (Golang / Node)",
-      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845277002",
-      "location": "Remote, Canada; Remote, United States",
-      "where": {
-        "countries": [
-          "CA",
-          "US"
-        ],
-        "regions": [],
-        "anywhere": false
-      },
-      "via": null,
-      "remote": true,
-      "workStyle": "remote",
-      "salary": {
-        "min": 152800,
-        "max": 152800,
-        "currency": "USD",
-        "interval": "year"
-      },
-      "stack": [
-        "node",
-        "ruby",
-        "golang"
-      ],
-      "rounds": null,
-      "interviewStyles": [
-        "pairing"
-      ],
-      "redFlags": [],
-      "rating": {
-        "level": 5,
-        "name": "Rocket ship",
-        "emoji": "🚀",
-        "reasons": [
-          "+1.25 strong pay",
-          "+0.25 clear salary range",
-          "+0.75 humane interviews",
-          "+0.25 no red flags"
-        ]
-      },
-      "source": "greenhouse",
-      "postedAt": "2026-10-02T09:24:02-04:00",
-      "firstSeen": "2026-11-06",
-      "reports": null,
-      "employerStated": null,
-      "slug": "gitlab-staff-fullstack-engineer-data-products-golang-node-siafja",
-      "featuredUntil": null
-    },
-    {
       "id": "gh:figma:5691911004",
       "company": "Figma",
       "title": "Software Engineer - Full Stack",
@@ -520,6 +468,60 @@
       "reports": null,
       "employerStated": null,
       "slug": "seeq-full-stack-software-engineer-staff-or-principal-g0u5mj",
+      "featuredUntil": null
+    },
+    {
+      "id": "gh:spacex:8555708002",
+      "company": "SpaceX",
+      "title": "Lead Software Engineer (Full Stack) - Build Reliability",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8555708002?gh_jid=8555708002",
+      "location": "Hawthorne, CA",
+      "where": {
+        "countries": [
+          "US"
+        ],
+        "regions": [],
+        "anywhere": false
+      },
+      "via": null,
+      "remote": null,
+      "workStyle": null,
+      "salary": {
+        "min": 160000,
+        "max": 160000,
+        "currency": "USD",
+        "interval": "year"
+      },
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "python",
+        "java",
+        "c#",
+        ".net",
+        "golang"
+      ],
+      "rounds": 1,
+      "interviewStyles": [],
+      "redFlags": [],
+      "rating": {
+        "level": 5,
+        "name": "Rocket ship",
+        "emoji": "🚀",
+        "reasons": [
+          "+1.25 strong pay",
+          "+0.25 clear salary range",
+          "+0.5 1 round",
+          "+0.25 no red flags"
+        ]
+      },
+      "source": "greenhouse",
+      "postedAt": "2026-05-18T21:15:26-04:00",
+      "firstSeen": "2026-11-06",
+      "reports": null,
+      "employerStated": null,
+      "slug": "spacex-lead-software-engineer-full-stack-build-reliability-w5p8v4",
       "featuredUntil": null
     }
   ]
