@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-27T03:19:45.863Z",
+  "updatedAt": "2026-11-27T19:41:58.260Z",
   "jobs": [
     {
       "id": "gh:affirm:8200180003",
       "company": "Affirm",
-      "title": "Senior Software Engineer, Fullstack (International) ",
+      "title": "Senior Software Engineer, Fullstack (International Accelerator)",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/8200180003",
       "location": "Remote Poland",
       "where": {
@@ -26,6 +26,7 @@
       "stack": [
         "react",
         "vue",
+        "node",
         "python",
         "kotlin",
         "mysql",
@@ -51,7 +52,7 @@
       "firstSeen": "2026-11-26",
       "reports": null,
       "employerStated": null,
-      "slug": "affirm-senior-software-engineer-fullstack-international-uhtmbt",
+      "slug": "affirm-senior-software-engineer-fullstack-international-accelerator-uhtmbt",
       "featuredUntil": null
     },
     {
